@@ -1,0 +1,1061 @@
+{
+  "classtypes": [
+    "appboot",
+    "sessions",
+    "data",
+    "telegram",
+    "tools",
+    "crypto",
+    "agents",
+    "database",
+    "swing",
+    "world",
+    "agswing",
+    "larva",
+    "games",
+    "factoryagent",
+    "geometry"
+  ],
+  "relationtypes": [
+    "extends",
+    "owns"
+  ],
+  "relation": {
+    "extends": [
+      {
+        "LARVABaseTelegram": [
+          "LARVAPublicTelegram",
+          "LARVAPrivateTelegram"
+        ]
+      },
+      {
+        "OleDataBase": [
+          "DBA2021",
+          "DBA2122"
+        ]
+      },
+      {
+        "Entity": [
+          "Thing"
+        ]
+      },
+      {
+        "JPanel": [
+          "AGDrawPane",
+          "MyDrawPane"
+        ]
+      },
+      {
+        "Agent": [
+          "LARVABaseAgent"
+        ]
+      },
+      {
+        "SessionManager": [
+          "TeamController",
+          "Goku",
+          "SonGoanda",
+          "HWManager",
+          "WorldController",
+          "Mario"
+        ]
+      },
+      {
+        "MyDrawPane": [
+          "MyMapPalPane",
+          "LARVAEmbeddedDash",
+          "AirTrafficControl"
+        ]
+      },
+      {
+        "LARVAFirstAgent": [
+          "TradeFederation",
+          "DeathStarDeLuxe",
+          "DeathStar"
+        ]
+      },
+      {
+        "Ole": [
+          "OleQuery",
+          "OleTable",
+          "OleFile",
+          "OleSensor",
+          "OleList",
+          "OleDot",
+          "OlePassport",
+          "OleConfig",
+          "OleReport"
+        ]
+      },
+      {
+        "JsonObject": [
+          "Ole"
+        ]
+      },
+      {
+        "LARVADash": [
+          "LARVACompactDash",
+          "LARVAMiniDash"
+        ]
+      },
+      {
+        "LARVAAdminAgent": [
+          "GMailer",
+          "LARVAEphemeral",
+          "LARVAQueen",
+          "ProblemManager",
+          "DataBaser",
+          "LARVABaseTelegram",
+          "DrDiagnostic",
+          "IdentityManager"
+        ]
+      },
+      {
+        "TelegramLongPollingBot": [
+          "LARVATelegramBot"
+        ]
+      },
+      {
+        "Object3D": [
+          "Line3D",
+          "Polygon3D",
+          "Bitmap3D"
+        ]
+      },
+      {
+        "LARVABaseAgent": [
+          "LARVAFirstAgent",
+          "LARVAAdminAgent"
+        ]
+      },
+      {
+        "OlePassport": [
+          "AdminPassport"
+        ]
+      },
+      {
+        "GameObject": [
+          "GameLabel",
+          "GameBitmap",
+          "GameCharacter"
+        ]
+      },
+      {
+        "Cryptor": [
+          "AdminCryptor"
+        ]
+      },
+      {
+        "LARVAEphemeral": [
+          "StoreManager",
+          "SessionManager"
+        ]
+      },
+      {
+        "ACLMessage": [
+          "ADMINMessage"
+        ]
+      },
+      {
+        "AGDrawPane": [
+          "AG3DDrawPane"
+        ]
+      },
+      {
+        "JDialog": [
+          "OleDialog"
+        ]
+      },
+      {
+        "Thing": [
+          "liveBot"
+        ]
+      }
+    ],
+    "owns": [
+      {
+        "Entity": [
+          
+        ]
+      },
+      {
+        "OleQuery": [
+          
+        ]
+      },
+      {
+        "GameLabel": [
+          
+        ]
+      },
+      {
+        "Ole": [
+          "Cryptor"
+        ]
+      },
+      {
+        "GMailer": [
+          
+        ]
+      },
+      {
+        "TeamController": [
+          "Ole"
+        ]
+      },
+      {
+        "MyPopup": [
+          
+        ]
+      },
+      {
+        "Cryptor": [
+          
+        ]
+      },
+      {
+        "LARVAEphemeral": [
+          
+        ]
+      },
+      {
+        "Map2DColor": [
+          
+        ]
+      },
+      {
+        "SentenceBuilder": [
+          "OleDataBase"
+        ]
+      },
+      {
+        "Vector": [
+          
+        ]
+      },
+      {
+        "Thing": [
+          "Perceptor"
+        ]
+      },
+      {
+        "LARVAQueen": [
+          "FactoryAgent"
+        ]
+      },
+      {
+        "Roles": [
+          
+        ]
+      },
+      {
+        "LARVADash": [
+          "MyDrawPane",
+          "MyMapPalPane"
+        ]
+      },
+      {
+        "Compass": [
+          
+        ]
+      },
+      {
+        "Line3D": [
+          
+        ]
+      },
+      {
+        "Object3D": [
+          
+        ]
+      },
+      {
+        "SequenceDiagram": [
+          
+        ]
+      },
+      {
+        "FactoryAgent": [
+          "LARVAAdminAgent"
+        ]
+      },
+      {
+        "Game": [
+          "MyDrawPane"
+        ]
+      },
+      {
+        "MyMapPalPane": [
+          "MyDrawPane"
+        ]
+      },
+      {
+        "ProblemManager": [
+          "OleConfig"
+        ]
+      },
+      {
+        "TelegramMenuOption": [
+          
+        ]
+      },
+      {
+        "TimeHandler": [
+          
+        ]
+      },
+      {
+        "AGDrawPane": [
+          
+        ]
+      },
+      {
+        "DataBaser": [
+          
+        ]
+      },
+      {
+        "LARVABaseTelegram": [
+          
+        ]
+      },
+      {
+        "MyDrawPane": [
+          
+        ]
+      },
+      {
+        "LARVABoot": [
+          "OleConfig"
+        ]
+      },
+      {
+        "AGFrame": [
+          
+        ]
+      },
+      {
+        "Logger": [
+          
+        ]
+      },
+      {
+        "GamePanel": [
+          
+        ]
+      },
+      {
+        "LARVABaseAgent": [
+          "OleFile"
+        ]
+      },
+      {
+        "capability": [
+          
+        ]
+      },
+      {
+        "Goku": [
+          
+        ]
+      },
+      {
+        "LARVAAirTrafficControlTiles": [
+          "MyDrawPane",
+          "AirTrafficControl",
+          "LARVAEmbeddedDash",
+          "OleFile"
+        ]
+      },
+      {
+        "LARVAPublicTelegram": [
+          
+        ]
+      },
+      {
+        "LARVAPrivateTelegram": [
+          
+        ]
+      },
+      {
+        "SonGoanda": [
+          
+        ]
+      },
+      {
+        "HWManager": [
+          
+        ]
+      },
+      {
+        "Menu": [
+          
+        ]
+      },
+      {
+        "TradeFederation": [
+          
+        ]
+      },
+      {
+        "TelegramChat": [
+          
+        ]
+      },
+      {
+        "DBAAPI": [
+          
+        ]
+      },
+      {
+        "emojis": [
+          "OleList"
+        ]
+      },
+      {
+        "JDrawPane": [
+          
+        ]
+      },
+      {
+        "MyPlainButton": [
+          
+        ]
+      },
+      {
+        "Map2DGrayscale": [
+          
+        ]
+      },
+      {
+        "OleTable": [
+          
+        ]
+      },
+      {
+        "DrDiagnostic": [
+          "OleConfig"
+        ]
+      },
+      {
+        "LARVATelegramBot": [
+          "LARVAAdminAgent"
+        ]
+      },
+      {
+        "TelegramChoice": [
+          
+        ]
+      },
+      {
+        "TelegramMenu": [
+          
+        ]
+      },
+      {
+        "Keygen": [
+          
+        ]
+      },
+      {
+        "DBA2021": [
+          "Ole",
+          "OleTable"
+        ]
+      },
+      {
+        "fileutils": [
+          
+        ]
+      },
+      {
+        "Event": [
+          
+        ]
+      },
+      {
+        "ProductCoin": [
+          
+        ]
+      },
+      {
+        "LARVACompactDash": [
+          
+        ]
+      },
+      {
+        "Transform": [
+          
+        ]
+      },
+      {
+        "GameBitmap": [
+          
+        ]
+      },
+      {
+        "DeathStarDeLuxe": [
+          "LARVAMiniDash"
+        ]
+      },
+      {
+        "LARVAEmbeddedDash": [
+          "MyDrawPane"
+        ]
+      },
+      {
+        "OleDialog": [
+          "OleConfig"
+        ]
+      },
+      {
+        "IdentityManager": [
+          
+        ]
+      },
+      {
+        "WorldController": [
+          "Ole"
+        ]
+      },
+      {
+        "LARVAMiniDash": [
+          
+        ]
+      },
+      {
+        "LARVAFirstAgent": [
+          "LARVADash",
+          "OleList",
+          "OleConfig"
+        ]
+      },
+      {
+        "Scene3D": [
+          "Object3D"
+        ]
+      },
+      {
+        "JADEBoot": [
+          "OleConfig"
+        ]
+      },
+      {
+        "Polygon3D": [
+          
+        ]
+      },
+      {
+        "World": [
+          "Thing",
+          "OleConfig"
+        ]
+      },
+      {
+        "Basher": [
+          
+        ]
+      },
+      {
+        "Mario": [
+          
+        ]
+      },
+      {
+        "AdminPassport": [
+          
+        ]
+      },
+      {
+        "AdminCryptor": [
+          
+        ]
+      },
+      {
+        "ReportableObject": [
+          
+        ]
+      },
+      {
+        "TelegramMenuBar": [
+          
+        ]
+      },
+      {
+        "GameObject": [
+          
+        ]
+      },
+      {
+        "GameCharacter": [
+          
+        ]
+      },
+      {
+        "Bitmap3D": [
+          
+        ]
+      },
+      {
+        "RoundProgressBar": [
+          
+        ]
+      },
+      {
+        "Sentence": [
+          
+        ]
+      },
+      {
+        "LARVA": [
+          
+        ]
+      },
+      {
+        "DBAgent": [
+          
+        ]
+      },
+      {
+        "OleFile": [
+          
+        ]
+      },
+      {
+        "LARVAAdminAgent": [
+          "FactoryAgent",
+          "OleConfig",
+          "DBA2122",
+          "AdminCryptor",
+          "OleList",
+          "Ole"
+        ]
+      },
+      {
+        "DBA2122": [
+          "Ole",
+          "OleTable",
+          "OleList"
+        ]
+      },
+      {
+        "ACLMessageTools": [
+          
+        ]
+      },
+      {
+        "OleSensor": [
+          
+        ]
+      },
+      {
+        "String3D": [
+          
+        ]
+      },
+      {
+        "Internet": [
+          
+        ]
+      },
+      {
+        "LARVAAirTrafficControl3D": [
+          "AG3DDrawPane",
+          "LARVAEmbeddedDash",
+          "OleFile"
+        ]
+      },
+      {
+        "OleDataBase": [
+          "Ole",
+          "OleTable"
+        ]
+      },
+      {
+        "liveBot": [
+          "Thing"
+        ]
+      },
+      {
+        "Palette": [
+          
+        ]
+      },
+      {
+        "request": [
+          
+        ]
+      },
+      {
+        "Ontology": [
+          
+        ]
+      },
+      {
+        "LARVAFrame": [
+          
+        ]
+      },
+      {
+        "TokenList": [
+          
+        ]
+      },
+      {
+        "TelegramUpdates": [
+          
+        ]
+      },
+      {
+        "OleList": [
+          
+        ]
+      },
+      {
+        "Angular": [
+          
+        ]
+      },
+      {
+        "OleDot": [
+          
+        ]
+      },
+      {
+        "StoreManager": [
+          
+        ]
+      },
+      {
+        "DeathStar": [
+          "LARVAMiniDash"
+        ]
+      },
+      {
+        "OlePassport": [
+          
+        ]
+      },
+      {
+        "Console": [
+          
+        ]
+      },
+      {
+        "EmptyAgent": [
+          
+        ]
+      },
+      {
+        "LARVADialog": [
+          
+        ]
+      },
+      {
+        "direction": [
+          
+        ]
+      },
+      {
+        "SwingTools": [
+          
+        ]
+      },
+      {
+        "SensorDecoder": [
+          
+        ]
+      },
+      {
+        "Sprite": [
+          
+        ]
+      },
+      {
+        "AG3DDrawPane": [
+          
+        ]
+      },
+      {
+        "SessionManager": [
+          
+        ]
+      },
+      {
+        "Circle3D": [
+          
+        ]
+      },
+      {
+        "Point": [
+          
+        ]
+      },
+      {
+        "ADMINMessage": [
+          "LARVAAdminAgent"
+        ]
+      },
+      {
+        "BehaviourControl": [
+          
+        ]
+      },
+      {
+        "SendGMailSMTP": [
+          
+        ]
+      },
+      {
+        "Map2DPalette": [
+          
+        ]
+      },
+      {
+        "sensors": [
+          
+        ]
+      },
+      {
+        "Map2DColor_OLD": [
+          
+        ]
+      },
+      {
+        "Perceptor": [
+          "Thing"
+        ]
+      },
+      {
+        "GameScene": [
+          "GameObject"
+        ]
+      },
+      {
+        "AirTrafficControl": [
+          "MyDrawPane"
+        ]
+      },
+      {
+        "OleConfig": [
+          
+        ]
+      },
+      {
+        "OleReport": [
+          
+        ]
+      },
+      {
+        "Session": [
+          "DBA2122",
+          "OleList",
+          "Ole",
+          "liveBot"
+        ]
+      }
+    ]
+  },
+  "class": {
+    "appboot": [
+      "LARVABoot",
+      "JADEBoot"
+    ],
+    "sessions": [
+      "Session"
+    ],
+    "data": [
+      "OleQuery",
+      "Ole",
+      "OleTable",
+      "AdminPassport",
+      "OleFile",
+      "OleSensor",
+      "OleList",
+      "OleDot",
+      "OlePassport",
+      "OleConfig",
+      "OleReport"
+    ],
+    "telegram": [
+      "LARVATelegramBot"
+    ],
+    "tools": [
+      "emojis"
+    ],
+    "crypto": [
+      "Cryptor",
+      "AdminCryptor"
+    ],
+    "agents": [
+      "LARVAEphemeral",
+      "LARVABaseTelegram",
+      "LARVABaseAgent",
+      "TradeFederation",
+      "DeathStarDeLuxe",
+      "LARVAFirstAgent",
+      "LARVAAdminAgent",
+      "DeathStar",
+      "ADMINMessage"
+    ],
+    "database": [
+      "SentenceBuilder",
+      "DBA2021",
+      "DBA2122",
+      "OleDataBase"
+    ],
+    "swing": [
+      "LARVADash",
+      "MyMapPalPane",
+      "MyDrawPane",
+      "LARVAAirTrafficControlTiles",
+      "LARVACompactDash",
+      "LARVAEmbeddedDash",
+      "OleDialog",
+      "LARVAMiniDash",
+      "LARVAAirTrafficControl3D",
+      "AirTrafficControl"
+    ],
+    "world": [
+      "Thing",
+      "World",
+      "liveBot",
+      "Perceptor"
+    ],
+    "agswing": [
+      "Line3D",
+      "Object3D",
+      "AGDrawPane",
+      "Scene3D",
+      "Polygon3D",
+      "Bitmap3D",
+      "AG3DDrawPane"
+    ],
+    "larva": [
+      "GMailer",
+      "TeamController",
+      "LARVAQueen",
+      "ProblemManager",
+      "DataBaser",
+      "Goku",
+      "LARVAPublicTelegram",
+      "LARVAPrivateTelegram",
+      "SonGoanda",
+      "HWManager",
+      "DrDiagnostic",
+      "IdentityManager",
+      "WorldController",
+      "Mario",
+      "StoreManager",
+      "SessionManager"
+    ],
+    "games": [
+      "GameLabel",
+      "Game",
+      "GameBitmap",
+      "GameObject",
+      "GameCharacter",
+      "GameScene"
+    ],
+    "factoryagent": [
+      "FactoryAgent"
+    ],
+    "geometry": [
+      "Entity"
+    ]
+  },
+  "format": {
+    "appboot": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "sessions": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "data": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "telegram": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "tools": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "crypto": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "agents": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "database": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "swing": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "world": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "agswing": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "larva": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "games": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "factoryagent": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "geometry": {
+      "face": "Arial",
+      "fontsize": 20,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "extends": "[arrowhead=onormal,color=black]",
+    "owns": "[style=dotted,arrowhead=odiamond,color=blue]"
+  }
+}
