@@ -11,6 +11,7 @@ import data.Ole;
 import data.OleConfig;
 import data.OleDot;
 import data.OleFile;
+import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -20,6 +21,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import javax.swing.JPanel;
+import swing.LARVAFrame;
+import swing.OleDialog;
+import swing.SwingTools;
 
 /**
  *
@@ -37,12 +42,17 @@ public class ClassDiagram {
     static String allcolours[] = new String[]{"Chartreuse", "MediumSpringGreen", "Turquoise", "CadetBlue", "MediumAquaMarine", "Thistle", "LightSteelBlue", "DarkViolet", "BlueViolet", "DarkOliveGreen", "Aqua", "OliveDrab", "Cyan", "LightBlue", "Indigo", "DarkSeaGreen", "Crimson", "Orchid", "DarkGreen", "Salmon", "RebeccaPurple", "MediumSlateBlue", "DodgerBlue", "PaleTurquoise", "Fuchsia", "Violet", "DarkTurquoise", "Blue", "SpringGreen", "DarkSlateBlue", "SkyBlue", "MediumBlue", "MidnightBlue", "IndianRed", "ForestGreen", "Lavender", "SlateBlue", "DarkMagenta", "Aquamarine", "DarkOrchid", "Lime", "Teal", "LightSeaGreen", "PowderBlue", "RoyalBlue", "Green", "Plum", "LimeGreen", "MediumOrchid", "FireBrick", "DarkRed", "MediumSeaGreen", "LightSkyBlue", "LightSalmon", "MediumTurquoise", "LightCoral", "DarkSalmon", "GreenYellow", "DeepSkyBlue", "MediumPurple", "LawnGreen", "CornflowerBlue", "PaleGreen", "SteelBlue", "Magenta", "LightCyan", "Navy", "Purple", "Red", "YellowGreen", "DarkCyan", "LightGreen", "SeaGreen", "DarkBlue"};
 //    static String allcolours[] = new String[]{"Aqua","Aquamarine","Blue","BlueViolet","CadetBlue","Chartreuse","CornflowerBlue","Crimson","Cyan","DarkBlue","DarkCyan","DarkGreen","DarkMagenta","DarkOliveGreen","DarkOrchid","DarkRed","DarkSalmon","DarkSeaGreen","DarkSlateBlue","DarkTurquoise","DarkViolet","DeepSkyBlue","DodgerBlue","FireBrick","ForestGreen","Fuchsia","Green","GreenYellow","IndianRed","Indigo","Lavender","LawnGreen","LightBlue","LightCoral","LightCyan","LightGreen","LightSalmon","LightSeaGreen","LightSkyBlue","LightSteelBlue","Lime","LimeGreen","Magenta","MediumAquaMarine","MediumBlue","MediumOrchid","MediumPurple","MediumSeaGreen","MediumSlateBlue","MediumSpringGreen","MediumTurquoise","MidnightBlue","Navy","OliveDrab","Orchid","PaleGreen","PaleTurquoise","Plum","PowderBlue","Purple","RebeccaPurple","Red","RoyalBlue","Salmon","SeaGreen","SkyBlue","SlateBlue","SpringGreen","SteelBlue","Teal","Thistle","Turquoise","Violet","YellowGreen"};
 
+    static LARVAFrame FMain;
+    static OleDialog ODMain;
+    static JPanel JPButtons;
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         myConfig = new OleConfig();
         myConfig.loadFile("config/config.json");
+//        InitGUI();
         loadAllFiles();
         System.out.println("Found initial " + allfilebasher.keySet().size() + " classes");
         findAllComponents();
@@ -51,6 +61,16 @@ public class ClassDiagram {
         System.out.println("Found " + allclasses.size() + " classes in " + allpackages.size() + " packages");
         dumpJson();
 
+    }
+
+    static void InitGUI() {
+        SwingTools.initLookAndFeel();
+        FMain = new LARVAFrame("ClassDiagram",e->Listener(e));
+        
+    }
+    
+    static void Listener(ActionEvent e) {
+        
     }
 
     public static void findAllComponents() {
@@ -85,12 +105,12 @@ public class ClassDiagram {
                 classusage.put(fromclass, classusage.get(fromclass) + 1);
             }
         }
-//        // Methods
-//        for (String fromclass : sorted) {
-//            datamembers = getMethods(fromclass); //frombasher.grepv("//");
-//            System.out.println("Exploring class " + fromclass + " Found Methods > " + datamembers);
-//            allmethods.put(fromclass, datamembers);
-//        }
+        // Methods
+        for (String fromclass : sorted) {
+            datamembers = getMethods(fromclass); //frombasher.grepv("//");
+            System.out.println("Exploring class " + fromclass + " Found Methods > " + datamembers);
+            allmethods.put(fromclass, datamembers);
+        }
         // Remove unused
         for (String sclass : sorted) {
             System.out.println("Class usage " + sclass + " : " + classusage.get(sclass));
@@ -148,7 +168,7 @@ public class ClassDiagram {
             singleformat = new Ole();
             singleformat.setField("face", "Arial");
             singleformat.setField("fontsize", 20);
-            singleformat.setField("fillcolor", "white"); //allcolours[ncolor++]);
+            singleformat.setField("fillcolor", allcolours[ncolor++]);
             singleformat.setField("color", "black");
             oformat.setField(spackage, singleformat);
         }
@@ -315,8 +335,8 @@ public class ClassDiagram {
 
         for (String line : allfilebasher.get(filename).getList()) {
             if (bfirstmethod) {
-                if ((line.contains("public") || line.contains("private") || line.contains("protected") ) 
-                        && line.contains("(") && line.contains(")") && !line.contains("new")&& !line.startsWith("//")) {
+                if ((line.contains("public") || line.contains("private") || line.contains("protected"))
+                        && line.contains("(") && line.contains(")") && !line.contains("new") && !line.startsWith("//")) {
                     smethod = line;
                     res.add(line);
                     System.out.println("Found method " + smethod);
@@ -325,7 +345,7 @@ public class ClassDiagram {
             if (line.matches("public class.*")) {
                 bclass = true;
             }
-            if ((line.contains("public") || line.contains("private") || line.contains("protected")) && line.contains("(") && line.contains(")") && !line.contains("new")&& !line.startsWith("//")) {
+            if ((line.contains("public") || line.contains("private") || line.contains("protected")) && line.contains("(") && line.contains(")") && !line.contains("new") && !line.startsWith("//")) {
                 bfirstmethod = true;
             }
         }
