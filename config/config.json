@@ -1,61 +1,6 @@
 {
-    "options": {
-        "sources": {
-            "Input folders": "../es.ugr.larva.core",
-            "Output folder": "./dot",
-            "Source folders": "src",
-            "File extension": "java"
-        },
-        "view": {
-            "Which classes": "All",
-            "Hierarchy": true,
-            "Data members": true,
-            "Methods": true
-        },
-        "config": {
-            "Font": "Arial",
-            "Font size": 24,
-            "Fill color": "Black & White"
-        }
-    },
-    "properties": {
-        "Which classes": {
-            "tooltip": "Select which classes are to be displayed",
-            "select": ["All", "Referenced"]
-        },
-        "Hierarchy": {
-            "tooltip": "Show relation 'extends'"
-        },
-        "Data members": {
-            "tooltip": "Show relation 'is-part-of'"
-        },
-        "Methods": {
-            "tooltip": "Show methods"
-        },
-        "Font": {
-            "tooltip": "For to be used",
-            "select": ["Arial", "Courier New"]
-        },
-        "Font size": {
-            "tooltip": "Size of the font to be used"
-        },
-        "Fill color": {
-            "tooltip": "Color of the head of each class",
-            "select": ["Black & White", "Colored"]
-        },
-        "Input folders":{
-            "tooltip":"Select project folders"            
-        },
-        "Output folder":{
-            "tooltip":"Select the folder to output charts",
-            "file":"./"
-        },
-        "Source folders":{
-            "tooltip":"Only the folders that contains source code",
-            "select":["all", "src"]
-        },
-        "File extension":{
-            "tooltip":"Which type of files will be included"
-        }
-    }
+    "input":["../es.ugr.larva.core","../es.ugr.larva.admin","../LARVA"],
+    "output":"./dot",
+    "includefolders":"src",
+    "files":"java"
 }
