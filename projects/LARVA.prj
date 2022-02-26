@@ -149,18 +149,6 @@
             ],
             "[Scan files]": "Scan files"
         },
-        "View": {
-            "Items to display": {
-                "Hierarchy": true,
-                "Data members": true,
-                "Methods": true
-            },
-            "Display options": {
-                "Font": "Arial",
-                "Font size": 24,
-                "Fill color": "Black & White"
-            }
-        },
         "Class diagram": {
             "Which classes": "All",
             "[Scan classes]": "Scan classes",
@@ -168,15 +156,20 @@
 
             ],
             "[Show methods]": "Show methods",
-            "Methods found": []
+            "Methods found": [],
+            "Format": {
+                "Font": "Arial",
+                "Font size": 24,
+                "Fill color": "Black & White"
+            }
         }
     },
     "properties": {
         "Sources": {
-            "tooltip": "Select the sources to analyze"
+            "tooltip": "Select the source files to analyze"
         },
-        "View": {
-            "tooltip": "Select what and how you want to see displayed"
+        "Class diagram": {
+            "tooltip": "Generate the Class diagram model"
         },
         "Which classes": {
             "tooltip": "Select which classes are to be displayed",
@@ -184,15 +177,6 @@
                 "All",
                 "Referenced"
             ]
-        },
-        "Hierarchy": {
-            "tooltip": "Show relation 'extends'"
-        },
-        "Data members": {
-            "tooltip": "Show relation 'is-part-of'"
-        },
-        "Methods": {
-            "tooltip": "Show methods"
         },
         "Font": {
             "tooltip": "For to be used",
@@ -231,13 +215,11 @@
             ]
         },
         "File extension": {
-            "tooltip": "Which type of files will be included"
+            "tooltip": "Which type of files (language) will be included"
         },
-        "Items to display": {
-            "border": true
-        },
-        "Display options": {
-            "border": true
+        "Format": {
+            "border": true,
+            "columns":2
         },
         "Classes found": {
             "listtype": "String",
@@ -245,7 +227,14 @@
             "rows": 6
         },
         "Methods found": {
-            "listtype": "String"
+            "listtype": "String",
+            "rows":6,
+            "selected":""
+        },
+        "File list":{
+            "listtype":"file",
+            "rows":4,
+            "selected":""
         }
     }
 }

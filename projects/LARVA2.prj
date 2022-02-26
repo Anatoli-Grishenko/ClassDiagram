@@ -1,0 +1,133 @@
+{
+    "options": {
+        "Sources": {
+            "Input folders": [
+                "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/LARVA/"
+            ],
+            "Output folder": "dot/",
+            "Source folders": "src",
+            "File extension": "java",
+            "File list": [
+                "DataBaser",
+                "DrDiagnostic",
+                "EmptyAgent",
+                "GMailer",
+                "Goku",
+                "HWManager",
+                "IdentityManager",
+                "LARVA",
+                "LARVAPrivateTelegram",
+                "LARVAPublicTelegram",
+                "LARVAQueen",
+                "Mario",
+                "ProblemManager",
+                "SessionManager",
+                "SonGoanda",
+                "StoreManager",
+                "TeamController",
+                "WorldController"
+            ],
+            "[Scan files]": "Scan files"
+        },
+        "Class diagram": {
+            "Which classes": "Referenced",
+            "[Scan classes]": "Scan classes",
+            "Classes found": [
+                "Goku",
+                "HWManager",
+                "Mario",
+                "SessionManager",
+                "SonGoanda",
+                "TeamController",
+                "WorldController"
+            ],
+            "[Show methods]": "Show methods",
+            "Methods found": [
+                "    protected void updateXUIAgent(String agentname) {",
+                "    protected void updateXUIGoals() {",
+                "    public Status loadWorld() {",
+                "    public Status processExecute(ACLMessage incoming) {",
+                "    public Status processJoin(ACLMessage incoming) {",
+                "    public Status processQuery(ACLMessage incoming) {",
+                "    public Status processRequest(ACLMessage incoming) {",
+                "    public void Execute() {",
+                "    public void processRegister(ACLMessage incoming) {",
+                "    public void takeDown() {"
+            ],
+            "Format": {
+                "Font": "Arial",
+                "Font size": 24,
+                "Fill color": "Black & White"
+            }
+        }
+    },
+    "properties": {
+        "Sources": {
+            "tooltip": "Select the source files to analyze"
+        },
+        "Class diagram": {
+            "tooltip": "Generate the Class diagram model"
+        },
+        "Which classes": {
+            "tooltip": "Select which classes are to be displayed",
+            "select": [
+                "All",
+                "Referenced"
+            ]
+        },
+        "Font": {
+            "tooltip": "For to be used",
+            "select": [
+                "Arial",
+                "Courier New"
+            ]
+        },
+        "Font size": {
+            "tooltip": "Size of the font to be used"
+        },
+        "Fill color": {
+            "tooltip": "Color of the head of each class",
+            "select": [
+                "Black & White",
+                "Colored"
+            ]
+        },
+        "Input folders": {
+            "tooltip": "Select project folders",
+            "listtype": "folder"
+        },
+        "File list": {
+            "listtype": "file",
+            "rows": 4,
+            "selected": ""
+        },
+        "Output folder": {
+            "tooltip": "Select the folder to output charts",
+            "folder": ""
+        },
+        "Source folders": {
+            "tooltip": "Only the folders that contains source code",
+            "select": [
+                "all",
+                "src"
+            ]
+        },
+        "File extension": {
+            "tooltip": "Which type of files (language) will be included"
+        },
+        "Format": {
+            "border": true,
+            "Columns": 4
+        },
+        "Classes found": {
+            "listtype": "String",
+            "selected": "TeamController",
+            "rows": 6
+        },
+        "Methods found": {
+            "listtype": "String",
+            "rows": 6,
+            "selected": ""
+        }
+    }
+}
