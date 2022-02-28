@@ -1,240 +1,129 @@
 {
-    "options": {
-        "Sources": {
-            "Input folders": [
-                "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.core/",
-                "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.admin/",
-                "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/LARVA/"
-            ],
-            "Output folder": "dot/",
-            "Source folders": "src",
-            "File extension": "java",
-            "File list": [
-                "ACLMessageTools",
-                "ADMINMessage",
-                "AG3DDrawPane",
-                "AGDrawPane",
-                "AGFrame",
-                "AdminCryptor",
-                "AdminPassport",
-                "AirTrafficControl",
-                "Angular",
-                "Basher",
-                "BehaviourControl",
-                "Bitmap3D",
-                "Circle3D",
-                "Compass",
-                "Console",
-                "Cryptor",
-                "DBA2021",
-                "DBA2122",
-                "DBAAPI",
-                "DBAgent",
-                "DataBaser",
-                "DeathStar",
-                "DeathStarDeLuxe",
-                "DrDiagnostic",
-                "EmptyAgent",
-                "Entity",
-                "Event",
-                "FactoryAgent",
-                "GMailer",
-                "Game",
-                "GameBitmap",
-                "GameCharacter",
-                "GameLabel",
-                "GameObject",
-                "GamePanel",
-                "GameScene",
-                "Goku",
-                "HWManager",
-                "IdentityManager",
-                "Internet",
-                "JADEBoot",
-                "JDrawPane",
-                "Keygen",
-                "LARVA",
-                "LARVAAdminAgent",
-                "LARVAAirTrafficControl3D",
-                "LARVAAirTrafficControlTiles",
-                "LARVABaseAgent",
-                "LARVABaseTelegram",
-                "LARVABoot",
-                "LARVACompactDash",
-                "LARVADash",
-                "LARVADialog",
-                "LARVAEmbeddedDash",
-                "LARVAEphemeral",
-                "LARVAFirstAgent",
-                "LARVAFrame",
-                "LARVAMiniDash",
-                "LARVAPrivateTelegram",
-                "LARVAPublicTelegram",
-                "LARVAQueen",
-                "LARVATelegramBot",
-                "Line3D",
-                "Logger",
-                "Map2DColor",
-                "Map2DColor_OLD",
-                "Map2DGrayscale",
-                "Map2DPalette",
-                "Mario",
-                "Menu",
-                "MyDrawPane",
-                "MyList",
-                "MyMapPalPane",
-                "MyPlainButton",
-                "MyPopup",
-                "Object3D",
-                "Ole",
-                "OleApplication",
-                "OleConfig",
-                "OleDataBase",
-                "OleDialog",
-                "OleDot",
-                "OleFile",
-                "OleFrame",
-                "OleList",
-                "OleMenuBar",
-                "OlePassport",
-                "OleQuery",
-                "OleReport",
-                "OleSensor",
-                "OleTable",
-                "Ontology",
-                "Palette",
-                "Perceptor",
-                "Point",
-                "Polygon3D",
-                "ProblemManager",
-                "ProductCoin",
-                "ReportableObject",
-                "Roles",
-                "RoundProgressBar",
-                "Scene3D",
-                "SendGMailSMTP",
-                "SensorDecoder",
-                "Sentence",
-                "SentenceBuilder",
-                "SequenceDiagram",
-                "Session",
-                "SessionManager",
-                "SonGoanda",
-                "Sprite",
-                "StoreManager",
-                "String3D",
-                "SwingTools",
-                "TeamController",
-                "TelegramChat",
-                "TelegramChoice",
-                "TelegramMenu",
-                "TelegramMenuBar",
-                "TelegramMenuOption",
-                "TelegramUpdates",
-                "Thing",
-                "TimeHandler",
-                "TokenList",
-                "TradeFederation",
-                "Transform",
-                "Vector",
-                "World",
-                "WorldController",
-                "capability",
-                "direction",
-                "emojis",
-                "fileutils",
-                "liveBot",
-                "request",
-                "sensors"
-            ],
-            "[Scan files]": "Scan files"
-        },
-        "Class diagram": {
-            "Which classes": "All",
-            "[Scan classes]": "Scan classes",
-            "Classes found": [
-
-            ],
-            "[Show methods]": "Show methods",
-            "Methods found": [],
-            "Format": {
-                "Font": "Arial",
-                "Font size": 24,
-                "Fill color": "Black & White"
-            }
-        }
+  "options": {
+    "Sources": {
+      "Input folders": [
+        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/LARVA/"
+      ],
+      "Output folder": "dot/",
+      "Source folders": "src",
+      "File extension": "java",
+      "File list": [
+        "DataBaser",
+        "DrDiagnostic",
+        "EmptyAgent",
+        "GMailer",
+        "Goku",
+        "HWManager",
+        "IdentityManager",
+        "LARVA",
+        "LARVAPrivateTelegram",
+        "LARVAPublicTelegram",
+        "LARVAQueen",
+        "Mario",
+        "ProblemManager",
+        "SessionManager",
+        "SonGoanda",
+        "StoreManager",
+        "TeamController",
+        "WorldController"
+      ],
+      "[Scan files]": "Scan files"
     },
-    "properties": {
-        "Sources": {
-            "tooltip": "Select the source files to analyze"
-        },
-        "Class diagram": {
-            "tooltip": "Generate the Class diagram model"
-        },
-        "Which classes": {
-            "tooltip": "Select which classes are to be displayed",
-            "select": [
-                "All",
-                "Referenced"
-            ]
-        },
-        "Font": {
-            "tooltip": "For to be used",
-            "select": [
-                "Arial",
-                "Courier New"
-            ]
-        },
-        "Font size": {
-            "tooltip": "Size of the font to be used"
-        },
-        "Fill color": {
-            "tooltip": "Color of the head of each class",
-            "select": [
-                "Black & White",
-                "Colored"
-            ]
-        },
-        "Input folders": {
-            "tooltip": "Select project folders",
-            "listtype": "folder"
-        },
-        "File list": {
-            "tooltip": "Select project folders",
-            "listtype": "files"
-        },
-        "Output folder": {
-            "tooltip": "Select the folder to output charts",
-            "folder": ""
-        },
-        "Source folders": {
-            "tooltip": "Only the folders that contains source code",
-            "select": [
-                "all",
-                "src"
-            ]
-        },
-        "File extension": {
-            "tooltip": "Which type of files (language) will be included"
-        },
-        "Format": {
-            "border": true,
-            "columns":2
-        },
-        "Classes found": {
-            "listtype": "String",
-            "selected": "",
-            "rows": 6
-        },
-        "Methods found": {
-            "listtype": "String",
-            "rows":6,
-            "selected":""
-        },
-        "File list":{
-            "listtype":"file",
-            "rows":4,
-            "selected":""
-        }
+    "Class diagram": {
+      "Which classes": "Referenced",
+      "[Scan classes]": "Scan classes",
+      "Classes found": [
+        "Goku",
+        "HWManager",
+        "Mario",
+        "SessionManager",
+        "SonGoanda",
+        "TeamController",
+        "WorldController"
+      ],
+      "[Show methods]": "Show methods",
+      "Methods found": [
+        "protected void Error(String message)",
+        "protected void Info(String message)",
+        "protected void Introduction()",
+        "protected void addMilestone(String milestone)",
+        "protected void solvedProblem(String problemName)",
+        "public void takeDown()"
+      ],
+      "Format": {
+        "Font": "Arial",
+        "Font size": 24,
+        "Fill color": "Colored"
+      }
     }
+  },
+  "properties": {
+    "Sources": {
+      "tooltip": "Select the source files to analyze"
+    },
+    "Class diagram": {
+      "tooltip": "Generate the Class diagram model"
+    },
+    "Which classes": {
+      "tooltip": "Select which classes are to be displayed",
+      "select": [
+        "All",
+        "Referenced"
+      ]
+    },
+    "Font": {
+      "tooltip": "For to be used",
+      "select": [
+        "Arial",
+        "Courier New"
+      ]
+    },
+    "Font size": {
+      "tooltip": "Size of the font to be used"
+    },
+    "Fill color": {
+      "tooltip": "Color of the head of each class",
+      "select": [
+        "Black & White",
+        "Colored"
+      ]
+    },
+    "Input folders": {
+      "tooltip": "Select project folders",
+      "listtype": "folder"
+    },
+    "File list": {
+      "listtype": "file",
+      "rows": 4,
+      "selected": ""
+    },
+    "Output folder": {
+      "tooltip": "Select the folder to output charts",
+      "folder": ""
+    },
+    "Source folders": {
+      "tooltip": "Only the folders that contains source code",
+      "select": [
+        "all",
+        "src"
+      ]
+    },
+    "File extension": {
+      "tooltip": "Which type of files (language) will be included"
+    },
+    "Format": {
+      "border": true,
+      "Columns": 4
+    },
+    "Classes found": {
+      "listtype": "String",
+      "selected": "SessionManager",
+      "rows": 6
+    },
+    "Methods found": {
+      "listtype": "String",
+      "rows": 6,
+      "selected": ""
+    }
+  }
 }
