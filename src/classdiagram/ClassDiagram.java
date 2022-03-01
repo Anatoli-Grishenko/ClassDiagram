@@ -30,6 +30,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -40,7 +41,6 @@ import swing.OleApplication;
 import swing.OleBitmapPane;
 import swing.OleDialog;
 import swing.OleDrawPane;
-import swing.OleProgressFrame;
 import swing.SwingTools;
 import tools.emojis;
 
@@ -54,7 +54,7 @@ public class ClassDiagram {
     static OleApplication oMainFrame;
     static JPanel pSideTools, pStatus, pMain;
     static OleDrawPane opDiagram;
-    static JScrollPane osDiagram;
+    static OleBitmapPane osDiagram;
     static String projectFile, modelFile, dotFile, pngFile, pdfFile;
 
     static ArrayList<String> allfilenames, allpackages, allclasses;
@@ -122,7 +122,7 @@ public class ClassDiagram {
         opDiagram.setBackground(Color.LIGHT_GRAY);
         opDiagram.setForeground(Color.WHITE);
 
-        osDiagram = new JScrollPane(opDiagram);
+        osDiagram = new OleBitmapPane(opDiagram);
 
         osDiagram.setBorder(new EmptyBorder(0, 0, 0, 0));
 //        osDiagram.setSize(oMainFrame.getMainPanel().getPreferredSize());
@@ -140,6 +140,29 @@ public class ClassDiagram {
 
         oMainFrame.getMainPanel().add(osDiagram, BorderLayout.CENTER);
         oMainFrame.getMainPanel().validate();
+        oMainFrame.addTaskBar();
+        JButton jbAux;
+        JLabel jlAux;
+//        // Taskbar 
+//        jbAux= new JButton();
+//        jbAux.setText(emojis.FOLDER);
+//        jbAux.setActionCommand("bopenProject");
+//        jbAux.addActionListener((e)->frameActionListener(e));
+//        jlAux =new JLabel();
+//        jlAux.setText(" ");
+//        jlAux.setForeground(Color.BLACK);
+//        oMainFrame.addToTaskBar("bopenProject", jbAux);
+//        oMainFrame.addToTaskBar("lopenProject", jlAux);
+//        
+//        jbAux= new JButton();
+//        jbAux.setText(emojis.MAGNIFFIER);
+//        jbAux.setActionCommand("bsetZoom");
+//        jbAux.addActionListener((e)->frameActionListener(e));
+//        jlAux =new JLabel();
+//        jlAux.setText(" ");
+//        jlAux.setForeground(Color.BLACK);
+//        oMainFrame.addToTaskBar("bsetZoom", jbAux);
+//        oMainFrame.addToTaskBar("lsetroject", jlAux);
     }
 
     public static void editProjectListener(ActionEvent e, OleConfig olecfg) {
@@ -221,11 +244,12 @@ public class ClassDiagram {
     }
 
     public static boolean openProject() {
-        projectFile = OleDialog.doSelectFile("./projects", "prj");
-        if (projectFile == null) {
+        String aux = OleDialog.doSelectFile("./projects", "prj");
+        if (aux == null) {
             oMainFrame.showStatus(" ");
             return false;
         }
+        projectFile=aux;
         oMainFrame.showInfo("Opening project " + projectFile + " ...");
         myProject = new OleConfig();
         myProject.loadFile(projectFile);
@@ -333,10 +357,7 @@ public class ClassDiagram {
     public static void generateModel(boolean simplified) {
         modelFile = projectFile.replace("prj", "mod").replace("projects", "models");
         dumpJson(myProject, simplified);
-//        opDiagram.repaint();
         osDiagram.repaint();
-//        oMainFrame.pack();
-//        oMainFrame.validate();
     }
 
     public static void frameKeyListener(KeyEvent e) {
@@ -547,7 +568,8 @@ public class ClassDiagram {
             oMainFrame.Info("Model generated");
         }
         opDiagram.setPreferredSize(new Dimension(mapDiagram.getWidth(), mapDiagram.getHeight()));
-        osDiagram.setViewportView(opDiagram);
+        osDiagram.reset(opDiagram.getPreferredSize());
+        osDiagram.setZoom(1);
 //        opDiagram.repaint();
 //        osDiagram.repaint();
     }
@@ -678,10 +700,12 @@ public class ClassDiagram {
 //        if (mapDiagram != null) {
 //            myg.drawImage(mapDiagram.getMap(), 0, 0, mapDiagram.getWidth(), mapDiagram.getHeight(), null);
 //        }
-
         opDiagram.clear();
         if (mapDiagram != null) {
-            myg.drawImage(mapDiagram.getMap(), 0, 0, mapDiagram.getWidth(), mapDiagram.getHeight(), null);
+            oMainFrame.showStatus(emojis.FOLDER+" " + projectFile + "   " + emojis.MAGNIFFIER + " "+osDiagram.getZoom());
+            int nw = (int) (opDiagram.getPreferredSize().getWidth()),
+                    nh = (int) (opDiagram.getPreferredSize().getHeight());
+            myg.drawImage(mapDiagram.getMap(), 0, 0, nw, nh, null);
         }
     }
 }
