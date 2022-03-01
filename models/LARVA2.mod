@@ -42,13 +42,13 @@
       {
         "JPanel": [
           "AGDrawPane",
-          "MyDrawPane"
+          "MyDrawPane",
+          "OleToolBar"
         ]
       },
       {
         "OleFrame": [
-          "OleApplication",
-          "OleProgressFrame"
+          "OleApplication"
         ]
       },
       {
@@ -63,6 +63,11 @@
           "TradeFederation",
           "DeathStarDeLuxe",
           "DeathStar"
+        ]
+      },
+      {
+        "JButton": [
+          "OleButton"
         ]
       },
       {
@@ -460,6 +465,11 @@
         ]
       },
       {
+        "OleButton": [
+          "OleApplication"
+        ]
+      },
+      {
         "LARVATelegramBot": [
           "LARVAAdminAgent"
         ]
@@ -586,6 +596,13 @@
       {
         "AdminPassport": [
           
+        ]
+      },
+      {
+        "OleToolBar": [
+          "OleFrame",
+          "OleApplication",
+          "OleConfig"
         ]
       },
       {
@@ -774,6 +791,11 @@
         ]
       },
       {
+        "OleBitmapPane": [
+          
+        ]
+      },
+      {
         "LARVADialog": [
           
         ]
@@ -866,11 +888,6 @@
       {
         "GameScene": [
           "GameObject"
-        ]
-      },
-      {
-        "OleProgressFrame": [
-          
         ]
       },
       {
@@ -1761,6 +1778,11 @@
       "protected void onTick()",
       "protected void findRoles()"
     ],
+    "OleButton": [
+      "public void mouseEntered(MouseEvent e)",
+      "public void mouseExited(MouseEvent e)",
+      "public void setEnabled(boolean b)"
+    ],
     "LARVATelegramBot": [
       "public String getBotUsername()",
       "public String getBotToken()",
@@ -2173,6 +2195,9 @@
       "public String getEmail()",
       "public String getName()",
       "public boolean isEmpty()"
+    ],
+    "OleToolBar": [
+      
     ],
     "AdminCryptor": [
       "public AdminCryptor(String k)",
@@ -2666,6 +2691,7 @@
     ],
     "OleDot": [
       "public OleDot(Ole o)",
+      "public void setResolution(int ppp)",
       "public void toDot(String dotfilename)",
       "public void recursiveTree(Ole classname, PrintStream output)"
     ],
@@ -2756,6 +2782,23 @@
     "EmptyAgent": [
       "public void Execute()",
       "public void takeDown()"
+    ],
+    "OleBitmapPane": [
+      "public void mouseDragged(MouseEvent e)",
+      "public void mouseMoved(MouseEvent e)",
+      "public void mouseWheelMoved(MouseWheelEvent e)",
+      "public void mouseClicked(MouseEvent e)",
+      "public void mousePressed(MouseEvent e)",
+      "public void mouseReleased(MouseEvent e)",
+      "public void mouseEntered(MouseEvent e)",
+      "public void mouseExited(MouseEvent e)",
+      "public void clear()",
+      "public void reset(Dimension d)",
+      "public JPanel getOleDrawPane()",
+      "public void setZoom(double z)",
+      "public double getZoom()",
+      "public void zoomIn()",
+      "public void zoomOut()"
     ],
     "LARVADialog": [
       "public void actionPerformed(ActionEvent e)",
@@ -3050,15 +3093,6 @@
       "public int getCell()",
       "public void setCell(int cell)"
     ],
-    "OleProgressFrame": [
-      "public void addProgress(String what, int value)",
-      "public void itemStateChanged(ItemEvent e)",
-      "public void myActionListener(ActionEvent e)",
-      "public void myKeyListener(KeyEvent e)",
-      "public void keyTyped(KeyEvent e)",
-      "public void keyPressed(KeyEvent e)",
-      "public void keyReleased(KeyEvent e)"
-    ],
     "AirTrafficControl": [
       "public void mouseWheelMoved(MouseWheelEvent e)",
       "public void mouseClicked(MouseEvent e)",
@@ -3261,12 +3295,13 @@
       "OleFrame",
       "MyDrawPane",
       "LARVAAirTrafficControlTiles",
+      "OleButton",
       "LARVACompactDash",
       "LARVAEmbeddedDash",
       "LARVAMiniDash",
+      "OleToolBar",
       "LARVAAirTrafficControl3D",
       "OleApplication",
-      "OleProgressFrame",
       "AirTrafficControl"
     ],
     "world": [

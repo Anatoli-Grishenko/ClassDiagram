@@ -64,6 +64,7 @@ public class ClassDiagram {
     static HashMap<String, Basher> allfilebasher;
     static String allcolours[] = new String[]{"Chartreuse", "MediumSpringGreen", "Turquoise", "CadetBlue", "MediumAquaMarine", "Thistle", "LightSteelBlue", "DarkViolet", "BlueViolet", "DarkOliveGreen", "Aqua", "OliveDrab", "Cyan", "LightBlue", "Indigo", "DarkSeaGreen", "Crimson", "Orchid", "DarkGreen", "Salmon", "RebeccaPurple", "MediumSlateBlue", "DodgerBlue", "PaleTurquoise", "Fuchsia", "Violet", "DarkTurquoise", "Blue", "SpringGreen", "DarkSlateBlue", "SkyBlue", "MediumBlue", "MidnightBlue", "IndianRed", "ForestGreen", "Lavender", "SlateBlue", "DarkMagenta", "Aquamarine", "DarkOrchid", "Lime", "Teal", "LightSeaGreen", "PowderBlue", "RoyalBlue", "Green", "Plum", "LimeGreen", "MediumOrchid", "FireBrick", "DarkRed", "MediumSeaGreen", "LightSkyBlue", "LightSalmon", "MediumTurquoise", "LightCoral", "DarkSalmon", "GreenYellow", "DeepSkyBlue", "MediumPurple", "LawnGreen", "CornflowerBlue", "PaleGreen", "SteelBlue", "Magenta", "LightCyan", "Navy", "Purple", "Red", "YellowGreen", "DarkCyan", "LightGreen", "SeaGreen", "DarkBlue"};
     static Map2DColor mapDiagram;
+    static int ppp = 150;
 
     static int rpaint = 0;
 
@@ -125,44 +126,11 @@ public class ClassDiagram {
         osDiagram = new OleBitmapPane(opDiagram);
 
         osDiagram.setBorder(new EmptyBorder(0, 0, 0, 0));
-//        osDiagram.setSize(oMainFrame.getMainPanel().getPreferredSize());
-//        osDiagram.setBackground(Color.WHITE);
-//        osDiagram.setForeground(Color.BLACK);
         osDiagram.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         osDiagram.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
-//        osDiagram.setViewportView(opDiagram);
-//        osDiagram.clear();
-//        osDiagram.getOleDrawPane().setBorder(new EmptyBorder(0, 0, 0, 0));
-//        osDiagram.getOleDrawPane().setSize(oMainFrame.getMainPanel().getPreferredSize());
-//        osDiagram.getOleDrawPane().setBackground(Color.LIGHT_GRAY);
-//        osDiagram.getOleDrawPane().setForeground(Color.WHITE);
-//        osDiagram.getOleDrawPane().clear();
 
         oMainFrame.getMainPanel().add(osDiagram, BorderLayout.CENTER);
         oMainFrame.getMainPanel().validate();
-        oMainFrame.addTaskBar();
-        JButton jbAux;
-        JLabel jlAux;
-//        // Taskbar 
-//        jbAux= new JButton();
-//        jbAux.setText(emojis.FOLDER);
-//        jbAux.setActionCommand("bopenProject");
-//        jbAux.addActionListener((e)->frameActionListener(e));
-//        jlAux =new JLabel();
-//        jlAux.setText(" ");
-//        jlAux.setForeground(Color.BLACK);
-//        oMainFrame.addToTaskBar("bopenProject", jbAux);
-//        oMainFrame.addToTaskBar("lopenProject", jlAux);
-//        
-//        jbAux= new JButton();
-//        jbAux.setText(emojis.MAGNIFFIER);
-//        jbAux.setActionCommand("bsetZoom");
-//        jbAux.addActionListener((e)->frameActionListener(e));
-//        jlAux =new JLabel();
-//        jlAux.setText(" ");
-//        jlAux.setForeground(Color.BLACK);
-//        oMainFrame.addToTaskBar("bsetZoom", jbAux);
-//        oMainFrame.addToTaskBar("lsetroject", jlAux);
     }
 
     public static void editProjectListener(ActionEvent e, OleConfig olecfg) {
@@ -249,7 +217,7 @@ public class ClassDiagram {
             oMainFrame.showStatus(" ");
             return false;
         }
-        projectFile=aux;
+        projectFile = aux;
         oMainFrame.showInfo("Opening project " + projectFile + " ...");
         myProject = new OleConfig();
         myProject.loadFile(projectFile);
@@ -279,6 +247,25 @@ public class ClassDiagram {
 
     public static void frameActionListener(ActionEvent e) {
         /// TBM
+        if (e.getActionCommand().equals("SetZoom")) {
+            String newZoom = oMainFrame.inputSelect("Select zoom", new String[]{"10", "5", "1.5", "1.25", "1", "0.75", "0.5", "0.25", "Fix to Width", "fix to Height"}, "1");
+            if (newZoom != null) {
+                if (newZoom.contains("Height")) {
+                    osDiagram.setZoom(mapDiagram.getHeight()/oMainFrame.getHeight());
+                } else if (newZoom.contains("Width")) {
+                    osDiagram.setZoom(mapDiagram.getWidth()/oMainFrame.getWidth());
+                } else {
+                    osDiagram.setZoom(Double.parseDouble(newZoom));
+                }
+            }
+        }
+        if (e.getActionCommand().equals("SelectResolution")) {
+            String newdpi = oMainFrame.inputSelect("Select resolution (dpi)", new String[]{"150", "300", "600", "1200"}, "150");
+            if (newdpi != null) {
+                ppp = Integer.parseInt(newdpi);
+                generateModel(true);
+            }
+        }
         if (e.getActionCommand().equals("Exit")) {
             if (oMainFrame.Confirm("Really want to exit?")) {
                 oMainFrame.dispose();
@@ -527,6 +514,7 @@ public class ClassDiagram {
         ooutput.saveAsFile(".", modelFile, true);
         dotFile = modelFile.replace("models", "dot").replace("mod", "dot");
         oMainFrame.showProgress("Saving dot file..." + dotFile);
+        ooutput.setResolution(ppp);
         ooutput.toDot(dotFile);
         oMainFrame.showProgress("Calling dot..." + dotFile);
         pngFile = modelFile.replace("models", "png").replace("mod", "png");
@@ -702,7 +690,7 @@ public class ClassDiagram {
 //        }
         opDiagram.clear();
         if (mapDiagram != null) {
-            oMainFrame.showStatus(emojis.FOLDER+" " + projectFile + "   " + emojis.MAGNIFFIER + " "+osDiagram.getZoom());
+            oMainFrame.showStatus(emojis.FOLDER + " " + projectFile + "   " + emojis.MAGNIFIER + " " + osDiagram.getZoom());
             int nw = (int) (opDiagram.getPreferredSize().getWidth()),
                     nh = (int) (opDiagram.getPreferredSize().getHeight());
             myg.drawImage(mapDiagram.getMap(), 0, 0, nw, nh, null);

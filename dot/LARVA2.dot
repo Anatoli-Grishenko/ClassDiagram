@@ -1,6 +1,6 @@
 digraph graphname {
      rankdir="BT"
-dpi=600
+dpi=1200
  size="16,11!";
  margin=0;
 LARVABoot LARVABoot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Arial" POINT-SIZE= "24"><b>LARVABoot</b></FONT></td></tr>
@@ -307,6 +307,7 @@ OleList OleList [shape=plain, label=<<table border="0" cellborder="1" cellspacin
 </table>>]
 OleDot OleDot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Arial" POINT-SIZE= "24"><b>OleDot</b></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleDot(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setResolution(int ppp)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void toDot(String dotfilename)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void recursiveTree(Ole classname, PrintStream output)</i></FONT></td></tr>
 </table>>]
@@ -913,6 +914,11 @@ LARVAAirTrafficControlTiles LARVAAirTrafficControlTiles [shape=plain, label=<<ta
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getWidth()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getHeight()</i></FONT></td></tr>
 </table>>]
+OleButton OleButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="BlueViolet"><FONT face="Arial" POINT-SIZE= "24"><b>OleButton</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void mouseEntered(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void mouseExited(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setEnabled(boolean b)</i></FONT></td></tr>
+</table>>]
 LARVACompactDash LARVACompactDash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="BlueViolet"><FONT face="Arial" POINT-SIZE= "24"><b>LARVACompactDash</b></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean preProcessACLM(ACLMessage msg)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void whenExecute(Consumer&lt;String&gt; executor)</i></FONT></td></tr>
@@ -1037,6 +1043,8 @@ LARVAMiniDash LARVAMiniDash [shape=plain, label=<<table border="0" cellborder="1
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setActivated(boolean activated)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String printSensors()</i></FONT></td></tr>
 </table>>]
+OleToolBar OleToolBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="BlueViolet"><FONT face="Arial" POINT-SIZE= "24"><b>OleToolBar</b></FONT></td></tr>
+</table>>]
 LARVAAirTrafficControl3D LARVAAirTrafficControl3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="BlueViolet"><FONT face="Arial" POINT-SIZE= "24"><b>LARVAAirTrafficControl3D</b></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setTitle(String title)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getTitle()</i></FONT></td></tr>
@@ -1087,15 +1095,6 @@ OleApplication OleApplication [shape=plain, label=<<table border="0" cellborder=
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void showProgress(String what, int value)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void showProgress(String what)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void closeProgress(String what)</i></FONT></td></tr>
-</table>>]
-OleProgressFrame OleProgressFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="BlueViolet"><FONT face="Arial" POINT-SIZE= "24"><b>OleProgressFrame</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void addProgress(String what, int value)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void itemStateChanged(ItemEvent e)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void myActionListener(ActionEvent e)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void myKeyListener(KeyEvent e)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void keyTyped(KeyEvent e)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void keyPressed(KeyEvent e)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void keyReleased(KeyEvent e)</i></FONT></td></tr>
 </table>>]
 AirTrafficControl AirTrafficControl [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="BlueViolet"><FONT face="Arial" POINT-SIZE= "24"><b>AirTrafficControl</b></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void mouseWheelMoved(MouseWheelEvent e)</i></FONT></td></tr>
@@ -1607,14 +1606,15 @@ DBA2122 -> OleDataBase [arrowhead=onormal,color=black]
 Thing -> Entity [arrowhead=onormal,color=black]
 AGDrawPane -> JPanel [arrowhead=onormal,color=black]
 MyDrawPane -> JPanel [arrowhead=onormal,color=black]
+OleToolBar -> JPanel [arrowhead=onormal,color=black]
 OleApplication -> OleFrame [arrowhead=onormal,color=black]
-OleProgressFrame -> OleFrame [arrowhead=onormal,color=black]
 MyMapPalPane -> MyDrawPane [arrowhead=onormal,color=black]
 LARVAEmbeddedDash -> MyDrawPane [arrowhead=onormal,color=black]
 AirTrafficControl -> MyDrawPane [arrowhead=onormal,color=black]
 TradeFederation -> LARVAFirstAgent [arrowhead=onormal,color=black]
 DeathStarDeLuxe -> LARVAFirstAgent [arrowhead=onormal,color=black]
 DeathStar -> LARVAFirstAgent [arrowhead=onormal,color=black]
+OleButton -> JButton [arrowhead=onormal,color=black]
 OleQuery -> Ole [arrowhead=onormal,color=black]
 OleTable -> Ole [arrowhead=onormal,color=black]
 OleFile -> Ole [arrowhead=onormal,color=black]
@@ -1681,6 +1681,7 @@ LARVAEmbeddedDash -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamon
 OleFile -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamond,color=blue]
 OleList -> emojis [style=dotted,arrowhead=odiamond,color=blue]
 OleConfig -> DrDiagnostic [style=dotted,arrowhead=odiamond,color=blue]
+OleApplication -> OleButton [style=dotted,arrowhead=odiamond,color=blue]
 LARVAAdminAgent -> LARVATelegramBot [style=dotted,arrowhead=odiamond,color=blue]
 Ole -> DBA2021 [style=dotted,arrowhead=odiamond,color=blue]
 OleTable -> DBA2021 [style=dotted,arrowhead=odiamond,color=blue]
@@ -1694,6 +1695,9 @@ Object3D -> Scene3D [style=dotted,arrowhead=odiamond,color=blue]
 OleConfig -> JADEBoot [style=dotted,arrowhead=odiamond,color=blue]
 Thing -> World [style=dotted,arrowhead=odiamond,color=blue]
 OleConfig -> World [style=dotted,arrowhead=odiamond,color=blue]
+OleFrame -> OleToolBar [style=dotted,arrowhead=odiamond,color=blue]
+OleApplication -> OleToolBar [style=dotted,arrowhead=odiamond,color=blue]
+OleConfig -> OleToolBar [style=dotted,arrowhead=odiamond,color=blue]
 FactoryAgent -> LARVAAdminAgent [style=dotted,arrowhead=odiamond,color=blue]
 OleConfig -> LARVAAdminAgent [style=dotted,arrowhead=odiamond,color=blue]
 DBA2122 -> LARVAAdminAgent [style=dotted,arrowhead=odiamond,color=blue]

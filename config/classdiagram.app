@@ -20,6 +20,14 @@
             },
             "About":"About"
         },
+        "ToolBar":{
+            "OpenProject":{"button":"FOLDER"},
+            "SetZoom":{"button":"MAGNIFIER"},
+            "SelectPackages":{"button":"PACKAGE"},
+            "SelectClasses":{"button":"CLASS"},
+            "SelectMethods":{"button":"METHOD"},
+            "SelectResolution":{"button":"DPI"}
+        },
         "Default project":""
     },
     "properties": {
