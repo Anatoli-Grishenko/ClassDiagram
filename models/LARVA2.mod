@@ -1490,15 +1490,8 @@
       "public OleFrame(OleConfig olecfg)",
       "public OleFrame init()",
       "public void actionPerformed(ActionEvent e)",
-      "public abstract void itemStateChanged(ItemEvent e);",
       "public abstract void myActionListener(ActionEvent e);",
-      "public abstract void myKeyListener(KeyEvent e);",
-      "public void Info(String message)",
-      "public void Warning(String message)",
-      "public void Error(String message)",
-      "public String inputLine(String message)",
-      "public String inputSelect(String message, String[] options, String value)",
-      "public boolean Confirm(String message)"
+      "public abstract void myKeyListener(KeyEvent e);"
     ],
     "MyDrawPane": [
       "public void setPainter(Consumer<Graphics2D> function)",
@@ -3004,11 +2997,15 @@
     ],
     "OleApplication": [
       "public OleApplication init()",
+      "public void OleDraw(Graphics2D g)",
+      "public OleBitmapPane getScollPane()",
+      "public OleDrawPane getDrawingPane()",
       "public JPanel getMainPanel()",
+      "public abstract void Draw(Graphics2D g);",
+      "protected void addLabel(Container con, String s)",
       "protected void addLabel(Container con, String s, Color col)",
       "public LayoutManager defLayout(Container c)",
       "public void actionPerformed(ActionEvent e)",
-      "public abstract void itemStateChanged(ItemEvent e);",
       "public abstract void myActionListener(ActionEvent e);",
       "public abstract void myKeyListener(KeyEvent e);",
       "public void keyTyped(KeyEvent e)",
@@ -3020,7 +3017,6 @@
       "public void showWarning(String message)",
       "public void showError(String message)",
       "public void showProgressFrame(String what, int value, int max)",
-      "public void itemStateChanged(ItemEvent e)",
       "public void myActionListener(ActionEvent e)",
       "public void myKeyListener(KeyEvent e)",
       "public void keyTyped(KeyEvent e)",
@@ -3029,7 +3025,13 @@
       "public void showProgress(String what, int value, int max)",
       "public void showProgress(String what, int value)",
       "public void showProgress(String what)",
-      "public void closeProgress(String what)"
+      "public void closeProgress(String what)",
+      "public void Info(String message)",
+      "public void Warning(String message)",
+      "public void Error(String message)",
+      "public String inputLine(String message)",
+      "public String inputSelect(String message, String[] options, String value)",
+      "public boolean Confirm(String message)"
     ],
     "sensors": [
       

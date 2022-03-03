@@ -1,6 +1,6 @@
 digraph graphname {
      rankdir="BT"
-dpi=1200
+dpi=600
  size="16,11!";
  margin=0;
 LARVABoot LARVABoot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Arial" POINT-SIZE= "24"><b>LARVABoot</b></FONT></td></tr>
@@ -881,15 +881,8 @@ OleFrame OleFrame [shape=plain, label=<<table border="0" cellborder="1" cellspac
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleFrame(OleConfig olecfg)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleFrame init()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void actionPerformed(ActionEvent e)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public abstract void itemStateChanged(ItemEvent e);</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public abstract void myActionListener(ActionEvent e);</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public abstract void myKeyListener(KeyEvent e);</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Info(String message)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Warning(String message)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Error(String message)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String inputLine(String message)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String inputSelect(String message, String[] options, String value)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean Confirm(String message)</i></FONT></td></tr>
 </table>>]
 MyDrawPane MyDrawPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="BlueViolet"><FONT face="Arial" POINT-SIZE= "24"><b>MyDrawPane</b></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setPainter(Consumer&lt;Graphics2D&gt; function)</i></FONT></td></tr>
@@ -1069,11 +1062,15 @@ LARVAAirTrafficControl3D LARVAAirTrafficControl3D [shape=plain, label=<<table bo
 </table>>]
 OleApplication OleApplication [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="BlueViolet"><FONT face="Arial" POINT-SIZE= "24"><b>OleApplication</b></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleApplication init()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void OleDraw(Graphics2D g)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleBitmapPane getScollPane()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleDrawPane getDrawingPane()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public JPanel getMainPanel()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public abstract void Draw(Graphics2D g);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void addLabel(Container con, String s)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void addLabel(Container con, String s, Color col)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public LayoutManager defLayout(Container c)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void actionPerformed(ActionEvent e)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public abstract void itemStateChanged(ItemEvent e);</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public abstract void myActionListener(ActionEvent e);</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public abstract void myKeyListener(KeyEvent e);</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void keyTyped(KeyEvent e)</i></FONT></td></tr>
@@ -1085,7 +1082,6 @@ OleApplication OleApplication [shape=plain, label=<<table border="0" cellborder=
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void showWarning(String message)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void showError(String message)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void showProgressFrame(String what, int value, int max)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void itemStateChanged(ItemEvent e)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void myActionListener(ActionEvent e)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void myKeyListener(KeyEvent e)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void keyTyped(KeyEvent e)</i></FONT></td></tr>
@@ -1095,6 +1091,12 @@ OleApplication OleApplication [shape=plain, label=<<table border="0" cellborder=
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void showProgress(String what, int value)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void showProgress(String what)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void closeProgress(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Info(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Warning(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Error(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String inputLine(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String inputSelect(String message, String[] options, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean Confirm(String message)</i></FONT></td></tr>
 </table>>]
 AirTrafficControl AirTrafficControl [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="BlueViolet"><FONT face="Arial" POINT-SIZE= "24"><b>AirTrafficControl</b></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void mouseWheelMoved(MouseWheelEvent e)</i></FONT></td></tr>

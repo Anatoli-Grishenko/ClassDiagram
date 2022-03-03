@@ -2,91 +2,27 @@
   "options": {
     "Sources": {
       "Input folders": [
-        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/LARVA/",
-        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.admin/"
+        
       ],
       "Output folder": "dot/",
       "Source folders": "src",
       "File extension": "java",
-      "Which classes": "Referenced",
       "[Scan files]": "Scan files",
       "File list": [
-        "ADMINMessage",
-        "AdminCryptor",
-        "AdminPassport",
-        "DBA2021",
-        "DBA2122",
-        "DataBaser",
-        "DrDiagnostic",
-        "EmptyAgent",
-        "FactoryAgent",
-        "GMailer",
-        "Goku",
-        "HWManager",
-        "IdentityManager",
-        "LARVAAdminAgent",
-        "LARVABaseTelegram",
-        "LARVAEphemeral",
-        "LARVAPrivateTelegram",
-        "LARVAPublicTelegram",
-        "LARVAQueen",
-        "LARVATelegramBot",
-        "Mario",
-        "ProblemManager",
-        "ProductCoin",
-        "Session",
-        "SessionManager",
-        "SonGoanda",
-        "StoreManager",
-        "TeamController",
-        "WorldController"
+        
       ]
     },
     "Packages": {
       "[Scan packages]": "ScanPackages",
       "Packages list": [
-        "agents",
-        "crypto",
-        "data",
-        "database",
-        "factoryagent",
-        "larva",
-        "sessions",
-        "telegram"
+        
       ]
     },
     "Classes": {
+      "Which classes": "Referenced",
       "[Scan classes]": "Scan classes",
       "Classes list": [
-        "ADMINMessage",
-        "AdminCryptor",
-        "AdminPassport",
-        "DBA2021",
-        "DBA2122",
-        "DataBaser",
-        "DrDiagnostic",
-        "EmptyAgent",
-        "FactoryAgent",
-        "GMailer",
-        "Goku",
-        "HWManager",
-        "IdentityManager",
-        "LARVAAdminAgent",
-        "LARVABaseTelegram",
-        "LARVAEphemeral",
-        "LARVAPrivateTelegram",
-        "LARVAPublicTelegram",
-        "LARVAQueen",
-        "LARVATelegramBot",
-        "Mario",
-        "ProblemManager",
-        "ProductCoin",
-        "Session",
-        "SessionManager",
-        "SonGoanda",
-        "StoreManager",
-        "TeamController",
-        "WorldController"
+        
       ]
     },
     "Display": {

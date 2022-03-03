@@ -2,6 +2,7 @@
     "options": {
         "FrameTitle":"Class diagram viewer",
         "FrameStatus":true,
+        "FrameSize":{"width":1024,"height":768},
         "Menu": {
             "Project": {
                 "Open project...": "OpenProject",
