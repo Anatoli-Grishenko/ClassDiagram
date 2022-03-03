@@ -7,6 +7,7 @@
       "Output folder": "dot/",
       "Source folders": "src",
       "File extension": "java",
+      "Which classes": "Referenced",
       "[Scan files]": "Scan files",
       "File list": [
         
@@ -19,9 +20,11 @@
       ]
     },
     "Classes": {
-      "Which classes": "Referenced",
       "[Scan classes]": "Scan classes",
       "Classes list": [
+        
+      ],
+      "Show methods": [
         
       ]
     },

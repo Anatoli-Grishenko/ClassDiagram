@@ -3,6 +3,7 @@
         "FrameTitle":"Class diagram viewer",
         "FrameStatus":true,
         "FrameSize":{"width":1024,"height":768},
+        "FlatLaf":"Light",
         "Menu": {
             "Project": {
                 "Open project...": "OpenProject",
@@ -14,10 +15,7 @@
             },
             "Model":{
                 "Generate model":"GenerateModel",
-                "Save model":"SaveModel"
-            },
-            "Configuration":{
-                "Preferences..":"Preferences"
+                "Export model":"ExportModel"
             },
             "About":"About"
         },
@@ -26,7 +24,6 @@
             "SetZoom":{"button":"MAGNIFIER"},
             "SelectPackages":{"button":"PACKAGE"},
             "SelectClasses":{"button":"CLASS"},
-            "SelectMethods":{"button":"METHOD"},
             "SelectResolution":{"button":"DPI"}
         },
         "Default project":""

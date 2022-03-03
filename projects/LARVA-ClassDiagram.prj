@@ -1,0 +1,222 @@
+{
+  "options": {
+    "Sources": {
+      "Input folders": [
+        "src/",
+        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.core/"
+      ],
+      "Output folder": "dot/",
+      "Source folders": "src",
+      "File extension": "java",
+      "Which classes": "Referenced",
+      "[Scan files]": "Scan files",
+      "File list": [
+        "AG3DDrawPane",
+        "AGDrawPane",
+        "AGFrame",
+        "AirTrafficControl",
+        "Bitmap3D",
+        "Circle3D",
+        "ClassDiagram",
+        "DeathStar",
+        "DeathStarDeLuxe",
+        "Entity",
+        "Game",
+        "GameBitmap",
+        "GameCharacter",
+        "GameLabel",
+        "GameObject",
+        "GamePanel",
+        "GameScene",
+        "JADEBoot",
+        "JDrawPane",
+        "LARVAAirTrafficControl3D",
+        "LARVAAirTrafficControlTiles",
+        "LARVABaseAgent",
+        "LARVABoot",
+        "LARVACompactDash",
+        "LARVADash",
+        "LARVADialog",
+        "LARVAEmbeddedDash",
+        "LARVAFirstAgent",
+        "LARVAFrame",
+        "LARVAMiniDash",
+        "Line3D",
+        "MyDrawPane",
+        "MyMapPalPane",
+        "MyPlainButton",
+        "MyPopup",
+        "Object3D",
+        "Ole",
+        "OleApplication",
+        "OleBitmapPane",
+        "OleButton",
+        "OleConfig",
+        "OleDataBase",
+        "OleDialog",
+        "OleDot",
+        "OleDrawPane",
+        "OleFile",
+        "OleFrame",
+        "OleList",
+        "OleMenuBar",
+        "OlePassport",
+        "OleQuery",
+        "OleReport",
+        "OleSensor",
+        "OleSet",
+        "OleTable",
+        "OleToolBar",
+        "Perceptor",
+        "Polygon3D",
+        "Scene3D",
+        "SentenceBuilder",
+        "String3D",
+        "Thing",
+        "TradeFederation",
+        "World",
+        "emojis",
+        "liveBot"
+      ]
+    },
+    "Packages": {
+      "[Scan packages]": "ScanPackages",
+      "Packages list": [
+        "data",
+        "swing"
+      ]
+    },
+    "Classes": {
+      "[Scan classes]": "Scan classes",
+      "Classes list": [
+        "ClassDiagram",
+        "Ole",
+        "OleApplication",
+        "OleBitmapPane",
+        "OleButton",
+        "OleConfig",
+        "OleDataBase",
+        "OleDialog",
+        "OleDot",
+        "OleDrawPane",
+        "OleFile",
+        "OleFrame",
+        "OleList",
+        "OleMenuBar",
+        "OlePassport",
+        "OleQuery",
+        "OleReport",
+        "OleSensor",
+        "OleSet",
+        "OleTable",
+        "OleToolBar"
+      ],
+      "Show methods": [
+        "ClassDiagram",
+        "Ole",
+        "OleApplication",
+        "OleBitmapPane",
+        "OleButton",
+        "OleConfig",
+        "OleDialog",
+        "OleDot",
+        "OleDrawPane",
+        "OleFile",
+        "OleFrame",
+        "OleList",
+        "OleMenuBar",
+        "OleToolBar"
+      ]
+    },
+    "Display": {
+      "Format": {
+        "Font": "Arial",
+        "Font size": 24,
+        "Fill color": "Colored"
+      }
+    }
+  },
+  "properties": {
+    "Packages": {
+      "tooltip": "Filter packages",
+      "columns": 2
+    },
+    "Packages list": {
+      "listtype": "string",
+      "multiple": true,
+      "rows": 5
+    },
+    "Sources": {
+      "tooltip": "Select the source files to analyze"
+    },
+    "Classes": {
+      "tooltip": "Generate the Classes model"
+    },
+    "Which classes": {
+      "tooltip": "Select which classes are to be displayed",
+      "select": [
+        "All",
+        "Referenced"
+      ]
+    },
+    "Font": {
+      "tooltip": "For to be used",
+      "select": [
+        "Arial",
+        "Courier New"
+      ]
+    },
+    "Font size": {
+      "tooltip": "Size of the font to be used"
+    },
+    "Fill color": {
+      "tooltip": "Color of the head of each class",
+      "select": [
+        "Black & White",
+        "Colored"
+      ]
+    },
+    "Input folders": {
+      "tooltip": "Select project folders",
+      "listtype": "folder",
+      "multiple": true,
+      "selected": "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.core/"
+    },
+    "File list": {
+      "listtype": "file",
+      "rows": 4,
+      "multiple": true,
+      "selected": ""
+    },
+    "Output folder": {
+      "tooltip": "Select the folder to output charts",
+      "folder": ""
+    },
+    "Source folders": {
+      "tooltip": "Only the folders that contains source code",
+      "select": [
+        "all",
+        "src"
+      ]
+    },
+    "File extension": {
+      "tooltip": "Which type of files (language) will be included"
+    },
+    "Format": {
+      "border": true,
+      "Columns": 4
+    },
+    "Classes list": {
+      "listtype": "String",
+      "selected": "OlePassport",
+      "multiple": true,
+      "rows": 6
+    },
+    "Methods found": {
+      "listtype": "String",
+      "rows": 6,
+      "multiple": false,
+      "selected": ""
+    }
+  }
+}
