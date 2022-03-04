@@ -293,22 +293,6 @@
       "public Status processQuery(ACLMessage incoming)",
       "protected void updateXUI(String agentname)"
     ],
-    "TelegramUpdates": [
-      "public void initChatID(long cid)",
-      "public Set<Long> getAllChatIDRegistered()",
-      "protected synchronized boolean isEmptyChatID(long chatID)",
-      "public synchronized boolean isEmptyUserID(int userID)",
-      "public synchronized boolean isAllEmpty()",
-      "public long getChatIDUser(int userID)",
-      "public List<Long> getAllChatIDActive()",
-      "public List<Long> getAllChatIDGroup(int groupID)",
-      "protected ArrayList<Update> getChatIDPendingUpdates(long chatID)",
-      "protected ArrayList<Update> getUserIDPendingUpdates(int userID)",
-      "public synchronized void pushUpdate(Update update)",
-      "public synchronized Update popUpdateChatID(long chatID)",
-      "public synchronized Update popUpdateUserID(int userID)",
-      "public TelegramChat getChatData(long cid)"
-    ],
     "GMailer": [
       "public void ServiceHandlerNOTIFICATION(ACLMessage msg)",
       "protected void sendGmail(String receiver, String subject, String body)",
@@ -360,22 +344,6 @@
       "public void Execute()",
       "public void takeDown()"
     ],
-    "TelegramMenuBar": [
-      "public TelegramMenu addMenu(String name)",
-      "public TelegramMenu getMenu(String name)",
-      "public TelegramMenuBar addOption(TelegramMenu m, String option, Consumer<TelegramChoice> r)",
-      "public TelegramMenuBar addOption(TelegramMenu m, String option, TelegramMenu subm)",
-      "public TelegramMenuBar addOption(TelegramMenu m, String option)",
-      "public TelegramMenuOption getOption(String code)",
-      "public TelegramMenu getRootMenu()",
-      "public void setRootMenu(TelegramMenu rootMenu)",
-      "public TelegramMenu getLastMenu(long cid)",
-      "public void setLastMenu(long cid, TelegramMenu lastMenu)",
-      "public boolean isMenu(String option)",
-      "public boolean isOption(String option)",
-      "public boolean isValidChoice(String option)",
-      "public TelegramMenu processChoice(long cid, String c)"
-    ],
     "LARVAPublicTelegram": [
       "public void takeDown()",
       "protected String getBotName()",
@@ -418,29 +386,6 @@
       "public void Execute()",
       "public void takeDown()"
     ],
-    "TelegramChat": [
-      "public void resetChat()",
-      "public boolean isValidChat()",
-      "public void setUserID(int userID)",
-      "public void setGroupID(int groupID)",
-      "public void setCourseID(int courseID)",
-      "public void setUsername(String username)",
-      "public void setGroupname(String groupname)",
-      "public void setTeacher(boolean teacher)",
-      "public void setSubscribed(boolean subscribed)",
-      "public boolean isTeacher()",
-      "public boolean isSubscribed()",
-      "public void setPendingUpdates(ArrayList<Update> pendingUpdates)",
-      "public int getUserID()",
-      "public int getGroupID()",
-      "public int getCourseID()",
-      "public String getUsername()",
-      "public String getGroupname()",
-      "public ArrayList<Update> getPendingUpdates()"
-    ],
-    "DBAAPI": [
-      
-    ],
     "LARVAQueen": [
       "protected String doProgressBar(int n, int total, int length, String done, String undone)",
       "public void Execute()",
@@ -456,9 +401,6 @@
       "protected void onTick()",
       "protected void findRoles()"
     ],
-    "LARVA": [
-      
-    ],
     "LARVATelegramBot": [
       "public String getBotUsername()",
       "public String getBotToken()",
@@ -473,29 +415,10 @@
       "protected void Info(String message)",
       "protected void addMilestone(String milestone)"
     ],
-    "TelegramChoice": [
-      
-    ],
-    "TelegramMenu": [
-      "public TelegramMenu setDescription(String d)",
-      "public TelegramMenu setColumns(int nc)",
-      "public TelegramMenu addButton(String text)",
-      "public String getName()",
-      "public TelegramMenu setName(String name)",
-      "public String getDescription()",
-      "public ReplyKeyboardMarkup getKeyboard()"
-    ],
     "ADMINMessage": [
       "public ADMINMessage(LARVAAdminAgent sender)",
       "protected final void init(LARVAAdminAgent sender)",
       "public void setJsonContent(JsonObject jso)"
-    ],
-    "DBAgent": [
-      "private DBAgent setDefault()",
-      "public Ole get()",
-      "public DBAgent set(Ole o)",
-      "private DBAgent()",
-      "public DBAgent clear()"
     ],
     "LARVAAdminAgent": [
       "public void takeDown()",
@@ -697,11 +620,6 @@
       "public void purgeSessions()",
       "public void takeDown()"
     ],
-    "TelegramMenuOption": [
-      "public TelegramMenuOption(Consumer <TelegramChoice> handler)",
-      "public TelegramMenuOption()",
-      "public boolean isExit()"
-    ],
     "ProductCoin": [
       
     ],
@@ -896,7 +814,7 @@
       "fillcolor": "DarkViolet",
       "color": "black"
     },
-    "extends": "[arrowhead=onormal,color=black]",
-    "owns": "[style=dotted,arrowhead=odiamond,color=blue]"
+    "extends": "[arrowhead=onormal, penwidth=2, color=black]",
+    "owns": "[style=dotted,arrowhead=odiamond, penwidth=2,color=blue]"
   }
 }

@@ -10,8 +10,29 @@
   "relation": {
     "extends": [
       {
+        "JScrollPane": [
+          "OleBitmapPane"
+        ]
+      },
+      {
+        "JPanel": [
+          "OleDrawPane",
+          "OleToolBar"
+        ]
+      },
+      {
         "OleFrame": [
           "OleApplication"
+        ]
+      },
+      {
+        "JButton": [
+          "OleButton"
+        ]
+      },
+      {
+        "JsonObject": [
+          "Ole"
         ]
       },
       {
@@ -25,6 +46,26 @@
           "OleSensor",
           "OleSet",
           "OleTable"
+        ]
+      },
+      {
+        "JFrame": [
+          "OleFrame"
+        ]
+      },
+      {
+        "JDialog": [
+          "OleDialog"
+        ]
+      },
+      {
+        "JList": [
+          "OleList"
+        ]
+      },
+      {
+        "JMenuBar": [
+          "OleMenuBar"
         ]
       }
     ],
@@ -62,7 +103,7 @@
       },
       {
         "OleDialog": [
-          
+          "OleConfig"
         ]
       },
       {
@@ -96,14 +137,6 @@
       {
         "OleDot": [
           
-        ]
-      },
-      {
-        "ClassDiagram": [
-          "OleConfig",
-          "OleApplication",
-          "OleDrawPane",
-          "OleBitmapPane"
         ]
       },
       {
@@ -144,241 +177,137 @@
     ]
   },
   "methods": {
-    "Ole": [
-      "public static Ole Json2Ole(JsonObject jsole)",
-      "protected static JsonValue Ole2JsonValue(JsonValue jsobject)",
-      "public static JsonObject Ole2PlainJson(Ole odata)",
-      "public static List<String> allNames(JsonObject jso)",
-      "public Ole()",
-      "public Ole(JsonObject jsole)",
-      "public Ole(String s)",
-      "protected JsonObject meta()",
-      "public Ole clear()",
-      "protected void Init()",
-      "public boolean isOle()",
-      "public boolean isEmpty()",
-      "public Ole set(String s)",
-      "public Ole fromJson(JsonObject jsole)",
-      "protected Ole fromPlainJson(JsonObject jsole)",
-      "protected Ole fromFullJson(JsonObject jsole)",
-      "public JsonObject toPlainJson()",
-      "public String toString(WriterConfig wcon)",
-      "public String toString()",
-      "public Ole parse(String s)",
-      "public boolean checkField(String fieldName)",
-      "public Ole addField(String fieldName)",
-      "public Ole setID(String id)",
-      "public Ole setType(String type)",
-      "public Ole setDate(String date)",
-      "public Ole setDescription(String description)",
-      "public Ole setOle()",
-      "public String getID()",
-      "public String getType()",
-      "public String getDate()",
-      "public String getDescription()",
-      "public List<String> getFieldList()",
-      "public String getFieldType(String field)",
-      "public String getValueType(JsonValue jsv)",
-      "public final Ole getOle(String field)",
-      "public Ole set(String field, boolean value)",
-      "public Ole set(String field, int value)",
-      "public Ole set(String field, double value)",
-      "public Ole set(String field, String value)",
-      "public Ole set(String field, JsonArray value)",
-      "public Ole set(String field, Ole value)",
-      "public boolean isEncrypted()",
-      "public Ole onEncryption(Cryptor myc)",
-      "public Ole offEncryption()",
-      "public Ole loadFile(String fullfilename)",
-      "public final String getField(String field)",
-      "public final boolean getBoolean(String field)",
-      "public final int getInt(String field)",
-      "public final double getDouble(String field)",
-      "public final String getString(String field)",
-      "public final ArrayList getArray(String field)",
-      "public final Ole setField(String fieldname, String value)",
-      "public final Ole setField(String fieldname, int value)",
-      "public final Ole setField(String fieldname, double value)",
-      "public final Ole setField(String fieldname, boolean value)",
-      "public final Ole setField(String fieldname, ArrayList<Object> value)",
-      "public final Ole setField(String fieldname, Ole value)",
-      "public final Ole addToField(String fieldname, String v)",
-      "public final Ole addToField(String fieldname, int v)",
-      "public final Ole addToField(String fieldname, double v)",
-      "public final Ole addToField(String fieldname, boolean v)",
-      "public final Ole addToField(String fieldname, Ole v)",
-      "public Ole setFieldGeneric(String field, Object s)"
-    ],
     "OleMenuBar": [
-      "public JMenu addMenu(String name, OleConfig omenu)"
+      "JMenu addMenu(String name, OleConfig omenu)"
     ],
     "OleFrame": [
-      "public OleFrame(OleConfig olecfg)",
-      "public OleFrame init()",
-      "public void actionPerformed(ActionEvent e)",
-      "public abstract void myActionListener(ActionEvent e);",
-      "public abstract void myKeyListener(KeyEvent e);"
+      "OleFrame(OleConfig olecfg)",
+      "OleFrame init()",
+      "void actionPerformed(ActionEvent e)",
+      "abstract void myActionListener(ActionEvent e);",
+      "abstract void myKeyListener(KeyEvent e);"
     ],
     "OleButton": [
-      "public void mouseEntered(MouseEvent e)",
-      "public void mouseExited(MouseEvent e)",
-      "public void setEnabled(boolean b)"
+      "void mouseEntered(MouseEvent e)",
+      "void mouseExited(MouseEvent e)",
+      "void setEnabled(boolean b)"
     ],
     "OleDialog": [
-      "public static String doSaveAsFile(String currentfolder)",
-      "public  static String doSelectFolder(String currentfolder)",
-      "public OleDialog(JFrame parent, String title)",
-      "public OleDialog addActionListener(BiConsumer<ActionEvent, OleConfig> l)",
-      "public void actionPerformed(ActionEvent e)",
-      "public boolean run(OleConfig o)",
-      "public OleConfig getResult()",
-      "protected void setLayout(OleConfig olecfg)",
-      "protected JPanel setLayout(String oid, Ole ocomponents, OleConfig olecfg)",
-      "protected void setValues(OleConfig olecfg)",
-      "protected void setValues(String oid, Ole ocomponents, OleConfig olecfg)",
-      "protected OleConfig getValues(OleConfig olecfg)",
-      "protected OleConfig getValues(Ole currentTab, OleConfig olecfg)"
+      "static String doSaveAsFile(String currentfolder)",
+      "static String doSelectFolder(String currentfolder)",
+      "OleDialog(JFrame parent, String title)",
+      "OleDialog addActionListener(BiConsumer<ActionEvent, OleConfig> l)",
+      "void actionPerformed(ActionEvent e)",
+      "boolean run(OleConfig o)",
+      "boolean run(OleConfig o, String defaulttab)",
+      "OleConfig getResult()",
+      "void setLayout(OleConfig olecfg)",
+      "JPanel setLayout(String oid, Ole ocomponents, OleConfig olecfg)",
+      "void setValues(OleConfig olecfg)",
+      "void setValues(String oid, Ole ocomponents, OleConfig olecfg)",
+      "OleConfig getValues(OleConfig olecfg)",
+      "OleConfig getValues(Ole currentTab, OleConfig olecfg)"
     ],
     "OleToolBar": [
       
     ],
-    "OleFile": [
-      "public OleFile(Ole o)",
-      "public OleFile loadFile(String fullfilename)",
-      "public boolean saveFile(String outputfolder)",
-      "public String getStringContent()",
-      "public String getFileName()"
-    ],
     "OleList": [
-      "public OleList init(OleConfig olecfg)",
-      "public OleList addElement(String element)",
-      "public OleList addAllElements(ArrayList<String> elements)",
-      "public OleList removeElement(int pos)",
-      "public OleList removeElement(String element)",
-      "public OleList clear()",
-      "private int getIndex(String what)",
-      "public DefaultListModel getListMode()",
-      "public JScrollPane getPane()",
-      "public JButton getAddButton()",
-      "public JButton getRemoveButton()",
-      "public void valueChanged(ListSelectionEvent e)",
-      "public void actionPerformed(ActionEvent e)"
+      "OleList init(OleConfig olecfg)",
+      "OleList addElement(String element)",
+      "OleList addAllElements(ArrayList<String> elements)",
+      "OleList removeElement(int pos)",
+      "OleList removeElement(String element)",
+      "OleList clear()",
+      "DefaultListModel getListMode()",
+      "JScrollPane getPane()",
+      "JButton getAddButton()",
+      "JButton getRemoveButton()",
+      "void valueChanged(ListSelectionEvent e)",
+      "void actionPerformed(ActionEvent e)"
     ],
     "OleDot": [
-      "public OleDot(Ole o)",
-      "public void setResolution(int ppp)",
-      "public static void exportTo(String dotFile, String type)",
-      "public void toDot(String dotfilename)",
-      "public void recursiveTree(Ole classname, PrintStream output)"
-    ],
-    "ClassDiagram": [
-      "public void myActionListener(ActionEvent e)",
-      "public void myKeyListener(KeyEvent e)",
-      "public void Draw(Graphics2D g)",
-      "public static void frameActionListener(ActionEvent e)",
-      "public static void frameKeyListener(KeyEvent e)",
-      "public static void editProjectListener(ActionEvent e, OleConfig olecfg)",
-      "public static void scanFiles(OleConfig olecfg)",
-      "public static void scanPackages(OleConfig olecfg)",
-      "public static void scanClasses(OleConfig olecfg)",
-      "public static void editProject()",
-      "public static boolean openProject()",
-      "public static void saveProject()",
-      "public static void saveAsProject()",
-      "public static void generateModel(OleConfig oleconf, boolean simplified)",
-      "public static void clearFiles()",
-      "public static void clearModel()",
-      "public static void findFolder(String padding, String folder) throws IOException",
-      "public static void findAllFiles(ArrayList<String> inputfolders, OleConfig olecfg)",
-      "public static void findUsage(ArrayList<String> files, OleConfig olecfg)",
-      "public static void findAllPackages(ArrayList<String> files, OleConfig olecfg)",
-      "public static void findAllClasses(ArrayList<String> packages, OleConfig olecfg)",
-      "public static void findAll(OleConfig olecfg)",
-      "public static void dumpJson(OleConfig olecfg, boolean simplified)",
-      "public static String getClassName(String filename)",
-      "public static String getPackageName(String filename)",
-      "public static String getExtends(String filename)",
-      "return aux.grep(\"class\").toString().replaceAll(\"public.*extends \", \"\").replaceAll(\"\\\\.*\", \"\").trim();",
-      "public static ArrayList<String> getDataMembers(String filename)",
-      "if (line.matches(\"public class.*\"))",
-      "public static ArrayList<String> getMethods(String filename)",
-      "if ((line.contains(\"public\") || line.contains(\"private\") || line.contains(\"protected\"))",
-      "if (line.matches(\"public class.*\"))",
-      "public static void paintDiagram(Graphics2D myg)",
-      "public static void showProjectSummary()",
-      "public static ArrayList<String> selectPreferred(ArrayList<String> Original, ArrayList<String> Preferred)"
+      "OleDot(Ole o)",
+      "void setResolution(int ppp)",
+      "int getWidth()",
+      "int getHeight()",
+      "void setWidth(int width)",
+      "void setHeight(int height)",
+      "static void exportTo(String dotFile, String type)",
+      "void toDot(String dotfilename)",
+      "void recursiveTree(Ole classname, PrintStream output)",
+      "static String highlight(String s)"
     ],
     "OleBitmapPane": [
-      "public void mouseDragged(MouseEvent e)",
-      "public void mouseMoved(MouseEvent e)",
-      "public void mouseWheelMoved(MouseWheelEvent e)",
-      "public void mouseClicked(MouseEvent e)",
-      "public void mousePressed(MouseEvent e)",
-      "public void mouseReleased(MouseEvent e)",
-      "public void mouseEntered(MouseEvent e)",
-      "public void mouseExited(MouseEvent e)",
-      "public void clear()",
-      "public void reset(Dimension d)",
-      "public JPanel getOleDrawPane()",
-      "public void setZoom(double z)",
-      "public double getZoom()",
-      "public void zoomIn()",
-      "public void zoomOut()"
+      "void mouseDragged(MouseEvent e)",
+      "void mouseMoved(MouseEvent e)",
+      "void mouseWheelMoved(MouseWheelEvent e)",
+      "void mouseClicked(MouseEvent e)",
+      "void mousePressed(MouseEvent e)",
+      "void mouseReleased(MouseEvent e)",
+      "void mouseEntered(MouseEvent e)",
+      "void mouseExited(MouseEvent e)",
+      "void clear()",
+      "void reset(Dimension d)",
+      "JPanel getOleDrawPane()",
+      "void setZoom(double z)",
+      "double getZoom()",
+      "void zoomIn()",
+      "void zoomOut()"
     ],
     "OleDrawPane": [
-      "public void paintComponent(Graphics g)",
-      "public void clear()",
-      "public Graphics2D canvas()",
-      "abstract public void OleDraw(Graphics2D g);"
+      "void paintComponent(Graphics g)",
+      "void clear()",
+      "Graphics2D canvas()",
+      "abstract void OleDraw(Graphics2D g);"
     ],
     "OleApplication": [
-      "public OleApplication init()",
-      "public void OleDraw(Graphics2D g)",
-      "public OleBitmapPane getScollPane()",
-      "public OleDrawPane getDrawingPane()",
-      "public JPanel getMainPanel()",
-      "public abstract void Draw(Graphics2D g);",
-      "protected void addLabel(Container con, String s)",
-      "protected void addLabel(Container con, String s, Color col)",
-      "public LayoutManager defLayout(Container c)",
-      "public void actionPerformed(ActionEvent e)",
-      "public abstract void myActionListener(ActionEvent e);",
-      "public abstract void myKeyListener(KeyEvent e);",
-      "public void keyTyped(KeyEvent e)",
-      "public void keyPressed(KeyEvent e)",
-      "public void keyReleased(KeyEvent e)",
-      "public void cleanStatus()",
-      "public void showStatus(String message)",
-      "public void showInfo(String message)",
-      "public void showWarning(String message)",
-      "public void showError(String message)",
-      "public void showProgressFrame(String what, int value, int max)",
-      "public void myActionListener(ActionEvent e)",
-      "public void myKeyListener(KeyEvent e)",
-      "public void keyTyped(KeyEvent e)",
-      "public void keyPressed(KeyEvent e)",
-      "public void keyReleased(KeyEvent e)",
-      "public void showProgress(String what, int value, int max)",
-      "public void showProgress(String what, int value)",
-      "public void showProgress(String what)",
-      "public void closeProgress(String what)",
-      "public void Info(String message)",
-      "public void Warning(String message)",
-      "public void Error(String message)",
-      "public String inputLine(String message)",
-      "public String inputSelect(String message, String[] options, String value)",
-      "public boolean Confirm(String message)"
+      "OleApplication init()",
+      "void OleDraw(Graphics2D g)",
+      "OleBitmapPane getScollPane()",
+      "OleDrawPane getDrawingPane()",
+      "JPanel getMainPanel()",
+      "abstract void Draw(Graphics2D g);",
+      "void addLabel(Container con, String s)",
+      "void addLabel(Container con, String s, Color col)",
+      "LayoutManager defLayout(Container c)",
+      "void actionPerformed(ActionEvent e)",
+      "abstract void myActionListener(ActionEvent e);",
+      "abstract void myKeyListener(KeyEvent e);",
+      "void keyTyped(KeyEvent e)",
+      "void keyPressed(KeyEvent e)",
+      "void keyReleased(KeyEvent e)",
+      "void cleanStatus()",
+      "void showStatus(String message)",
+      "void showInfo(String message)",
+      "void showWarning(String message)",
+      "void showError(String message)",
+      "void showProgressFrame(String what, int value, int max)",
+      "void myActionListener(ActionEvent e)",
+      "void myKeyListener(KeyEvent e)",
+      "void keyTyped(KeyEvent e)",
+      "void keyPressed(KeyEvent e)",
+      "void keyReleased(KeyEvent e)",
+      "void showProgress(String what, int value, int max)",
+      "void showProgress(String what, int value)",
+      "void showProgress(String what)",
+      "void closeProgress(String what)",
+      "void Info(String message)",
+      "void Warning(String message)",
+      "void Error(String message)",
+      "String inputLine(String message)",
+      "String inputSelect(String message, String[] options, String value)",
+      "boolean Confirm(String message)"
     ],
     "OleConfig": [
-      "public OleConfig(Ole o)",
-      "public Ole getProperties()",
-      "public Ole getProperties(String sfield)",
-      "public Ole getOptions()",
-      "protected List<String> getTabList()",
-      "public int numTabs()",
-      "public List<String> getAllTabNames()",
-      "public Ole getTab(String stab)",
-      "public List<String> getAllTabFields(String stab)"
+      "OleConfig(Ole o)",
+      "Ole getProperties()",
+      "Ole getProperties(String sfield)",
+      "Ole getOptions()",
+      "List<String> getTabList()",
+      "int numTabs()",
+      "List<String> getAllTabNames()",
+      "Ole getTab(String stab)",
+      "List<String> getAllTabFields(String stab)"
     ]
   },
   "class": {
@@ -408,18 +337,18 @@
   },
   "format": {
     "data": {
-      "face": "Arial",
+      "face": "Courier New",
       "fontsize": 24,
-      "fillcolor": "Chartreuse",
+      "fillcolor": "white",
       "color": "black"
     },
     "swing": {
-      "face": "Arial",
+      "face": "Courier New",
       "fontsize": 24,
-      "fillcolor": "MediumSpringGreen",
+      "fillcolor": "white",
       "color": "black"
     },
-    "extends": "[arrowhead=onormal,color=black]",
-    "owns": "[style=dotted,arrowhead=odiamond,color=blue]"
+    "extends": "[arrowhead=onormal, penwidth=2, color=black]",
+    "owns": "[style=dotted,arrowhead=odiamond, penwidth=2,color=blue]"
   }
 }

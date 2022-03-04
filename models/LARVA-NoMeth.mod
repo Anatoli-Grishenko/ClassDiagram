@@ -1,21 +1,14 @@
 {
   "classtypes": [
-    "swing",
     "agents",
     "appboot",
-    "basher",
-    "console",
     "crypto",
     "data",
     "database",
-    "disk",
     "geometry",
-    "glossary",
     "larva",
-    "map2D",
-    "messaging",
-    "ontology",
     "sessions",
+    "swing",
     "telegram",
     "tools",
     "world"
@@ -39,8 +32,7 @@
       },
       {
         "JPanel": [
-          "JDrawPane",
-          "MyDrawPane"
+          "JDrawPane"
         ]
       },
       {
@@ -57,7 +49,8 @@
       },
       {
         "LARVAFirstAgent": [
-          "DeathStar"
+          "DeathStar",
+          "TradeFederation"
         ]
       },
       {
@@ -72,8 +65,8 @@
       },
       {
         "Ole": [
+          "OleConfig",
           "OleFile",
-          "OlePassport",
           "OleQuery",
           "OleReport",
           "OleSensor",
@@ -84,12 +77,6 @@
       {
         "TelegramLongPollingBot": [
           "LARVATelegramBot"
-        ]
-      },
-      {
-        "LARVABaseAgent": [
-          "LARVAAdminAgent",
-          "LARVAFirstAgent"
         ]
       },
       {
@@ -109,7 +96,6 @@
       },
       {
         "LARVAEphemeral": [
-          "SessionManager",
           "StoreManager"
         ]
       },
@@ -148,7 +134,6 @@
         "LARVAAdminAgent": [
           "DataBaser",
           "DrDiagnostic",
-          "EmptyAgent",
           "GMailer",
           "IdentityManager",
           "LARVABaseTelegram",
@@ -164,7 +149,7 @@
       },
       {
         "Keygen": [
-          
+          "ProductCoin"
         ]
       },
       {
@@ -206,7 +191,7 @@
       },
       {
         "GMailer": [
-          "SendGMailSMTP"
+          
         ]
       },
       {
@@ -230,24 +215,12 @@
         ]
       },
       {
-        "Map2DColor": [
-          
-        ]
-      },
-      {
         "SentenceBuilder": [
           "OleDataBase"
         ]
       },
       {
-        "Vector": [
-          "Point"
-        ]
-      },
-      {
         "Thing": [
-          "World",
-          "Map2DColor",
           "Perceptor"
         ]
       },
@@ -261,23 +234,7 @@
           "LARVAFrame",
           "MyDrawPane",
           "MyPlainButton",
-          "MyMapPalPane",
-          "Map2DColor",
-          "RoundProgressBar",
-          "Angular",
-          "SensorDecoder",
-          "TimeHandler",
-          "Palette"
-        ]
-      },
-      {
-        "Compass": [
-          
-        ]
-      },
-      {
-        "SequenceDiagram": [
-          
+          "MyMapPalPane"
         ]
       },
       {
@@ -287,27 +244,13 @@
       },
       {
         "MyMapPalPane": [
-          "Map2DColor",
           "MyDrawPane",
-          "Palette",
-          "MyPopup",
-          "Point"
+          "MyPopup"
         ]
       },
       {
         "ProblemManager": [
-          "Session"
-        ]
-      },
-      {
-        "TelegramMenuOption": [
-          "TelegramMenu",
-          "TelegramChoice"
-        ]
-      },
-      {
-        "TimeHandler": [
-          
+          "OleConfig"
         ]
       },
       {
@@ -327,19 +270,13 @@
       },
       {
         "LARVABoot": [
-          "Logger",
+          "OleConfig",
           "LARVAFrame"
         ]
       },
       {
-        "Logger": [
-          
-        ]
-      },
-      {
         "LARVABaseAgent": [
-          "OleFile",
-          "Logger"
+          "OleFile"
         ]
       },
       {
@@ -352,21 +289,18 @@
           "LARVAFrame",
           "MyDrawPane",
           "AirTrafficControl",
-          "SensorDecoder",
-          "TimeHandler",
-          "Palette",
           "LARVAEmbeddedDash",
           "OleFile"
         ]
       },
       {
         "LARVAPublicTelegram": [
-          "TelegramChat"
+          
         ]
       },
       {
         "LARVAPrivateTelegram": [
-          "TelegramChat"
+          
         ]
       },
       {
@@ -380,18 +314,13 @@
         ]
       },
       {
-        "Menu": [
-          "Console"
+        "TradeFederation": [
+          "LARVAFrame"
         ]
       },
       {
-        "TelegramChat": [
-          
-        ]
-      },
-      {
-        "DBAAPI": [
-          
+        "emojis": [
+          "OleSet"
         ]
       },
       {
@@ -411,23 +340,12 @@
       },
       {
         "DrDiagnostic": [
-          "TimeHandler"
+          "OleConfig"
         ]
       },
       {
         "LARVATelegramBot": [
-          "TelegramUpdates",
           "LARVAAdminAgent"
-        ]
-      },
-      {
-        "TelegramChoice": [
-          
-        ]
-      },
-      {
-        "TelegramMenu": [
-          
         ]
       },
       {
@@ -436,7 +354,7 @@
         ]
       },
       {
-        "Event": [
+        "ProductCoin": [
           
         ]
       },
@@ -447,10 +365,6 @@
       },
       {
         "LARVAEmbeddedDash": [
-          "SensorDecoder",
-          "RoundProgressBar",
-          "Angular",
-          "TimeHandler",
           "MyDrawPane"
         ]
       },
@@ -473,24 +387,29 @@
         "LARVAFirstAgent": [
           "LARVAFrame",
           "LARVADash",
-          "SequenceDiagram",
-          "OleSet"
+          "OleSet",
+          "OleConfig"
+        ]
+      },
+      {
+        "Scene3D": [
+          
         ]
       },
       {
         "JADEBoot": [
-          "Logger"
+          "OleConfig"
+        ]
+      },
+      {
+        "Polygon3D": [
+          
         ]
       },
       {
         "World": [
           "Thing",
-          "Ontology"
-        ]
-      },
-      {
-        "Basher": [
-          
+          "OleConfig"
         ]
       },
       {
@@ -509,37 +428,6 @@
         ]
       },
       {
-        "ReportableObject": [
-          
-        ]
-      },
-      {
-        "TelegramMenuBar": [
-          "TelegramMenuOption",
-          "TelegramMenu"
-        ]
-      },
-      {
-        "RoundProgressBar": [
-          
-        ]
-      },
-      {
-        "Sentence": [
-          
-        ]
-      },
-      {
-        "LARVA": [
-          
-        ]
-      },
-      {
-        "DBAgent": [
-          
-        ]
-      },
-      {
         "OleFile": [
           
         ]
@@ -547,15 +435,11 @@
       {
         "LARVAAdminAgent": [
           "FactoryAgent",
+          "OleConfig",
           "DBA2122",
-          "BehaviourControl",
-          "ReportableObject",
           "AdminCryptor",
           "OleSet",
-          "Ole",
-          "Session",
-          "TimeHandler",
-          "Sentence"
+          "Ole"
         ]
       },
       {
@@ -566,52 +450,24 @@
         ]
       },
       {
-        "ACLMessageTools": [
-          
-        ]
-      },
-      {
         "OleSensor": [
           
         ]
       },
       {
-        "Internet": [
+        "String3D": [
           
-        ]
-      },
-      {
-        "LARVAAirTrafficControl3D": [
-          "LARVAFrame",
-          "SensorDecoder",
-          "TimeHandler",
-          "Palette",
-          "LARVAEmbeddedDash",
-          "OleFile"
         ]
       },
       {
         "OleDataBase": [
           "Ole",
-          "Logger",
-          "OleTable",
-          "SentenceBuilder"
+          "OleTable"
         ]
       },
       {
         "liveBot": [
-          "Point",
           "Thing"
-        ]
-      },
-      {
-        "Palette": [
-          
-        ]
-      },
-      {
-        "Ontology": [
-          
         ]
       },
       {
@@ -620,22 +476,7 @@
         ]
       },
       {
-        "TokenList": [
-          
-        ]
-      },
-      {
-        "TelegramUpdates": [
-          "TelegramChat"
-        ]
-      },
-      {
         "OleList": [
-          
-        ]
-      },
-      {
-        "Angular": [
           
         ]
       },
@@ -646,8 +487,7 @@
       },
       {
         "DeathStar": [
-          "LARVAMiniDash",
-          "LARVAAirTrafficControlTiles"
+          "LARVAMiniDash"
         ]
       },
       {
@@ -661,37 +501,12 @@
         ]
       },
       {
-        "Console": [
-          
-        ]
-      },
-      {
-        "EmptyAgent": [
-          
-        ]
-      },
-      {
         "LARVADialog": [
           
         ]
       },
       {
-        "SwingTools": [
-          
-        ]
-      },
-      {
-        "SensorDecoder": [
-          "Map2DColor"
-        ]
-      },
-      {
         "SessionManager": [
-          
-        ]
-      },
-      {
-        "Point": [
           
         ]
       },
@@ -701,31 +516,19 @@
         ]
       },
       {
-        "BehaviourControl": [
-          
-        ]
-      },
-      {
-        "SendGMailSMTP": [
-          
-        ]
-      },
-      {
-        "Map2DPalette": [
-          
-        ]
-      },
-      {
         "Perceptor": [
           "Thing"
         ]
       },
       {
         "AirTrafficControl": [
-          "Map2DColor",
           "MyDrawPane",
-          "Palette",
           "MyPopup"
+        ]
+      },
+      {
+        "OleConfig": [
+          
         ]
       },
       {
@@ -737,102 +540,60 @@
         "Session": [
           "DBA2122",
           "OleSet",
-          "Logger",
-          "World",
-          "Map2DColor",
           "Ole",
-          "liveBot",
-          "SensorDecoder"
+          "liveBot"
         ]
       }
     ]
   },
   "class": {
-    "swing": [
-      "AirTrafficControl",
-      "Angular",
-      "JDrawPane",
-      "LARVAAirTrafficControl3D",
-      "LARVAAirTrafficControlTiles",
-      "LARVACompactDash",
-      "LARVADash",
-      "LARVADialog",
-      "LARVAEmbeddedDash",
-      "LARVAFrame",
-      "LARVAMiniDash",
-      "MyDrawPane",
-      "MyMapPalPane",
-      "MyPlainButton",
-      "MyPopup",
-      "OleList",
-      "RoundProgressBar",
-      "SwingTools"
-    ],
     "agents": [
       "ADMINMessage",
-      "BehaviourControl",
       "DeathStar",
       "LARVAAdminAgent",
       "LARVABaseAgent",
       "LARVABaseTelegram",
       "LARVAEphemeral",
-      "LARVAFirstAgent"
+      "LARVAFirstAgent",
+      "TradeFederation"
     ],
     "appboot": [
       "JADEBoot",
       "LARVABoot"
     ],
-    "basher": [
-      "Basher"
-    ],
-    "console": [
-      "Console",
-      "Menu"
-    ],
     "crypto": [
       "AdminCryptor",
       "Cryptor",
-      "Keygen"
+      "Keygen",
+      "ProductCoin"
     ],
     "data": [
       "AdminPassport",
       "Ole",
+      "OleConfig",
       "OleFile",
       "OlePassport",
       "OleQuery",
       "OleReport",
       "OleSensor",
       "OleSet",
-      "OleTable",
-      "TokenList"
+      "OleTable"
     ],
     "database": [
       "DBA2122",
-      "DBAgent",
       "OleDataBase",
       "SentenceBuilder"
     ],
-    "disk": [
-      "Logger"
-    ],
     "geometry": [
-      "Compass",
-      "Entity",
-      "Point",
-      "Vector"
-    ],
-    "glossary": [
-      
+      "Entity"
     ],
     "larva": [
       "DataBaser",
       "DrDiagnostic",
-      "EmptyAgent",
       "GMailer",
       "Goku",
       "HWManager",
       "IdentityManager",
-      "LARVA",
       "LARVAPrivateTelegram",
       "LARVAPublicTelegram",
       "LARVAQueen",
@@ -844,161 +605,112 @@
       "TeamController",
       "WorldController"
     ],
-    "map2D": [
-      "Map2DColor",
-      "Map2DPalette",
-      "Palette"
-    ],
-    "messaging": [
-      "ACLMessageTools",
-      "Sentence",
-      "SequenceDiagram"
-    ],
-    "ontology": [
-      "Ontology"
-    ],
     "sessions": [
       "Session"
     ],
+    "swing": [
+      "AirTrafficControl",
+      "JDrawPane",
+      "LARVAAirTrafficControlTiles",
+      "LARVACompactDash",
+      "LARVADash",
+      "LARVADialog",
+      "LARVAEmbeddedDash",
+      "LARVAFrame",
+      "LARVAMiniDash",
+      "MyDrawPane",
+      "MyMapPalPane",
+      "MyPlainButton",
+      "MyPopup",
+      "OleList"
+    ],
     "telegram": [
-      "LARVATelegramBot",
-      "TelegramChat",
-      "TelegramChoice",
-      "TelegramMenu",
-      "TelegramMenuBar",
-      "TelegramMenuOption",
-      "TelegramUpdates"
+      "LARVATelegramBot"
     ],
     "tools": [
-      "Internet",
-      "ReportableObject",
-      "SendGMailSMTP",
-      "TimeHandler"
+      "emojis"
     ],
     "world": [
       "Perceptor",
-      "SensorDecoder",
       "Thing",
       "World",
       "liveBot"
     ]
   },
   "format": {
-    "swing": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
-      "color": "black"
-    },
     "agents": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
+      "face": "Arial",
+      "fontsize": 24,
+      "fillcolor": "Chartreuse",
       "color": "black"
     },
     "appboot": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
-      "color": "black"
-    },
-    "basher": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
-      "color": "black"
-    },
-    "console": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
+      "face": "Arial",
+      "fontsize": 24,
+      "fillcolor": "MediumSpringGreen",
       "color": "black"
     },
     "crypto": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
+      "face": "Arial",
+      "fontsize": 24,
+      "fillcolor": "Turquoise",
       "color": "black"
     },
     "data": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
+      "face": "Arial",
+      "fontsize": 24,
+      "fillcolor": "CadetBlue",
       "color": "black"
     },
     "database": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
-      "color": "black"
-    },
-    "disk": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
+      "face": "Arial",
+      "fontsize": 24,
+      "fillcolor": "MediumAquaMarine",
       "color": "black"
     },
     "geometry": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
-      "color": "black"
-    },
-    "glossary": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
+      "face": "Arial",
+      "fontsize": 24,
+      "fillcolor": "Thistle",
       "color": "black"
     },
     "larva": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
-      "color": "black"
-    },
-    "map2D": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
-      "color": "black"
-    },
-    "messaging": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
-      "color": "black"
-    },
-    "ontology": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
+      "face": "Arial",
+      "fontsize": 24,
+      "fillcolor": "LightSteelBlue",
       "color": "black"
     },
     "sessions": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
+      "face": "Arial",
+      "fontsize": 24,
+      "fillcolor": "DarkViolet",
+      "color": "black"
+    },
+    "swing": {
+      "face": "Arial",
+      "fontsize": 24,
+      "fillcolor": "BlueViolet",
       "color": "black"
     },
     "telegram": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
+      "face": "Arial",
+      "fontsize": 24,
+      "fillcolor": "DarkOliveGreen",
       "color": "black"
     },
     "tools": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
+      "face": "Arial",
+      "fontsize": 24,
+      "fillcolor": "Aqua",
       "color": "black"
     },
     "world": {
-      "face": "Courier New",
-      "fontsize": 36,
-      "fillcolor": "white",
+      "face": "Arial",
+      "fontsize": 24,
+      "fillcolor": "OliveDrab",
       "color": "black"
     },
-    "extends": "[arrowhead=onormal, penwidth=3, color=black]",
-    "owns": "[style=dotted,arrowhead=odiamond, penwidth=3,color=blue]"
+    "extends": "[arrowhead=onormal, penwidth=2, color=black]",
+    "owns": "[style=dotted,arrowhead=odiamond, penwidth=2,color=blue]"
   }
 }

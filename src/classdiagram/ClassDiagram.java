@@ -15,6 +15,8 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Graphics2D;
+import static java.awt.RenderingHints.KEY_ANTIALIASING;
+import static java.awt.RenderingHints.VALUE_ANTIALIAS_ON;
 import java.awt.event.ActionEvent;
 import java.awt.event.ItemEvent;
 import java.awt.event.KeyEvent;
@@ -50,7 +52,7 @@ import tools.emojis;
  */
 public class ClassDiagram {
 
-    static OleConfig myConfig, myProject, myPreferrences;
+    static OleConfig myConfig, myProject; //, myPreferrences;
     static OleApplication oMainFrame;
     static JPanel pSideTools, pStatus, pMain;
     static OleDrawPane opDiagram;
@@ -67,6 +69,7 @@ public class ClassDiagram {
     static int ppp = 150;
 
     static int rpaint = 0;
+    static OleDot ooutput;
 
     /**
      * @param args the command line arguments
@@ -96,6 +99,7 @@ public class ClassDiagram {
         };
         opDiagram = oMainFrame.getDrawingPane();
         osDiagram = oMainFrame.getScollPane();
+        ooutput = new OleDot();
     }
 
     /////// LISTENERS
@@ -113,11 +117,15 @@ public class ClassDiagram {
                 }
             }
         }
-        if (e.getActionCommand().equals("SelectResolution")) {
-            String newdpi = oMainFrame.inputSelect("Select resolution (dpi)", new String[]{"150", "300", "600", "1200"}, "150");
-            if (newdpi != null) {
-                ppp = Integer.parseInt(newdpi);
-                generateModel(myPreferrences, true);
+        if (e.getActionCommand().equals("SelectResolution")
+                || e.getActionCommand().equals("SelectArrows")
+                || e.getActionCommand().equals("SelectFont")) {
+            OleDialog odClasses = new OleDialog(oMainFrame, "Display");
+            odClasses.addActionListener((e2, c2) -> editProjectListener(e2, c2));
+            if (odClasses.run(myProject, "Display")) {
+                myProject = odClasses.getResult();
+                generateModel(myProject, true);
+                showProjectSummary();
             }
         }
         if (e.getActionCommand().equals("Exit")) {
@@ -142,6 +150,10 @@ public class ClassDiagram {
             oMainFrame.setTitle(projectFile);
             oMainFrame.showInfo("New empy project ");
             editProject();
+            osDiagram.setZoom(1);
+            ooutput.setWidth(16);
+            ooutput.setHeight(11);
+            generateModel(myProject, true);
         }
 
         if (e.getActionCommand().equals("SaveProject")) {
@@ -167,14 +179,18 @@ public class ClassDiagram {
                 }
             }
             if (openProject()) {
-//                editProject();
-                generateModel(myPreferrences, true);
+                osDiagram.setZoom(1);
+                ooutput.setWidth(16);
+                ooutput.setHeight(11);
+                generateModel(myProject, true);
                 showProjectSummary();
             }
         }
         if (e.getActionCommand().equals("ConfigureProject")) {
             if (projectFile != null) {
                 editProject();
+                generateModel(myProject, true);
+                showProjectSummary();
             } else {
                 oMainFrame.Error("No project found");
             }
@@ -188,39 +204,58 @@ public class ClassDiagram {
                 if (type != null) {
                     String mydotFile = projectFile.replace("projects/", "dot/").replace("prj", "dot");
                     OleDot.exportTo(mydotFile, type);
+                    oMainFrame.Info("export generated");
                 }
-              
+
             } else {
                 oMainFrame.Error("No project found");
             }
         }
 
+        if (e.getActionCommand().equals("GenerateModel")) {
+            generateModel(myProject, true);
+            showProjectSummary();
+            oMainFrame.Info("Model generated");
+        }
         if (e.getActionCommand().equals("SelectPackages")) {
-            OleConfig packagesList = new OleConfig();
-            packagesList.setField("[Reset packages]", "Reset Packages");
-            packagesList.setField("Packages list", new ArrayList(myPreferrences.getTab("Packages").getArray("Packages list")));
-
             OleDialog odPackages = new OleDialog(oMainFrame, "Select packages");
             odPackages.addActionListener((e2, c2) -> editProjectListener(e2, c2));
-            if (odPackages.run(packagesList)) {
-                packagesList = odPackages.getResult();
+            if (odPackages.run(myProject, "Packages")) {
+                myProject = odPackages.getResult();
+                generateModel(myProject, true);
+                showProjectSummary();
             }
-            myPreferrences.getTab("Packages").setField("Packages list", new ArrayList(packagesList.getArray("Packages list")));
-            generateModel(myPreferrences, true);
         }
 
         if (e.getActionCommand().equals("SelectClasses")) {
-            OleConfig ClassesList = new OleConfig();
-            ClassesList.setField("[Reset classes]", "Reset Classes");
-            ClassesList.setField("Classes list", new ArrayList(myPreferrences.getTab("Classes").getArray("Classes list")));
-
-            OleDialog odClasses = new OleDialog(oMainFrame, "Select Classes");
+            OleDialog odClasses = new OleDialog(oMainFrame, "Select classes");
             odClasses.addActionListener((e2, c2) -> editProjectListener(e2, c2));
-            if (odClasses.run(ClassesList)) {
-                ClassesList = odClasses.getResult();
+            if (odClasses.run(myProject, "Classes")) {
+                myProject = odClasses.getResult();
+                generateModel(myProject, true);
+                showProjectSummary();
             }
-            myPreferrences.getTab("Classes").setField("Classes list", new ArrayList(ClassesList.getArray("Classes list")));
-            generateModel(myPreferrences, true);
+
+        }
+        if (e.getActionCommand().equals("Thicker")) {
+            ooutput.setWidth(ooutput.getWidth() + 1);
+            generateModel(myProject, true);
+            showProjectSummary();
+        }
+        if (e.getActionCommand().equals("Narrower")) {
+            ooutput.setWidth(ooutput.getWidth() - 1);
+            generateModel(myProject, true);
+            showProjectSummary();
+        }
+        if (e.getActionCommand().equals("Taller")) {
+            ooutput.setHeight(ooutput.getHeight() + 1);
+            generateModel(myProject, true);
+            showProjectSummary();
+        }
+        if (e.getActionCommand().equals("Shorter")) {
+            ooutput.setHeight(ooutput.getHeight() - 1);
+            generateModel(myProject, true);
+            showProjectSummary();
         }
 
         if (e.getActionCommand()
@@ -239,7 +274,7 @@ public class ClassDiagram {
         } else if (e.getActionCommand().equals("[Scan classes]")) {
             scanClasses(olecfg);
         } else if (e.getActionCommand().equals("[Show methods]")) {
-            String classname = olecfg.getProperties().getOle("Classes list").getField("selected");
+            String classname = olecfg.getProperties().getOle("Classes found").getField("selected");
             if (classname != null && classname.length() > 0) {
                 ArrayList<String> alFileList = new ArrayList();
                 for (String s : allmethods.get(classname)) {
@@ -250,10 +285,26 @@ public class ClassDiagram {
             }
         } else if (e.getActionCommand().equals("[Scan packages]")) {
             scanPackages(olecfg);
+        } else if (e.getActionCommand().equals("[Select packages]")) {
+            for (String fpackage : new ArrayList<String>(olecfg.getProperties().getOle("Packages found").getArray("selected"))) {
+                if (!olecfg.getTab("Packages").getArray("Packages selected").contains(fpackage)) {
+                    olecfg.getTab("Packages").addToField("Packages selected", fpackage);
+                }
+            }
+
+        } else if (e.getActionCommand().equals("[Select classes]")) {
+            for (String fclass : new ArrayList<String>(olecfg.getProperties().getOle("Classes found").getArray("selected"))) {
+                if (!olecfg.getTab("Classes").getArray("Classes selected").contains(fclass)) {
+                    olecfg.getTab("Classes").addToField("Classes selected", fclass);
+                }
+                if (!olecfg.getTab("Classes").getArray("Show methods").contains(fclass)) {
+                    olecfg.getTab("Classes").addToField("Show methods", fclass);
+                }
+            }
         } else if (e.getActionCommand().equals("[Reset packages]")) {
-            olecfg.getTab("Packages").setField("Packages list", new ArrayList(myProject.getTab("Packages").getArray("Packages list")));
+            olecfg.getTab("Packages").setField("Packages found", new ArrayList(myProject.getTab("Packages").getArray("Packages found")));
         } else if (e.getActionCommand().equals("[Reset classes]")) {
-            olecfg.getTab("Classes").setField("Classes list", new ArrayList(myProject.getTab("Classes").getArray("Classes list")));
+            olecfg.getTab("Classes").setField("Classes found", new ArrayList(myProject.getTab("Classes").getArray("Classes found")));
             olecfg.getTab("Classes").setField("Show methods", new ArrayList(myProject.getTab("Classes").getArray("Show methods")));
         } else {
             oMainFrame.Error(e.getActionCommand() + " Undefined answer");
@@ -268,12 +319,12 @@ public class ClassDiagram {
 
     public static void scanPackages(OleConfig olecfg) {
         findAllPackages(olecfg.getTab("Sources").getArray("File list"), olecfg);
-        oMainFrame.Info("Found " + olecfg.getTab("Packages").getArray("Packages list").size() + " packages");
+        oMainFrame.Info("Found " + olecfg.getTab("Packages").getArray("Packages found").size() + " packages");
     }
 
     public static void scanClasses(OleConfig olecfg) {
-        findAllClasses(olecfg.getTab("Packages").getArray("Packages list"), olecfg);
-        oMainFrame.Info("Found " + olecfg.getTab("Classes").getArray("Classes list").size() + " classes");
+        findAllClasses(olecfg.getTab("Packages").getArray("Packages selected"), olecfg);
+        oMainFrame.Info("Found " + olecfg.getTab("Classes").getArray("Classes found").size() + " classes");
     }
 
     public static void editProject() {
@@ -283,9 +334,9 @@ public class ClassDiagram {
             myProject = odiag.getResult();
             oMainFrame.showInfo(" Project " + projectFile + " summary: "
                     + myProject.getTab("Sources").getArray("File list").size() + " files "
-                    + +myProject.getTab("Classes").getArray("Classes list").size() + " classes "
+                    + +myProject.getTab("Classes").getArray("Classes found").size() + " classes "
             );
-            myPreferrences = new OleConfig(myProject);
+            myProject = new OleConfig(myProject);
 
         }
     }
@@ -306,9 +357,8 @@ public class ClassDiagram {
             return false;
         }
         oMainFrame.setTitle(projectFile);
-        myPreferrences = new OleConfig(myProject);
-        findAll(myPreferrences);
-        myPreferrences = new OleConfig(myProject);
+        findAll(myProject);
+        myProject = new OleConfig(myProject);
         return true;
     }
 
@@ -348,6 +398,7 @@ public class ClassDiagram {
         allmethods = new HashMap();
         classusage = new HashMap();
         mapDiagram = null;
+        ooutput.clear();
     }
 
     public static void findFolder(String padding, String folder) throws IOException {
@@ -407,7 +458,7 @@ public class ClassDiagram {
         }
         // Reset usage counter
         for (String fromclass : files) {
-            classusage.put(fromclass, 0);
+            classusage.put(fromclass, 1);
         }
         oMainFrame.showProgress("Analyzing java dependencies");
         oMainFrame.showProgress("Analyzing classes and superclasses");
@@ -417,7 +468,7 @@ public class ClassDiagram {
             ssuperclass = getExtends(sclass);
             if (ssuperclass.length() > 0) {
                 if (classusage.get(ssuperclass) == null) {
-                    classusage.put(ssuperclass, 0);
+                    classusage.put(ssuperclass, 1);
                 }
                 oMainFrame.showProgress("   " + sclassname + " extends " + ssuperclass);
                 classusage.put(sclassname, classusage.get(sclassname) + 1);
@@ -487,7 +538,7 @@ public class ClassDiagram {
         }
         ArrayList<String> lAux = new ArrayList(allpackages);
         Collections.sort(lAux);
-        olecfg.getTab("Packages").setField("Packages list", new ArrayList(lAux));
+        olecfg.getTab("Packages").setField("Packages found", new ArrayList(lAux));
     }
 
     public static void findAllClasses(ArrayList<String> packages, OleConfig olecfg) {
@@ -501,19 +552,22 @@ public class ClassDiagram {
             if (!allclasses.contains(sclasscontent)) {
                 allclasses.add(sclasscontent);
 
-                ssuperclass = getExtends(sclass);
-                if (ssuperclass.length() > 0) {
-                    if (!allextends.keySet().contains(ssuperclass)) {
-                        allextends.put(ssuperclass, new ArrayList<String>());
-                    }
-                    allextends.get(ssuperclass).add(sclasscontent);
+            }
+            ssuperclass = getExtends(sclass);
+
+            if (ssuperclass.length() > 0) {
+                if (!allclasses.contains(ssuperclass)) {
+                    allclasses.add(ssuperclass);
                 }
+                if (!allextends.keySet().contains(ssuperclass)) {
+                    allextends.put(ssuperclass, new ArrayList<String>());
+                }
+                allextends.get(ssuperclass).add(sclasscontent);
             }
         }
         ArrayList<String> lAux = new ArrayList(allclasses);
         Collections.sort(lAux);
-        olecfg.getTab("Classes").setField("Classes list", new ArrayList(lAux));
-        olecfg.getTab("Classes").setField("Show methods", new ArrayList(lAux));
+        olecfg.getTab("Classes").setField("Classes found", new ArrayList(lAux));
     }
 
     public static void findAll(OleConfig olecfg) {
@@ -521,10 +575,17 @@ public class ClassDiagram {
     }
 
     public static void dumpJson(OleConfig olecfg, boolean simplified) {
-        OleDot ooutput = new OleDot();
+        HashMap<String, String> boxcolors = new HashMap();
+        ooutput.clear();
         Ole oclass, oformat, singleformat, orelation, omethods;
+        // Sets resolution
+        try {
+            ooutput.setResolution(Integer.parseInt(olecfg.getTab("Display").getOle("Output").getString("Resolution", "150")));
+        } catch (Exception Ex) {
+            ooutput.setResolution(150);
+        }
         // Remove unused classes
-        ooutput.setField("classtypes", new ArrayList(olecfg.getTab("Packages").getArray("Packages list")));
+        ooutput.setField("classtypes", new ArrayList(olecfg.getTab("Packages").getArray("Packages selected")));
         ArrayList<String> alaux = new ArrayList();
         alaux.add("extends");
         alaux.add("owns");
@@ -538,9 +599,10 @@ public class ClassDiagram {
             oMainFrame.showProgressFrame("Generating dot model", 1, 1000);
         }
         oMainFrame.showProgress("Exploring packages...");
-        ArrayList<String> prefPackages = new ArrayList<String>(olecfg.getTab("Packages").getArray("Packages list")),
-                prefClasses = new ArrayList<String>(olecfg.getTab("Classes").getArray("Classes list")),
+        ArrayList<String> prefPackages = new ArrayList<String>(olecfg.getTab("Packages").getArray("Packages selected")),
+                prefClasses = new ArrayList<String>(olecfg.getTab("Classes").getArray("Classes selected")),
                 methClasses = new ArrayList<String>(olecfg.getTab("Classes").getArray("Show methods"));
+
         for (String spackage : prefPackages) {
             oMainFrame.showProgress("     Package " + spackage);
             oclass.setField(spackage, new ArrayList(selectPreferred(allfullpackages.get(spackage), prefClasses)));
@@ -556,13 +618,14 @@ public class ClassDiagram {
             singleformat.setField("color", "black");
             oformat.setField(spackage, singleformat);
         }
+        // Add external classes
         orelation = new Ole();
         orelation.setField("extends", new ArrayList());
-//        oMainFrame.showProgress("Exploring subclasses...");
+        oMainFrame.showProgress("Exploring subclasses...");
         if (allextends.size() > 0) {
             ArrayList<String> prefParent = selectPreferred(new ArrayList<String>(allextends.keySet()), prefClasses);
             for (String ssuperclass : prefParent) {
-//                oMainFrame.showProgress("     Class " + ssuperclass + " " + allextends.get(ssuperclass));
+                oMainFrame.showProgress("     Class " + ssuperclass + " " + allextends.get(ssuperclass));
                 Ole oaux = new Ole().setField(ssuperclass, new ArrayList(selectPreferred(allextends.get(ssuperclass), prefClasses)));
                 orelation.addToField("extends", oaux);
             }
@@ -578,7 +641,7 @@ public class ClassDiagram {
         }
         ooutput.setField("relation", orelation);
 /// Methods
-        if (allmethods.size() > 0) {
+        if (allmethods.size() > 0 && olecfg.getTab("Classes").getBoolean("Include methods", false)) {
             orelation = new Ole();
             oMainFrame.showProgress("Exploring methods...");
             for (String ssuperclass : allmethods.keySet()) {
@@ -592,8 +655,15 @@ public class ClassDiagram {
 
         ooutput.setField("class", oclass);
         ooutput.setField("format", oformat);
-        ooutput.getOle("format").setField("extends", "[arrowhead=onormal,color=black]");
-        ooutput.getOle("format").setField("owns", "[style=dotted,arrowhead=odiamond,color=blue]");
+        int penwidth = olecfg.getTab("Display").getOle("Lines").getInt("Line width", 1);
+//        String colorline;
+//        if (olecfg.getTab("Display").getOle("Lines").getString("Line color", "Black & White").equals("Black & White")) {
+//            colorline= "black"; //allcolours[ncolor++]);
+//        } else {
+//            colorline = singleformat.getField("fillcolor");
+//        }
+        ooutput.getOle("format").setField("extends", "[arrowhead=onormal, penwidth=" + penwidth + ", color=black]");
+        ooutput.getOle("format").setField("owns", "[style=dotted,arrowhead=odiamond, penwidth=" + penwidth + ",color=blue]");
         oMainFrame.showProgress("Saving model file..." + modelFile);
         ooutput.saveAsFile(".", modelFile, true);
         dotFile = modelFile.replace("models", "dot").replace("mod", "dot");
@@ -644,7 +714,6 @@ public class ClassDiagram {
         }
         opDiagram.setPreferredSize(new Dimension(mapDiagram.getWidth(), mapDiagram.getHeight()));
         osDiagram.reset(opDiagram.getPreferredSize());
-        osDiagram.setZoom(1);
 //        opDiagram.repaint();
 //        osDiagram.repaint();
     }
@@ -654,13 +723,13 @@ public class ClassDiagram {
     }
 
     public static String getPackageName(String filename) {
-        return allfilebasher.get(filename).grepv("//").grep("package").sed("package *", "").sed(";", "").toString();
+        return allfilebasher.get(filename).grepv("//").grep("package ").sed("package *", "").sed(";", "").toString();
     }
 
     public static String getExtends(String filename) {
-        Basher aux = allfilebasher.get(filename).grepv("//").grep("extends");
+        Basher aux = allfilebasher.get(filename).grepv("//").grep("class ").grep(" extends ");
         if (aux.toString().length() > 0) {
-            return aux.grep("class").toString().replaceAll("public.*extends ", "").replaceAll("\\{.*", "").trim();
+            return aux.grep("class").toString().replaceAll("public.*extends ", "").replaceAll(" .*\\{.*", "").replaceAll("\\{.*", "").trim();
 //            return aux.sed("public class " + filename.replace("." + myConfig.getField("files"), "") + " extends ", "").toString().replaceAll(" *\\{.*", "");
         } else {
             return "";
@@ -706,12 +775,15 @@ public class ClassDiagram {
 
         for (String line : allfilebasher.get(filename).getList()) {
             if (bfirstmethod) {
-                if ((line.contains("public") || line.contains("private") || line.contains("protected"))
+                if ((line.contains("public") || line.contains("protected"))
                         && line.contains("(") && line.contains(")") && !line.contains("new") && !line.startsWith("//")) {
                     smethod = line;
                     smethod = smethod.replace("{", "");
+                    smethod = smethod.replace("public ", "");
+                    smethod = smethod.replace("protected ", "");
                     smethod = smethod.trim();
                     res.add(smethod);
+
 //                    System.out.println("Found method " + smethod);
                 }
             }
@@ -729,6 +801,7 @@ public class ClassDiagram {
         System.out.println("OleDrawPane Repaint " + rpaint++);
         if (mapDiagram != null) {
             opDiagram.clear();
+            myg.setRenderingHint(KEY_ANTIALIASING, VALUE_ANTIALIAS_ON);
             showProjectSummary();
             int nw = (int) (opDiagram.getPreferredSize().getWidth()),
                     nh = (int) (opDiagram.getPreferredSize().getHeight());
@@ -739,9 +812,10 @@ public class ClassDiagram {
     public static void showProjectSummary() {
         oMainFrame.showStatus(" Project " + projectFile + " "
                 + "     " + emojis.FOLDER + " " + myProject.getTab("Sources").getArray("File list").size() + " files"
-                + "     " + emojis.PACKAGE + " " + +myProject.getTab("Packages").getArray("Packages list").size() + " packages"
-                + "     " + emojis.CLASS + " " + +myProject.getTab("Classes").getArray("Classes list").size() + " classes"
+                + "     " + emojis.PACKAGE + " " + +myProject.getTab("Packages").getArray("Packages found").size() + " packages"
+                + "     " + emojis.CLASS + " " + +myProject.getTab("Classes").getArray("Classes found").size() + " classes"
                 + "           " + emojis.MAGNIFIER + " " + String.format("%3.1f", osDiagram.getZoom())
+                + "     " + String.format("%03dx%03d", ooutput.getWidth(), ooutput.getHeight())
         );
 
     }

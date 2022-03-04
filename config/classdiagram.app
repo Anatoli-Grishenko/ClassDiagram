@@ -24,7 +24,13 @@
             "SetZoom":{"button":"MAGNIFIER"},
             "SelectPackages":{"button":"PACKAGE"},
             "SelectClasses":{"button":"CLASS"},
-            "SelectResolution":{"button":"DPI"}
+            "SelectArrows":{"button":"ARROWS"},
+            "SelectFont":{"button":"FONT"},
+            "SelectResolution":{"button":"DPI"},
+            "Thicker":{"button":"THICKER"},
+            "Narrower":{"button":"NARROWER"},
+            "Taller":{"button":"TALLER"},
+            "Shorter":{"button":"SHORTER"}
         },
         "Default project":""
     },

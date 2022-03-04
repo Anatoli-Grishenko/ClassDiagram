@@ -44,7 +44,18 @@
     },
     "Packages": {
       "[Scan packages]": "ScanPackages",
-      "Packages list": [
+      "Packages found": [
+        "agents",
+        "crypto",
+        "data",
+        "database",
+        "factoryagent",
+        "larva",
+        "sessions",
+        "telegram"
+      ],
+      "[Select packages]":"SelectPackages",
+      "Packages selected": [
         "agents",
         "crypto",
         "data",
@@ -57,7 +68,7 @@
     },
     "Classes": {
       "[Scan classes]": "Scan classes",
-      "Classes list": [
+      "Classes found": [
         "ADMINMessage",
         "AdminCryptor",
         "AdminPassport",
@@ -88,6 +99,39 @@
         "TeamController",
         "WorldController"
       ],
+      "[Select classes]":"Select classes",
+      "Classes selected": [
+        "ADMINMessage",
+        "AdminCryptor",
+        "AdminPassport",
+        "DBA2021",
+        "DBA2122",
+        "DataBaser",
+        "DrDiagnostic",
+        "EmptyAgent",
+        "FactoryAgent",
+        "GMailer",
+        "Goku",
+        "HWManager",
+        "IdentityManager",
+        "LARVAAdminAgent",
+        "LARVABaseTelegram",
+        "LARVAEphemeral",
+        "LARVAPrivateTelegram",
+        "LARVAPublicTelegram",
+        "LARVAQueen",
+        "LARVATelegramBot",
+        "Mario",
+        "ProblemManager",
+        "ProductCoin",
+        "Session",
+        "SessionManager",
+        "SonGoanda",
+        "StoreManager",
+        "TeamController",
+        "WorldController"
+      ],
+      "Include methods":true,
       "Show methods": [
         "ADMINMessage",
         "AdminCryptor",
@@ -125,6 +169,13 @@
         "Font": "Arial",
         "Font size": 24,
         "Fill color": "Colored"
+      },
+      "Lines":{
+        "Line width":2,
+        "Line color":"Colored"
+      },
+      "Output":{
+        "Resolution":"150"
       }
     }
   },
@@ -133,7 +184,12 @@
       "tooltip": "Filter packages",
       "columns": 2
     },
-    "Packages list": {
+    "Packages found": {
+      "listtype": "string",
+      "multiple": true,
+      "rows": 5
+    },
+    "Packages selected": {
       "listtype": "string",
       "multiple": true,
       "rows": 5
@@ -168,6 +224,17 @@
         "Colored"
       ]
     },
+    "Line color":{
+        "tooltip":"Color of the lines",
+      "select": [
+        "Black & White",
+        "Colored"
+      ]
+    },
+    "Resolution":{
+        "tooltip": "Choose the resolution, in dpi, of the output",
+        "select":["150","300","600", "1200"]
+    },
     "Input folders": {
       "tooltip": "Select project folders",
       "listtype": "folder",
@@ -198,7 +265,7 @@
       "border": true,
       "Columns": 4
     },
-    "Classes list": {
+    "Classes found": {
       "listtype": "String",
       "selected": "SessionManager",
       "multiple": true,
@@ -207,7 +274,7 @@
     "Methods found": {
       "listtype": "String",
       "rows": 6,
-      "multiple": false,
+      "multiple": true,
       "selected": ""
     }
   }

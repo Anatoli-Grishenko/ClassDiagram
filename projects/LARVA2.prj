@@ -3,264 +3,142 @@
     "Sources": {
       "Input folders": [
         "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/LARVA/",
-        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.core/",
         "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.admin/"
       ],
       "Output folder": "dot/",
       "Source folders": "src",
       "File extension": "java",
+      "Which classes": "Referenced",
+      "[Scan files]": "Scan files",
       "File list": [
-        "ACLMessageTools",
         "ADMINMessage",
-        "AG3DDrawPane",
-        "AGDrawPane",
-        "AGFrame",
         "AdminCryptor",
         "AdminPassport",
-        "AirTrafficControl",
-        "Angular",
-        "Basher",
-        "BehaviourControl",
-        "Bitmap3D",
-        "Circle3D",
-        "Compass",
-        "Console",
-        "Cryptor",
         "DBA2021",
         "DBA2122",
-        "DBAAPI",
-        "DBAgent",
         "DataBaser",
-        "DeathStar",
-        "DeathStarDeLuxe",
         "DrDiagnostic",
         "EmptyAgent",
-        "Entity",
-        "Event",
         "FactoryAgent",
         "GMailer",
-        "Game",
-        "GameBitmap",
-        "GameCharacter",
-        "GameLabel",
-        "GameObject",
-        "GamePanel",
-        "GameScene",
         "Goku",
         "HWManager",
         "IdentityManager",
-        "Internet",
-        "JADEBoot",
-        "JDrawPane",
-        "Keygen",
-        "LARVA",
         "LARVAAdminAgent",
-        "LARVAAirTrafficControl3D",
-        "LARVAAirTrafficControlTiles",
-        "LARVABaseAgent",
         "LARVABaseTelegram",
-        "LARVABoot",
-        "LARVACompactDash",
-        "LARVADash",
-        "LARVADialog",
-        "LARVAEmbeddedDash",
         "LARVAEphemeral",
-        "LARVAFirstAgent",
-        "LARVAFrame",
-        "LARVAMiniDash",
         "LARVAPrivateTelegram",
         "LARVAPublicTelegram",
         "LARVAQueen",
         "LARVATelegramBot",
-        "Line3D",
-        "Logger",
-        "Map2DColor",
-        "Map2DColor_OLD",
-        "Map2DGrayscale",
-        "Map2DPalette",
         "Mario",
-        "Menu",
-        "MyDrawPane",
-        "MyList",
-        "MyMapPalPane",
-        "MyPlainButton",
-        "MyPopup",
-        "Object3D",
-        "Ole",
-        "OleApplication",
-        "OleConfig",
-        "OleDataBase",
-        "OleDialog",
-        "OleDot",
-        "OleDrawPane",
-        "OleFile",
-        "OleFrame",
-        "OleList",
-        "OleMenuBar",
-        "OlePassport",
-        "OleProgressFrame",
-        "OleQuery",
-        "OleReport",
-        "OleSensor",
-        "OleTable",
-        "Ontology",
-        "Palette",
-        "Perceptor",
-        "Point",
-        "Polygon3D",
         "ProblemManager",
         "ProductCoin",
-        "ReportableObject",
-        "Roles",
-        "RoundProgressBar",
-        "Scene3D",
-        "SendGMailSMTP",
-        "SensorDecoder",
-        "Sentence",
-        "SentenceBuilder",
-        "SequenceDiagram",
         "Session",
         "SessionManager",
         "SonGoanda",
-        "Sprite",
         "StoreManager",
-        "String3D",
-        "SwingTools",
         "TeamController",
-        "TelegramChat",
-        "TelegramChoice",
-        "TelegramMenu",
-        "TelegramMenuBar",
-        "TelegramMenuOption",
-        "TelegramUpdates",
-        "Thing",
-        "TimeHandler",
-        "TokenList",
-        "TradeFederation",
-        "Transform",
-        "Vector",
-        "World",
-        "WorldController",
-        "capability",
-        "direction",
-        "emojis",
-        "fileutils",
-        "liveBot",
-        "request",
-        "sensors"
-      ],
-      "[Scan files]": "Scan files"
+        "WorldController"
+      ]
     },
-    "Class diagram": {
-      "Which classes": "Referenced",
+    "Packages": {
+      "[Scan packages]": "ScanPackages",
+      "Packages found": [
+        "agents",
+        "crypto",
+        "data",
+        "database",
+        "factoryagent",
+        "larva",
+        "sessions",
+        "telegram"
+      ],
+      "[Select packages]": "SelectPackages",
+      "Packages selected": [
+        "data",
+        "larva"
+      ]
+    },
+    "Classes": {
       "[Scan classes]": "Scan classes",
       "Classes found": [
         "ADMINMessage",
-        "AG3DDrawPane",
-        "AGDrawPane",
         "AdminCryptor",
         "AdminPassport",
-        "AirTrafficControl",
-        "Bitmap3D",
-        "Cryptor",
         "DBA2021",
         "DBA2122",
         "DataBaser",
-        "DeathStar",
-        "DeathStarDeLuxe",
         "DrDiagnostic",
-        "Entity",
+        "EmptyAgent",
         "FactoryAgent",
         "GMailer",
-        "Game",
-        "GameBitmap",
-        "GameCharacter",
-        "GameLabel",
-        "GameObject",
-        "GameScene",
         "Goku",
         "HWManager",
         "IdentityManager",
-        "JADEBoot",
         "LARVAAdminAgent",
-        "LARVAAirTrafficControl3D",
-        "LARVAAirTrafficControlTiles",
-        "LARVABaseAgent",
         "LARVABaseTelegram",
-        "LARVABoot",
-        "LARVACompactDash",
-        "LARVADash",
-        "LARVAEmbeddedDash",
         "LARVAEphemeral",
-        "LARVAFirstAgent",
-        "LARVAMiniDash",
         "LARVAPrivateTelegram",
         "LARVAPublicTelegram",
         "LARVAQueen",
         "LARVATelegramBot",
-        "Line3D",
         "Mario",
-        "MyDrawPane",
-        "MyMapPalPane",
-        "Object3D",
-        "Ole",
-        "OleApplication",
-        "OleConfig",
-        "OleDataBase",
-        "OleDot",
-        "OleFile",
-        "OleFrame",
-        "OleList",
-        "OleMenuBar",
-        "OlePassport",
-        "OleProgressFrame",
-        "OleQuery",
-        "OleReport",
-        "OleSensor",
-        "OleTable",
-        "Perceptor",
-        "Polygon3D",
         "ProblemManager",
-        "Scene3D",
-        "SentenceBuilder",
+        "ProductCoin",
         "Session",
         "SessionManager",
         "SonGoanda",
         "StoreManager",
         "TeamController",
-        "Thing",
-        "TradeFederation",
-        "World",
-        "WorldController",
-        "emojis",
-        "liveBot"
+        "WorldController"
       ],
-      "[Show methods]": "Show methods",
-      "Methods found": [
-        "    protected void updateXUIAgent(String agentname) {",
-        "    protected void updateXUIGoals() {",
-        "    public Status loadWorld() {",
-        "    public Status processExecute(ACLMessage incoming) {",
-        "    public Status processJoin(ACLMessage incoming) {",
-        "    public Status processQuery(ACLMessage incoming) {",
-        "    public Status processRequest(ACLMessage incoming) {",
-        "    public void Execute() {",
-        "    public void processRegister(ACLMessage incoming) {",
-        "    public void takeDown() {"
+      "[Select classes]": "Select classes",
+      "Classes selected": [
+        "AdminCryptor",
+        "AdminPassport",
+        "DBA2122",
+        "DataBaser"
       ],
+      "Show methods": [
+        "AdminCryptor"
+      ]
+    },
+    "Display": {
       "Format": {
         "Font": "Arial",
         "Font size": 24,
         "Fill color": "Colored"
+      },
+      "Lines": {
+        "Line width": 2,
+        "Line color": "Colored"
+      },
+      "Output": {
+        "Resolution": "150"
       }
     }
   },
   "properties": {
+    "Packages": {
+      "tooltip": "Filter packages",
+      "columns": 2
+    },
+    "Packages found": {
+      "listtype": "string",
+      "multiple": true,
+      "rows": 5
+    },
+    "Packages selected": {
+      "listtype": "string",
+      "multiple": true,
+      "rows": 5
+    },
     "Sources": {
       "tooltip": "Select the source files to analyze"
     },
-    "Class diagram": {
-      "tooltip": "Generate the Class diagram model"
+    "Classes": {
+      "tooltip": "Generate the Classes model"
     },
     "Which classes": {
       "tooltip": "Select which classes are to be displayed",
@@ -286,14 +164,32 @@
         "Colored"
       ]
     },
+    "Line color": {
+      "tooltip": "Color of the lines",
+      "select": [
+        "Black & White",
+        "Colored"
+      ]
+    },
+    "Resolution": {
+      "tooltip": "Choose the resolution, in dpi, of the output",
+      "select": [
+        "150",
+        "300",
+        "600",
+        "1200"
+      ]
+    },
     "Input folders": {
       "tooltip": "Select project folders",
       "listtype": "folder",
+      "multiple": true,
       "selected": "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.admin/"
     },
     "File list": {
       "listtype": "file",
       "rows": 4,
+      "multiple": true,
       "selected": ""
     },
     "Output folder": {
@@ -316,12 +212,16 @@
     },
     "Classes found": {
       "listtype": "String",
-      "selected": "TeamController",
+      "selected": [
+        "DataBaser"
+      ],
+      "multiple": true,
       "rows": 6
     },
     "Methods found": {
       "listtype": "String",
       "rows": 6,
+      "multiple": true,
       "selected": ""
     }
   }
