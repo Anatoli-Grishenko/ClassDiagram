@@ -1,6 +1,0 @@
-{
-    "input":["../es.ugr.larva.core","../es.ugr.larva.admin","../LARVA"],
-    "output":"./dot",
-    "includefolders":"src",
-    "files":"java"
-}

@@ -1,0 +1,352 @@
+digraph graphname {
+     rankdir="BT"
+dpi=1200
+ratio="fill";
+ size="16,11!";
+ margin=0;
+AirTrafficControl AirTrafficControl [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>AirTrafficControl</b></FONT></td></tr>
+</table>>]
+Angular Angular [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Angular</b></FONT></td></tr>
+</table>>]
+JDrawPane JDrawPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>JDrawPane</b></FONT></td></tr>
+</table>>]
+LARVAAirTrafficControl3D LARVAAirTrafficControl3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVAAirTrafficControl3D</b></FONT></td></tr>
+</table>>]
+LARVAAirTrafficControlTiles LARVAAirTrafficControlTiles [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVAAirTrafficControlTiles</b></FONT></td></tr>
+</table>>]
+LARVACompactDash LARVACompactDash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVACompactDash</b></FONT></td></tr>
+</table>>]
+LARVADash LARVADash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVADash</b></FONT></td></tr>
+</table>>]
+LARVADialog LARVADialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVADialog</b></FONT></td></tr>
+</table>>]
+LARVAEmbeddedDash LARVAEmbeddedDash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVAEmbeddedDash</b></FONT></td></tr>
+</table>>]
+LARVAFrame LARVAFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVAFrame</b></FONT></td></tr>
+</table>>]
+LARVAMiniDash LARVAMiniDash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVAMiniDash</b></FONT></td></tr>
+</table>>]
+MyDrawPane MyDrawPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>MyDrawPane</b></FONT></td></tr>
+</table>>]
+MyMapPalPane MyMapPalPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>MyMapPalPane</b></FONT></td></tr>
+</table>>]
+MyPlainButton MyPlainButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>MyPlainButton</b></FONT></td></tr>
+</table>>]
+MyPopup MyPopup [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>MyPopup</b></FONT></td></tr>
+</table>>]
+OleList OleList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>OleList</b></FONT></td></tr>
+</table>>]
+RoundProgressBar RoundProgressBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>RoundProgressBar</b></FONT></td></tr>
+</table>>]
+SwingTools SwingTools [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>SwingTools</b></FONT></td></tr>
+</table>>]
+ADMINMessage ADMINMessage [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>ADMINMessage</b></FONT></td></tr>
+</table>>]
+BehaviourControl BehaviourControl [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>BehaviourControl</b></FONT></td></tr>
+</table>>]
+DeathStar DeathStar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>DeathStar</b></FONT></td></tr>
+</table>>]
+LARVAAdminAgent LARVAAdminAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVAAdminAgent</b></FONT></td></tr>
+</table>>]
+LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVABaseAgent</b></FONT></td></tr>
+</table>>]
+LARVABaseTelegram LARVABaseTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVABaseTelegram</b></FONT></td></tr>
+</table>>]
+LARVAEphemeral LARVAEphemeral [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVAEphemeral</b></FONT></td></tr>
+</table>>]
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVAFirstAgent</b></FONT></td></tr>
+</table>>]
+JADEBoot JADEBoot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>JADEBoot</b></FONT></td></tr>
+</table>>]
+LARVABoot LARVABoot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVABoot</b></FONT></td></tr>
+</table>>]
+Basher Basher [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Basher</b></FONT></td></tr>
+</table>>]
+Console Console [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Console</b></FONT></td></tr>
+</table>>]
+Menu Menu [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Menu</b></FONT></td></tr>
+</table>>]
+AdminCryptor AdminCryptor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>AdminCryptor</b></FONT></td></tr>
+</table>>]
+Cryptor Cryptor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Cryptor</b></FONT></td></tr>
+</table>>]
+Keygen Keygen [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Keygen</b></FONT></td></tr>
+</table>>]
+AdminPassport AdminPassport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>AdminPassport</b></FONT></td></tr>
+</table>>]
+Ole Ole [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Ole</b></FONT></td></tr>
+</table>>]
+OleFile OleFile [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>OleFile</b></FONT></td></tr>
+</table>>]
+OlePassport OlePassport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>OlePassport</b></FONT></td></tr>
+</table>>]
+OleQuery OleQuery [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>OleQuery</b></FONT></td></tr>
+</table>>]
+OleReport OleReport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>OleReport</b></FONT></td></tr>
+</table>>]
+OleSensor OleSensor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>OleSensor</b></FONT></td></tr>
+</table>>]
+OleSet OleSet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>OleSet</b></FONT></td></tr>
+</table>>]
+OleTable OleTable [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>OleTable</b></FONT></td></tr>
+</table>>]
+TokenList TokenList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>TokenList</b></FONT></td></tr>
+</table>>]
+DBA2122 DBA2122 [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>DBA2122</b></FONT></td></tr>
+</table>>]
+DBAgent DBAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>DBAgent</b></FONT></td></tr>
+</table>>]
+OleDataBase OleDataBase [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>OleDataBase</b></FONT></td></tr>
+</table>>]
+SentenceBuilder SentenceBuilder [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>SentenceBuilder</b></FONT></td></tr>
+</table>>]
+Logger Logger [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Logger</b></FONT></td></tr>
+</table>>]
+Compass Compass [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Compass</b></FONT></td></tr>
+</table>>]
+Entity Entity [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Entity</b></FONT></td></tr>
+</table>>]
+Point Point [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Point</b></FONT></td></tr>
+</table>>]
+Vector Vector [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Vector</b></FONT></td></tr>
+</table>>]
+DataBaser DataBaser [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>DataBaser</b></FONT></td></tr>
+</table>>]
+DrDiagnostic DrDiagnostic [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>DrDiagnostic</b></FONT></td></tr>
+</table>>]
+EmptyAgent EmptyAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>EmptyAgent</b></FONT></td></tr>
+</table>>]
+GMailer GMailer [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>GMailer</b></FONT></td></tr>
+</table>>]
+Goku Goku [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Goku</b></FONT></td></tr>
+</table>>]
+HWManager HWManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>HWManager</b></FONT></td></tr>
+</table>>]
+IdentityManager IdentityManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>IdentityManager</b></FONT></td></tr>
+</table>>]
+LARVA LARVA [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVA</b></FONT></td></tr>
+</table>>]
+LARVAPrivateTelegram LARVAPrivateTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVAPrivateTelegram</b></FONT></td></tr>
+</table>>]
+LARVAPublicTelegram LARVAPublicTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVAPublicTelegram</b></FONT></td></tr>
+</table>>]
+LARVAQueen LARVAQueen [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVAQueen</b></FONT></td></tr>
+</table>>]
+Mario Mario [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Mario</b></FONT></td></tr>
+</table>>]
+ProblemManager ProblemManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>ProblemManager</b></FONT></td></tr>
+</table>>]
+SessionManager SessionManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>SessionManager</b></FONT></td></tr>
+</table>>]
+SonGoanda SonGoanda [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>SonGoanda</b></FONT></td></tr>
+</table>>]
+StoreManager StoreManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>StoreManager</b></FONT></td></tr>
+</table>>]
+TeamController TeamController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>TeamController</b></FONT></td></tr>
+</table>>]
+WorldController WorldController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>WorldController</b></FONT></td></tr>
+</table>>]
+Map2DColor Map2DColor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Map2DColor</b></FONT></td></tr>
+</table>>]
+Map2DPalette Map2DPalette [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Map2DPalette</b></FONT></td></tr>
+</table>>]
+Palette Palette [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Palette</b></FONT></td></tr>
+</table>>]
+ACLMessageTools ACLMessageTools [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>ACLMessageTools</b></FONT></td></tr>
+</table>>]
+Sentence Sentence [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Sentence</b></FONT></td></tr>
+</table>>]
+SequenceDiagram SequenceDiagram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>SequenceDiagram</b></FONT></td></tr>
+</table>>]
+Ontology Ontology [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Ontology</b></FONT></td></tr>
+</table>>]
+Session Session [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Session</b></FONT></td></tr>
+</table>>]
+LARVATelegramBot LARVATelegramBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>LARVATelegramBot</b></FONT></td></tr>
+</table>>]
+TelegramChat TelegramChat [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>TelegramChat</b></FONT></td></tr>
+</table>>]
+TelegramChoice TelegramChoice [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>TelegramChoice</b></FONT></td></tr>
+</table>>]
+TelegramMenu TelegramMenu [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>TelegramMenu</b></FONT></td></tr>
+</table>>]
+TelegramMenuBar TelegramMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>TelegramMenuBar</b></FONT></td></tr>
+</table>>]
+TelegramMenuOption TelegramMenuOption [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>TelegramMenuOption</b></FONT></td></tr>
+</table>>]
+TelegramUpdates TelegramUpdates [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>TelegramUpdates</b></FONT></td></tr>
+</table>>]
+Internet Internet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Internet</b></FONT></td></tr>
+</table>>]
+ReportableObject ReportableObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>ReportableObject</b></FONT></td></tr>
+</table>>]
+SendGMailSMTP SendGMailSMTP [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>SendGMailSMTP</b></FONT></td></tr>
+</table>>]
+TimeHandler TimeHandler [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>TimeHandler</b></FONT></td></tr>
+</table>>]
+Perceptor Perceptor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Perceptor</b></FONT></td></tr>
+</table>>]
+SensorDecoder SensorDecoder [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>SensorDecoder</b></FONT></td></tr>
+</table>>]
+Thing Thing [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>Thing</b></FONT></td></tr>
+</table>>]
+World World [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>World</b></FONT></td></tr>
+</table>>]
+liveBot liveBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "36"><b>liveBot</b></FONT></td></tr>
+</table>>]
+DBA2122 -> OleDataBase [arrowhead=onormal, penwidth=3, color=black]
+LARVAPrivateTelegram -> LARVABaseTelegram [arrowhead=onormal, penwidth=3, color=black]
+LARVAPublicTelegram -> LARVABaseTelegram [arrowhead=onormal, penwidth=3, color=black]
+JDrawPane -> JPanel [arrowhead=onormal, penwidth=3, color=black]
+MyDrawPane -> JPanel [arrowhead=onormal, penwidth=3, color=black]
+Thing -> Entity [arrowhead=onormal, penwidth=3, color=black]
+AirTrafficControl -> MyDrawPane [arrowhead=onormal, penwidth=3, color=black]
+LARVAEmbeddedDash -> MyDrawPane [arrowhead=onormal, penwidth=3, color=black]
+MyMapPalPane -> MyDrawPane [arrowhead=onormal, penwidth=3, color=black]
+DeathStar -> LARVAFirstAgent [arrowhead=onormal, penwidth=3, color=black]
+MyPlainButton -> JButton [arrowhead=onormal, penwidth=3, color=black]
+Ole -> JsonObject [arrowhead=onormal, penwidth=3, color=black]
+OleFile -> Ole [arrowhead=onormal, penwidth=3, color=black]
+OlePassport -> Ole [arrowhead=onormal, penwidth=3, color=black]
+OleQuery -> Ole [arrowhead=onormal, penwidth=3, color=black]
+OleReport -> Ole [arrowhead=onormal, penwidth=3, color=black]
+OleSensor -> Ole [arrowhead=onormal, penwidth=3, color=black]
+OleSet -> Ole [arrowhead=onormal, penwidth=3, color=black]
+OleTable -> Ole [arrowhead=onormal, penwidth=3, color=black]
+LARVATelegramBot -> TelegramLongPollingBot [arrowhead=onormal, penwidth=3, color=black]
+LARVAAdminAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=3, color=black]
+LARVAFirstAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=3, color=black]
+LARVAFrame -> JFrame [arrowhead=onormal, penwidth=3, color=black]
+AdminPassport -> OlePassport [arrowhead=onormal, penwidth=3, color=black]
+AdminCryptor -> Cryptor [arrowhead=onormal, penwidth=3, color=black]
+SessionManager -> LARVAEphemeral [arrowhead=onormal, penwidth=3, color=black]
+StoreManager -> LARVAEphemeral [arrowhead=onormal, penwidth=3, color=black]
+liveBot -> Thing [arrowhead=onormal, penwidth=3, color=black]
+LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=3, color=black]
+Goku -> SessionManager [arrowhead=onormal, penwidth=3, color=black]
+HWManager -> SessionManager [arrowhead=onormal, penwidth=3, color=black]
+Mario -> SessionManager [arrowhead=onormal, penwidth=3, color=black]
+SonGoanda -> SessionManager [arrowhead=onormal, penwidth=3, color=black]
+TeamController -> SessionManager [arrowhead=onormal, penwidth=3, color=black]
+WorldController -> SessionManager [arrowhead=onormal, penwidth=3, color=black]
+LARVACompactDash -> LARVADash [arrowhead=onormal, penwidth=3, color=black]
+LARVAMiniDash -> LARVADash [arrowhead=onormal, penwidth=3, color=black]
+DataBaser -> LARVAAdminAgent [arrowhead=onormal, penwidth=3, color=black]
+DrDiagnostic -> LARVAAdminAgent [arrowhead=onormal, penwidth=3, color=black]
+EmptyAgent -> LARVAAdminAgent [arrowhead=onormal, penwidth=3, color=black]
+GMailer -> LARVAAdminAgent [arrowhead=onormal, penwidth=3, color=black]
+IdentityManager -> LARVAAdminAgent [arrowhead=onormal, penwidth=3, color=black]
+LARVABaseTelegram -> LARVAAdminAgent [arrowhead=onormal, penwidth=3, color=black]
+LARVAEphemeral -> LARVAAdminAgent [arrowhead=onormal, penwidth=3, color=black]
+LARVAQueen -> LARVAAdminAgent [arrowhead=onormal, penwidth=3, color=black]
+ProblemManager -> LARVAAdminAgent [arrowhead=onormal, penwidth=3, color=black]
+MyPopup -> JPopupMenu [arrowhead=onormal, penwidth=3, color=black]
+ADMINMessage -> ACLMessage [arrowhead=onormal, penwidth=3, color=black]
+LARVADialog -> JDialog [arrowhead=onormal, penwidth=3, color=black]
+OleList -> JList [arrowhead=onormal, penwidth=3, color=black]
+Cryptor -> Ole [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+SendGMailSMTP -> GMailer [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Ole -> TeamController [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+OleDataBase -> SentenceBuilder [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Point -> Vector [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+World -> Thing [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Map2DColor -> Thing [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Perceptor -> Thing [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+FactoryAgent -> LARVAQueen [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAFrame -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+MyDrawPane -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+MyPlainButton -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+MyMapPalPane -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Map2DColor -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+RoundProgressBar -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Angular -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+SensorDecoder -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TimeHandler -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Palette -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAAdminAgent -> FactoryAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Map2DColor -> MyMapPalPane [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+MyDrawPane -> MyMapPalPane [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Palette -> MyMapPalPane [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+MyPopup -> MyMapPalPane [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Point -> MyMapPalPane [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Session -> ProblemManager [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TelegramMenu -> TelegramMenuOption [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TelegramChoice -> TelegramMenuOption [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Logger -> LARVABoot [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAFrame -> LARVABoot [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+OleFile -> LARVABaseAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Logger -> LARVABaseAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAFrame -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+MyDrawPane -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+AirTrafficControl -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+SensorDecoder -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TimeHandler -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Palette -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAEmbeddedDash -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+OleFile -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TelegramChat -> LARVAPublicTelegram [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TelegramChat -> LARVAPrivateTelegram [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Console -> Menu [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAFrame -> MyPlainButton [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TimeHandler -> DrDiagnostic [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TelegramUpdates -> LARVATelegramBot [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAAdminAgent -> LARVATelegramBot [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+SensorDecoder -> LARVAEmbeddedDash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+RoundProgressBar -> LARVAEmbeddedDash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Angular -> LARVAEmbeddedDash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TimeHandler -> LARVAEmbeddedDash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+MyDrawPane -> LARVAEmbeddedDash [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Ole -> WorldController [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAFrame -> LARVAFirstAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVADash -> LARVAFirstAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+SequenceDiagram -> LARVAFirstAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+OleSet -> LARVAFirstAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Logger -> JADEBoot [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Thing -> World [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Ontology -> World [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TelegramMenuOption -> TelegramMenuBar [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TelegramMenu -> TelegramMenuBar [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+FactoryAgent -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+DBA2122 -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+BehaviourControl -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+ReportableObject -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+AdminCryptor -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+OleSet -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Ole -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Session -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TimeHandler -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Sentence -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Ole -> DBA2122 [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+OleTable -> DBA2122 [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+OleSet -> DBA2122 [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAFrame -> LARVAAirTrafficControl3D [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+SensorDecoder -> LARVAAirTrafficControl3D [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TimeHandler -> LARVAAirTrafficControl3D [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Palette -> LARVAAirTrafficControl3D [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAEmbeddedDash -> LARVAAirTrafficControl3D [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+OleFile -> LARVAAirTrafficControl3D [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Ole -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Logger -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+OleTable -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+SentenceBuilder -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Point -> liveBot [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Thing -> liveBot [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+TelegramChat -> TelegramUpdates [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAMiniDash -> DeathStar [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAAirTrafficControlTiles -> DeathStar [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Map2DColor -> SensorDecoder [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+LARVAAdminAgent -> ADMINMessage [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Thing -> Perceptor [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Map2DColor -> AirTrafficControl [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+MyDrawPane -> AirTrafficControl [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Palette -> AirTrafficControl [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+MyPopup -> AirTrafficControl [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+DBA2122 -> Session [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+OleSet -> Session [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Logger -> Session [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+World -> Session [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Map2DColor -> Session [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+Ole -> Session [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+liveBot -> Session [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+SensorDecoder -> Session [style=dotted,arrowhead=odiamond, penwidth=3,color=blue]
+}

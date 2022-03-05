@@ -1,0 +1,281 @@
+{
+  "options": {
+    "Sources": {
+      "Input folders": [
+        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/LARVA/",
+        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.admin/"
+      ],
+      "Output folder": "dot/",
+      "Source folders": "src",
+      "File extension": "java",
+      "Which classes": "Referenced",
+      "[Scan files]": "Scan files",
+      "File list": [
+        "ADMINMessage",
+        "AdminCryptor",
+        "AdminPassport",
+        "DBA2021",
+        "DBA2122",
+        "DataBaser",
+        "DrDiagnostic",
+        "EmptyAgent",
+        "FactoryAgent",
+        "GMailer",
+        "Goku",
+        "HWManager",
+        "IdentityManager",
+        "LARVAAdminAgent",
+        "LARVABaseTelegram",
+        "LARVAEphemeral",
+        "LARVAPrivateTelegram",
+        "LARVAPublicTelegram",
+        "LARVAQueen",
+        "LARVATelegramBot",
+        "Mario",
+        "ProblemManager",
+        "ProductCoin",
+        "Session",
+        "SessionManager",
+        "SonGoanda",
+        "StoreManager",
+        "TeamController",
+        "WorldController"
+      ]
+    },
+    "Packages": {
+      "[Scan packages]": "ScanPackages",
+      "Packages found": [
+        "agents",
+        "crypto",
+        "data",
+        "database",
+        "factoryagent",
+        "larva",
+        "sessions",
+        "telegram"
+      ],
+      "[Select packages]":"SelectPackages",
+      "Packages selected": [
+        "agents",
+        "crypto",
+        "data",
+        "database",
+        "factoryagent",
+        "larva",
+        "sessions",
+        "telegram"
+      ]
+    },
+    "Classes": {
+      "[Scan classes]": "Scan classes",
+      "Classes found": [
+        "ADMINMessage",
+        "AdminCryptor",
+        "AdminPassport",
+        "DBA2021",
+        "DBA2122",
+        "DataBaser",
+        "DrDiagnostic",
+        "EmptyAgent",
+        "FactoryAgent",
+        "GMailer",
+        "Goku",
+        "HWManager",
+        "IdentityManager",
+        "LARVAAdminAgent",
+        "LARVABaseTelegram",
+        "LARVAEphemeral",
+        "LARVAPrivateTelegram",
+        "LARVAPublicTelegram",
+        "LARVAQueen",
+        "LARVATelegramBot",
+        "Mario",
+        "ProblemManager",
+        "ProductCoin",
+        "Session",
+        "SessionManager",
+        "SonGoanda",
+        "StoreManager",
+        "TeamController",
+        "WorldController"
+      ],
+      "[Select classes]":"Select classes",
+      "Classes selected": [
+        "ADMINMessage",
+        "AdminCryptor",
+        "AdminPassport",
+        "DBA2021",
+        "DBA2122",
+        "DataBaser",
+        "DrDiagnostic",
+        "EmptyAgent",
+        "FactoryAgent",
+        "GMailer",
+        "Goku",
+        "HWManager",
+        "IdentityManager",
+        "LARVAAdminAgent",
+        "LARVABaseTelegram",
+        "LARVAEphemeral",
+        "LARVAPrivateTelegram",
+        "LARVAPublicTelegram",
+        "LARVAQueen",
+        "LARVATelegramBot",
+        "Mario",
+        "ProblemManager",
+        "ProductCoin",
+        "Session",
+        "SessionManager",
+        "SonGoanda",
+        "StoreManager",
+        "TeamController",
+        "WorldController"
+      ],
+      "Include methods":true,
+      "Show methods": [
+        "ADMINMessage",
+        "AdminCryptor",
+        "AdminPassport",
+        "DBA2021",
+        "DBA2122",
+        "DataBaser",
+        "DrDiagnostic",
+        "EmptyAgent",
+        "FactoryAgent",
+        "GMailer",
+        "Goku",
+        "HWManager",
+        "IdentityManager",
+        "LARVAAdminAgent",
+        "LARVABaseTelegram",
+        "LARVAEphemeral",
+        "LARVAPrivateTelegram",
+        "LARVAPublicTelegram",
+        "LARVAQueen",
+        "LARVATelegramBot",
+        "Mario",
+        "ProblemManager",
+        "ProductCoin",
+        "Session",
+        "SessionManager",
+        "SonGoanda",
+        "StoreManager",
+        "TeamController",
+        "WorldController"
+      ]
+    },
+    "Display": {
+      "Format": {
+        "Font": "Arial",
+        "Font size": 24,
+        "Fill color": "Colored"
+      },
+      "Lines":{
+        "Line width":2,
+        "Line color":"Colored"
+      },
+      "Output":{
+        "Resolution":"150"
+      }
+    }
+  },
+  "properties": {
+    "Packages": {
+      "tooltip": "Filter packages",
+      "columns": 2
+    },
+    "Packages found": {
+      "listtype": "string",
+      "multiple": true,
+      "rows": 5
+    },
+    "Packages selected": {
+      "listtype": "string",
+      "multiple": true,
+      "rows": 5
+    },
+    "Sources": {
+      "tooltip": "Select the source files to analyze"
+    },
+    "Classes": {
+      "tooltip": "Generate the Classes model"
+    },
+    "Which classes": {
+      "tooltip": "Select which classes are to be displayed",
+      "select": [
+        "All",
+        "Referenced"
+      ]
+    },
+    "Font": {
+      "tooltip": "For to be used",
+      "select": [
+        "Arial",
+        "Courier New"
+      ]
+    },
+    "Font size": {
+      "tooltip": "Size of the font to be used"
+    },
+    "Fill color": {
+      "tooltip": "Color of the head of each class",
+      "select": [
+        "Black & White",
+        "Colored"
+      ]
+    },
+    "Line color":{
+        "tooltip":"Color of the lines",
+      "select": [
+        "Black & White",
+        "Colored"
+      ]
+    },
+    "Resolution":{
+        "tooltip": "Choose the resolution, in dpi, of the output",
+        "select":["150","300","600", "1200"]
+    },
+    "Input folders": {
+      "tooltip": "Select project folders",
+      "listtype": "folder",
+      "multiple": true,
+      "selected": "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.admin/"
+    },
+    "File list": {
+      "listtype": "file",
+      "rows": 4,
+      "multiple": true,
+      "selected": ""
+    },
+    "Output folder": {
+      "tooltip": "Select the folder to output charts",
+      "folder": ""
+    },
+    "Source folders": {
+      "tooltip": "Only the folders that contains source code",
+      "select": [
+        "all",
+        "src"
+      ]
+    },
+    "File extension": {
+      "tooltip": "Which type of files (language) will be included"
+    },
+    "Format": {
+      "border": true,
+      "Columns": 4
+    },
+    "Classes found": {
+      "listtype": "String",
+      "selected": "SessionManager",
+      "multiple": true,
+      "rows": 6
+    },
+    "Methods found": {
+      "listtype": "String",
+      "rows": 6,
+      "multiple": true,
+      "selected": ""
+    }
+  }
+}

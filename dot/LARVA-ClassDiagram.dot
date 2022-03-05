@@ -1,0 +1,216 @@
+digraph graphname {
+     rankdir="BT"
+dpi=300
+ size="16,11!";
+ margin=0;
+Ole Ole [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>Ole</b></FONT></td></tr>
+</table>>]
+OleConfig OleConfig [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleConfig</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i><b>OleConfig</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>Ole <b>getProperties</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>Ole <b>getProperties</b>(String sfield)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>Ole <b>getOptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>List&lt;String&gt; <b>getTabList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>int <b>numTabs</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>List&lt;String&gt; <b>getAllTabNames</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>Ole <b>getTab</b>(String stab)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>List&lt;String&gt; <b>getAllTabFields</b>(String stab)</i></FONT></td></tr>
+</table>>]
+OleDot OleDot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleDot</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i><b>OleDot</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>setResolution</b>(int ppp)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>boolean <b>isFill</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>setFill</b>(boolean fill)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>int <b>getWidth</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>int <b>getHeight</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>setWidth</b>(int width)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>setHeight</b>(int height)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>static void <b>exportTo</b>(String dotFile, String type)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>toDot</b>(String dotfilename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>recursiveTree</b>(Ole classname, PrintStream output)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>static String <b>highlight</b>(String s)</i></FONT></td></tr>
+</table>>]
+OleFile OleFile [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleFile</b></FONT></td></tr>
+</table>>]
+OlePassport OlePassport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OlePassport</b></FONT></td></tr>
+</table>>]
+OleQuery OleQuery [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleQuery</b></FONT></td></tr>
+</table>>]
+OleReport OleReport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleReport</b></FONT></td></tr>
+</table>>]
+OleSensor OleSensor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleSensor</b></FONT></td></tr>
+</table>>]
+OleSet OleSet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleSet</b></FONT></td></tr>
+</table>>]
+OleTable OleTable [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleTable</b></FONT></td></tr>
+</table>>]
+OleApplication OleApplication [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleApplication</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleApplication <b>init</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>OleDraw</b>(Graphics2D g)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleBitmapPane <b>getScollPane</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleDrawPane <b>getDrawingPane</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>JPanel <b>getMainPanel</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>abstract void <b>Draw</b>(Graphics2D g);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>addLabel</b>(Container con, String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>addLabel</b>(Container con, String s, Color col)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>LayoutManager <b>defLayout</b>(Container c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>abstract void <b>myActionListener</b>(ActionEvent e);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>abstract void <b>myKeyListener</b>(KeyEvent e);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>keyTyped</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>keyPressed</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>keyReleased</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>cleanStatus</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>showStatus</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>showInfo</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>showWarning</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>showError</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>showProgressFrame</b>(String what, int value, int max)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>myActionListener</b>(ActionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>myKeyListener</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>keyTyped</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>keyPressed</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>keyReleased</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>showProgress</b>(String what, int value, int max)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>showProgress</b>(String what, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>showProgress</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>closeProgress</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>Info</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>Warning</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>Error</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>String <b>inputLine</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>String <b>inputSelect</b>(String message, String[] options, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>boolean <b>Confirm</b>(String message)</i></FONT></td></tr>
+</table>>]
+OleBitmapPane OleBitmapPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleBitmapPane</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>mouseDragged</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>mouseMoved</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>mouseWheelMoved</b>(MouseWheelEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>mouseClicked</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>mousePressed</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>mouseReleased</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>mouseEntered</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>mouseExited</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>clear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>reset</b>(Dimension d)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>JPanel <b>getOleDrawPane</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>setZoom</b>(double z)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>double <b>getZoom</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>zoomIn</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>zoomOut</b>()</i></FONT></td></tr>
+</table>>]
+OleButton OleButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleButton</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>mouseEntered</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>mouseExited</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>setEnabled</b>(boolean b)</i></FONT></td></tr>
+</table>>]
+OleDialog OleDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleDialog</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>static String <b>doSaveAsFile</b>(String currentfolder)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>static String <b>doSelectFolder</b>(String currentfolder)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i><b>OleDialog</b>(JFrame parent, String title)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleDialog <b>addActionListener</b>(BiConsumer&lt;ActionEvent, OleConfig&gt; l)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>boolean <b>run</b>(OleConfig o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>boolean <b>run</b>(OleConfig o, String defaulttab)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleConfig <b>getResult</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>setLayout</b>(OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>JPanel <b>setLayout</b>(String oid, Ole ocomponents, OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>setValues</b>(OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>setValues</b>(String oid, Ole ocomponents, OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleConfig <b>getValues</b>(OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleConfig <b>getValues</b>(Ole currentTab, OleConfig olecfg)</i></FONT></td></tr>
+</table>>]
+OleDrawPane OleDrawPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleDrawPane</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>paintComponent</b>(Graphics g)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>clear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>Graphics2D <b>canvas</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>abstract void <b>OleDraw</b>(Graphics2D g);</i></FONT></td></tr>
+</table>>]
+OleFrame OleFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleFrame</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i><b>OleFrame</b>(OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleFrame <b>init</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>abstract void <b>myActionListener</b>(ActionEvent e);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>abstract void <b>myKeyListener</b>(KeyEvent e);</i></FONT></td></tr>
+</table>>]
+OleList OleList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleList</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleList <b>init</b>(OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleList <b>addElement</b>(String element)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleList <b>addAllElements</b>(ArrayList&lt;String&gt; elements)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleList <b>removeElement</b>(int pos)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleList <b>removeElement</b>(String element)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>OleList <b>clear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>DefaultListModel <b>getListMode</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>JScrollPane <b>getPane</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>JButton <b>getAddButton</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>JButton <b>getRemoveButton</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>valueChanged</b>(ListSelectionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+</table>>]
+OleMenuBar OleMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleMenuBar</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>JMenu <b>addMenu</b>(String name, OleConfig omenu)</i></FONT></td></tr>
+</table>>]
+OleToolBar OleToolBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleToolBar</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JButton</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+JScrollPane JScrollPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JScrollPane</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JButton</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JList JList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JList</b></FONT></td></tr>
+</table>>]
+JMenuBar JMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JMenuBar</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JPanel</b></FONT></td></tr>
+</table>>]
+OleBitmapPane -> JScrollPane [arrowhead=onormal, penwidth=2, color=black]
+OleDrawPane -> JPanel [arrowhead=onormal, penwidth=2, color=black]
+OleToolBar -> JPanel [arrowhead=onormal, penwidth=2, color=black]
+OleApplication -> OleFrame [arrowhead=onormal, penwidth=2, color=black]
+OleButton -> JButton [arrowhead=onormal, penwidth=2, color=black]
+Ole -> JsonObject [arrowhead=onormal, penwidth=2, color=black]
+OleConfig -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OleDot -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OleFile -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OlePassport -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OleQuery -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OleReport -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OleSensor -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OleSet -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OleTable -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OleFrame -> JFrame [arrowhead=onormal, penwidth=2, color=black]
+OleDialog -> JDialog [arrowhead=onormal, penwidth=2, color=black]
+OleList -> JList [arrowhead=onormal, penwidth=2, color=black]
+OleMenuBar -> JMenuBar [arrowhead=onormal, penwidth=2, color=black]
+OleFrame -> OleMenuBar [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleConfig -> OleMenuBar [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleApplication -> OleButton [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleConfig -> OleDialog [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleFrame -> OleToolBar [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleApplication -> OleToolBar [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleConfig -> OleToolBar [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Ole -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleTable -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleDrawPane -> OleBitmapPane [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+}

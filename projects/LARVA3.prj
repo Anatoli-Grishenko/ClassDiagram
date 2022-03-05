@@ -1,0 +1,119 @@
+{
+  "options": {
+    "Sources": {
+      "Input folders": [
+        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/LARVA/"
+      ],
+      "Output folder": "dot/",
+      "Source folders": "src",
+      "File extension": "java",
+      "Which classes": "Referenced",
+      "[Scan files]": "Scan files",
+      "File list": [
+        
+      ]
+    },
+    "Packages": {
+      "[Scan packages]": "ScanPackages",
+      "Packages list": [
+        
+      ]
+    },
+    "Classes": {
+      "[Scan classes]": "Scan classes",
+      "Classes list": [
+        
+      ]
+    },
+    "Display": {
+      "Format": {
+        "Font": "Arial",
+        "Font size": 24,
+        "Fill color": "Colored"
+      }
+    }
+  },
+  "properties": {
+    "Packages": {
+      "tooltip": "Filter packages",
+      "columns": 2
+    },
+    "Packages list": {
+      "listtype": "string",
+      "multiple": true,
+      "rows": 5
+    },
+    "Sources": {
+      "tooltip": "Select the source files to analyze"
+    },
+    "Classes": {
+      "tooltip": "Generate the Classes model"
+    },
+    "Which classes": {
+      "tooltip": "Select which classes are to be displayed",
+      "select": [
+        "All",
+        "Referenced"
+      ]
+    },
+    "Font": {
+      "tooltip": "For to be used",
+      "select": [
+        "Arial",
+        "Courier New"
+      ]
+    },
+    "Font size": {
+      "tooltip": "Size of the font to be used"
+    },
+    "Fill color": {
+      "tooltip": "Color of the head of each class",
+      "select": [
+        "Black & White",
+        "Colored"
+      ]
+    },
+    "Input folders": {
+      "tooltip": "Select project folders",
+      "listtype": "folder",
+      "multiple": true,
+      "selected": "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.admin/"
+    },
+    "File list": {
+      "listtype": "file",
+      "rows": 4,
+      "multiple": true,
+      "selected": ""
+    },
+    "Output folder": {
+      "tooltip": "Select the folder to output charts",
+      "folder": ""
+    },
+    "Source folders": {
+      "tooltip": "Only the folders that contains source code",
+      "select": [
+        "all",
+        "src"
+      ]
+    },
+    "File extension": {
+      "tooltip": "Which type of files (language) will be included"
+    },
+    "Format": {
+      "border": true,
+      "Columns": 4
+    },
+    "Classes list": {
+      "listtype": "String",
+      "selected": "SessionManager",
+      "multiple": true,
+      "rows": 6
+    },
+    "Methods found": {
+      "listtype": "String",
+      "rows": 6,
+      "multiple": false,
+      "selected": ""
+    }
+  }
+}

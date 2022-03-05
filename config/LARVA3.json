@@ -1,0 +1,157 @@
+{
+  "options": {
+    "Sources": {
+      "Input folders": [
+        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/LARVA/"
+      ],
+      "Output folder": "dot/",
+      "Source folders": "src",
+      "File extension": "java",
+      "File list": [
+        "DataBaser",
+        "DrDiagnostic",
+        "EmptyAgent",
+        "GMailer",
+        "Goku",
+        "HWManager",
+        "IdentityManager",
+        "LARVA",
+        "LARVAPrivateTelegram",
+        "LARVAPublicTelegram",
+        "LARVAQueen",
+        "Mario",
+        "ProblemManager",
+        "SessionManager",
+        "SonGoanda",
+        "StoreManager",
+        "TeamController",
+        "WorldController"
+      ],
+      "[Scan files]": "Scan files"
+    },
+    "View": {
+      "Items to display": {
+        "Which classes": "All",
+        "Hierarchy": true,
+        "Data members": true,
+        "Methods": true
+      },
+      "Display options": {
+        "Font": "Arial",
+        "Font size": 24,
+        "Fill color": "Black & White"
+      }
+    },
+    "Classes": {
+      "Classes found": [
+        "DataBaser",
+        "DrDiagnostic",
+        "EmptyAgent",
+        "GMailer",
+        "Goku",
+        "HWManager",
+        "IdentityManager",
+        "LARVA",
+        "LARVAPrivateTelegram",
+        "LARVAPublicTelegram",
+        "LARVAQueen",
+        "Mario",
+        "ProblemManager",
+        "SessionManager",
+        "SonGoanda",
+        "StoreManager",
+        "TeamController",
+        "WorldController"
+      ],
+      "[Scan classes]": "Scan classes",
+      "Select class": "DataBaser",
+      "[Show methods]": "Show methods",
+      "Methods found": [
+        
+      ]
+    }
+  },
+  "properties": {
+    "Sources": {
+      "tooltip": "Select the sources to analyze"
+    },
+    "View": {
+      "tooltip": "Select what and how you want to see displayed"
+    },
+    "Which classes": {
+      "tooltip": "Select which classes are to be displayed",
+      "select": [
+        "All",
+        "Referenced"
+      ]
+    },
+    "Hierarchy": {
+      "tooltip": "Show relation 'extends'"
+    },
+    "Data members": {
+      "tooltip": "Show relation 'is-part-of'"
+    },
+    "Methods": {
+      "tooltip": "Show methods"
+    },
+    "Font": {
+      "tooltip": "For to be used",
+      "select": [
+        "Arial",
+        "Courier New"
+      ]
+    },
+    "Font size": {
+      "tooltip": "Size of the font to be used"
+    },
+    "Fill color": {
+      "tooltip": "Color of the head of each class",
+      "select": [
+        "Black & White",
+        "Colored"
+      ]
+    },
+    "Input folders": {
+      "tooltip": "Select project folders",
+      "listtype": "folder"
+    },
+    "File list": {
+      "tooltip": "Select project folders",
+      "listtype": "files",
+      "selected": "DataBaser"
+    },
+    "Output folder": {
+      "tooltip": "Select the folder to output charts",
+      "folder": ""
+    },
+    "Source folders": {
+      "tooltip": "Only the folders that contains source code",
+      "select": [
+        "all",
+        "src"
+      ]
+    },
+    "File extension": {
+      "tooltip": "Which type of files will be included"
+    },
+    "Items to display": {
+      "border": true
+    },
+    "Display options": {
+      "border": true
+    },
+    "Classes found": {
+      "listtype": "String",
+      "selected": "LARVA",
+      "rows": 6
+    },
+    "Select class": {
+      "select": [
+        "none"
+      ]
+    },
+    "Methods found": {
+      "listtype": "String"
+    }
+  }
+}

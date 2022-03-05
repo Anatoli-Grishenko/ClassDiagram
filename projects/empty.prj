@@ -1,0 +1,166 @@
+{
+  "options": {
+    "Sources": {
+      "Input folders": [
+        
+      ],
+      "Output folder": "dot/",
+      "Source folders": "src",
+      "File extension": "java",
+      "Which classes": "Referenced",
+      "[Scan files]": "Scan files",
+      "File list": [
+        
+      ]
+    },
+    "Packages": {
+      "[Scan packages]": "ScanPackages",
+      "Packages found": [
+        
+      ],
+      "[Select packages]": "SelectPackages",
+      "Packages selected": [
+        
+      ]
+    },
+    "Classes": {
+      "[Scan classes]": "Scan classes",
+      "Classes found": [
+        
+      ],
+      "[Select classes]": "Select classes",
+      "Classes selected": [
+        
+      ],
+      "Include methods": true,
+      "Show methods": [
+        
+      ]
+    },
+    "Display": {
+      "Format": {
+        "Font": "Courier New",
+        "Font size": 24,
+        "Fill color": "Black & White"
+      },
+      "Lines": {
+        "Line width": 2,
+        "Line color": "Colored"
+      },
+      "Output": {
+        "Resolution": "300"
+      }
+    }
+  },
+  "properties": {
+    "Packages": {
+      "tooltip": "Filter packages",
+      "columns": 2
+    },
+    "Packages found": {
+      "listtype": "string",
+      "multiple": true,
+      "rows": 5,
+      "selected": [
+        "swing"
+      ]
+    },
+    "Packages selected": {
+      "listtype": "string",
+      "multiple": true,
+      "rows": 5
+    },
+    "Sources": {
+      "tooltip": "Select the source files to analyze"
+    },
+    "Classes": {
+      "tooltip": "Generate the Classes model"
+    },
+    "Which classes": {
+      "tooltip": "Select which classes are to be displayed",
+      "select": [
+        "All",
+        "Referenced"
+      ]
+    },
+    "Font": {
+      "tooltip": "For to be used",
+      "select": [
+        "Arial",
+        "Courier New"
+      ]
+    },
+    "Font size": {
+      "tooltip": "Size of the font to be used"
+    },
+    "Fill color": {
+      "tooltip": "Color of the head of each class",
+      "select": [
+        "Black & White",
+        "Colored"
+      ]
+    },
+    "Line color": {
+      "tooltip": "Color of the lines",
+      "select": [
+        "Black & White",
+        "Colored"
+      ]
+    },
+    "Resolution": {
+      "tooltip": "Choose the resolution, in dpi, of the output",
+      "select": [
+        "150",
+        "300",
+        "600",
+        "1200"
+      ]
+    },
+    "Input folders": {
+      "tooltip": "Select project folders",
+      "listtype": "folder",
+      "multiple": true,
+      "selected": [
+        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.core/"
+      ]
+    },
+    "File list": {
+      "listtype": "file",
+      "rows": 4,
+      "multiple": true,
+      "selected": ""
+    },
+    "Output folder": {
+      "tooltip": "Select the folder to output charts",
+      "folder": ""
+    },
+    "Source folders": {
+      "tooltip": "Only the folders that contains source code",
+      "select": [
+        "all",
+        "src"
+      ]
+    },
+    "File extension": {
+      "tooltip": "Which type of files (language) will be included"
+    },
+    "Format": {
+      "border": true,
+      "Columns": 4
+    },
+    "Classes found": {
+      "listtype": "String",
+      "selected": [
+        "JsonObject"
+      ],
+      "multiple": true,
+      "rows": 6
+    },
+    "Methods found": {
+      "listtype": "String",
+      "rows": 6,
+      "multiple": true,
+      "selected": ""
+    }
+  }
+}

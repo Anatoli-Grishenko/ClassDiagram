@@ -1,0 +1,10 @@
+digraph graphname {
+     rankdir="BT"
+dpi=150
+ size="16,11!";
+ margin=0;
+AdminPassport AdminPassport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Arial" POINT-SIZE= "24"><b>AdminPassport</b></FONT></td></tr>
+</table>>]
+DataBaser DataBaser [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Arial" POINT-SIZE= "24"><b>DataBaser</b></FONT></td></tr>
+</table>>]
+}
