@@ -124,6 +124,9 @@ public class ClassDiagram {
             odClasses.addActionListener((e2, c2) -> editProjectListener(e2, c2));
             if (odClasses.run(myProject, "Display")) {
                 myProject = odClasses.getResult();
+                ooutput.setWidth(myProject.getTab("Display").getOle("Output").getInt("Width", 16));
+                ooutput.setHeight(myProject.getTab("Display").getOle("Output").getInt("Height", 16));
+                ooutput.setFill(myProject.getTab("Display").getOle("Output").getBoolean("Fill", true));
                 generateModel(myProject, true);
                 showProjectSummary();
             }
@@ -144,15 +147,16 @@ public class ClassDiagram {
                     }
                 }
             }
-            projectFile = null;
+            projectFile = "./projects/nonamed.prj";
             myProject = new OleConfig();
             myProject.loadFile("projects/empty.prj");
             oMainFrame.setTitle(projectFile);
             oMainFrame.showInfo("New empy project ");
             editProject();
             osDiagram.setZoom(1);
-            ooutput.setWidth(16);
-            ooutput.setHeight(11);
+            ooutput.setWidth(myProject.getTab("Display").getOle("Output").getInt("Width", 16));
+            ooutput.setHeight(myProject.getTab("Display").getOle("Output").getInt("Height", 16));
+            ooutput.setFill(myProject.getTab("Display").getOle("Output").getBoolean("Fill", true));
             generateModel(myProject, true);
         }
 
@@ -180,8 +184,9 @@ public class ClassDiagram {
             }
             if (openProject()) {
                 osDiagram.setZoom(1);
-                ooutput.setWidth(16);
-                ooutput.setHeight(11);
+                ooutput.setWidth(myProject.getTab("Display").getOle("Output").getInt("Width", 16));
+                ooutput.setHeight(myProject.getTab("Display").getOle("Output").getInt("Height", 16));
+                ooutput.setFill(myProject.getTab("Display").getOle("Output").getBoolean("Fill", true));
                 generateModel(myProject, true);
                 showProjectSummary();
             }
@@ -189,6 +194,9 @@ public class ClassDiagram {
         if (e.getActionCommand().equals("ConfigureProject")) {
             if (projectFile != null) {
                 editProject();
+                ooutput.setWidth(myProject.getTab("Display").getOle("Output").getInt("Width", 16));
+                ooutput.setHeight(myProject.getTab("Display").getOle("Output").getInt("Height", 16));
+                ooutput.setFill(myProject.getTab("Display").getOle("Output").getBoolean("Fill", true));
                 generateModel(myProject, true);
                 showProjectSummary();
             } else {
@@ -222,6 +230,9 @@ public class ClassDiagram {
             odPackages.addActionListener((e2, c2) -> editProjectListener(e2, c2));
             if (odPackages.run(myProject, "Packages")) {
                 myProject = odPackages.getResult();
+                ooutput.setWidth(myProject.getTab("Display").getOle("Output").getInt("Width", 16));
+                ooutput.setHeight(myProject.getTab("Display").getOle("Output").getInt("Height", 16));
+                ooutput.setFill(myProject.getTab("Display").getOle("Output").getBoolean("Fill", true));
                 generateModel(myProject, true);
                 showProjectSummary();
             }
@@ -232,6 +243,9 @@ public class ClassDiagram {
             odClasses.addActionListener((e2, c2) -> editProjectListener(e2, c2));
             if (odClasses.run(myProject, "Classes")) {
                 myProject = odClasses.getResult();
+                ooutput.setWidth(myProject.getTab("Display").getOle("Output").getInt("Width", 16));
+                ooutput.setHeight(myProject.getTab("Display").getOle("Output").getInt("Height", 16));
+                ooutput.setFill(myProject.getTab("Display").getOle("Output").getBoolean("Fill", true));
                 generateModel(myProject, true);
                 showProjectSummary();
             }
@@ -521,6 +535,7 @@ public class ClassDiagram {
             findUsage(files, olecfg);
         }
         oMainFrame.showProgress("Selecting packages");
+        allfullpackages.put("extern", new ArrayList<String>());
         for (String sclass : new ArrayList<String>(olecfg.getTab("Sources").getArray("File list"))) {
             sclasscontent = getClassName(sclass);
             spackage = getPackageName(sclass);
@@ -546,7 +561,8 @@ public class ClassDiagram {
         if (packages.isEmpty()) {
             findAllPackages(packages, olecfg);
         }
-        for (String sclass : new ArrayList<String>(olecfg.getTab("Sources").getArray("File list"))) {
+        ArrayList<String> filelist = olecfg.getTab("Sources").getArray("File list");
+        for (String sclass : new ArrayList<String>(filelist)) {
             sclasscontent = getClassName(sclass);
             spackage = getPackageName(sclass);
             if (!allclasses.contains(sclasscontent)) {
@@ -563,6 +579,9 @@ public class ClassDiagram {
                     allextends.put(ssuperclass, new ArrayList<String>());
                 }
                 allextends.get(ssuperclass).add(sclasscontent);
+                if (!filelist.contains(ssuperclass)) {
+                    allfullpackages.get("extern").add(ssuperclass);
+                }
             }
         }
         ArrayList<String> lAux = new ArrayList(allclasses);
@@ -580,12 +599,14 @@ public class ClassDiagram {
         Ole oclass, oformat, singleformat, orelation, omethods;
         // Sets resolution
         try {
-            ooutput.setResolution(Integer.parseInt(olecfg.getTab("Display").getOle("Output").getString("Resolution", "150")));
+            ooutput.setResolution(Integer.parseInt(olecfg.getTab("Display").getOle("Output").getString("Resolution", "600")));
         } catch (Exception Ex) {
             ooutput.setResolution(150);
         }
-        // Remove unused classes
-        ooutput.setField("classtypes", new ArrayList(olecfg.getTab("Packages").getArray("Packages selected")));
+        // Add extern packages
+        ArrayList<String> classtypes = olecfg.getTab("Packages").getArray("Packages selected");
+        classtypes.add("extern");
+        ooutput.setField("classtypes", new ArrayList(classtypes));
         ArrayList<String> alaux = new ArrayList();
         alaux.add("extends");
         alaux.add("owns");
@@ -603,13 +624,14 @@ public class ClassDiagram {
                 prefClasses = new ArrayList<String>(olecfg.getTab("Classes").getArray("Classes selected")),
                 methClasses = new ArrayList<String>(olecfg.getTab("Classes").getArray("Show methods"));
 
+        // add format for every package
+        oclass.setField("extern", new ArrayList(selectPreferred(allfullpackages.get("extern"), prefClasses))); //////
         for (String spackage : prefPackages) {
             oMainFrame.showProgress("     Package " + spackage);
             oclass.setField(spackage, new ArrayList(selectPreferred(allfullpackages.get(spackage), prefClasses)));
             singleformat = new Ole();
             singleformat.setField("face", olecfg.getTab("Display").getOle("Format").getString("Font"));
             singleformat.setField("fontsize", olecfg.getTab("Display").getOle("Format").getInt("Font size"));
-//            oMainFrame.showProgress("     " + allfullpackages.get(spackage));
             if (olecfg.getTab("Display").getOle("Format").getString("Fill color", "Black & White").equals("Black & White")) {
                 singleformat.setField("fillcolor", "white"); //allcolours[ncolor++]);
             } else {
@@ -618,6 +640,13 @@ public class ClassDiagram {
             singleformat.setField("color", "black");
             oformat.setField(spackage, singleformat);
         }
+        singleformat = new Ole();
+        singleformat.setField("face", olecfg.getTab("Display").getOle("Format").getString("Font"));
+        singleformat.setField("fontsize", olecfg.getTab("Display").getOle("Format").getInt("Font size"));
+        singleformat.setField("fillcolor", "gray");
+        singleformat.setField("color", "black");
+        oformat.setField("extern", singleformat);
+
         // Add external classes
         orelation = new Ole();
         orelation.setField("extends", new ArrayList());
@@ -668,7 +697,6 @@ public class ClassDiagram {
         ooutput.saveAsFile(".", modelFile, true);
         dotFile = modelFile.replace("models", "dot").replace("mod", "dot");
         oMainFrame.showProgress("Saving dot file..." + dotFile);
-        ooutput.setResolution(ppp);
         ooutput.toDot(dotFile);
         ooutput.exportTo(dotFile, "png");
 

@@ -32,7 +32,8 @@
       },
       {
         "JPanel": [
-          "JDrawPane"
+          "JDrawPane",
+          "MyDrawPane"
         ]
       },
       {
@@ -67,6 +68,7 @@
         "Ole": [
           "OleConfig",
           "OleFile",
+          "OlePassport",
           "OleQuery",
           "OleReport",
           "OleSensor",
@@ -77,6 +79,12 @@
       {
         "TelegramLongPollingBot": [
           "LARVATelegramBot"
+        ]
+      },
+      {
+        "LARVABaseAgent": [
+          "LARVAAdminAgent",
+          "LARVAFirstAgent"
         ]
       },
       {
@@ -96,6 +104,7 @@
       },
       {
         "LARVAEphemeral": [
+          "SessionManager",
           "StoreManager"
         ]
       },
@@ -221,6 +230,7 @@
       },
       {
         "Thing": [
+          "World",
           "Perceptor"
         ]
       },
@@ -250,7 +260,8 @@
       },
       {
         "ProblemManager": [
-          "OleConfig"
+          "OleConfig",
+          "Session"
         ]
       },
       {
@@ -439,7 +450,8 @@
           "DBA2122",
           "AdminCryptor",
           "OleSet",
-          "Ole"
+          "Ole",
+          "Session"
         ]
       },
       {
@@ -462,7 +474,8 @@
       {
         "OleDataBase": [
           "Ole",
-          "OleTable"
+          "OleTable",
+          "SentenceBuilder"
         ]
       },
       {
@@ -487,7 +500,8 @@
       },
       {
         "DeathStar": [
-          "LARVAMiniDash"
+          "LARVAMiniDash",
+          "LARVAAirTrafficControlTiles"
         ]
       },
       {
@@ -540,6 +554,7 @@
         "Session": [
           "DBA2122",
           "OleSet",
+          "World",
           "Ole",
           "liveBot"
         ]

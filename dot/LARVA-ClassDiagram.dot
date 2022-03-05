@@ -1,7 +1,6 @@
 digraph graphname {
      rankdir="BT"
-dpi=150
-ratio="fill";
+dpi=300
  size="16,11!";
  margin=0;
 Ole Ole [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>Ole</b></FONT></td></tr>
@@ -20,6 +19,8 @@ OleConfig OleConfig [shape=plain, label=<<table border="0" cellborder="1" cellsp
 OleDot OleDot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleDot</b></FONT></td></tr>
 <tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i><b>OleDot</b>(Ole o)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>setResolution</b>(int ppp)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>boolean <b>isFill</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>setFill</b>(boolean fill)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>int <b>getWidth</b>()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>int <b>getHeight</b>()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>void <b>setWidth</b>(int width)</i></FONT></td></tr>
@@ -150,6 +151,38 @@ OleMenuBar OleMenuBar [shape=plain, label=<<table border="0" cellborder="1" cell
 <tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18"><i>JMenu <b>addMenu</b>(String name, OleConfig omenu)</i></FONT></td></tr>
 </table>>]
 OleToolBar OleToolBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleToolBar</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JButton</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+JScrollPane JScrollPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JScrollPane</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JButton</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JList JList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JList</b></FONT></td></tr>
+</table>>]
+JMenuBar JMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JMenuBar</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>JPanel</b></FONT></td></tr>
 </table>>]
 OleBitmapPane -> JScrollPane [arrowhead=onormal, penwidth=2, color=black]
 OleDrawPane -> JPanel [arrowhead=onormal, penwidth=2, color=black]

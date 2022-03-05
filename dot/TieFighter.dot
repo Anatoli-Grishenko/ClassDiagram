@@ -1,0 +1,86 @@
+digraph graphname {
+     rankdir="BT"
+dpi=1200
+ratio="fill";
+ size="16,11!";
+ margin=0;
+LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVABaseAgent</b></FONT></td></tr>
+</table>>]
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVAFirstAgent</b></FONT></td></tr>
+</table>>]
+Ole Ole [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE= "24"><b>Ole</b></FONT></td></tr>
+</table>>]
+OleSensor OleSensor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE= "24"><b>OleSensor</b></FONT></td></tr>
+</table>>]
+Angular Angular [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE= "24"><b>Angular</b></FONT></td></tr>
+</table>>]
+LARVACompactDash LARVACompactDash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVACompactDash</b></FONT></td></tr>
+</table>>]
+LARVADash LARVADash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVADash</b></FONT></td></tr>
+</table>>]
+LARVADialog LARVADialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVADialog</b></FONT></td></tr>
+</table>>]
+LARVAEmbeddedDash LARVAEmbeddedDash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVAEmbeddedDash</b></FONT></td></tr>
+</table>>]
+LARVAFrame LARVAFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVAFrame</b></FONT></td></tr>
+</table>>]
+LARVAMiniDash LARVAMiniDash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVAMiniDash</b></FONT></td></tr>
+</table>>]
+MyMapPalPane MyMapPalPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE= "24"><b>MyMapPalPane</b></FONT></td></tr>
+</table>>]
+MyPlainButton MyPlainButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE= "24"><b>MyPlainButton</b></FONT></td></tr>
+</table>>]
+MyPopup MyPopup [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE= "24"><b>MyPopup</b></FONT></td></tr>
+</table>>]
+RoundProgressBar RoundProgressBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE= "24"><b>RoundProgressBar</b></FONT></td></tr>
+</table>>]
+SwingTools SwingTools [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE= "24"><b>SwingTools</b></FONT></td></tr>
+</table>>]
+TieExplorer TieExplorer [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="CadetBlue"><FONT face="Courier New" POINT-SIZE= "24"><b>TieExplorer</b></FONT></td></tr>
+</table>>]
+TieFighter TieFighter [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="CadetBlue"><FONT face="Courier New" POINT-SIZE= "24"><b>TieFighter</b></FONT></td></tr>
+</table>>]
+TieLeader TieLeader [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="CadetBlue"><FONT face="Courier New" POINT-SIZE= "24"><b>TieLeader</b></FONT></td></tr>
+</table>>]
+TieShadow TieShadow [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="CadetBlue"><FONT face="Courier New" POINT-SIZE= "24"><b>TieShadow</b></FONT></td></tr>
+</table>>]
+Internet Internet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumAquaMarine"><FONT face="Courier New" POINT-SIZE= "24"><b>Internet</b></FONT></td></tr>
+</table>>]
+TimeHandler TimeHandler [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumAquaMarine"><FONT face="Courier New" POINT-SIZE= "24"><b>TimeHandler</b></FONT></td></tr>
+</table>>]
+LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=2, color=black]
+TieExplorer -> LARVAFirstAgent [arrowhead=onormal, penwidth=2, color=black]
+TieLeader -> LARVAFirstAgent [arrowhead=onormal, penwidth=2, color=black]
+TieShadow -> LARVAFirstAgent [arrowhead=onormal, penwidth=2, color=black]
+MyPlainButton -> JButton [arrowhead=onormal, penwidth=2, color=black]
+Ole -> JsonObject [arrowhead=onormal, penwidth=2, color=black]
+OleSensor -> Ole [arrowhead=onormal, penwidth=2, color=black]
+LARVACompactDash -> LARVADash [arrowhead=onormal, penwidth=2, color=black]
+LARVAMiniDash -> LARVADash [arrowhead=onormal, penwidth=2, color=black]
+MyPopup -> JPopupMenu [arrowhead=onormal, penwidth=2, color=black]
+LARVAFirstAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=2, color=black]
+LARVAFrame -> JFrame [arrowhead=onormal, penwidth=2, color=black]
+LARVADialog -> JDialog [arrowhead=onormal, penwidth=2, color=black]
+LARVAFrame -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+MyPlainButton -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+MyMapPalPane -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Map2DColor -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+RoundProgressBar -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Angular -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+TimeHandler -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Palette -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Map2DColor -> MyMapPalPane [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Palette -> MyMapPalPane [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+MyPopup -> MyMapPalPane [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Point -> MyMapPalPane [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Logger -> LARVABoot [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+LARVAFrame -> LARVABoot [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Logger -> LARVABaseAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+LARVAFrame -> MyPlainButton [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+RoundProgressBar -> LARVAEmbeddedDash [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Angular -> LARVAEmbeddedDash [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+TimeHandler -> LARVAEmbeddedDash [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+LARVAFrame -> LARVAFirstAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+LARVADash -> LARVAFirstAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+SequenceDiagram -> LARVAFirstAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+}

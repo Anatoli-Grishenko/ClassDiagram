@@ -1,7 +1,8 @@
 {
   "classtypes": [
     "data",
-    "swing"
+    "swing",
+    "extern"
   ],
   "relationtypes": [
     "extends",
@@ -228,6 +229,8 @@
     "OleDot": [
       "OleDot(Ole o)",
       "void setResolution(int ppp)",
+      "boolean isFill()",
+      "void setFill(boolean fill)",
       "int getWidth()",
       "int getHeight()",
       "void setWidth(int width)",
@@ -311,6 +314,24 @@
     ]
   },
   "class": {
+    "extern": [
+      "JPanel",
+      "JFrame",
+      "JPanel",
+      "JDialog",
+      "JFrame",
+      "JPanel",
+      "JButton",
+      "JsonObject",
+      "JScrollPane",
+      "JButton",
+      "JDialog",
+      "JPanel",
+      "JFrame",
+      "JList",
+      "JMenuBar",
+      "JPanel"
+    ],
     "data": [
       "Ole",
       "OleConfig",
@@ -346,6 +367,12 @@
       "face": "Courier New",
       "fontsize": 24,
       "fillcolor": "white",
+      "color": "black"
+    },
+    "extern": {
+      "face": "Courier New",
+      "fontsize": 24,
+      "fillcolor": "gray",
       "color": "black"
     },
     "extends": "[arrowhead=onormal, penwidth=2, color=black]",

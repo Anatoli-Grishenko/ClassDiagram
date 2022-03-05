@@ -1,6 +1,6 @@
 digraph graphname {
      rankdir="BT"
-dpi=150
+dpi=1200
 ratio="fill";
  size="16,11!";
  margin=0;

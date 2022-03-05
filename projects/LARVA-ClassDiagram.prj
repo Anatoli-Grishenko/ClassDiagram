@@ -125,7 +125,6 @@
         "appboot",
         "basher",
         "classdiagram",
-        "classdiagram\n            s= getPackageName(sclass)\n            s= getPackageName(sclass)",
         "console",
         "crypto",
         "data",
@@ -322,7 +321,10 @@
         "Line color": "Colored"
       },
       "Output": {
-        "Resolution": "300"
+        "Resolution": "300",
+        "Width":16,
+        "Height":11,
+        "Fill":false
       }
     }
   },
