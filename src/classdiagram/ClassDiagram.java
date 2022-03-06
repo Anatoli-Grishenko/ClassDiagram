@@ -40,7 +40,7 @@ import javax.swing.border.Border;
 import javax.swing.border.EmptyBorder;
 import map2D.Map2DColor;
 import swing.OleApplication;
-import swing.OleBitmapPane;
+import swing.OleScrollPane;
 import swing.OleDialog;
 import swing.OleDrawPane;
 import swing.SwingTools;
@@ -56,13 +56,13 @@ public class ClassDiagram {
     static OleApplication oMainFrame;
     static JPanel pSideTools, pStatus, pMain;
     static OleDrawPane opDiagram;
-    static OleBitmapPane osDiagram;
+    static OleScrollPane osDiagram;
     static String projectFile, modelFile, dotFile, pngFile, pdfFile;
 
     static ArrayList<String> allfilenames, allpackages, allclasses;
     static HashMap<String, String> allfilecontent;
     static HashMap<String, Integer> classusage;
-    static HashMap<String, ArrayList<String>> allfullpackages, allextends, allowns, allmethods;
+    static HashMap<String, ArrayList<String>> allfullpackages, allextends, allowns, publicmethods, protectedmethods;
     static HashMap<String, Basher> allfilebasher;
     static String allcolours[] = new String[]{"Chartreuse", "MediumSpringGreen", "Turquoise", "CadetBlue", "MediumAquaMarine", "Thistle", "LightSteelBlue", "DarkViolet", "BlueViolet", "DarkOliveGreen", "Aqua", "OliveDrab", "Cyan", "LightBlue", "Indigo", "DarkSeaGreen", "Crimson", "Orchid", "DarkGreen", "Salmon", "RebeccaPurple", "MediumSlateBlue", "DodgerBlue", "PaleTurquoise", "Fuchsia", "Violet", "DarkTurquoise", "Blue", "SpringGreen", "DarkSlateBlue", "SkyBlue", "MediumBlue", "MidnightBlue", "IndianRed", "ForestGreen", "Lavender", "SlateBlue", "DarkMagenta", "Aquamarine", "DarkOrchid", "Lime", "Teal", "LightSeaGreen", "PowderBlue", "RoyalBlue", "Green", "Plum", "LimeGreen", "MediumOrchid", "FireBrick", "DarkRed", "MediumSeaGreen", "LightSkyBlue", "LightSalmon", "MediumTurquoise", "LightCoral", "DarkSalmon", "GreenYellow", "DeepSkyBlue", "MediumPurple", "LawnGreen", "CornflowerBlue", "PaleGreen", "SteelBlue", "Magenta", "LightCyan", "Navy", "Purple", "Red", "YellowGreen", "DarkCyan", "LightGreen", "SeaGreen", "DarkBlue"};
     static Map2DColor mapDiagram;
@@ -205,13 +205,13 @@ public class ClassDiagram {
         }
         if (e.getActionCommand().equals("ExportModel")) {
             if (projectFile != null) {
-                if (allmethods == null) {
+                if (publicmethods == null) {
                     scanClasses(myProject);
                 }
                 String type = oMainFrame.inputSelect("Export To", new String[]{"pdf", "png", "svg"}, "pdf");
                 if (type != null) {
                     String mydotFile = projectFile.replace("projects/", "dot/").replace("prj", "dot");
-                    OleDot.exportTo(mydotFile, type);
+                    OleDot.exportTo(mydotFile, myProject.getTab("Display").getOle("Output").getString("Layout", "dot"), type);
                     oMainFrame.Info("export generated");
                 }
 
@@ -291,7 +291,7 @@ public class ClassDiagram {
             String classname = olecfg.getProperties().getOle("Classes found").getField("selected");
             if (classname != null && classname.length() > 0) {
                 ArrayList<String> alFileList = new ArrayList();
-                for (String s : allmethods.get(classname)) {
+                for (String s : publicmethods.get(classname)) {
                     alFileList.add(s);
                 }
                 Collections.sort(alFileList);
@@ -390,6 +390,7 @@ public class ClassDiagram {
     }
 
     public static void generateModel(OleConfig oleconf, boolean simplified) {
+        findAllMethods();
         modelFile = projectFile.replace("prj", "mod").replace("projects", "models");
         dumpJson(oleconf, simplified);
         osDiagram.repaint();
@@ -409,10 +410,14 @@ public class ClassDiagram {
         allfullpackages = new HashMap();
         allextends = new HashMap();
         allowns = new HashMap();
-        allmethods = new HashMap();
         classusage = new HashMap();
         mapDiagram = null;
         ooutput.clear();
+    }
+    
+    public static void clearMethods() {
+        publicmethods = new HashMap();
+        protectedmethods = new HashMap();        
     }
 
     public static void findFolder(String padding, String folder) throws IOException {
@@ -502,25 +507,30 @@ public class ClassDiagram {
                 oMainFrame.showProgress("       " + fromclass + "." + tonew);
             }
         }
-        // Methods
-        oMainFrame.showProgress("Analyzing methods");
-        for (String fromclass : files) {
-            datamembers = getMethods(fromclass); //frombasher.grepv("//");
-            allmethods.put(fromclass, datamembers);
-            if (datamembers.size() > 0) {
-                oMainFrame.showProgress("   " + fromclass + "." + datamembers.toString());
-            }
-        }
-        // Remove unused
-        if (myProject.getTab("Sources").getField("Which classes").equals("Referenced")) {
-            oMainFrame.showProgress("Removing unused classes");
-            for (String sclass : files) {
-                if (classusage.get(sclass) == null || classusage.get(sclass) < 1) {
-                    allfilebasher.remove(sclass);
-                    oMainFrame.showProgress("   Removig unused class " + sclass);
-                }
-            }
-        }
+//        // Methods
+//        oMainFrame.showProgress("Analyzing methods");
+//        for (String fromclass : files) {
+//            datamembers = getMethods(fromclass, "public"); //frombasher.grepv("//");
+//            publicmethods.put(fromclass, datamembers);
+//            if (datamembers.size() > 0) {
+//                oMainFrame.showProgress("   " + fromclass + "+" + datamembers.toString());
+//            }
+//            datamembers = getMethods(fromclass, "protected"); //frombasher.grepv("//");
+//            protectedmethods.put(fromclass, datamembers);
+//            if (datamembers.size() > 0) {
+//                oMainFrame.showProgress("   " + fromclass + "-" + datamembers.toString());
+//            }
+//        }
+//        // Remove unused
+//        if (myProject.getTab("Sources").getField("Which classes").equals("Referenced")) {
+//            oMainFrame.showProgress("Removing unused classes");
+//            for (String sclass : files) {
+//                if (classusage.get(sclass) == null || classusage.get(sclass) < 1) {
+//                    allfilebasher.remove(sclass);
+//                    oMainFrame.showProgress("   Removig unused class " + sclass);
+//                }
+//            }
+//        }
         oMainFrame.showProgress("End of analysis");
         ArrayList<String> lAux;
 
@@ -529,6 +539,35 @@ public class ClassDiagram {
         olecfg.getTab("Sources").setField("File list", new ArrayList(lAux));
     }
 
+    public static void findAllMethods() {
+        ArrayList<String> datamembers;
+        clearMethods();
+        // Methods
+        oMainFrame.showProgress("Analyzing methods");
+        for (String fromclass : allfilebasher.keySet()) {
+            datamembers = getMethods(fromclass, "public"); //frombasher.grepv("//");
+            publicmethods.put(fromclass, datamembers);
+            if (datamembers.size() > 0) {
+                oMainFrame.showProgress("   " + fromclass + "+" + datamembers.toString());
+            }
+            datamembers = getMethods(fromclass, "protected"); //frombasher.grepv("//");
+            protectedmethods.put(fromclass, datamembers);
+            if (datamembers.size() > 0) {
+                oMainFrame.showProgress("   " + fromclass + "-" + datamembers.toString());
+            }
+        }
+        // Remove unused
+        if (myProject.getTab("Sources").getField("Which classes").equals("Referenced")) {
+            oMainFrame.showProgress("Removing unused classes");
+            for (String sclass : allfilebasher.keySet()) {
+                if (classusage.get(sclass) == null || classusage.get(sclass) < 1) {
+                    allfilebasher.remove(sclass);
+                    oMainFrame.showProgress("   Removig unused class " + sclass);
+                }
+            }
+        }
+        
+    }
     public static void findAllPackages(ArrayList<String> files, OleConfig olecfg) {
         String sclasscontent, spackage, ssuperclass;
         if (files.isEmpty()) {
@@ -567,7 +606,6 @@ public class ClassDiagram {
             spackage = getPackageName(sclass);
             if (!allclasses.contains(sclasscontent)) {
                 allclasses.add(sclasscontent);
-
             }
             ssuperclass = getExtends(sclass);
 
@@ -626,6 +664,20 @@ public class ClassDiagram {
 
         // add format for every package
         oclass.setField("extern", new ArrayList(selectPreferred(allfullpackages.get("extern"), prefClasses))); //////
+        /// Classes listed but their packages are not, are included as external
+        boolean found;
+        for (String sprefclass : prefClasses) {
+            found = false;
+            for (String sprefpack : prefPackages) {
+                if (allfullpackages.get(sprefpack).contains(sprefclass)) {
+                    found = true;
+                }
+            }
+            if (!found) {
+                allfullpackages.get("extern").add(sprefclass);
+            }
+        }
+        prefPackages.add("extern");
         for (String spackage : prefPackages) {
             oMainFrame.showProgress("     Package " + spackage);
             oclass.setField(spackage, new ArrayList(selectPreferred(allfullpackages.get(spackage), prefClasses)));
@@ -670,16 +722,26 @@ public class ClassDiagram {
         }
         ooutput.setField("relation", orelation);
 /// Methods
-        if (allmethods.size() > 0 && olecfg.getTab("Classes").getBoolean("Include methods", false)) {
+        if (olecfg.getTab("Classes").getBoolean("Include methods", false)) {
             orelation = new Ole();
             oMainFrame.showProgress("Exploring methods...");
-            for (String ssuperclass : allmethods.keySet()) {
-                oMainFrame.showProgress("     Class " + ssuperclass + " " + allmethods.get(ssuperclass));
+            for (String ssuperclass : publicmethods.keySet()) {
+                oMainFrame.showProgress("     Class " + ssuperclass + " " + publicmethods.get(ssuperclass));
                 if (methClasses.contains(ssuperclass)) {
-                    orelation.setField(ssuperclass, new ArrayList(allmethods.get(ssuperclass)));
+                    orelation.setField(ssuperclass, new ArrayList(publicmethods.get(ssuperclass)));
                 }
             }
-            ooutput.setField("methods", orelation);
+            ooutput.setField("publicmethods", orelation);
+            if (!olecfg.getTab("Classes").getBoolean("Only public methods", true)) {
+                orelation = new Ole();
+                for (String ssuperclass : protectedmethods.keySet()) {
+                    oMainFrame.showProgress("     Class " + ssuperclass + " " + protectedmethods.get(ssuperclass));
+                    if (methClasses.contains(ssuperclass)) {
+                        orelation.setField(ssuperclass, new ArrayList(protectedmethods.get(ssuperclass)));
+                    }
+                }
+                ooutput.setField("protectedmethods", orelation);
+            }
         }
 
         ooutput.setField("class", oclass);
@@ -698,7 +760,7 @@ public class ClassDiagram {
         dotFile = modelFile.replace("models", "dot").replace("mod", "dot");
         oMainFrame.showProgress("Saving dot file..." + dotFile);
         ooutput.toDot(dotFile);
-        ooutput.exportTo(dotFile, "png");
+        ooutput.exportTo(dotFile, myProject.getTab("Display").getOle("Output").getString("Layout", "dot"), "png");
 
         oMainFrame.showProgress("Calling dot..." + dotFile);
         pngFile = modelFile.replace("models/", "export/").replace("mod", "png");
@@ -795,7 +857,7 @@ public class ClassDiagram {
         return res;
     }
 
-    public static ArrayList<String> getMethods(String filename) {
+    public static ArrayList<String> getMethods(String filename, String methodtype) {
         ArrayList<String> res = new ArrayList();
         boolean bclass = false, bfirstmethod = false;
         Pattern pat;
@@ -803,12 +865,11 @@ public class ClassDiagram {
 
         for (String line : allfilebasher.get(filename).getList()) {
             if (bfirstmethod) {
-                if ((line.contains("public") || line.contains("protected"))
+                if (line.contains(methodtype)
                         && line.contains("(") && line.contains(")") && !line.contains("new") && !line.startsWith("//")) {
                     smethod = line;
                     smethod = smethod.replace("{", "");
-                    smethod = smethod.replace("public ", "");
-                    smethod = smethod.replace("protected ", "");
+                    smethod = smethod.replace(methodtype, "");
                     smethod = smethod.trim();
                     res.add(smethod);
 
