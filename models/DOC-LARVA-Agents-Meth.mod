@@ -1,14 +1,24 @@
 {
   "classtypes": [
-    "agents",
-    "crypto",
     "data",
+    "swing",
+    "agents",
+    "appboot",
+    "basher",
+    "console",
+    "crypto",
     "database",
     "disk",
     "factoryagent",
+    "geometry",
+    "glossary",
     "larva",
+    "map2D",
+    "messaging",
+    "ontology",
     "sessions",
     "telegram",
+    "tools",
     "world",
     "extern"
   ],
@@ -26,7 +36,12 @@
       },
       {
         "LARVAFirstAgent": [
-          
+          "DeathStar"
+        ]
+      },
+      {
+        "TelegramLongPollingBot": [
+          "LARVATelegramBot"
         ]
       },
       {
@@ -64,7 +79,8 @@
           "IdentityManager",
           "LARVABaseTelegram",
           "LARVAEphemeral",
-          "LARVAQueen"
+          "LARVAQueen",
+          "ProblemManager"
         ]
       }
     ],
@@ -86,6 +102,11 @@
       },
       {
         "LARVAQueen": [
+          
+        ]
+      },
+      {
+        "ProblemManager": [
           
         ]
       },
@@ -135,6 +156,11 @@
         ]
       },
       {
+        "LARVATelegramBot": [
+          "LARVAAdminAgent"
+        ]
+      },
+      {
         "IdentityManager": [
           
         ]
@@ -165,6 +191,11 @@
         ]
       },
       {
+        "DeathStar": [
+          
+        ]
+      },
+      {
         "SessionManager": [
           
         ]
@@ -172,40 +203,6 @@
     ]
   },
   "publicmethods": {
-    "GMailer": [
-      "void ServiceHandlerNOTIFICATION(ACLMessage msg)",
-      "void takeDown()"
-    ],
-    "TeamController": [
-      "void Execute()",
-      "void takeDown()",
-      "Status loadWorld()",
-      "Status processRequest(ACLMessage incoming)",
-      "Status processJoin(ACLMessage incoming)",
-      "Status processExecute(ACLMessage incoming)",
-      "Status processQuery(ACLMessage incoming)",
-      "void processRegister(ACLMessage incoming)"
-    ],
-    "LARVAEphemeral": [
-      "void unTick()",
-      "void takeDown()"
-    ],
-    "LARVABaseTelegram": [
-      "void Scheduler(TelegramChoice c)",
-      "void Scheduler2(TelegramChoice c)",
-      "void takeDown()",
-      "abstract void sayHello();",
-      "abstract void sayGoodBye();",
-      "void doResumeWork()",
-      "final void Execute()",
-      "void ServiceHandlerNOTIFICATION(ACLMessage msg)",
-      "void ShowMyGroup(TelegramChoice c)",
-      "void ShowGroup(TelegramChoice c)",
-      "void ShowOldGroup(TelegramChoice c)",
-      "void doShowAgents(TelegramChoice c)",
-      "String showProgressDetail(OleSet total, OleSet done)",
-      "boolean amILocal()"
-    ],
     "LARVABaseAgent": [
       "void setup()",
       "void takeDown()",
@@ -227,15 +224,6 @@
       "void setNcycles(int ncycles)",
       "boolean isExit()",
       "void setExit(boolean exit)"
-    ],
-    "WorldController": [
-      "void Execute()",
-      "void takeDown()",
-      "Status loadWorld()",
-      "Status processRequest(ACLMessage incoming)",
-      "Status processJoin(ACLMessage incoming)",
-      "Status processExecute(ACLMessage incoming)",
-      "Status processQuery(ACLMessage incoming)"
     ],
     "LARVAFirstAgent": [
       "void takeDown()",
@@ -269,14 +257,6 @@
       "void action()",
       "boolean done()",
       "void BehaviourSplitSsetup(Processes t)",
-      "void action()",
-      "boolean done()",
-      "void action()",
-      "boolean done()",
-      "void action()",
-      "boolean done()",
-      "void action()",
-      "boolean done()",
       "void ServiceHandlerRegular(ACLMessage msg)",
       "void ServiceHandlerADMIN(ACLMessage msg)",
       "void ServiceHandlerXUI(ACLMessage msg)",
@@ -291,98 +271,102 @@
       "void StatusDisableSafeMode()",
       "void StatusEnableSafeMode()",
       "void StatusSet(AlertsLevel level, Alerts category, String alert)"
+    ]
+  },
+  "protectedmethods": {
+    "LARVABaseAgent": [
+      "void Error(String message)",
+      "void Info(String message)",
+      "void Alert(String message)",
+      "boolean Confirm(String message)",
+      "String inputLine(String message)",
+      "void BehaviourDefaultSetup()"
     ],
-    "DBA2122": [
-      "DBA2122 cacheTables()",
-      "int DBGetAgentID(String agentName)",
-      "int DBGetProblemID(String problemName)",
-      "int DBGetAsignmentID(String name)",
-      "Ole DBGetAssignment(int assignmentID)",
-      "Ole DBGetProblem(int problemID)",
-      "Ole DBGetMilestone(String milestoneID)",
-      "Ole DBGetUser(int userID)",
-      "void DBAddUser(int userID, String name, String email)",
-      "void DBFreeALias(String alias)",
-      "String DBGetFreeALias()",
-      "String DBAssignAlias(int userID)",
-      "int DBGetUserCourse(int userID)",
-      "Ole DBGetAllUsersCID(long cid)",
-      "Ole DBGetGroup(int groupID)",
-      "Ole DBGetUserGroup(int userID)",
-      "OleTable DBGetUserFellows(int groupID)",
-      "Ole DBGetCourse(int courseID)",
-      "void addUserToGroup (int userID, int groupID)",
-      "void clearGroup (int groupID)",
-      "void DBAddUserMilestone(int userID, int problemID, String milestoneID, String sessionID, String date)",
-      "void DBAddGroupMilestone(int userID, int problemID, String milestoneID, String sessionID, String date)",
-      "OleSet DBGetProblemMilestones(int problemID)",
-      "OleSet DBGetProblemUserMilestones(int userID, int problemID)",
-      "void DBCleanProblemUserMilestones(int userID, int problemID)",
-      "OleSet DBGetProblemGroupMilestones(int groupID, int problemID)",
-      "OleSet DBGetAssignmentMilestones(int assignmentID)",
-      "OleSet DBGetCourseMilestones(int courseID)",
-      "OleSet DBGetAssignmentUserMilestones(int userID, int assignmentID)",
-      "OleSet DBGetCourseUserMilestones(int userID, int courseID)",
-      "OlePassport DBGetPassport(int userID)",
-      "Ole DBGetUserCredentials(int userID)",
-      "boolean DBHasUserNotifications(int userID, String noti)",
-      "OleSet DBGetUserNotifications(int userID)",
-      "void DBActivateUserNotifications(int userID, String subscription)",
-      "void DBRemoveUserNotifications(int userID, String subscription)",
-      "void DBDeleteChatUserID(int userID)",
-      "void DBUpdateChatUserID(int userID, long cid)",
-      "boolean DBIsChatSubscribedTelegram(long cid)",
-      "ArrayList<Long> DBGetAllChatsSubscribedTelegram()",
-      "boolean DBIsUserSubscribedTelegram(int userID)",
-      "long DBGetUserCID(int userID)",
-      "void DBOpenSession(int userID, String agentName, int problemID, String sessionID)",
-      "void DBUpdateStatisticsSessionSession(String sessionID, OleQuery update)",
-      "void DBCloseSession(String sessionID)",
-      "OleTable DBGetOpenSessions()",
-      "OleTable DBGetSession(String sessionID)",
-      "OleTable DBGetUserSession(int userID)",
-      "boolean DBIsSessionOpen(String sessionID)",
-      "void DBDoBanAgent(String agentname, String bannedUntil)",
-      "void DBUndoBanAgent(String agentname)",
-      "boolean DBDoCheckInAgent(String agentname, int userID)",
-      "void DBDoCheckInAgent(String agentname, int userID, String container)",
-      "void DBDoCheckOutAgent(String agentname)",
-      "int DBIsCheckedInAgent(String agentname)",
-      "int DBWhoCheckedInAgent(String agentname)",
-      "String DBBannedUntilAgent(String agentname)",
-      "OleTable DBGetAllAgents()",
-      "OleTable DBGetAllBannedAgents()",
-      "OleTable DBGetAllExceptions()",
-      "void DBAddException(String agentName, String title, String description)",
-      "void DBClearExceptions()"
+    "LARVAFirstAgent": [
+      "boolean isSwing()",
+      "void enableDeepLARVAMonitoring()",
+      "String[] getConfiguredSensors()",
+      "void Error(String message)",
+      "void Info(String message)",
+      "boolean doLARVACheckin()",
+      "boolean doLARVACheckout()",
+      "void LARVAsend(ACLMessage msg)",
+      "ACLMessage LARVAblockingReceive()",
+      "ACLMessage LARVAblockingReceive(MessageTemplate t, long milis)",
+      "boolean Confirm(String message)",
+      "String inputLine(String message)",
+      "String inputSelect(String message, String[] options, String value)",
+      "void refreshGUI()",
+      "void doSwingLater(Runnable what)",
+      "void doSwingWait(Runnable what)"
     ],
-    "StoreManager": [
-      "void Execute()",
-      "void processRequest(ACLMessage incoming)",
-      "void takeDown()"
-    ],
-    "SessionManager": [
-      "void takeDown()"
+    "LARVAAdminAgent": [
+      "void doRebootNow()",
+      "void doShutdownNow()",
+      "void pressReturn()",
+      "boolean AdminCheckSender(ACLMessage msg)",
+      "OleReport ReportAgent()",
+      "void BehaviourDefaultSetup()",
+      "void SetupLegacy()",
+      "void PingSetup()",
+      "void onTick()",
+      "void DataBaseSetup()",
+      "ACLMessage pullACLM(MessageTemplate t)",
+      "String colorMessage(String protocol, String message)",
+      "void pushACLM(ACLMessage msg)",
+      "String RespondError(ACLMessage msg, int performative, String details)",
+      "String RespondSuccess(ACLMessage msg, int performative, String details)",
+      "String RespondAdmin(ACLMessage msg, int performative, Ole details)",
+      "void Error(String message)",
+      "void Error(String message, Session s)",
+      "void Info(String message)",
+      "void Info(String message, Session s)",
+      "void MinorException(Alerts a, String title, Exception ex)",
+      "void MajorException(Alerts a, String title, Exception ex)",
+      "void StatusAlert(Alerts category, String title, String alert)",
+      "void StatusEmergencyMode(Alerts category, String title, String alert)",
+      "void StatusSafeMode()",
+      "String encodeProduct(String product)",
+      "String decodeProduct(String code)",
+      "boolean tooManyRequests(ACLMessage incoming)",
+      "boolean toGmailer(int userID, String subject, String body)"
     ]
   },
   "class": {
     "extern": [
       "Agent",
+      "TelegramLongPollingBot",
       "Agent",
+      "TelegramLongPollingBot",
       "Agent",
-      "Agent"
+      "TelegramLongPollingBot",
+      "Agent",
+      "TelegramLongPollingBot"
+    ],
+    "data": [
+      
+    ],
+    "swing": [
+      
     ],
     "agents": [
+      "DeathStar",
       "LARVAAdminAgent",
       "LARVABaseAgent",
       "LARVABaseTelegram",
       "LARVAEphemeral",
       "LARVAFirstAgent"
     ],
-    "crypto": [
+    "appboot": [
       
     ],
-    "data": [
+    "basher": [
+      
+    ],
+    "console": [
+      
+    ],
+    "crypto": [
       
     ],
     "database": [
@@ -392,6 +376,12 @@
       
     ],
     "factoryagent": [
+      
+    ],
+    "geometry": [
+      
+    ],
+    "glossary": [
       
     ],
     "larva": [
@@ -405,16 +395,29 @@
       "LARVAPublicTelegram",
       "LARVAQueen",
       "Mario",
+      "ProblemManager",
       "SessionManager",
       "SonGoanda",
       "StoreManager",
       "TeamController",
       "WorldController"
     ],
+    "map2D": [
+      
+    ],
+    "messaging": [
+      
+    ],
+    "ontology": [
+      
+    ],
     "sessions": [
       
     ],
     "telegram": [
+      "LARVATelegramBot"
+    ],
+    "tools": [
       
     ],
     "world": [
@@ -422,73 +425,133 @@
     ]
   },
   "format": {
+    "data": {
+      "face": "Arial",
+      "fontsize": 16,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "swing": {
+      "face": "Arial",
+      "fontsize": 16,
+      "fillcolor": "white",
+      "color": "black"
+    },
     "agents": {
       "face": "Arial",
-      "fontsize": 32,
+      "fontsize": 16,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "appboot": {
+      "face": "Arial",
+      "fontsize": 16,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "basher": {
+      "face": "Arial",
+      "fontsize": 16,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "console": {
+      "face": "Arial",
+      "fontsize": 16,
       "fillcolor": "white",
       "color": "black"
     },
     "crypto": {
       "face": "Arial",
-      "fontsize": 32,
-      "fillcolor": "white",
-      "color": "black"
-    },
-    "data": {
-      "face": "Arial",
-      "fontsize": 32,
+      "fontsize": 16,
       "fillcolor": "white",
       "color": "black"
     },
     "database": {
       "face": "Arial",
-      "fontsize": 32,
+      "fontsize": 16,
       "fillcolor": "white",
       "color": "black"
     },
     "disk": {
       "face": "Arial",
-      "fontsize": 32,
+      "fontsize": 16,
       "fillcolor": "white",
       "color": "black"
     },
     "factoryagent": {
       "face": "Arial",
-      "fontsize": 32,
+      "fontsize": 16,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "geometry": {
+      "face": "Arial",
+      "fontsize": 16,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "glossary": {
+      "face": "Arial",
+      "fontsize": 16,
       "fillcolor": "white",
       "color": "black"
     },
     "larva": {
       "face": "Arial",
-      "fontsize": 32,
+      "fontsize": 16,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "map2D": {
+      "face": "Arial",
+      "fontsize": 16,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "messaging": {
+      "face": "Arial",
+      "fontsize": 16,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "ontology": {
+      "face": "Arial",
+      "fontsize": 16,
       "fillcolor": "white",
       "color": "black"
     },
     "sessions": {
       "face": "Arial",
-      "fontsize": 32,
+      "fontsize": 16,
       "fillcolor": "white",
       "color": "black"
     },
     "telegram": {
       "face": "Arial",
-      "fontsize": 32,
+      "fontsize": 16,
+      "fillcolor": "white",
+      "color": "black"
+    },
+    "tools": {
+      "face": "Arial",
+      "fontsize": 16,
       "fillcolor": "white",
       "color": "black"
     },
     "world": {
       "face": "Arial",
-      "fontsize": 32,
+      "fontsize": 16,
       "fillcolor": "white",
       "color": "black"
     },
     "extern": {
       "face": "Arial",
-      "fontsize": 32,
+      "fontsize": 16,
       "fillcolor": "gray",
       "color": "black"
     },
-    "extends": "[arrowhead=onormal, penwidth=2, color=black]",
-    "owns": "[style=dotted,arrowhead=odiamond, penwidth=2,color=blue]"
+    "extends": "[arrowhead=onormal, penwidth=1, color=black]",
+    "owns": "[style=dotted,arrowhead=odiamond, penwidth=1,color=blue]"
   }
 }

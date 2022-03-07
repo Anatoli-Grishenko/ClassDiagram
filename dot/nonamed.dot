@@ -1,0 +1,763 @@
+digraph graphname {
+     rankdir="BT"
+dpi=300
+ratio="fill";
+ size="16,16!";
+ margin=0;
+ADMINMessage ADMINMessage [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>ADMINMessage</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>ADMINMessage</b>(LARVAAdminAgent sender)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setJsonContent</b>(JsonObject jso)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>final void <b>init</b>(LARVAAdminAgent sender)</i></FONT></td></tr>
+</table>>]
+BehaviourControl BehaviourControl [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>BehaviourControl</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;String&gt; <b>getAllBehaviourNames</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Behaviour <b>getBehaviour</b>(String name)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>defReportType</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>registerBehaviour</b>(Behaviour b, String name, String description)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>reportObjectStatus</b>(String objectid)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>unregisterBehaviour</b>(Behaviour b)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>unregisterBehaviour</b>(String name)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String[] <b>defReportableObjectList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isEmpty</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isOK</b>(String behaviourname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>size</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>long <b>getLatency</b>(String behaviourname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>endBehaviour</b>(Behaviour b)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>startBehaviour</b>(Behaviour b)</i></FONT></td></tr>
+</table>>]
+LARVAAdminAgent LARVAAdminAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVAAdminAgent</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>AdminGiveBirth</b>(FactoryAgent factory, String agentname, String containername, Class c, OleConfig config)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>AdminKill</b>(FactoryAgent factory, String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>AdminConfirmBirth</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>AdminConfirmDeath</b>(String replywith)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>AdminProcessesClear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>BehaviourDefaultClear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>BehaviourSplitSsetup</b>(Processes t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DataBaseClear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>FactoryAgentClear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>FactoryAgentSetup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>Notify</b>(String what, ArrayList&lt;Integer&gt; UserIDs, String inReplyTo)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>NotifyClass</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>NotifyReferee</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>NotifyTeacher</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>NotifyUser</b>(int userID, String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>ServiceHandlerADMIN</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>ServiceHandlerNOTIFICATION</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>ServiceHandlerRegular</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>ServiceHandlerXUI</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>SetupAdmin</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>StatusDisableSafeMode</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>StatusEnableSafeMode</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>StatusSet</b>(AlertsLevel level, Alerts category, String alert)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>doShield</b>(Runnable r)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>ACLMessage <b>pullACLM</b>(MessageTemplate t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>OleReport <b>ReportAgent</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>RespondAdmin</b>(ACLMessage msg, int performative, Ole details)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>RespondError</b>(ACLMessage msg, int performative, String details)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>RespondSuccess</b>(ACLMessage msg, int performative, String details)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>colorMessage</b>(String protocol, String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>decodeProduct</b>(String code)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>encodeProduct</b>(String product)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>AdminCheckSender</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>toGmailer</b>(int userID, String subject, String body)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>tooManyRequests</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>BehaviourDefaultSetup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>DataBaseSetup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>Error</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>Error</b>(String message, Session s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>Info</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>Info</b>(String message, Session s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>MajorException</b>(Alerts a, String title, Exception ex)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>MinorException</b>(Alerts a, String title, Exception ex)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>PingSetup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>SetupLegacy</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>StatusAlert</b>(Alerts category, String title, String alert)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>StatusEmergencyMode</b>(Alerts category, String title, String alert)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>StatusSafeMode</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doRebootNow</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doShutdownNow</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>onTick</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>onTick</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>onTick</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>pressReturn</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>pushACLM</b>(ACLMessage msg)</i></FONT></td></tr>
+</table>>]
+LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVABaseAgent</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;String&gt; <b>AMSGetAllConnectedAgents</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllProvidersOf</b>(String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllServicesProvidedBy</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;String&gt; <b>DFGetProviderList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;String&gt; <b>DFGetServiceList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>AMSIsConnected</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DFHasService</b>(String agentName, String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DFSetMyServices</b>(String[] services)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isCheckedin</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isExit</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getNCycles</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DFRemoveAllMyServices</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setCheckedin</b>(boolean checkedin)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setExit</b>(boolean exit)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setNcycles</b>(int ncycles)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>inputLine</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>Confirm</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>Alert</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>BehaviourDefaultSetup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>Error</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>Info</b>(String message)</i></FONT></td></tr>
+</table>>]
+LARVABaseTelegram LARVABaseTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVABaseTelegram</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>showProgressDetail</b>(OleSet total, OleSet done)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>abstract void <b>sayGoodBye</b>();</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>abstract void <b>sayHello</b>();</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>amILocal</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>Scheduler</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>Scheduler2</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>ServiceHandlerNOTIFICATION</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>ShowGroup</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>ShowMyGroup</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>ShowOldGroup</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>doResumeWork</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>doShowAgents</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>bold</b>(String text)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>doAnalyticsClass</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>doAnalyticsMe</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>doAnalyticsProblem</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>doAnalyticsProblemUser</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>doAnalyticsSummary</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>doShortAnalyticsSummary</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>getSubscriptions</b>(long cid)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>italic</b>(String text)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>mono</b>(String text)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>showAllAssignments</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>showAssignment</b>(String assignmentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>showAssignmentSummary</b>(String assignmentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>showMilestone</b>(String milestoneID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>showProblem</b>(String problemName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>tab</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>under</b>(String text)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>abstract String <b>getBotName</b>();</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>abstract String <b>getBotToken</b>();</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>cancelException</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>checkExceptions</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>isTelegramException</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>storePassport</b>(long cid, Update u)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>final void <b>sendTelegram</b>(long cid, String what, TelegramMenu menu)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>final void <b>sendTelegramPhoto</b>(long cid, String what, String filename, TelegramMenu menu)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>int <b>getExceptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>int <b>getTimeOutException</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>int <b>limitException</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>TelegramException</b>(long cid, String what, Exception ex)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>addException</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>checkAgentDiagnostic</b>() throws Exception</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doAnalytics</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doBannedAgents</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doCancel</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doCheckConnection</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doCheckReport</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doCheckServices</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doCheckStatus</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doCleanHelloWorld</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doDiagnoseLARVA</b>(long cid, String command)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doGetPassport</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doHelp</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doInformERROR</b>(long cid, String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doInformOK</b>(long cid, String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doSubscribe</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>endTelegram</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>euroVote</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>processIncomingACLM</b>(ACLMessage aclu)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>processIncomingTelegram</b>(long cid, Update u)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>processTelegramCallBack</b>(long cid, Update u)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>processTelegramCommand</b>(long cid, Update u)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>resetException</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>selectGroup</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>sendTelegram</b>(long cid, String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>startTelegram</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>toggleNotification</b>(TelegramChoice c)</i></FONT></td></tr>
+</table>>]
+LARVAEphemeral LARVAEphemeral [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVAEphemeral</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>unTick</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>onTick</b>()</i></FONT></td></tr>
+</table>>]
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVAFirstAgent</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ACLMessage <b>LARVAblockingReceive</b>(MessageTemplate t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllProvidersOf</b>(String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllServicesProvidedBy</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;String&gt; <b>DFGetProviderList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;String&gt; <b>DFGetServiceList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getIdentityManager</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getMypassport</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DFHasService</b>(String agentName, String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>loadMyPassport</b>(String passportFileName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>Alert</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>doActivateLARVADash</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>getUserData</b>(String welcome)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>saveSequenceDiagram</b>(String filename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setIdentityManager</b>(String IdentityManager)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setMypassport</b>(String mypassport)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>ACLMessage <b>LARVAblockingReceive</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>ACLMessage <b>LARVAblockingReceive</b>(MessageTemplate t, long milis)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>inputLine</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>inputSelect</b>(String message, String[] options, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String[] <b>getConfiguredSensors</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>Confirm</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>doLARVACheckin</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>doLARVACheckout</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>isSwing</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>Error</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>Info</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>LARVAsend</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doSwingLater</b>(Runnable what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doSwingWait</b>(Runnable what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>enableDeepLARVAMonitoring</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>refreshGUI</b>()</i></FONT></td></tr>
+</table>>]
+AdminCryptor AdminCryptor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>AdminCryptor</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>AdminCryptor</b>(String k)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>deCrypt</b>(String text)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>enCrypt</b>(String text)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>keyPradoEncode</b>(int pradocode)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>keyPradoDecode</b>(String pradocode)</i></FONT></td></tr>
+</table>>]
+Cryptor Cryptor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>Cryptor</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>Cryptor</b>(String cs, String k)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>deCrypt</b>(String text)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>deCrypt64</b>(String text)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>deCryptAES</b>(String text)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>enCrypt</b>(String text)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>enCrypt64</b>(String text)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>enCryptAES</b>(String text)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getCharSet</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getCryptoKey</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setCharSet</b>(String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setCryptoKey</b>(String k)</i></FONT></td></tr>
+</table>>]
+Keygen Keygen [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>Keygen</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>BigInteger <b>getCanonical</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Keygen <b>encode</b>(String w) throws Exception</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Keygen <b>lock</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Keygen <b>recode</b>(Keygen other)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Keygen <b>rotateLeft</b>(int n)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Keygen <b>rotateRight</b>(int n)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Keygen <b>setOffset</b>(boolean o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Keygen <b>unlock</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>Keygen</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>Keygen</b>(String input)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>decode</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>belongs</b>(String word)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>static String <b>getAlphaNumKey</b>(int length)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>static String <b>getHexaKey</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>static String <b>getHexaKey</b>(int length)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>static String <b>getWordo</b>(int length)</i></FONT></td></tr>
+</table>>]
+AdminPassport AdminPassport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>AdminPassport</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>AdminPassport</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>loadEncryptedFile</b>(String fullfilename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getAlias</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getCid</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getEmail</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isEmpty</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getUserID</b>()</i></FONT></td></tr>
+</table>>]
+Ole Ole [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>Ole</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>JsonObject <b>toPlainJson</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>List&lt;String&gt; <b>getFieldList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>addField</b>(String fieldName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>clear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>fromJson</b>(JsonObject jsole)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>loadFile</b>(String fullfilename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>offEncryption</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>onEncryption</b>(Cryptor myc)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>parse</b>(String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>set</b>(String field, JsonArray value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>set</b>(String field, Ole value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>set</b>(String field, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>set</b>(String field, boolean value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>set</b>(String field, double value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>set</b>(String field, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>set</b>(String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>setDate</b>(String date)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>setDescription</b>(String description)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>setFieldGeneric</b>(String field, Object s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>setID</b>(String id)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>setOle</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>setType</b>(String type)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>Ole</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>Ole</b>(JsonObject jsole)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>Ole</b>(String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getDate</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getDescription</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getFieldType</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getID</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getType</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getValueType</b>(JsonValue jsv)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>toString</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>toString</b>(WriterConfig wcon)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>checkField</b>(String fieldName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isEmpty</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isEncrypted</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isOle</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final ArrayList <b>getArray</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Ole <b>addToField</b>(String fieldname, Ole v)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Ole <b>addToField</b>(String fieldname, String v)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Ole <b>addToField</b>(String fieldname, boolean v)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Ole <b>addToField</b>(String fieldname, double v)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Ole <b>addToField</b>(String fieldname, int v)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Ole <b>getOle</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Ole <b>setField</b>(String fieldname, ArrayList&lt;Object&gt; value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Ole <b>setField</b>(String fieldname, Ole value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Ole <b>setField</b>(String fieldname, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Ole <b>setField</b>(String fieldname, boolean value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Ole <b>setField</b>(String fieldname, double value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Ole <b>setField</b>(String fieldname, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final String <b>getField</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final String <b>getString</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final boolean <b>getBoolean</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final double <b>getDouble</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final int <b>getInt</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>static JsonObject <b>Ole2PlainJson</b>(Ole odata)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>static List&lt;String&gt; <b>allNames</b>(JsonObject jso)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>static Ole <b>Json2Ole</b>(JsonObject jsole)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>JsonObject <b>meta</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>Ole <b>fromFullJson</b>(JsonObject jsole)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>Ole <b>fromPlainJson</b>(JsonObject jsole)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>static JsonValue <b>Ole2JsonValue</b>(JsonValue jsobject)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>Init</b>()</i></FONT></td></tr>
+</table>>]
+OleConfig OleConfig [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleConfig</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>List&lt;String&gt; <b>getAllTabFields</b>(String stab)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>List&lt;String&gt; <b>getAllTabNames</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>getOptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>getProperties</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>getProperties</b>(String sfield)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>getTab</b>(String stab)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>OleConfig</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>numTabs</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>List&lt;String&gt; <b>getTabList</b>()</i></FONT></td></tr>
+</table>>]
+OleFile OleFile [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleFile</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleFile <b>loadFile</b>(String fullfilename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>OleFile</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getFileName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getStringContent</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>saveFile</b>(String outputfolder)</i></FONT></td></tr>
+</table>>]
+OlePassport OlePassport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OlePassport</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>OlePassport</b>(Ole o)</i></FONT></td></tr>
+</table>>]
+OleQuery OleQuery [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleQuery</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleQuery <b>Condition</b>(String field, String comp, Object o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleQuery <b>Pair</b>(String field, Object o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>OleQuery</b>(Ole o)</i></FONT></td></tr>
+</table>>]
+OleTable OleTable [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleTable</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;Ole&gt; <b>getAllRows</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;Ole&gt; <b>getAllRows</b>(String field, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;Ole&gt; <b>getAllRows</b>(String field, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>JsonArray <b>rawRows</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>getRow</b>(String field, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>getRow</b>(String field, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>getRow</b>(int r)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleTable <b>addRow</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleTable <b>getAllRowsOleTable</b>(String field, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleTable <b>getAllRowsOleTable</b>(String field, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>OleTable</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>OleTable</b>(ResultSet rs)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>prettyprint</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isEmpty</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>size</b>()</i></FONT></td></tr>
+</table>>]
+DBA2122 DBA2122 [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>DBA2122</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;Long&gt; <b>DBGetAllChatsSubscribedTelegram</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>DBA2122 <b>cacheTables</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>DBGetAllUsersCID</b>(long cid)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>DBGetAssignment</b>(int assignmentID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>DBGetCourse</b>(int courseID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>DBGetGroup</b>(int groupID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>DBGetMilestone</b>(String milestoneID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>DBGetProblem</b>(int problemID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>DBGetUser</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>DBGetUserCredentials</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>DBGetUserGroup</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OlePassport <b>DBGetPassport</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleSet <b>DBGetAssignmentMilestones</b>(int assignmentID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleSet <b>DBGetAssignmentUserMilestones</b>(int userID, int assignmentID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleSet <b>DBGetCourseMilestones</b>(int courseID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleSet <b>DBGetCourseUserMilestones</b>(int userID, int courseID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleSet <b>DBGetProblemGroupMilestones</b>(int groupID, int problemID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleSet <b>DBGetProblemMilestones</b>(int problemID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleSet <b>DBGetProblemUserMilestones</b>(int userID, int problemID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleSet <b>DBGetUserNotifications</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleTable <b>DBGetAllAgents</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleTable <b>DBGetAllBannedAgents</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleTable <b>DBGetAllExceptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleTable <b>DBGetOpenSessions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleTable <b>DBGetSession</b>(String sessionID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleTable <b>DBGetUserFellows</b>(int groupID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleTable <b>DBGetUserSession</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>DBAssignAlias</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>DBBannedUntilAgent</b>(String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>DBGetFreeALias</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DBDoCheckInAgent</b>(String agentname, int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DBHasUserNotifications</b>(int userID, String noti)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DBIsChatSubscribedTelegram</b>(long cid)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DBIsSessionOpen</b>(String sessionID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DBIsUserSubscribedTelegram</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>DBGetAgentID</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>DBGetAsignmentID</b>(String name)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>DBGetProblemID</b>(String problemName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>DBGetUserCourse</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>DBIsCheckedInAgent</b>(String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>DBWhoCheckedInAgent</b>(String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>long <b>DBGetUserCID</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBActivateUserNotifications</b>(int userID, String subscription)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBAddException</b>(String agentName, String title, String description)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBAddGroupMilestone</b>(int userID, int problemID, String milestoneID, String sessionID, String date)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBAddUser</b>(int userID, String name, String email)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBAddUserMilestone</b>(int userID, int problemID, String milestoneID, String sessionID, String date)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBCleanProblemUserMilestones</b>(int userID, int problemID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBClearExceptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBCloseSession</b>(String sessionID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBDeleteChatUserID</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBDoBanAgent</b>(String agentname, String bannedUntil)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBDoCheckInAgent</b>(String agentname, int userID, String container)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBDoCheckOutAgent</b>(String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBFreeALias</b>(String alias)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBOpenSession</b>(int userID, String agentName, int problemID, String sessionID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBRemoveUserNotifications</b>(int userID, String subscription)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBUndoBanAgent</b>(String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBUpdateChatUserID</b>(int userID, long cid)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>DBUpdateStatisticsSessionSession</b>(String sessionID, OleQuery update)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b></b>v<b></b>o<b></b>i<b></b>d<b></b> <b></b>a<b></b>d<b></b>d<b></b>U<b></b>s<b></b>e<b></b>r<b></b>T<b></b>o<b></b>G<b></b>r<b></b>o<b></b>u<b></b>p<b></b> <b></b>(<b></b>i<b></b>n<b></b>t<b></b> <b></b>u<b></b>s<b></b>e<b></b>r<b></b>I<b></b>D<b></b>,<b></b> <b></b>i<b></b>n<b></b>t<b></b> <b></b>g<b></b>r<b></b>o<b></b>u<b></b>p<b></b>I<b></b>D<b></b>)<b></b></i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b></b>v<b></b>o<b></b>i<b></b>d<b></b> <b></b>c<b></b>l<b></b>e<b></b>a<b></b>r<b></b>G<b></b>r<b></b>o<b></b>u<b></b>p<b></b> <b></b>(<b></b>i<b></b>n<b></b>t<b></b> <b></b>g<b></b>r<b></b>o<b></b>u<b></b>p<b></b>I<b></b>D<b></b>)<b></b></i></FONT></td></tr>
+</table>>]
+OleDataBase OleDataBase [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>OleDataBase</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;String&gt; <b>getColumnList</b>(String tablename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;String&gt; <b>getTableList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleTable <b>DBObjectQuery</b>(String table, OleQuery oq)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleTable <b>DBquery</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>defReportType</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getColumnType</b>(String tablename, String columname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getURL</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>reportObjectStatus</b>(String objectid)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String[] <b>defReportableObjectList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String[] <b>errorLog</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DBObjectDelete</b>(String table, OleQuery oq)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DBObjectUpdate</b>(String table, OleQuery find, OleQuery update)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DBObjectUpdateUnique</b>(String table, OleQuery find, OleQuery update)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DBdelete</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DBinsert</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>DBupdate</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>canContinue</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>defineConnection</b>(String host, int port, String database, String user, String password)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>getORM</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isEmpty</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isError</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isOpen</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>openConnection</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final void <b>closeConnection</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>of.println</b>(" OleDataBase db;");</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>of.println(" OleTable "+table+"GetRow(OleQuery oq) ");</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>of.println(" OleTable "+table+"GetRow(String field, String value) ");</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>of.println</b>(" class "+this._database+" ");</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>closeTransaction</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>emergencyClose</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>endCommit</b>() throws SQLException</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>flushError</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>loadSchema</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>openTransaction</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>reportError</b>(String which)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>reportException</b>(Exception Ex)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>rollBack</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>startCommit</b>() throws SQLException</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>validationQuery</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>OleTable <b>DBSBquery</b>(SentenceBuilder s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>OleTable <b>getOleTable</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>ResultSet <b>getResult</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>SentenceBuilder <b>sentence</b>(SQLOP o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>DBSBdelete</b>(SentenceBuilder s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>DBSBinsert</b>(SentenceBuilder s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>DBSBupdate</b>(SentenceBuilder s)</i></FONT></td></tr>
+</table>>]
+SentenceBuilder SentenceBuilder [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>SentenceBuilder</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>SentenceBuilder <b>Column</b>(String column)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>SentenceBuilder <b>Condition</b>(String column, String comp, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>SentenceBuilder <b>Op</b>(SQLOP o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>SentenceBuilder <b>Pair</b>(String column, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>SentenceBuilder <b>Table</b>(String t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>SentenceBuilder <b>clear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>toString</b>()</i></FONT></td></tr>
+</table>>]
+Logger Logger [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>Logger</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>JsonObject <b>logError</b>(JsonObject details)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>JsonObject <b>logError</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>JsonObject <b>logException</b>(Exception ex)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>JsonObject <b>logMessage</b>(JsonObject details)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>JsonObject <b>logMessage</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>offEcho</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>offTabular</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>onAppend</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>onEcho</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>onOverwrite</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>onTabular</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>setEcho</b>(boolean e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>setLoggerFileName</b>(String fname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>setOutputTo</b>(PrintStream out)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>setOwner</b>(String name)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>setOwnerQualifier</b>(String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>setTextColor</b>(int color)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getLastlog</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getLoggerFileName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isEcho</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>static String <b>trimString</b>(String original, int max)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>decIndent</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>incIndent</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>JsonObject <b>addRecord</b>(JsonObject o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>formatOutput</b>(String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>boolean <b>initRecord</b>(String filename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>Error</b>(String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>Output</b>(String s)</i></FONT></td></tr>
+</table>>]
+DataBaser DataBaser [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>DataBaser</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table>>]
+DrDiagnostic DrDiagnostic [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>DrDiagnostic</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>PeriodicCheckSetup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>ServiceHandlerADMIN</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>doLauchQueries</b>(AdminDiagnostic d)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>findRoles</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>onTick</b>()</i></FONT></td></tr>
+</table>>]
+GMailer GMailer [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>GMailer</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>ServiceHandlerNOTIFICATION</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>sendGmail</b>(String receiver, String subject, String body)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>sendGmail</b>(String receiver, String subject, String body, String filename)</i></FONT></td></tr>
+</table>>]
+Goku Goku [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>Goku</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table>>]
+HWManager HWManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>HWManager</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table>>]
+IdentityManager IdentityManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>IdentityManager</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doCancel</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doSubscribe</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>onTick</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>purgeAgents</b>()</i></FONT></td></tr>
+</table>>]
+LARVA LARVA [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVA</b></FONT></td></tr>
+</table>>]
+LARVAPrivateTelegram LARVAPrivateTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVAPrivateTelegram</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>defineGroup</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>doExceptions</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>doResume</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>getAllPassports</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>reBootNow</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>sayGoodBye</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>sayHello</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>shutDownNow</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>getBotName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>getBotToken</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doBroadcast</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>doShowStudents</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>processIncomingTelegram</b>(long cid, Update u)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>void <b>processTelegramCommand</b>(long cid, Update u)</i></FONT></td></tr>
+</table>>]
+LARVAPublicTelegram LARVAPublicTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVAPublicTelegram</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>sayGoodBye</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>sayHello</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>getBotName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>getBotToken</b>()</i></FONT></td></tr>
+</table>>]
+LARVAQueen LARVAQueen [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVAQueen</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>ServiceHandlerADMIN</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>String <b>doProgressBar</b>(int n, int total, int length, String done, String undone)</i></FONT></td></tr>
+</table>>]
+Mario Mario [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>Mario</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table>>]
+Session Session [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>Session</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>ArrayList&lt;Integer&gt; <b>getFellowsID</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>DBA2122 <b>getDatabase</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>JsonObject <b>getGoals</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>JsonObject <b>getPerceptions</b>(liveBot agent)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>JsonObject <b>readPerceptions</b>(liveBot agent)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Logger <b>getSessionLogger</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Map2DColor <b>getMap</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Ole <b>toOle</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleSet <b>getAchievedMilestones</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleSet <b>getProblemMilestones</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleSet <b>getSessionMilestones</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>OleSet <b>getSessionMilestonesMissing</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Session <b>addGuest</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Session <b>fromOle</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Session <b>setContext</b>(String problemName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>Session <b>setOwner</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i><b>Session</b>(DBA2122 db)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getAgentName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getAssignmentName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getContainerName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getControllerName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getGroupName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getLastAction</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getOpenDate</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getProblemName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getSessionAlias</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getSessionID</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getUserName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>isGoal</b>(liveBot agent)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>open</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>World <b>getWorld</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>execAgent</b>(liveBot agent, String action)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>getIsIndividual</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>hasDistances</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isEmpty</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>boolean <b>isSolved</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>double <b>getBurnRate</b>(Roles rol)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>final Session <b>clear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getAgentID</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getAssignmentID</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getElapsedTime</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getEnergyBurnt</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getGroupID</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getHeight</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getMaxLevel</b>(Roles r)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getMaxVisibility</b>(Roles rol)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getMaxflight</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getNumPayload</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getNumSteps</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getProblemID</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getRange</b>(Roles rol)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getUserID</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>int <b>getWidth</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>liveBot <b>findAgent</b>(String name)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>liveBot <b>registerAgent</b>(String name, Roles rol, int basex, int basey, OleSet attachments)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>addTrace</b>(String record)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>checkStatus</b>(liveBot agent)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>close</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setAchievedMilestones</b>(OleSet achievedMilestones)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setAgentID</b>(int agentID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setAgentName</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setAssignmentID</b>(int assignmentID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setAssignmentName</b>(String assignmentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setContainerName</b>(String containerName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setControllerName</b>(String controllerName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setDatabase</b>(DBA2122 database)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setGroupID</b>(int groupID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setGroupName</b>(String groupName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setHeight</b>(int height)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setIsIndividual</b>(boolean isIndividual)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setLastAction</b>(String lastAction)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setMap</b>(Map2DColor map)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setMaxflight</b>(int maxflight)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setOpenDate</b>(String sthOpen)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setProblemID</b>(int problemID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setProblemMilestones</b>(OleSet problemMilestones)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setProblemName</b>(String problemName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setSessionAlias</b>(String sessionAlias)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setSessionID</b>(String sessionID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setSessionLogger</b>(Logger sessionLogger)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setSessionMilestones</b>(OleSet sessionMilestones)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setSessionMilestonesMissing</b>(OleSet sessionMilestonesMissing)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setUserID</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setUserName</b>(String userName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setWidth</b>(int width)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>setWorld</b>(World world)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>int <b>getBurnRatio</b>(glossary.sensors name)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">(-)<i>int <b>getSensorRange</b>(glossary.sensors name)</i></FONT></td></tr>
+</table>>]
+LARVATelegramBot LARVATelegramBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New" POINT-SIZE= "24"><b>LARVATelegramBot</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getBotToken</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>String <b>getBotUsername</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "18">[+]<i>void <b>onUpdateReceived</b>(Update update)</i></FONT></td></tr>
+</table>>]
+ACLMessage ACLMessage [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>ACLMessage</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE= "24"><b>Agent</b></FONT></td></tr>
+</table>>]
+DBA2122 -> OleDataBase [arrowhead=onormal, penwidth=2, color=black]
+LARVAPrivateTelegram -> LARVABaseTelegram [arrowhead=onormal, penwidth=2, color=black]
+LARVAPublicTelegram -> LARVABaseTelegram [arrowhead=onormal, penwidth=2, color=black]
+OleConfig -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OleFile -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OlePassport -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OleQuery -> Ole [arrowhead=onormal, penwidth=2, color=black]
+OleTable -> Ole [arrowhead=onormal, penwidth=2, color=black]
+LARVAAdminAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=2, color=black]
+LARVAFirstAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=2, color=black]
+AdminPassport -> OlePassport [arrowhead=onormal, penwidth=2, color=black]
+AdminCryptor -> Cryptor [arrowhead=onormal, penwidth=2, color=black]
+LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=2, color=black]
+DataBaser -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
+DrDiagnostic -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
+GMailer -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
+IdentityManager -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
+LARVABaseTelegram -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
+LARVAEphemeral -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
+LARVAQueen -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
+ADMINMessage -> ACLMessage [arrowhead=onormal, penwidth=2, color=black]
+Cryptor -> Ole [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+SendGMailSMTP -> GMailer [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleDataBase -> SentenceBuilder [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleConfig -> LARVABoot [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Logger -> LARVABoot [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleFile -> LARVABaseAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Logger -> LARVABaseAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleConfig -> DrDiagnostic [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+LARVAAdminAgent -> LARVATelegramBot [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+SequenceDiagram -> LARVAFirstAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleConfig -> LARVAFirstAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleConfig -> JADEBoot [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Logger -> JADEBoot [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleConfig -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+DBA2122 -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+BehaviourControl -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+AdminCryptor -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Ole -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Session -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Ole -> DBA2122 [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleTable -> DBA2122 [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Ole -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Logger -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+OleTable -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+SentenceBuilder -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+LARVAAdminAgent -> ADMINMessage [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+DBA2122 -> Session [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Logger -> Session [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Map2DColor -> Session [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+Ole -> Session [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
+}

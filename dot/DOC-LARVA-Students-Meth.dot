@@ -1,0 +1,146 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ratio="fill";
+ size="11,16!";
+ margin=0;
+LARVAAdminAgent LARVAAdminAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>LARVAAdminAgent</b></FONT></td></tr>
+</table>>]
+LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>LARVABaseAgent</b></FONT></td></tr>
+</table>>]
+LARVAEphemeral LARVAEphemeral [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>LARVAEphemeral</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>unTick</b>()</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>onTick</b>()</i></FONT></td></tr>
+<tr><td> </td></tr></table></td></tr>
+</table>>]
+SessionManager SessionManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>SessionManager</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>Error</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>Info</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>Introduction</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>addMilestone</b>(String milestone)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>solvedProblem</b>(String problemName)</i></FONT></td></tr>
+<tr><td> </td></tr></table></td></tr>
+</table>>]
+StoreManager StoreManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>StoreManager</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>processRequest</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>buyProduct</b>(ACLMessage incoming, String product)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>shoppingList</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>supplyStore</b>()</i></FONT></td></tr>
+<tr><td> </td></tr></table></td></tr>
+</table>>]
+TeamController TeamController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>TeamController</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Status <b>loadWorld</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Status <b>processExecute</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Status <b>processJoin</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Status <b>processQuery</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Status <b>processRequest</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>processRegister</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>updateXUIAgent</b>(String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>updateXUIGoals</b>()</i></FONT></td></tr>
+<tr><td> </td></tr></table></td></tr>
+</table>>]
+WorldController WorldController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>WorldController</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Status <b>loadWorld</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Status <b>processExecute</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Status <b>processJoin</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Status <b>processQuery</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Status <b>processRequest</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>updateXUI</b>(String agentname)</i></FONT></td></tr>
+<tr><td> </td></tr></table></td></tr>
+</table>>]
+Session Session [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Session</b></FONT></td></tr>
+</table>>]
+liveBot liveBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>liveBot</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>ArrayList&lt;String&gt; <b>getAttachments</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>ArrayList&lt;String&gt; <b>getCapabilities</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>ArrayList&lt;Thing&gt; <b>getAllPayload</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>ArrayList&lt;Thing&gt; <b>getThePayload</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>JsonArray <b>getFullPayload</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>JsonObject <b>toJson</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Point3D <b>getPosition</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Roles <b>getRole</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>getMyCommitment</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>getStatus</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>toString</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>isAtBase</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getAlive</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getAltitude</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getBurnmovement</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getBurnsensor</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getCurrentDistance</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getEnergy</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getEnergyBurnt</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getEnergylevel</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getInitialDistance</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getMaxAllowedLevel</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getMinAllowedLevel</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getNumSteps</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getOnTarget</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getPayload</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>getRange</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>l<b>iveBot</b>(String name, World w)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>addAttachments</b>(String attachment)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>addCapabilities</b>(String capability)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>addEnergyBurnt</b>(int increment)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>addNumSteps</b>(int increment)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>addPayload</b>(Thing what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>addThePayload</b>(Thing capture)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>burnEnergylevel</b>(int increment)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>fromJson</b>(JsonObject update)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setAltitude</b>(int altitude)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setBurnmovement</b>(int burnmovement)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setBurnsensor</b>(int burnsensor)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setCurrentDistance</b>(int currentDistance)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setEnergylevel</b>(int energylevel)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setInitialDistance</b>(int initialDistance)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setMaxAllowedLevel</b>(int maxAllowedLevel)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setMinAllowedLevel</b>(int minAllowedLevel)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setMyCommitment</b>(String myCommitment)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setRange</b>(int range)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setRole</b>(Roles role)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setStatus</b>(String s)</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td> </td></tr></table></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>Agent</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>Agent</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>Agent</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>Agent</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>Agent</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>Agent</b></FONT></td></tr>
+</table>>]
+LARVAAdminAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
+LARVAAdminAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
+SessionManager -> LARVAEphemeral [arrowhead=onormal, penwidth=1, color=black]
+StoreManager -> LARVAEphemeral [arrowhead=onormal, penwidth=1, color=black]
+SessionManager -> LARVAEphemeral [arrowhead=onormal, penwidth=1, color=black]
+StoreManager -> LARVAEphemeral [arrowhead=onormal, penwidth=1, color=black]
+LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=1, color=black]
+LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=1, color=black]
+TeamController -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
+WorldController -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
+TeamController -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
+WorldController -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
+LARVAEphemeral -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
+LARVAEphemeral -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
+Session -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+liveBot -> Session [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}

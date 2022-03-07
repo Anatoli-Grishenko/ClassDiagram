@@ -1,547 +1,183 @@
 digraph graphname {
      rankdir="BT"
-dpi=150
- size="16,11!";
+dpi=600
+ratio="fill";
+ size="11,16!";
  margin=0;
-ADMINMessage ADMINMessage [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Arial" POINT-SIZE= "24"><b>ADMINMessage</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public ADMINMessage(LARVAAdminAgent sender)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected final void init(LARVAAdminAgent sender)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setJsonContent(JsonObject jso)</i></FONT></td></tr>
+LARVAAdminAgent LARVAAdminAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>LARVAAdminAgent</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>AdminGiveBirth</b>(FactoryAgent factory, String agentname, String containername, Class c, OleConfig config)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>AdminKill</b>(FactoryAgent factory, String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>AdminConfirmBirth</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>AdminConfirmDeath</b>(String replywith)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>AdminProcessesClear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>BehaviourDefaultClear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>BehaviourSplitSsetup</b>(Processes t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>DataBaseClear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>FactoryAgentClear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>FactoryAgentSetup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>Notify</b>(String what, ArrayList&lt;Integer&gt; UserIDs, String inReplyTo)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>NotifyClass</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>NotifyReferee</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>NotifyTeacher</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>NotifyUser</b>(int userID, String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>ServiceHandlerADMIN</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>ServiceHandlerNOTIFICATION</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>ServiceHandlerRegular</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>ServiceHandlerXUI</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>SetupAdmin</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>StatusDisableSafeMode</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>StatusEnableSafeMode</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>StatusSet</b>(AlertsLevel level, Alerts category, String alert)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>doShield</b>(Runnable r)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
 </table>>]
-LARVAAdminAgent LARVAAdminAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Arial" POINT-SIZE= "24"><b>LARVAAdminAgent</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doRebootNow()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doShutdownNow()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void pressReturn()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected boolean AdminCheckSender(ACLMessage msg)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean AdminGiveBirth(FactoryAgent factory, String agentname, String containername, Class c, OleConfig config)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean AdminKill(FactoryAgent factory, String agentname)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void AdminConfirmBirth()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void AdminConfirmDeath(String replywith)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected OleReport ReportAgent()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Notify(String what, ArrayList&lt;Integer&gt; UserIDs, String inReplyTo)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void NotifyReferee(String what)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void NotifyTeacher(String what)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void NotifyClass(String what)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void NotifyUser(int userID, String what)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void BehaviourDefaultSetup()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void action()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean done()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void BehaviourSplitSsetup(Processes t)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void action()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean done()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void action()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean done()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void action()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean done()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void action()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean done()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void ServiceHandlerRegular(ACLMessage msg)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void ServiceHandlerADMIN(ACLMessage msg)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void ServiceHandlerXUI(ACLMessage msg)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void ServiceHandlerNOTIFICATION(ACLMessage msg)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void SetupAdmin()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void SetupLegacy()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void PingSetup()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void onTick()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void DataBaseSetup()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void onTick()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void FactoryAgentSetup()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void onTick()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DataBaseClear()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void FactoryAgentClear()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void AdminProcessesClear()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void BehaviourDefaultClear()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>private void doValidateDB()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected ACLMessage pullACLM(MessageTemplate t)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String colorMessage(String protocol, String message)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void pushACLM(ACLMessage msg)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String RespondError(ACLMessage msg, int performative, String details)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String RespondSuccess(ACLMessage msg, int performative, String details)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String RespondAdmin(ACLMessage msg, int performative, Ole details)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void Error(String message)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void Error(String message, Session s)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void Info(String message)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void Info(String message, Session s)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void MinorException(Alerts a, String title, Exception ex)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void doShield(Runnable r)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void MajorException(Alerts a, String title, Exception ex)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void StatusAlert(Alerts category, String title, String alert)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void StatusEmergencyMode(Alerts category, String title, String alert)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void StatusSafeMode()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void StatusDisableSafeMode()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void StatusEnableSafeMode()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void StatusSet(AlertsLevel level, Alerts category, String alert)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String encodeProduct(String product)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String decodeProduct(String code)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected boolean tooManyRequests(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected boolean toGmailer(int userID, String subject, String body)</i></FONT></td></tr>
+LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>LARVABaseAgent</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>ArrayList&lt;String&gt; <b>AMSGetAllConnectedAgents</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllProvidersOf</b>(String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllServicesProvidedBy</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>ArrayList&lt;String&gt; <b>DFGetProviderList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>ArrayList&lt;String&gt; <b>DFGetServiceList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>AMSIsConnected</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>DFHasService</b>(String agentName, String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>DFSetMyServices</b>(String[] services)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>isCheckedin</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>isExit</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>int <b>getNCycles</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>DFRemoveAllMyServices</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>setCheckedin</b>(boolean checkedin)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>setExit</b>(boolean exit)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>setNcycles</b>(int ncycles)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>setup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
 </table>>]
-LARVABaseTelegram LARVABaseTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Arial" POINT-SIZE= "24"><b>LARVABaseTelegram</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Scheduler(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Scheduler2(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public abstract void sayHello();</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public abstract void sayGoodBye();</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void doResumeWork()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public final void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void processTelegramCallBack(long cid, Update u)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void processIncomingTelegram(long cid, Update u)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String getSubscriptions(long cid)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void euroVote(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void selectGroup(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void toggleNotification(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void processTelegramCommand(long cid, Update u)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void processIncomingACLM(ACLMessage aclu)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected abstract String getBotName();</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected abstract String getBotToken();</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void ServiceHandlerNOTIFICATION(ACLMessage msg)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void startTelegram()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void endTelegram()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void sendTelegram(long cid, String what)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected final void sendTelegram(long cid, String what, TelegramMenu menu)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected final void sendTelegramPhoto(long cid, String what, String filename, TelegramMenu menu)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doInformOK(long cid, String what)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doInformERROR(long cid, String what)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doCleanHelloWorld(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doSubscribe(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doCancel(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doBannedAgents(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doGetPassport(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doAnalytics(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String doAnalyticsClass(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String doAnalyticsMe(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String doAnalyticsSummary(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String doShortAnalyticsSummary(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String doAnalyticsProblem(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String doAnalyticsProblemUser(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void ShowMyGroup(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void ShowGroup(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void ShowOldGroup(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void doShowAgents(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doHelp(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String showMilestone(String milestoneID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String showProblem(String problemName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String showAssignment(String assignmentName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String showAssignmentSummary(String assignmentName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String showAllAssignments()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void checkAgentDiagnostic() throws Exception</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doDiagnoseLARVA(long cid, String command)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doCheckConnection(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doCheckStatus(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doCheckServices(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doCheckReport(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected boolean storePassport(long cid, Update u)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>this.doInformERROR(cid, "This is a private chat. This operation is not allowed.");</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String showProgressDetail(OleSet total, OleSet done)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String under(String text)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String bold(String text)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String italic(String text)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String mono(String text)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String tab()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean amILocal()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void TelegramException(long cid, String what, Exception ex)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected boolean isTelegramException()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected int getExceptions()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void addException()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void resetException()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected int limitException()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected int getTimeOutException()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected boolean cancelException()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected boolean checkExceptions(String what)</i></FONT></td></tr>
+LARVABaseTelegram LARVABaseTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>LARVABaseTelegram</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>String <b>showProgressDetail</b>(OleSet total, OleSet done)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>abstract void <b>sayGoodBye</b>();</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>abstract void <b>sayHello</b>();</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>amILocal</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>final void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>Scheduler</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>Scheduler2</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>ServiceHandlerNOTIFICATION</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>ShowGroup</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>ShowMyGroup</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>ShowOldGroup</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>doResumeWork</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>doShowAgents</b>(TelegramChoice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
 </table>>]
-LARVAEphemeral LARVAEphemeral [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Arial" POINT-SIZE= "24"><b>LARVAEphemeral</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void onTick()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void unTick()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
+LARVAEphemeral LARVAEphemeral [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>LARVAEphemeral</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>unTick</b>()</i></FONT></td></tr>
 </table>>]
-AdminCryptor AdminCryptor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Arial" POINT-SIZE= "24"><b>AdminCryptor</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public AdminCryptor(String k)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String keyPradoEncode(int pradocode)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int keyPradoDecode(String pradocode)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String enCrypt(String text)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String deCrypt(String text)</i></FONT></td></tr>
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>LARVAFirstAgent</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>ACLMessage <b>LARVAblockingReceive</b>(MessageTemplate t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllProvidersOf</b>(String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllServicesProvidedBy</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>ArrayList&lt;String&gt; <b>DFGetProviderList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>ArrayList&lt;String&gt; <b>DFGetServiceList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>String <b>getIdentityManager</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>String <b>getMypassport</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>DFHasService</b>(String agentName, String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>boolean <b>loadMyPassport</b>(String passportFileName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>Alert</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>doActivateLARVADash</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>getUserData</b>(String welcome)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>saveSequenceDiagram</b>(String filename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>setIdentityManager</b>(String IdentityManager)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>setMypassport</b>(String mypassport)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
 </table>>]
-ProductCoin ProductCoin [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Arial" POINT-SIZE= "24"><b>ProductCoin</b></FONT></td></tr>
+DataBaser DataBaser [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>DataBaser</b></FONT></td></tr>
 </table>>]
-AdminPassport AdminPassport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Arial" POINT-SIZE= "24"><b>AdminPassport</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public AdminPassport(Ole o)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole loadEncryptedFile(String fullfilename)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getUserID()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getCid()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getAlias()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getEmail()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getName()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean isEmpty()</i></FONT></td></tr>
+DrDiagnostic DrDiagnostic [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>DrDiagnostic</b></FONT></td></tr>
 </table>>]
-DBA2021 DBA2021 [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="CadetBlue"><FONT face="Arial" POINT-SIZE= "24"><b>DBA2021</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public DBA2021 cacheTables()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int DBGetAgentID(String agentName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int DBGetProblemID(String problemName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String DBGetProblemMilestones(int problemID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetAssignment(int assignmentID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetProblem(int problemID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetUser(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetAllUsersCID(long cid)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetGroup(int groupID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetUserGroup(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetUserFellows(int groupID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String DBGetProgressByUserID(int userID, int problemID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String DBGetProgressByGroupID(int groupID, int problemID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OlePassport DBGetPassport(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetUserCredentials(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBUpdateChatUserID(int userID, String cid)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean DBIsSubscribedCID(long cid)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public ArrayList&lt;Long&gt; DBGetAllSubscribedCid()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean DBIsUserIDSubscribedTo(int userID, String token)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBOpenSession(int userID, int agentID, int problemID, String sessionID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBCloseSession(String sessionID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetOpenSessions()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetSession(String sessionID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean DBIsSessionOpen(String sessionID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBDoBanAgent(String agentname, String bannedUntil)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBDoCheckInAgent(String agentname, int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBDoCheckInAgent(String agentname, int userID, String container)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBDoCheckOutAgent(String agentname)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int DBIsCheckedInAgent(String agentname)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int DBWhoCheckedInAgent(String agentname)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String DBBannedUntilAgent(String agentname)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetAllAgents()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetAllBannedAgents()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetAllExceptions()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBAddException(String agentName, String title, String description)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBClearExceptions()</i></FONT></td></tr>
+GMailer GMailer [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>GMailer</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>ServiceHandlerNOTIFICATION</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
 </table>>]
-DBA2122 DBA2122 [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="CadetBlue"><FONT face="Arial" POINT-SIZE= "24"><b>DBA2122</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public DBA2122 cacheTables()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int DBGetAgentID(String agentName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int DBGetProblemID(String problemName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int DBGetAsignmentID(String name)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetAssignment(int assignmentID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetProblem(int problemID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetMilestone(String milestoneID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetUser(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBAddUser(int userID, String name, String email)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBFreeALias(String alias)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String DBGetFreeALias()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String DBAssignAlias(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int DBGetUserCourse(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetAllUsersCID(long cid)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetGroup(int groupID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetUserGroup(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetUserFellows(int groupID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetCourse(int courseID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void addUserToGroup (int userID, int groupID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void clearGroup (int groupID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBAddUserMilestone(int userID, int problemID, String milestoneID, String sessionID, String date)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBAddGroupMilestone(int userID, int problemID, String milestoneID, String sessionID, String date)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleSet DBGetProblemMilestones(int problemID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleSet DBGetProblemUserMilestones(int userID, int problemID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBCleanProblemUserMilestones(int userID, int problemID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleSet DBGetProblemGroupMilestones(int groupID, int problemID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleSet DBGetAssignmentMilestones(int assignmentID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleSet DBGetCourseMilestones(int courseID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleSet DBGetAssignmentUserMilestones(int userID, int assignmentID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleSet DBGetCourseUserMilestones(int userID, int courseID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OlePassport DBGetPassport(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole DBGetUserCredentials(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean DBHasUserNotifications(int userID, String noti)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleSet DBGetUserNotifications(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBActivateUserNotifications(int userID, String subscription)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBRemoveUserNotifications(int userID, String subscription)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBDeleteChatUserID(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBUpdateChatUserID(int userID, long cid)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean DBIsChatSubscribedTelegram(long cid)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public ArrayList&lt;Long&gt; DBGetAllChatsSubscribedTelegram()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean DBIsUserSubscribedTelegram(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public long DBGetUserCID(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBOpenSession(int userID, String agentName, int problemID, String sessionID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBUpdateStatisticsSessionSession(String sessionID, OleQuery update)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBCloseSession(String sessionID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetOpenSessions()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetSession(String sessionID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetUserSession(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean DBIsSessionOpen(String sessionID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBDoBanAgent(String agentname, String bannedUntil)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBUndoBanAgent(String agentname)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean DBDoCheckInAgent(String agentname, int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBDoCheckInAgent(String agentname, int userID, String container)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBDoCheckOutAgent(String agentname)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int DBIsCheckedInAgent(String agentname)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int DBWhoCheckedInAgent(String agentname)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String DBBannedUntilAgent(String agentname)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetAllAgents()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetAllBannedAgents()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleTable DBGetAllExceptions()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBAddException(String agentName, String title, String description)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void DBClearExceptions()</i></FONT></td></tr>
+Goku Goku [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>Goku</b></FONT></td></tr>
 </table>>]
-FactoryAgent FactoryAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumAquaMarine"><FONT face="Arial" POINT-SIZE= "24"><b>FactoryAgent</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public ArrayList&lt;String&gt; getAllAgentNames()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public ArrayList&lt;String&gt; getAllContainerNames()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getMainContainerName()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean createContainer(String containername)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean birthAgent(String agentname, Class c, String parameters[])</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean birthAgent(String agentname, Class c, String parameters[], String containername)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean killAgent(String agentname)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean killContainer(String containername)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean killAllAgents()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean killAllContainers()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String purgeAgents()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void killAllExit()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String defReportType()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String[] defReportableObjectList()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String reportObjectStatus(String objectid)</i></FONT></td></tr>
+HWManager HWManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>HWManager</b></FONT></td></tr>
 </table>>]
-DataBaser DataBaser [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>DataBaser</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
+IdentityManager IdentityManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>IdentityManager</b></FONT></td></tr>
 </table>>]
-DrDiagnostic DrDiagnostic [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>DrDiagnostic</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void doLauchQueries(AdminDiagnostic d)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void ServiceHandlerADMIN(ACLMessage msg)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void PeriodicCheckSetup()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void onTick()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void findRoles()</i></FONT></td></tr>
+LARVAPrivateTelegram LARVAPrivateTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>LARVAPrivateTelegram</b></FONT></td></tr>
 </table>>]
-EmptyAgent EmptyAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>EmptyAgent</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
+LARVAPublicTelegram LARVAPublicTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>LARVAPublicTelegram</b></FONT></td></tr>
 </table>>]
-GMailer GMailer [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>GMailer</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void ServiceHandlerNOTIFICATION(ACLMessage msg)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void sendGmail(String receiver, String subject, String body)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void sendGmail(String receiver, String subject, String body, String filename)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
+LARVAQueen LARVAQueen [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>LARVAQueen</b></FONT></td></tr>
 </table>>]
-Goku Goku [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>Goku</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
+Mario Mario [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>Mario</b></FONT></td></tr>
 </table>>]
-HWManager HWManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>HWManager</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
+SessionManager SessionManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>SessionManager</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
 </table>>]
-IdentityManager IdentityManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>IdentityManager</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void onTick()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doSubscribe(ACLMessage msg)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doCancel(ACLMessage msg)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void purgeAgents()</i></FONT></td></tr>
+SonGoanda SonGoanda [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>SonGoanda</b></FONT></td></tr>
 </table>>]
-LARVAPrivateTelegram LARVAPrivateTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>LARVAPrivateTelegram</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doShowStudents(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void defineGroup(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String getBotName()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String getBotToken()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void sayHello()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void sayGoodBye()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void shutDownNow(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void reBootNow(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void doResume(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void processIncomingTelegram(long cid, Update u)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>this.doInformERROR(cid, "This is a private chat. This operation is not allowed.");</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void doExceptions(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void getAllPassports(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doBroadcast(TelegramChoice c)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void processTelegramCommand(long cid, Update u)</i></FONT></td></tr>
+StoreManager StoreManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>StoreManager</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>processRequest</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
 </table>>]
-LARVAPublicTelegram LARVAPublicTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>LARVAPublicTelegram</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String getBotName()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String getBotToken()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void sayHello()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void sayGoodBye()</i></FONT></td></tr>
+TeamController TeamController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>TeamController</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>Status <b>loadWorld</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>Status <b>processExecute</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>Status <b>processJoin</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>Status <b>processQuery</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>Status <b>processRequest</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>processRegister</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
 </table>>]
-LARVAQueen LARVAQueen [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>LARVAQueen</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected String doProgressBar(int n, int total, int length, String done, String undone)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void ServiceHandlerADMIN(ACLMessage msg)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
+WorldController WorldController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="32"><b>WorldController</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>Status <b>loadWorld</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>Status <b>processExecute</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>Status <b>processJoin</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>Status <b>processQuery</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>Status <b>processRequest</b>(ACLMessage incoming)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "24">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
 </table>>]
-Mario Mario [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>Mario</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="32"><b>Agent</b></FONT></td></tr>
 </table>>]
-ProblemManager ProblemManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>ProblemManager</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void processInternal(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void processRequests(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doOpenProblem(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void doCancelProblem(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean doOpenSession(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void doForcedCloseSession(String sessionID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean doCloseSession(String sessionKey)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void purgeSessions()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="32"><b>Agent</b></FONT></td></tr>
 </table>>]
-SessionManager SessionManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>SessionManager</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void Introduction()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void solvedProblem(String problemName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void Error(String message)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void Info(String message)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void addMilestone(String milestone)</i></FONT></td></tr>
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="32"><b>Agent</b></FONT></td></tr>
 </table>>]
-SonGoanda SonGoanda [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>SonGoanda</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
-</table>>]
-StoreManager StoreManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>StoreManager</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void processRequest(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void supplyStore()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void buyProduct(ACLMessage incoming, String product)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void shoppingList(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
-</table>>]
-TeamController TeamController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>TeamController</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Status loadWorld()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Status processRequest(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Status processJoin(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Status processExecute(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Status processQuery(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void updateXUIAgent(String agentname)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void updateXUIGoals()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void processRegister(ACLMessage incoming)</i></FONT></td></tr>
-</table>>]
-WorldController WorldController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Arial" POINT-SIZE= "24"><b>WorldController</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void Execute()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void takeDown()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Status loadWorld()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Status processRequest(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Status processJoin(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Status processExecute(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Status processQuery(ACLMessage incoming)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected void updateXUI(String agentname)</i></FONT></td></tr>
-</table>>]
-Session Session [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="LightSteelBlue"><FONT face="Arial" POINT-SIZE= "24"><b>Session</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Session(DBA2122 db)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String open()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void close()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public final Session clear()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean isEmpty()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Ole toOle()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Session fromOle(Ole o)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Session setOwner(String agentName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Session addGuest(String agentName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public World getWorld()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setWorld(World world)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Session setContext(String problemName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setDatabase(DBA2122 database)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setUserID(int userID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setProblemID(int problemID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setGroupID(int groupID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setAssignmentID(int assignmentID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setAgentID(int agentID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setIsIndividual(boolean isIndividual)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setUserName(String userName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setAgentName(String agentName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setProblemName(String problemName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setGroupName(String groupName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setSessionID(String sessionID)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setAssignmentName(String assignmentName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setControllerName(String controllerName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setProblemMilestones(OleSet problemMilestones)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setSessionMilestones(OleSet sessionMilestones)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setLastAction(String lastAction)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setSessionLogger(Logger sessionLogger)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public DBA2122 getDatabase()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getUserID()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getProblemID()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getGroupID()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getAssignmentID()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getAgentID()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean getIsIndividual()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getUserName()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getAgentName()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getProblemName()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getGroupName()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getSessionID()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getAssignmentName()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getControllerName()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleSet getProblemMilestones()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleSet getSessionMilestones()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getLastAction()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Logger getSessionLogger()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public ArrayList&lt;Integer&gt; getFellowsID()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getContainerName()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setContainerName(String containerName)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleSet getSessionMilestonesMissing()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setSessionMilestonesMissing(OleSet sessionMilestonesMissing)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public OleSet getAchievedMilestones()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setAchievedMilestones(OleSet achievedMilestones)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public Map2DColor getMap()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setMap(Map2DColor map)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public liveBot registerAgent(String name, Roles rol, int basex, int basey, OleSet attachments)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public liveBot findAgent(String name)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void addTrace(String record)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean execAgent(liveBot agent, String action)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void checkStatus(liveBot agent)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String isGoal(liveBot agent)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public JsonObject getGoals()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public JsonObject readPerceptions(liveBot agent)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public JsonObject getPerceptions(liveBot agent)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getNumPayload()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getNumSteps()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getEnergyBurnt()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean hasDistances()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getElapsedTime()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getOpenDate()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setOpenDate(String sthOpen)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected int getSensorRange(glossary.sensors name)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>protected int getBurnRatio(glossary.sensors name)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getMaxVisibility(Roles rol)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getRange(Roles rol)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getMaxLevel(Roles r)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public double getBurnRate(Roles rol)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getWidth()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setWidth(int width)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getHeight()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setHeight(int height)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public int getMaxflight()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setMaxflight(int maxflight)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public boolean isSolved()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getSessionAlias()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void setSessionAlias(String sessionAlias)</i></FONT></td></tr>
-</table>>]
-LARVATelegramBot LARVATelegramBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="DarkViolet"><FONT face="Arial" POINT-SIZE= "24"><b>LARVATelegramBot</b></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getBotUsername()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public String getBotToken()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>public void onUpdateReceived(Update update)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "18"><i>if (privateDBA)</i></FONT></td></tr>
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="32"><b>Agent</b></FONT></td></tr>
 </table>>]
 LARVAPrivateTelegram -> LARVABaseTelegram [arrowhead=onormal, penwidth=2, color=black]
 LARVAPublicTelegram -> LARVABaseTelegram [arrowhead=onormal, penwidth=2, color=black]
+LARVAAdminAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=2, color=black]
+LARVAFirstAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=2, color=black]
+SessionManager -> LARVAEphemeral [arrowhead=onormal, penwidth=2, color=black]
+StoreManager -> LARVAEphemeral [arrowhead=onormal, penwidth=2, color=black]
+LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=2, color=black]
 Goku -> SessionManager [arrowhead=onormal, penwidth=2, color=black]
 HWManager -> SessionManager [arrowhead=onormal, penwidth=2, color=black]
 Mario -> SessionManager [arrowhead=onormal, penwidth=2, color=black]
 SonGoanda -> SessionManager [arrowhead=onormal, penwidth=2, color=black]
 TeamController -> SessionManager [arrowhead=onormal, penwidth=2, color=black]
 WorldController -> SessionManager [arrowhead=onormal, penwidth=2, color=black]
-SessionManager -> LARVAEphemeral [arrowhead=onormal, penwidth=2, color=black]
-StoreManager -> LARVAEphemeral [arrowhead=onormal, penwidth=2, color=black]
 DataBaser -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
 DrDiagnostic -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
-EmptyAgent -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
 GMailer -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
 IdentityManager -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
 LARVABaseTelegram -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
 LARVAEphemeral -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
 LARVAQueen -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
-ProblemManager -> LARVAAdminAgent [arrowhead=onormal, penwidth=2, color=black]
-FactoryAgent -> LARVAQueen [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
-LARVAAdminAgent -> LARVATelegramBot [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
-LARVAAdminAgent -> ADMINMessage [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
-FactoryAgent -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
-DBA2122 -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
-AdminCryptor -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
-LARVAAdminAgent -> FactoryAgent [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
-DBA2122 -> Session [style=dotted,arrowhead=odiamond, penwidth=2,color=blue]
 }

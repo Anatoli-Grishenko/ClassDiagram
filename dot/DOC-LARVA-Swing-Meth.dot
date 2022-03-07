@@ -1,0 +1,295 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ size="11,16!";
+ margin=0;
+Ole Ole [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Ole</b></FONT></td></tr>
+</table>>]
+OleConfig OleConfig [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleConfig</b></FONT></td></tr>
+</table>>]
+AirTrafficControl AirTrafficControl [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>AirTrafficControl</b></FONT></td></tr>
+</table>>]
+LARVAAirTrafficControlTiles LARVAAirTrafficControlTiles [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>LARVAAirTrafficControlTiles</b></FONT></td></tr>
+</table>>]
+LARVACompactDash LARVACompactDash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>LARVACompactDash</b></FONT></td></tr>
+</table>>]
+LARVADash LARVADash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>LARVADash</b></FONT></td></tr>
+</table>>]
+LARVADialog LARVADialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>LARVADialog</b></FONT></td></tr>
+</table>>]
+LARVAEmbeddedDash LARVAEmbeddedDash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>LARVAEmbeddedDash</b></FONT></td></tr>
+</table>>]
+LARVAFrame LARVAFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>LARVAFrame</b></FONT></td></tr>
+</table>>]
+LARVAMiniDash LARVAMiniDash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>LARVAMiniDash</b></FONT></td></tr>
+</table>>]
+Ole3DApplication Ole3DApplication [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Ole3DApplication</b></FONT></td></tr>
+</table>>]
+Ole3DPane Ole3DPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Ole3DPane</b></FONT></td></tr>
+</table>>]
+OleApplication OleApplication [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleApplication</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>JPanel <b>getMainPanel</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>LayoutManager <b>defLayout</b>(Container c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleApplication <b>init</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleDrawPane <b>getDrawingPane</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleScrollPane <b>getScollPane</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>inputLine</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>inputSelect</b>(String message, String[] options, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>abstract void <b>Draw</b>(Graphics2D g);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>abstract void <b>myActionListener</b>(ActionEvent e);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>abstract void <b>myKeyListener</b>(KeyEvent e);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>Confirm</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>Error</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>Info</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>OleDraw</b>(Graphics2D g)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>Warning</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>cleanStatus</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>closeProgress</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>keyPressed</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>keyReleased</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>keyTyped</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>myActionListener</b>(ActionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>myKeyListener</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>showError</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>showInfo</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>showProgress</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>showProgress</b>(String what, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>showProgress</b>(String what, int value, int max)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>showProgressFrame</b>(String what, int value, int max)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>showStatus</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>showWarning</b>(String message)</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>addLabel</b>(Container con, String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>addLabel</b>(Container con, String s, Color col)</i></FONT></td></tr>
+<tr><td> </td></tr></table></td></tr>
+</table>>]
+OleButton OleButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleButton</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>mouseEntered</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>mouseExited</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>setEnabled</b>(boolean b)</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td> </td></tr></table></td></tr>
+</table>>]
+OleDialog OleDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleDialog</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleConfig <b>getResult</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleDialog <b>addActionListener</b>(BiConsumer&lt;ActionEvent, OleConfig&gt; l)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>O<b>leDialog</b>(JFrame parent, String title)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>run</b>(OleConfig o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>run</b>(OleConfig o, String defaulttab)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>static String <b>doSaveAsFile</b>(String currentfolder)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>static String <b>doSelectFolder</b>(String currentfolder)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>JPanel <b>setLayout</b>(String oid, Ole ocomponents, OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>OleConfig <b>getValues</b>(Ole currentTab, OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>OleConfig <b>getValues</b>(OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>setLayout</b>(OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>setValues</b>(OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>void <b>setValues</b>(String oid, Ole ocomponents, OleConfig olecfg)</i></FONT></td></tr>
+<tr><td> </td></tr></table></td></tr>
+</table>>]
+OleDrawPane OleDrawPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleDrawPane</b></FONT></td></tr>
+</table>>]
+OleFrame OleFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleFrame</b></FONT></td></tr>
+</table>>]
+OleList OleList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleList</b></FONT></td></tr>
+</table>>]
+OleMenuBar OleMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleMenuBar</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>JMenu <b>addMenu</b>(String name, OleConfig omenu)</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td> </td></tr></table></td></tr>
+</table>>]
+OleScrollPane OleScrollPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleScrollPane</b></FONT></td></tr>
+</table>>]
+OleToolBar OleToolBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleToolBar</b></FONT></td></tr>
+</table>>]
+SwingTools SwingTools [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>SwingTools</b></FONT></td></tr>
+</table>>]
+DeathStar DeathStar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>DeathStar</b></FONT></td></tr>
+</table>>]
+Circle3D Circle3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Circle3D</b></FONT></td></tr>
+</table>>]
+Entity3D Entity3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Entity3D</b></FONT></td></tr>
+</table>>]
+Line3D Line3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Line3D</b></FONT></td></tr>
+</table>>]
+Point3D Point3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Point3D</b></FONT></td></tr>
+</table>>]
+Polygon3D Polygon3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Polygon3D</b></FONT></td></tr>
+</table>>]
+Scene3D Scene3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Scene3D</b></FONT></td></tr>
+</table>>]
+String3D String3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>String3D</b></FONT></td></tr>
+</table>>]
+Vector3D Vector3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Vector3D</b></FONT></td></tr>
+</table>>]
+Map2DColor Map2DColor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Map2DColor</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JButton</b></FONT></td></tr>
+</table>>]
+JPopupMenu JPopupMenu [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPopupMenu</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+JScrollPane JScrollPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JScrollPane</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JButton</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JList JList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JList</b></FONT></td></tr>
+</table>>]
+JMenuBar JMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JMenuBar</b></FONT></td></tr>
+</table>>]
+JScrollPane JScrollPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JScrollPane</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JButton</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JList JList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JList</b></FONT></td></tr>
+</table>>]
+JMenuBar JMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JMenuBar</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JPopupMenu JPopupMenu [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPopupMenu</b></FONT></td></tr>
+</table>>]
+JScrollPane JScrollPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JScrollPane</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JButton</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JList JList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JList</b></FONT></td></tr>
+</table>>]
+JMenuBar JMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JMenuBar</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JPopupMenu JPopupMenu [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPopupMenu</b></FONT></td></tr>
+</table>>]
+JScrollPane JScrollPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JScrollPane</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JButton</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JList JList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JList</b></FONT></td></tr>
+</table>>]
+JMenuBar JMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JMenuBar</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JPopupMenu JPopupMenu [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPopupMenu</b></FONT></td></tr>
+</table>>]
+JScrollPane JScrollPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JScrollPane</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JButton</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JList JList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JList</b></FONT></td></tr>
+</table>>]
+JMenuBar JMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JMenuBar</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JPopupMenu JPopupMenu [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPopupMenu</b></FONT></td></tr>
+</table>>]
+JScrollPane JScrollPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JScrollPane</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JButton</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JList JList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JList</b></FONT></td></tr>
+</table>>]
+JMenuBar JMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JMenuBar</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JPopupMenu JPopupMenu [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JPopupMenu</b></FONT></td></tr>
+</table>>]
+JScrollPane JScrollPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JScrollPane</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+OleDrawPane -> JPanel [arrowhead=onormal, penwidth=1, color=black]
+OleToolBar -> JPanel [arrowhead=onormal, penwidth=1, color=black]
+OleApplication -> OleFrame [arrowhead=onormal, penwidth=1, color=black]
+OleButton -> JButton [arrowhead=onormal, penwidth=1, color=black]
+Ole -> JsonObject [arrowhead=onormal, penwidth=1, color=black]
+OleConfig -> Ole [arrowhead=onormal, penwidth=1, color=black]
+LARVAFrame -> JFrame [arrowhead=onormal, penwidth=1, color=black]
+OleFrame -> JFrame [arrowhead=onormal, penwidth=1, color=black]
+Ole3DPane -> JScrollPane [arrowhead=onormal, penwidth=1, color=black]
+OleScrollPane -> JScrollPane [arrowhead=onormal, penwidth=1, color=black]
+LARVACompactDash -> LARVADash [arrowhead=onormal, penwidth=1, color=black]
+LARVAMiniDash -> LARVADash [arrowhead=onormal, penwidth=1, color=black]
+Ole3DApplication -> OleApplication [arrowhead=onormal, penwidth=1, color=black]
+Circle3D -> Entity3D [arrowhead=onormal, penwidth=1, color=black]
+Line3D -> Entity3D [arrowhead=onormal, penwidth=1, color=black]
+Polygon3D -> Entity3D [arrowhead=onormal, penwidth=1, color=black]
+String3D -> Entity3D [arrowhead=onormal, penwidth=1, color=black]
+LARVADialog -> JDialog [arrowhead=onormal, penwidth=1, color=black]
+OleDialog -> JDialog [arrowhead=onormal, penwidth=1, color=black]
+OleList -> JList [arrowhead=onormal, penwidth=1, color=black]
+OleMenuBar -> JMenuBar [arrowhead=onormal, penwidth=1, color=black]
+Point3D -> Vector3D [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+LARVAFrame -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Map2DColor -> LARVADash [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Point3D -> Line3D [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleFrame -> OleMenuBar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleConfig -> OleMenuBar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+LARVAFrame -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+AirTrafficControl -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+LARVAEmbeddedDash -> LARVAAirTrafficControlTiles [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleDrawPane -> Ole3DPane [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Scene3D -> Ole3DPane [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleApplication -> OleButton [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleConfig -> OleDialog [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Entity3D -> Scene3D [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Point3D -> Polygon3D [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleFrame -> OleToolBar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleApplication -> OleToolBar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleConfig -> OleToolBar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleDrawPane -> OleScrollPane [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+LARVAMiniDash -> DeathStar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+LARVAAirTrafficControlTiles -> DeathStar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Point3D -> Circle3D [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Map2DColor -> AirTrafficControl [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}

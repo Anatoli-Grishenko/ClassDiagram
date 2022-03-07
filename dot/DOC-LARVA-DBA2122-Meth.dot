@@ -1,0 +1,73 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ratio="fill";
+ size="11,16!";
+ margin=0;
+DBA2122 DBA2122 [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>DBA2122</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>ArrayList&lt;Long&gt; <b>DBGetAllChatsSubscribedTelegram</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>DBA2122 <b>cacheTables</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Ole <b>DBGetAllUsersCID</b>(long cid)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Ole <b>DBGetAssignment</b>(int assignmentID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Ole <b>DBGetCourse</b>(int courseID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Ole <b>DBGetGroup</b>(int groupID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Ole <b>DBGetMilestone</b>(String milestoneID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Ole <b>DBGetProblem</b>(int problemID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Ole <b>DBGetUser</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Ole <b>DBGetUserCredentials</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Ole <b>DBGetUserGroup</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OlePassport <b>DBGetPassport</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleSet <b>DBGetAssignmentMilestones</b>(int assignmentID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleSet <b>DBGetAssignmentUserMilestones</b>(int userID, int assignmentID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleSet <b>DBGetCourseMilestones</b>(int courseID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleSet <b>DBGetCourseUserMilestones</b>(int userID, int courseID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleSet <b>DBGetProblemGroupMilestones</b>(int groupID, int problemID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleSet <b>DBGetProblemMilestones</b>(int problemID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleSet <b>DBGetProblemUserMilestones</b>(int userID, int problemID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleSet <b>DBGetUserNotifications</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleTable <b>DBGetAllAgents</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleTable <b>DBGetAllBannedAgents</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleTable <b>DBGetAllExceptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleTable <b>DBGetOpenSessions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleTable <b>DBGetSession</b>(String sessionID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleTable <b>DBGetUserFellows</b>(int groupID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleTable <b>DBGetUserSession</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>DBAssignAlias</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>DBBannedUntilAgent</b>(String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>DBGetFreeALias</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>DBDoCheckInAgent</b>(String agentname, int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>DBHasUserNotifications</b>(int userID, String noti)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>DBIsChatSubscribedTelegram</b>(long cid)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>DBIsSessionOpen</b>(String sessionID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>DBIsUserSubscribedTelegram</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>DBGetAgentID</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>DBGetAsignmentID</b>(String name)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>DBGetProblemID</b>(String problemName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>DBGetUserCourse</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>DBIsCheckedInAgent</b>(String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>DBWhoCheckedInAgent</b>(String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>long <b>DBGetUserCID</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBActivateUserNotifications</b>(int userID, String subscription)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBAddException</b>(String agentName, String title, String description)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBAddGroupMilestone</b>(int userID, int problemID, String milestoneID, String sessionID, String date)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBAddUser</b>(int userID, String name, String email)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBAddUserMilestone</b>(int userID, int problemID, String milestoneID, String sessionID, String date)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBCleanProblemUserMilestones</b>(int userID, int problemID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBClearExceptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBCloseSession</b>(String sessionID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBDeleteChatUserID</b>(int userID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBDoBanAgent</b>(String agentname, String bannedUntil)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBDoCheckInAgent</b>(String agentname, int userID, String container)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBDoCheckOutAgent</b>(String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBFreeALias</b>(String alias)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBOpenSession</b>(int userID, String agentName, int problemID, String sessionID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBRemoveUserNotifications</b>(int userID, String subscription)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBUndoBanAgent</b>(String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBUpdateChatUserID</b>(int userID, long cid)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>DBUpdateStatisticsSessionSession</b>(String sessionID, OleQuery update)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>addUserToGroup</b> (int userID, int groupID)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>clearGroup</b> (int groupID)</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td> </td></tr></table></td></tr>
+</table>>]
+}

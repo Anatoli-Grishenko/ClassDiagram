@@ -1,0 +1,370 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ratio="fill";
+ size="11,16!";
+ margin=0;
+Ole Ole [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>Ole</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>JsonObject <b>toPlainJson</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>List&lt;String&gt; <b>getFieldList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>addField</b>(String fieldName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>clear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>fromJson</b>(JsonObject jsole)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>loadFile</b>(String fullfilename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>offEncryption</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>onEncryption</b>(Cryptor myc)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>parse</b>(String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>set</b>(String field, JsonArray value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>set</b>(String field, Ole value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>set</b>(String field, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>set</b>(String field, boolean value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>set</b>(String field, double value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>set</b>(String field, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>set</b>(String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>setDate</b>(String date)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>setDescription</b>(String description)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>setFieldGeneric</b>(String field, Object s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>setID</b>(String id)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>setOle</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>setType</b>(String type)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>Ole</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>Ole</b>(JsonObject jsole)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>Ole</b>(String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>getDate</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>getDescription</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>getFieldType</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>getID</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>getType</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>getValueType</b>(JsonValue jsv)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>toString</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>toString</b>(WriterConfig wcon)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>checkField</b>(String fieldName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>isEmpty</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>isEncrypted</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>isOle</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final ArrayList <b>getArray</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final Ole <b>addToField</b>(String fieldname, Ole v)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final Ole <b>addToField</b>(String fieldname, String v)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final Ole <b>addToField</b>(String fieldname, boolean v)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final Ole <b>addToField</b>(String fieldname, double v)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final Ole <b>addToField</b>(String fieldname, int v)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final Ole <b>getOle</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final Ole <b>setField</b>(String fieldname, ArrayList&lt;Object&gt; value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final Ole <b>setField</b>(String fieldname, Ole value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final Ole <b>setField</b>(String fieldname, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final Ole <b>setField</b>(String fieldname, boolean value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final Ole <b>setField</b>(String fieldname, double value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final Ole <b>setField</b>(String fieldname, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final String <b>getField</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final String <b>getString</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final boolean <b>getBoolean</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final double <b>getDouble</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final int <b>getInt</b>(String field)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>static JsonObject <b>Ole2PlainJson</b>(Ole odata)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>static List&lt;String&gt; <b>allNames</b>(JsonObject jso)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>static Ole <b>Json2Ole</b>(JsonObject jsole)</i></FONT></td></tr>
+</table>>]
+OleConfig OleConfig [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleConfig</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>List&lt;String&gt; <b>getAllTabFields</b>(String stab)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>List&lt;String&gt; <b>getAllTabNames</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>getOptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>getProperties</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>getProperties</b>(String sfield)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>getTab</b>(String stab)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>OleConfig</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>int <b>numTabs</b>()</i></FONT></td></tr>
+</table>>]
+OleDot OleDot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleDot</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>OleDot</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>isFill</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>if <b>(getOle("methods").get</b>(classname) != null)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>int <b>getHeight</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>int <b>getWidth</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>static String <b>highlight</b>(String s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>static void <b>exportTo</b>(String dotFile, String layoutmanager, String type)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>recursiveTree</b>(Ole classname, PrintStream output)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>setFill</b>(boolean fill)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>setHeight</b>(int height)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>setResolution</b>(int ppp)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>setWidth</b>(int width)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>toDot</b>(String dotfilename)</i></FONT></td></tr>
+</table>>]
+OleFile OleFile [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleFile</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleFile <b>loadFile</b>(String fullfilename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>OleFile</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>getFileName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>getStringContent</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>saveFile</b>(String outputfolder)</i></FONT></td></tr>
+</table>>]
+OlePassport OlePassport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OlePassport</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>OlePassport</b>(Ole o)</i></FONT></td></tr>
+</table>>]
+OleQuery OleQuery [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleQuery</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleQuery <b>Condition</b>(String field, String comp, Object o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleQuery <b>Pair</b>(String field, Object o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>OleQuery</b>(Ole o)</i></FONT></td></tr>
+</table>>]
+OleReport OleReport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleReport</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>OleReport</b>(ReportableObject o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>shortTextReport</b>()</i></FONT></td></tr>
+</table>>]
+OleSensor OleSensor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleSensor</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>ArrayList&lt;Double&gt; <b>getAllReadings</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleSensor <b>setAllReadings</b>(ArrayList&lt;Double&gt; values)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleSensor <b>setSensorName</b>(String name)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>OleSensor</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>getSensorName</b>()</i></FONT></td></tr>
+</table>>]
+OleSet OleSet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleSet</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleSet <b>addDupItem</b>(String item)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleSet <b>addDupItem</b>(String[] items)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleSet <b>addUniqueItem</b>(String item)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleSet <b>addUniqueItem</b>(String[] items)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleSet <b>getConcatenation</b>(OleSet other)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleSet <b>getDifference</b>(OleSet other)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleSet <b>getIntersection</b>(OleSet other)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleSet <b>getUnion</b>(OleSet other)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleSet <b>removeALlItems</b>(String item)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleSet <b>removeItem</b>(String item)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>OleSet</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>getItem</b>(int i)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>prettyprint</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>findItem</b>(String item)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>int <b>size</b>()</i></FONT></td></tr>
+</table>>]
+OleTable OleTable [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleTable</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>ArrayList&lt;Ole&gt; <b>getAllRows</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>ArrayList&lt;Ole&gt; <b>getAllRows</b>(String field, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>ArrayList&lt;Ole&gt; <b>getAllRows</b>(String field, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>JsonArray <b>rawRows</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>getRow</b>(String field, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>getRow</b>(String field, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Ole <b>getRow</b>(int r)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleTable <b>addRow</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleTable <b>getAllRowsOleTable</b>(String field, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleTable <b>getAllRowsOleTable</b>(String field, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>OleTable</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>OleTable</b>(ResultSet rs)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>prettyprint</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>isEmpty</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>int <b>size</b>()</i></FONT></td></tr>
+</table>>]
+OleApplication OleApplication [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleApplication</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>JPanel <b>getMainPanel</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>LayoutManager <b>defLayout</b>(Container c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleApplication <b>init</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleBitmapPane <b>getScollPane</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleDrawPane <b>getDrawingPane</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>inputLine</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>inputSelect</b>(String message, String[] options, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>abstract void <b>Draw</b>(Graphics2D g);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>abstract void <b>myActionListener</b>(ActionEvent e);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>abstract void <b>myKeyListener</b>(KeyEvent e);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>Confirm</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>Error</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>Info</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>OleDraw</b>(Graphics2D g)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>Warning</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>cleanStatus</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>closeProgress</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>keyPressed</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>keyPressed</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>keyReleased</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>keyReleased</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>keyTyped</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>keyTyped</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>myActionListener</b>(ActionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>myKeyListener</b>(KeyEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>showError</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>showInfo</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>showProgress</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>showProgress</b>(String what, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>showProgress</b>(String what, int value, int max)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>showProgressFrame</b>(String what, int value, int max)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>showStatus</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>showWarning</b>(String message)</i></FONT></td></tr>
+</table>>]
+OleBitmapPane OleBitmapPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleBitmapPane</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>JPanel <b>getOleDrawPane</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>double <b>getZoom</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>clear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>mouseClicked</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>mouseDragged</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>mouseEntered</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>mouseExited</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>mouseMoved</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>mousePressed</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>mouseReleased</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>mouseWheelMoved</b>(MouseWheelEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>reset</b>(Dimension d)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>setZoom</b>(double z)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>zoomIn</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>zoomOut</b>()</i></FONT></td></tr>
+</table>>]
+OleButton OleButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleButton</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>mouseEntered</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>mouseExited</b>(MouseEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>setEnabled</b>(boolean b)</i></FONT></td></tr>
+</table>>]
+OleDialog OleDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleDialog</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleConfig <b>getResult</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleDialog <b>addActionListener</b>(BiConsumer&lt;ActionEvent, OleConfig&gt; l)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>OleDialog</b>(JFrame parent, String title)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>run</b>(OleConfig o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>run</b>(OleConfig o, String defaulttab)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>static String <b>doSaveAsFile</b>(String currentfolder)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>static String <b>doSelectFolder</b>(String currentfolder)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+</table>>]
+OleDrawPane OleDrawPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleDrawPane</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>Graphics2D <b>canvas</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>abstract  void <b>OleDraw</b>(Graphics2D g);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>clear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>paintComponent</b>(Graphics g)</i></FONT></td></tr>
+</table>>]
+OleFrame OleFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleFrame</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleFrame <b>init</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>OleFrame</b>(OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>abstract void <b>myActionListener</b>(ActionEvent e);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>abstract void <b>myKeyListener</b>(KeyEvent e);</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+</table>>]
+OleList OleList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleList</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>DefaultListModel <b>getListMode</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>JButton <b>getAddButton</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>JButton <b>getRemoveButton</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>JScrollPane <b>getPane</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleList <b>addAllElements</b>(ArrayList&lt;String&gt; elements)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleList <b>addElement</b>(String element)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleList <b>clear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleList <b>init</b>(OleConfig olecfg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleList <b>removeElement</b>(String element)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleList <b>removeElement</b>(int pos)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>valueChanged</b>(ListSelectionEvent e)</i></FONT></td></tr>
+</table>>]
+OleMenuBar OleMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleMenuBar</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>JMenu <b>addMenu</b>(String name, OleConfig omenu)</i></FONT></td></tr>
+</table>>]
+OleToolBar OleToolBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="9"><b>OleToolBar</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JButton</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+JScrollPane JScrollPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JScrollPane</b></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JButton</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JList JList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JList</b></FONT></td></tr>
+</table>>]
+JMenuBar JMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JMenuBar</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JPanel</b></FONT></td></tr>
+</table>>]
+OleDataBase OleDataBase [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>OleDataBase</b></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>ArrayList&lt;String&gt; <b>getColumnList</b>(String tablename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>ArrayList&lt;String&gt; <b>getTableList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleTable <b>DBObjectQuery</b>(String table, OleQuery oq)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>OleTable <b>DBquery</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>defReportType</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>getColumnType</b>(String tablename, String columname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>getURL</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String <b>reportObjectStatus</b>(String objectid)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String[] <b>defReportableObjectList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>String[] <b>errorLog</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>DBObjectDelete</b>(String table, OleQuery oq)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>DBObjectUpdate</b>(String table, OleQuery find, OleQuery update)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>DBObjectUpdateUnique</b>(String table, OleQuery find, OleQuery update)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>DBdelete</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>DBinsert</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>DBupdate</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>canContinue</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>defineConnection</b>(String host, int port, String database, String user, String password)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>getORM</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>isEmpty</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>isError</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>isOpen</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>boolean <b>openConnection</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>final void <b>closeConnection</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>of.println</b>(" OleDataBase db;");</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>of.println(" OleTable "+table+"GetRow(OleQuery oq) ");</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>of.println(" OleTable "+table+"GetRow(String field, String value) ");</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i><b>of.println</b>(" class "+this._database+" ");</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>closeTransaction</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>emergencyClose</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>endCommit</b>() throws SQLException</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>flushError</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>loadSchema</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>openTransaction</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>reportError</b>(String which)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>reportException</b>(Exception Ex)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>rollBack</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>startCommit</b>() throws SQLException</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "6">[+]<i>void <b>validationQuery</b>()</i></FONT></td></tr>
+</table>>]
+JButton JButton [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JButton</b></FONT></td></tr>
+</table>>]
+JDialog JDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JDialog</b></FONT></td></tr>
+</table>>]
+JFrame JFrame [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JFrame</b></FONT></td></tr>
+</table>>]
+JList JList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JList</b></FONT></td></tr>
+</table>>]
+JMenuBar JMenuBar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JMenuBar</b></FONT></td></tr>
+</table>>]
+JPanel JPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JPanel</b></FONT></td></tr>
+</table>>]
+JScrollPane JScrollPane [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JScrollPane</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="9"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+OleDrawPane -> JPanel [arrowhead=onormal, penwidth=1, color=black]
+OleToolBar -> JPanel [arrowhead=onormal, penwidth=1, color=black]
+OleApplication -> OleFrame [arrowhead=onormal, penwidth=1, color=black]
+OleButton -> JButton [arrowhead=onormal, penwidth=1, color=black]
+Ole -> JsonObject [arrowhead=onormal, penwidth=1, color=black]
+OleConfig -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleDot -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleFile -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OlePassport -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleQuery -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleReport -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleSensor -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleSet -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleTable -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleFrame -> JFrame [arrowhead=onormal, penwidth=1, color=black]
+OleBitmapPane -> JScrollPane [arrowhead=onormal, penwidth=1, color=black]
+OleDialog -> JDialog [arrowhead=onormal, penwidth=1, color=black]
+OleList -> JList [arrowhead=onormal, penwidth=1, color=black]
+OleMenuBar -> JMenuBar [arrowhead=onormal, penwidth=1, color=black]
+OleFrame -> OleMenuBar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleConfig -> OleMenuBar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleApplication -> OleButton [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleConfig -> OleDialog [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleFrame -> OleToolBar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleApplication -> OleToolBar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleConfig -> OleToolBar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Ole -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleTable -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleDrawPane -> OleBitmapPane [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}
