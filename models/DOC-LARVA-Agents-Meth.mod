@@ -36,7 +36,7 @@
       },
       {
         "LARVAFirstAgent": [
-          "DeathStar"
+          
         ]
       },
       {
@@ -207,12 +207,17 @@
       "void setup()",
       "void takeDown()",
       "void Execute()",
+      "void preExecute()  }",
+      "void postExecute()  }",
+      "void doExit()",
+      "void doNotExit()",
       "ArrayList<String> DFGetProviderList()",
       "ArrayList<String> DFGetServiceList()",
       "ArrayList<String> DFGetAllProvidersOf(String service)",
       "ArrayList<String> DFGetAllServicesProvidedBy(String agentName)",
       "boolean DFHasService(String agentName, String service)",
       "boolean DFSetMyServices(String[] services)",
+      "boolean DFAddMyServices(String[] services)",
       "void DFRemoveAllMyServices()",
       "boolean AMSIsConnected(String agentName)",
       "ArrayList<String> AMSGetAllConnectedAgents()",
@@ -220,18 +225,22 @@
       "boolean done()",
       "boolean isCheckedin()",
       "void setCheckedin(boolean checkedin)",
-      "int getNCycles()",
+      "long getNCycles()",
       "void setNcycles(int ncycles)",
       "boolean isExit()",
       "void setExit(boolean exit)"
     ],
     "LARVAFirstAgent": [
+      "void setup()",
+      "void postExecute()",
+      "void preExecute()",
       "void takeDown()",
       "boolean loadMyPassport(String passportFileName)",
       "void setMypassport(String mypassport)",
       "String getMypassport()",
       "ACLMessage LARVAblockingReceive(MessageTemplate t)",
       "void Alert(String message)",
+      "void Message(String message)",
       "void doActivateLARVADash()",
       "String getIdentityManager()",
       "void setIdentityManager(String IdentityManager)",
@@ -241,7 +250,8 @@
       "ArrayList<String> DFGetAllServicesProvidedBy(String agentName)",
       "boolean DFHasService(String agentName, String service)",
       "void saveSequenceDiagram(String filename)",
-      "void getUserData(String welcome)"
+      "void getUserData(String welcome)",
+      "void actionPerformed(ActionEvent e)"
     ],
     "LARVAAdminAgent": [
       "void takeDown()",
@@ -276,6 +286,7 @@
   "protectedmethods": {
     "LARVABaseAgent": [
       "void Error(String message)",
+      "void Message(String message)",
       "void Info(String message)",
       "void Alert(String message)",
       "boolean Confirm(String message)",
@@ -283,9 +294,17 @@
       "void BehaviourDefaultSetup()"
     ],
     "LARVAFirstAgent": [
+      "Choice Ag(Environment E, DecisionSet A)",
+      "DecisionSet Prioritize(Environment E, DecisionSet A)",
+      "Environment T(Environment E, Choice a)",
+      "double U(Environment E)",
+      "boolean Va(Environment E, Choice a)",
+      "boolean Ve(Environment E)",
+      "boolean G(Environment E)",
+      "void waitRemoteSemaphore()",
       "boolean isSwing()",
       "void enableDeepLARVAMonitoring()",
-      "String[] getConfiguredSensors()",
+      "String[] getConfiguredSensors(OleConfig ocfg)",
       "void Error(String message)",
       "void Info(String message)",
       "boolean doLARVACheckin()",
@@ -296,9 +315,10 @@
       "boolean Confirm(String message)",
       "String inputLine(String message)",
       "String inputSelect(String message, String[] options, String value)",
-      "void refreshGUI()",
       "void doSwingLater(Runnable what)",
-      "void doSwingWait(Runnable what)"
+      "void doSwingWait(Runnable what)",
+      "void closeRemote()",
+      "void openRemote()"
     ],
     "LARVAAdminAgent": [
       "void doRebootNow()",
@@ -337,10 +357,7 @@
       "Agent",
       "TelegramLongPollingBot",
       "Agent",
-      "TelegramLongPollingBot",
-      "Agent",
-      "TelegramLongPollingBot",
-      "Agent",
+      "DeathStar",
       "TelegramLongPollingBot"
     ],
     "data": [
@@ -350,7 +367,6 @@
       
     ],
     "agents": [
-      "DeathStar",
       "LARVAAdminAgent",
       "LARVABaseAgent",
       "LARVABaseTelegram",

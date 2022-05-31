@@ -29,37 +29,52 @@
   "relation": {
     "extends": [
       {
+        "LARVAFirstAgent": [
+          "XUIAgent"
+        ]
+      },
+      {
         "LARVABaseAgent": [
           "LARVAAdminAgent",
-          "LARVAAdminAgent"
+          "LARVAFirstAgent"
         ]
       },
       {
         "LARVAEphemeral": [
-          "SessionManager",
-          "StoreManager",
           "SessionManager",
           "StoreManager"
         ]
       },
       {
         "Agent": [
-          "LARVABaseAgent",
           "LARVABaseAgent"
         ]
       },
       {
         "SessionManager": [
-          "TeamController",
-          "WorldController",
+          "Controller",
+          "Goku",
+          "HWManager",
+          "Mario",
+          "SonGoanda",
           "TeamController",
           "WorldController"
         ]
       },
       {
         "LARVAAdminAgent": [
+          "IdentityManager",
           "LARVAEphemeral",
-          "LARVAEphemeral"
+          "ProblemManager"
+        ]
+      },
+      {
+        "OleSensor": [
+          "OleBag",
+          "OleDiode",
+          "OleHud",
+          "OleSemiDial",
+          "OleSuperMap"
         ]
       }
     ],
@@ -70,12 +85,72 @@
         ]
       },
       {
+        "OleBag": [
+          
+        ]
+      },
+      {
         "LARVAEphemeral": [
           
         ]
       },
       {
+        "Map2DColor": [
+          
+        ]
+      },
+      {
+        "OleHud": [
+          "Map2DColor"
+        ]
+      },
+      {
+        "ProblemManager": [
+          "Session"
+        ]
+      },
+      {
         "LARVABaseAgent": [
+          
+        ]
+      },
+      {
+        "Goku": [
+          
+        ]
+      },
+      {
+        "SonGoanda": [
+          
+        ]
+      },
+      {
+        "XUIAgent": [
+          "OleDashBoard"
+        ]
+      },
+      {
+        "HWManager": [
+          
+        ]
+      },
+      {
+        "OleSemiDial": [
+          
+        ]
+      },
+      {
+        "Controller": [
+          
+        ]
+      },
+      {
+        "Keygen": [
+          
+        ]
+      },
+      {
+        "IdentityManager": [
           
         ]
       },
@@ -85,13 +160,60 @@
         ]
       },
       {
+        "OleDiode": [
+          
+        ]
+      },
+      {
+        "LARVAFirstAgent": [
+          "Environment"
+        ]
+      },
+      {
+        "Mario": [
+          
+        ]
+      },
+      {
+        "OleSuperMap": [
+          "Environment",
+          "Map2DColor"
+        ]
+      },
+      {
         "LARVAAdminAgent": [
           "Session"
         ]
       },
       {
+        "OleSensor": [
+          
+        ]
+      },
+      {
+        "Environment": [
+          "liveBot"
+        ]
+      },
+      {
         "liveBot": [
           
+        ]
+      },
+      {
+        "OleRemote": [
+          
+        ]
+      },
+      {
+        "OleDashBoard": [
+          "OleSensor",
+          "Environment",
+          "OleSemiDial",
+          "OleDiode",
+          "OleBag",
+          "OleSuperMap",
+          "OleHud"
         ]
       },
       {
@@ -106,119 +228,10 @@
       },
       {
         "Session": [
+          "Map2DColor",
           "liveBot"
         ]
       }
-    ]
-  },
-  "publicmethods": {
-    "TeamController": [
-      "void Execute()",
-      "void takeDown()",
-      "Status loadWorld()",
-      "Status processRequest(ACLMessage incoming)",
-      "Status processJoin(ACLMessage incoming)",
-      "Status processExecute(ACLMessage incoming)",
-      "Status processQuery(ACLMessage incoming)",
-      "void processRegister(ACLMessage incoming)"
-    ],
-    "LARVAEphemeral": [
-      "void unTick()",
-      "void takeDown()"
-    ],
-    "WorldController": [
-      "void Execute()",
-      "void takeDown()",
-      "Status loadWorld()",
-      "Status processRequest(ACLMessage incoming)",
-      "Status processJoin(ACLMessage incoming)",
-      "Status processExecute(ACLMessage incoming)",
-      "Status processQuery(ACLMessage incoming)"
-    ],
-    "liveBot": [
-      "liveBot(String name, World w)",
-      "boolean isAtBase()",
-      "JsonObject toJson()",
-      "void fromJson(JsonObject update)",
-      "String toString()",
-      "int getEnergy()",
-      "int getOnTarget()",
-      "int getAlive()",
-      "int getPayload()",
-      "ArrayList<Thing> getAllPayload()",
-      "void addPayload(Thing what)",
-      "String getStatus()",
-      "void setStatus(String s)",
-      "JsonArray getFullPayload()",
-      "Point3D getPosition()",
-      "int getEnergyBurnt()",
-      "void addEnergyBurnt(int increment)",
-      "int getNumSteps()",
-      "void addNumSteps(int increment)",
-      "Roles getRole()",
-      "void setRole(Roles role)",
-      "ArrayList<String> getCapabilities()",
-      "void addCapabilities(String capability)",
-      "ArrayList<String> getAttachments()",
-      "void addAttachments(String attachment)",
-      "ArrayList<Thing> getThePayload()",
-      "void addThePayload(Thing capture)",
-      "int getEnergylevel()",
-      "void setEnergylevel(int energylevel)",
-      "void burnEnergylevel(int increment)",
-      "int getBurnmovement()",
-      "void setBurnmovement(int burnmovement)",
-      "int getBurnsensor()",
-      "void setBurnsensor(int burnsensor)",
-      "int getMinAllowedLevel()",
-      "void setMinAllowedLevel(int minAllowedLevel)",
-      "int getMaxAllowedLevel()",
-      "void setMaxAllowedLevel(int maxAllowedLevel)",
-      "int getRange()",
-      "void setRange(int range)",
-      "int getAltitude()",
-      "void setAltitude(int altitude)",
-      "int getInitialDistance()",
-      "void setInitialDistance(int initialDistance)",
-      "int getCurrentDistance()",
-      "void setCurrentDistance(int currentDistance)",
-      "String getMyCommitment()",
-      "void setMyCommitment(String myCommitment)"
-    ],
-    "StoreManager": [
-      "void Execute()",
-      "void processRequest(ACLMessage incoming)",
-      "void takeDown()"
-    ],
-    "SessionManager": [
-      "void takeDown()"
-    ]
-  },
-  "protectedmethods": {
-    "TeamController": [
-      "void updateXUIAgent(String agentname)",
-      "void updateXUIGoals()"
-    ],
-    "LARVAEphemeral": [
-      "void onTick()"
-    ],
-    "WorldController": [
-      "void updateXUI(String agentname)"
-    ],
-    "liveBot": [
-      
-    ],
-    "StoreManager": [
-      "void supplyStore()",
-      "void buyProduct(ACLMessage incoming, String product)",
-      "void shoppingList(ACLMessage incoming)"
-    ],
-    "SessionManager": [
-      "void Introduction()",
-      "void solvedProblem(String problemName)",
-      "void Error(String message)",
-      "void Info(String message)",
-      "void addMilestone(String milestone)"
     ]
   },
   "class": {
@@ -228,18 +241,31 @@
       "Agent",
       "Agent",
       "Agent",
-      "Agent"
+      "Agent",
+      "Environment",
+      "Agent",
+      "Environment",
+      "Agent",
+      "Environment",
+      "Agent",
+      "Environment",
+      "Agent",
+      "Environment"
     ],
     "data": [
       
     ],
     "swing": [
-      
+      "OleDashBoard",
+      "OleRemote",
+      "OleSensor"
     ],
     "agents": [
       "LARVAAdminAgent",
       "LARVABaseAgent",
-      "LARVAEphemeral"
+      "LARVAEphemeral",
+      "LARVAFirstAgent",
+      "XUIAgent"
     ],
     "appboot": [
       
@@ -251,7 +277,7 @@
       
     ],
     "crypto": [
-      
+      "Keygen"
     ],
     "database": [
       
@@ -263,19 +289,30 @@
       
     ],
     "geometry": [
-      
+      "OleBag",
+      "OleDiode",
+      "OleHud",
+      "OleSemiDial",
+      "OleSuperMap"
     ],
     "glossary": [
       
     ],
     "larva": [
+      "Controller",
+      "Goku",
+      "HWManager",
+      "IdentityManager",
+      "Mario",
+      "ProblemManager",
       "SessionManager",
+      "SonGoanda",
       "StoreManager",
       "TeamController",
       "WorldController"
     ],
     "map2D": [
-      
+      "Map2DColor"
     ],
     "messaging": [
       
@@ -299,127 +336,127 @@
   "format": {
     "data": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "swing": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "agents": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "appboot": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "basher": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "console": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "crypto": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "database": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "disk": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "factoryagent": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "geometry": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "glossary": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "larva": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "map2D": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "messaging": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "ontology": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "sessions": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "telegram": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "tools": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "world": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "white",
       "color": "black"
     },
     "extern": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 5,
       "fillcolor": "gray",
       "color": "black"
     },

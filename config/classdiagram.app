@@ -3,7 +3,7 @@
         "FrameTitle":"Class diagram viewer",
         "FrameStatus":true,
         "FrameSize":{"width":1024,"height":768},
-        "FlatLaf":"Light",
+        "FlatLaf":"Dark",
         "Menu": {
             "Project": {
                 "Open project...": "OpenProject",
@@ -20,20 +20,17 @@
             "About":"About"
         },
         "ToolBar":{
-            "OpenProject":{"button":"FOLDER"},
-            "SetZoom":{"button":"MAGNIFIER"},
-            "SelectPackages":{"button":"PACKAGE"},
-            "SelectClasses":{"button":"CLASS"},
-            "SelectArrows":{"button":"ARROWS"},
-            "SelectFont":{"button":"FONT"},
-            "SelectResolution":{"button":"DPI"},
-            "Thicker":{"button":"THICKER"},
-            "Narrower":{"button":"NARROWER"},
-            "Taller":{"button":"TALLER"},
-            "Shorter":{"button":"SHORTER"}
-        },
+            "OpenProject":{"text":"folder_open"},
+            "SetZoom":{"text":"aspect_ratio"},
+            "SelectPackages":{"text":"inventory_2"},
+            "SelectClasses":{"text":"square"},
+            "SelectArrows":{"text":"compare_arrows"},
+            "SelectFont":{"text":"font_download"},
+            "SelectResolution":{"text":"article"}
+         },
         "Default project":""
     },
     "properties": {
+        "ToolBar":{"style":"flat","type":"icon"}
     }
 }

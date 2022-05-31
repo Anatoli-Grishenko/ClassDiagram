@@ -31,45 +31,64 @@
       {
         "JPanel": [
           "OleDrawPane",
+          "OleFoldableList",
+          "OleFoldablePane",
+          "OleToolBar",
+          "OleDrawPane",
+          "OleFoldableList",
+          "OleFoldablePane",
           "OleToolBar"
         ]
       },
       {
         "OleFrame": [
+          "OleApplication",
           "OleApplication"
         ]
       },
       {
         "JButton": [
+          "OleButton",
           "OleButton"
         ]
       },
       {
         "JsonObject": [
+          "Ole",
           "Ole"
         ]
       },
       {
         "Ole": [
+          "OleConfig",
           "OleConfig"
         ]
       },
       {
         "JFrame": [
           "LARVAFrame",
+          "OleFrame",
+          "LARVAFrame",
           "OleFrame"
+        ]
+      },
+      {
+        "Vector3D": [
+          
         ]
       },
       {
         "JScrollPane": [
           "Ole3DPane",
+          "OleScrollPane",
+          "Ole3DPane",
           "OleScrollPane"
         ]
       },
       {
-        "LARVADash": [
-          "LARVACompactDash",
-          "LARVAMiniDash"
+        "OleDrawPane": [
+          "OleDashBoard",
+          "OleDashBoard"
         ]
       },
       {
@@ -79,11 +98,16 @@
       },
       {
         "OleApplication": [
+          "Ole3DApplication",
           "Ole3DApplication"
         ]
       },
       {
         "Entity3D": [
+          "Circle3D",
+          "Line3D",
+          "Polygon3D",
+          "String3D",
           "Circle3D",
           "Line3D",
           "Polygon3D",
@@ -93,16 +117,22 @@
       {
         "JDialog": [
           "LARVADialog",
-          "OleDialog"
+          "OleDialog",
+          "OleRemote",
+          "LARVADialog",
+          "OleDialog",
+          "OleRemote"
         ]
       },
       {
         "JList": [
+          "OleList",
           "OleList"
         ]
       },
       {
         "JMenuBar": [
+          "OleMenuBar",
           "OleMenuBar"
         ]
       }
@@ -125,8 +155,7 @@
       },
       {
         "LARVADash": [
-          "LARVAFrame",
-          "Map2DColor"
+          
         ]
       },
       {
@@ -152,9 +181,7 @@
       },
       {
         "LARVAAirTrafficControlTiles": [
-          "LARVAFrame",
-          "AirTrafficControl",
-          "LARVAEmbeddedDash"
+          
         ]
       },
       {
@@ -165,7 +192,7 @@
       },
       {
         "OleButton": [
-          "OleApplication"
+          
         ]
       },
       {
@@ -176,6 +203,14 @@
       {
         "Ole3DApplication": [
           
+        ]
+      },
+      {
+        "OleAgentTile": [
+          "OleApplication",
+          "OleButton",
+          "OlePerformeter",
+          "OleToolBar"
         ]
       },
       {
@@ -206,13 +241,22 @@
       {
         "OleToolBar": [
           "OleFrame",
-          "OleApplication",
-          "OleConfig"
+          "OleApplication"
+        ]
+      },
+      {
+        "OleFoldableList": [
+          
         ]
       },
       {
         "OleScrollPane": [
           "OleDrawPane"
+        ]
+      },
+      {
+        "OlePerformeter": [
+          "Map2DColor"
         ]
       },
       {
@@ -231,14 +275,25 @@
         ]
       },
       {
+        "OleRemote": [
+          "OleButton",
+          "OleApplication",
+          "OleToolBar"
+        ]
+      },
+      {
+        "OleDashBoard": [
+          
+        ]
+      },
+      {
         "OleList": [
           
         ]
       },
       {
         "DeathStar": [
-          "LARVAMiniDash",
-          "LARVAAirTrafficControlTiles"
+          
         ]
       },
       {
@@ -262,6 +317,12 @@
         ]
       },
       {
+        "OleFoldablePane": [
+          "OleButton",
+          "OleFoldableList"
+        ]
+      },
+      {
         "OleApplication": [
           
         ]
@@ -278,79 +339,6 @@
       }
     ]
   },
-  "publicmethods": {
-    "OleMenuBar": [
-      "JMenu addMenu(String name, OleConfig omenu)"
-    ],
-    "OleButton": [
-      "void mouseEntered(MouseEvent e)",
-      "void mouseExited(MouseEvent e)",
-      "void setEnabled(boolean b)"
-    ],
-    "OleDialog": [
-      "static String doSaveAsFile(String currentfolder)",
-      "static String doSelectFolder(String currentfolder)",
-      "OleDialog(JFrame parent, String title)",
-      "OleDialog addActionListener(BiConsumer<ActionEvent, OleConfig> l)",
-      "void actionPerformed(ActionEvent e)",
-      "boolean run(OleConfig o)",
-      "boolean run(OleConfig o, String defaulttab)",
-      "OleConfig getResult()"
-    ],
-    "OleApplication": [
-      "OleApplication init()",
-      "void OleDraw(Graphics2D g)",
-      "OleScrollPane getScollPane()",
-      "OleDrawPane getDrawingPane()",
-      "JPanel getMainPanel()",
-      "abstract void Draw(Graphics2D g);",
-      "LayoutManager defLayout(Container c)",
-      "void actionPerformed(ActionEvent e)",
-      "abstract void myActionListener(ActionEvent e);",
-      "abstract void myKeyListener(KeyEvent e);",
-      "void keyTyped(KeyEvent e)",
-      "void keyPressed(KeyEvent e)",
-      "void keyReleased(KeyEvent e)",
-      "void cleanStatus()",
-      "void showStatus(String message)",
-      "void showInfo(String message)",
-      "void showWarning(String message)",
-      "void showError(String message)",
-      "void showProgressFrame(String what, int value, int max)",
-      "void myActionListener(ActionEvent e)",
-      "void myKeyListener(KeyEvent e)",
-      "void showProgress(String what, int value, int max)",
-      "void showProgress(String what, int value)",
-      "void showProgress(String what)",
-      "void closeProgress(String what)",
-      "void Info(String message)",
-      "void Warning(String message)",
-      "void Error(String message)",
-      "String inputLine(String message)",
-      "String inputSelect(String message, String[] options, String value)",
-      "boolean Confirm(String message)"
-    ]
-  },
-  "protectedmethods": {
-    "OleMenuBar": [
-      
-    ],
-    "OleButton": [
-      
-    ],
-    "OleDialog": [
-      "void setLayout(OleConfig olecfg)",
-      "JPanel setLayout(String oid, Ole ocomponents, OleConfig olecfg)",
-      "void setValues(OleConfig olecfg)",
-      "void setValues(String oid, Ole ocomponents, OleConfig olecfg)",
-      "OleConfig getValues(OleConfig olecfg)",
-      "OleConfig getValues(Ole currentTab, OleConfig olecfg)"
-    ],
-    "OleApplication": [
-      "void addLabel(Container con, String s)",
-      "void addLabel(Container con, String s, Color col)"
-    ]
-  },
   "class": {
     "extern": [
       "JPanel",
@@ -364,11 +352,15 @@
       "JButton",
       "JDialog",
       "JPanel",
+      "JPanel",
+      "JPanel",
       "JFrame",
       "JList",
       "JMenuBar",
+      "JDialog",
       "JScrollPane",
       "JPanel",
+      "DeathStar",
       "JButton",
       "JDialog",
       "JFrame",
@@ -378,71 +370,64 @@
       "JPopupMenu",
       "JScrollPane",
       "JsonObject",
-      "JButton",
-      "JDialog",
-      "JFrame",
-      "JList",
-      "JMenuBar",
-      "JPanel",
-      "JPopupMenu",
-      "JScrollPane",
-      "JsonObject",
-      "JButton",
-      "JDialog",
-      "JFrame",
-      "JList",
-      "JMenuBar",
-      "JPanel",
-      "JPopupMenu",
-      "JScrollPane",
-      "JsonObject",
-      "JButton",
-      "JDialog",
-      "JFrame",
-      "JList",
-      "JMenuBar",
-      "JPanel",
-      "JPopupMenu",
-      "JScrollPane",
-      "JsonObject",
-      "JButton",
-      "JDialog",
-      "JFrame",
-      "JList",
-      "JMenuBar",
-      "JPanel",
-      "JPopupMenu",
-      "JScrollPane",
-      "JsonObject"
+      "LARVAAirTrafficControlTiles",
+      "LARVACompactDash",
+      "LARVADash",
+      "LARVAEmbeddedDash",
+      "LARVAMiniDash"
     ],
     "data": [
+      "Ole",
+      "OleConfig",
       "Ole",
       "OleConfig"
     ],
     "swing": [
       "AirTrafficControl",
-      "LARVAAirTrafficControlTiles",
-      "LARVACompactDash",
-      "LARVADash",
       "LARVADialog",
-      "LARVAEmbeddedDash",
       "LARVAFrame",
-      "LARVAMiniDash",
       "Ole3DApplication",
       "Ole3DPane",
+      "OleAgentTile",
       "OleApplication",
       "OleButton",
+      "OleDashBoard",
       "OleDialog",
       "OleDrawPane",
+      "OleFoldableList",
+      "OleFoldablePane",
       "OleFrame",
       "OleList",
       "OleMenuBar",
+      "OlePerformeter",
+      "OleRemote",
+      "OleScrollPane",
+      "OleToolBar",
+      "SwingTools",
+      "AirTrafficControl",
+      "LARVADialog",
+      "LARVAFrame",
+      "Ole3DApplication",
+      "Ole3DPane",
+      "OleAgentTile",
+      "OleApplication",
+      "OleButton",
+      "OleDashBoard",
+      "OleDialog",
+      "OleDrawPane",
+      "OleFoldableList",
+      "OleFoldablePane",
+      "OleFrame",
+      "OleList",
+      "OleMenuBar",
+      "OlePerformeter",
+      "OleRemote",
       "OleScrollPane",
       "OleToolBar",
       "SwingTools"
     ],
     "agents": [
-      "DeathStar"
+      
     ],
     "appboot": [
       
@@ -473,6 +458,14 @@
       "Polygon3D",
       "Scene3D",
       "String3D",
+      "Vector3D",
+      "Circle3D",
+      "Entity3D",
+      "Line3D",
+      "Point3D",
+      "Polygon3D",
+      "Scene3D",
+      "String3D",
       "Vector3D"
     ],
     "glossary": [
@@ -482,6 +475,7 @@
       
     ],
     "map2D": [
+      "Map2DColor",
       "Map2DColor"
     ],
     "messaging": [

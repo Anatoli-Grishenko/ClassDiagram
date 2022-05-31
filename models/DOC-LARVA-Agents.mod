@@ -29,174 +29,162 @@
   "relation": {
     "extends": [
       {
-        "LARVABaseTelegram": [
-          "LARVAPrivateTelegram",
-          "LARVAPublicTelegram"
+        "OleDataBase": [
+          
         ]
       },
       {
-        "LARVAFirstAgent": [
-          "DeathStar"
+        "JsonObject": [
+          "Ole"
         ]
       },
       {
-        "TelegramLongPollingBot": [
-          "LARVATelegramBot"
+        "Ole": [
+          "OleConfig",
+          "OleDot",
+          "OleFile",
+          "OlePassport",
+          "OleQuery",
+          "OleReport",
+          "OleSet",
+          "OleTable"
         ]
       },
       {
-        "LARVABaseAgent": [
-          "LARVAAdminAgent",
-          "LARVAFirstAgent"
+        "OlePassport": [
+          "AdminPassport"
         ]
       },
       {
-        "LARVAEphemeral": [
-          "SessionManager",
-          "StoreManager"
+        "Cryptor": [
+          "AdminCryptor"
         ]
       },
       {
-        "Agent": [
-          "LARVABaseAgent"
-        ]
-      },
-      {
-        "SessionManager": [
-          "Goku",
-          "HWManager",
-          "Mario",
-          "SonGoanda",
-          "TeamController",
-          "WorldController"
-        ]
-      },
-      {
-        "LARVAAdminAgent": [
-          "DataBaser",
-          "DrDiagnostic",
-          "GMailer",
-          "IdentityManager",
-          "LARVABaseTelegram",
-          "LARVAEphemeral",
-          "LARVAQueen",
-          "ProblemManager"
+        "OleSensor": [
+          
         ]
       }
     ],
     "owns": [
       {
-        "GMailer": [
+        "OleQuery": [
           
         ]
       },
       {
-        "TeamController": [
+        "Ole": [
+          "Cryptor"
+        ]
+      },
+      {
+        "Cryptor": [
           
         ]
       },
       {
-        "LARVAEphemeral": [
+        "Roles": [
           
         ]
       },
       {
-        "LARVAQueen": [
+        "SequenceDiagram": [
           
         ]
       },
       {
-        "ProblemManager": [
+        "TimeHandler": [
           
         ]
       },
       {
-        "DataBaser": [
+        "OleTable": [
           
         ]
       },
       {
-        "LARVABaseTelegram": [
+        "Keygen": [
           
         ]
       },
       {
-        "LARVABaseAgent": [
+        "Transform": [
           
         ]
       },
       {
-        "Goku": [
+        "OleDialog": [
+          "OleConfig"
+        ]
+      },
+      {
+        "Basher": [
           
         ]
       },
       {
-        "LARVAPublicTelegram": [
+        "AdminPassport": [
           
         ]
       },
       {
-        "LARVAPrivateTelegram": [
+        "AdminCryptor": [
           
         ]
       },
       {
-        "SonGoanda": [
+        "ReportableObject": [
           
         ]
       },
       {
-        "HWManager": [
+        "OleFile": [
           
         ]
       },
       {
-        "DrDiagnostic": [
+        "OleSensor": [
           
         ]
       },
       {
-        "LARVATelegramBot": [
-          "LARVAAdminAgent"
+        "OleDataBase": [
+          "Ole",
+          "OleTable"
         ]
       },
       {
-        "IdentityManager": [
+        "Ontology": [
           
         ]
       },
       {
-        "WorldController": [
+        "TokenList": [
           
         ]
       },
       {
-        "LARVAFirstAgent": [
+        "OleDot": [
           
         ]
       },
       {
-        "Mario": [
+        "OlePassport": [
           
         ]
       },
       {
-        "LARVAAdminAgent": [
+        "OleSet": [
           
         ]
       },
       {
-        "StoreManager": [
+        "OleConfig": [
           
         ]
       },
       {
-        "DeathStar": [
-          
-        ]
-      },
-      {
-        "SessionManager": [
+        "OleReport": [
           
         ]
       }
@@ -204,48 +192,46 @@
   },
   "class": {
     "extern": [
-      "Agent",
-      "TelegramLongPollingBot",
-      "Agent",
-      "Agent",
-      "TelegramLongPollingBot",
-      "Agent",
-      "TelegramLongPollingBot",
-      "Agent",
-      "TelegramLongPollingBot",
-      "Agent",
-      "TelegramLongPollingBot",
-      "Agent",
-      "TelegramLongPollingBot"
+      "JsonObject",
+      "JsonObject"
     ],
     "data": [
-      
+      "AdminPassport",
+      "Ole",
+      "OleConfig",
+      "OleDot",
+      "OleFile",
+      "OlePassport",
+      "OleQuery",
+      "OleReport",
+      "OleSet",
+      "OleTable",
+      "TokenList",
+      "Transform"
     ],
     "swing": [
-      
+      "OleDialog",
+      "OleSensor"
     ],
     "agents": [
-      "DeathStar",
-      "LARVAAdminAgent",
-      "LARVABaseAgent",
-      "LARVABaseTelegram",
-      "LARVAEphemeral",
-      "LARVAFirstAgent"
+      
     ],
     "appboot": [
       
     ],
     "basher": [
-      
+      "Basher"
     ],
     "console": [
       
     ],
     "crypto": [
-      
+      "AdminCryptor",
+      "Cryptor",
+      "Keygen"
     ],
     "database": [
-      
+      "OleDataBase"
     ],
     "disk": [
       
@@ -257,43 +243,29 @@
       
     ],
     "glossary": [
-      
+      "Roles"
     ],
     "larva": [
-      "DataBaser",
-      "DrDiagnostic",
-      "GMailer",
-      "Goku",
-      "HWManager",
-      "IdentityManager",
-      "LARVAPrivateTelegram",
-      "LARVAPublicTelegram",
-      "LARVAQueen",
-      "Mario",
-      "ProblemManager",
-      "SessionManager",
-      "SonGoanda",
-      "StoreManager",
-      "TeamController",
-      "WorldController"
+      
     ],
     "map2D": [
       
     ],
     "messaging": [
-      
+      "SequenceDiagram"
     ],
     "ontology": [
-      
+      "Ontology"
     ],
     "sessions": [
       
     ],
     "telegram": [
-      "LARVATelegramBot"
+      
     ],
     "tools": [
-      
+      "ReportableObject",
+      "TimeHandler"
     ],
     "world": [
       

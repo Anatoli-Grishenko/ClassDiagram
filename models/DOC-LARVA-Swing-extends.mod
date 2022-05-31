@@ -29,9 +29,16 @@
   "relation": {
     "extends": [
       {
+        "OleDataBase": [
+          
+        ]
+      },
+      {
         "JPanel": [
           "JDrawPane",
           "OleDrawPane",
+          "OleFoldableList",
+          "OleFoldablePane",
           "OleToolBar"
         ]
       },
@@ -52,7 +59,20 @@
       },
       {
         "Ole": [
-          "OleConfig"
+          "OleConfig",
+          "OleDot",
+          "OleFile",
+          "OlePassport",
+          "OleQuery",
+          "OleReport",
+          "OleSensor",
+          "OleSet",
+          "OleTable"
+        ]
+      },
+      {
+        "OlePassport": [
+          
         ]
       },
       {
@@ -65,6 +85,11 @@
         "JScrollPane": [
           "Ole3DPane",
           "OleScrollPane"
+        ]
+      },
+      {
+        "OleFoldablePane": [
+          "OleAgentTile"
         ]
       },
       {
@@ -93,7 +118,8 @@
       },
       {
         "JDialog": [
-          "LARVADialog"
+          "LARVADialog",
+          "OleDialog"
         ]
       },
       {
@@ -108,6 +134,11 @@
       }
     ],
     "owns": [
+      {
+        "OleQuery": [
+          
+        ]
+      },
       {
         "Ole": [
           
@@ -153,8 +184,8 @@
       {
         "LARVAAirTrafficControlTiles": [
           "LARVAFrame",
-          "AirTrafficControl",
-          "LARVAEmbeddedDash"
+          "LARVAEmbeddedDash",
+          "OleFile"
         ]
       },
       {
@@ -169,8 +200,13 @@
         ]
       },
       {
+        "OleTable": [
+          
+        ]
+      },
+      {
         "OleButton": [
-          "OleApplication"
+          
         ]
       },
       {
@@ -184,8 +220,20 @@
         ]
       },
       {
+        "OleAgentTile": [
+          "OleApplication",
+          "OleButton",
+          "OlePerformeter"
+        ]
+      },
+      {
         "LARVAEmbeddedDash": [
           
+        ]
+      },
+      {
+        "OleDialog": [
+          "OleConfig"
         ]
       },
       {
@@ -211,8 +259,28 @@
         ]
       },
       {
+        "OleFoldableList": [
+          
+        ]
+      },
+      {
         "OleScrollPane": [
           "OleDrawPane"
+        ]
+      },
+      {
+        "OlePerformeter": [
+          "Map2DColor"
+        ]
+      },
+      {
+        "OleFile": [
+          
+        ]
+      },
+      {
+        "OleSensor": [
+          
         ]
       },
       {
@@ -226,6 +294,12 @@
         ]
       },
       {
+        "OleDataBase": [
+          "Ole",
+          "OleTable"
+        ]
+      },
+      {
         "LARVAFrame": [
           
         ]
@@ -236,9 +310,18 @@
         ]
       },
       {
-        "DeathStar": [
-          "LARVAMiniDash",
-          "LARVAAirTrafficControlTiles"
+        "OleDot": [
+          
+        ]
+      },
+      {
+        "OlePassport": [
+          
+        ]
+      },
+      {
+        "OleSet": [
+          
         ]
       },
       {
@@ -262,17 +345,23 @@
         ]
       },
       {
+        "OleFoldablePane": [
+          "OleButton",
+          "OleFoldableList"
+        ]
+      },
+      {
         "OleApplication": [
           
         ]
       },
       {
-        "AirTrafficControl": [
-          "Map2DColor"
+        "OleConfig": [
+          
         ]
       },
       {
-        "OleConfig": [
+        "OleReport": [
           
         ]
       }
@@ -291,6 +380,8 @@
       "JButton",
       "JDialog",
       "JPanel",
+      "JPanel",
+      "JPanel",
       "JFrame",
       "JList",
       "JMenuBar",
@@ -308,10 +399,17 @@
     ],
     "data": [
       "Ole",
-      "OleConfig"
+      "OleConfig",
+      "OleDot",
+      "OleFile",
+      "OlePassport",
+      "OleQuery",
+      "OleReport",
+      "OleSensor",
+      "OleSet",
+      "OleTable"
     ],
     "swing": [
-      "AirTrafficControl",
       "JDrawPane",
       "LARVAAirTrafficControlTiles",
       "LARVACompactDash",
@@ -322,18 +420,23 @@
       "LARVAMiniDash",
       "Ole3DApplication",
       "Ole3DPane",
+      "OleAgentTile",
       "OleApplication",
       "OleButton",
+      "OleDialog",
       "OleDrawPane",
+      "OleFoldableList",
+      "OleFoldablePane",
       "OleFrame",
       "OleList",
       "OleMenuBar",
+      "OlePerformeter",
       "OleScrollPane",
       "OleToolBar",
       "SwingTools"
     ],
     "agents": [
-      "DeathStar"
+      
     ],
     "appboot": [
       
@@ -348,7 +451,7 @@
       
     ],
     "database": [
-      
+      "OleDataBase"
     ],
     "disk": [
       

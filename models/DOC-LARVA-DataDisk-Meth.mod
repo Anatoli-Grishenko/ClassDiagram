@@ -46,7 +46,6 @@
           "OlePassport",
           "OleQuery",
           "OleReport",
-          "OleSensor",
           "OleSet",
           "OleTable"
         ]
@@ -62,7 +61,7 @@
         ]
       },
       {
-        "Keygen": [
+        "OleSensor": [
           
         ]
       }
@@ -232,6 +231,7 @@
       "boolean isEncrypted()",
       "Ole onEncryption(Cryptor myc)",
       "Ole offEncryption()",
+      "Cryptor getCryptor()",
       "Ole loadFile(String fullfilename)",
       "final String getField(String field)",
       "final boolean getBoolean(String field)",
@@ -253,6 +253,7 @@
       "Ole setFieldGeneric(String field, Object s)"
     ],
     "Cryptor": [
+      "Cryptor(String k)",
       "Cryptor(String cs, String k)",
       "void setCryptoKey(String k)",
       "String getCryptoKey()",
@@ -260,8 +261,6 @@
       "void setCharSet(String s)",
       "String enCrypt(String text)",
       "String deCrypt(String text)",
-      "String enCryptAES(String text)",
-      "String deCryptAES(String text)",
       "String enCrypt64(String text)",
       "String deCrypt64(String text)"
     ],
@@ -290,19 +289,7 @@
       "static String getHexaKey()",
       "static String getAlphaNumKey(int length)",
       "static String getWordo(int length)",
-      "static String getHexaKey(int length)",
-      "Keygen()",
-      "Keygen(String input)",
-      "Keygen rotateLeft(int n)",
-      "Keygen rotateRight(int n)",
-      "Keygen lock()",
-      "Keygen unlock()",
-      "Keygen setOffset(boolean o)",
-      "boolean belongs(String word)",
-      "Keygen encode(String w) throws Exception",
-      "String decode()",
-      "Keygen recode(Keygen other)",
-      "BigInteger getCanonical()"
+      "static String getHexaKey(int length)"
     ],
     "OleFile": [
       "OleFile(Ole o)",
@@ -312,7 +299,20 @@
       "String getFileName()"
     ],
     "OlePassport": [
-      "OlePassport(Ole o)"
+      "OlePassport(Ole o)",
+      "Ole loadPassport(String fullfilename)",
+      "Passport=sload.split(separator)[0];",
+      "setField(\"name\",this.getCryptor().deCrypt64(Passport));",
+      "int getUserID()",
+      "String getCid()",
+      "String getAlias()",
+      "String getEmail()",
+      "String getName()",
+      "OlePassport setUserID(String uid)",
+      "OlePassport setCid(String ucid)",
+      "OlePassport setAlias(String ualias)",
+      "OlePassport setEmail(String uemail)",
+      "OlePassport setName(String uname)"
     ],
     "OleConfig": [
       "OleConfig(Ole o)",
@@ -329,10 +329,6 @@
     "extern": [
       "JsonObject",
       "JsonObject",
-      "JsonObject",
-      "JsonObject",
-      "JsonObject",
-      "JsonObject",
       "JsonObject"
     ],
     "data": [
@@ -344,14 +340,14 @@
       "OlePassport",
       "OleQuery",
       "OleReport",
-      "OleSensor",
       "OleSet",
       "OleTable",
       "TokenList",
       "Transform"
     ],
     "swing": [
-      "OleDialog"
+      "OleDialog",
+      "OleSensor"
     ],
     "agents": [
       

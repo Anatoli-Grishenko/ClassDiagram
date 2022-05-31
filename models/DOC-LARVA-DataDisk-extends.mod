@@ -46,7 +46,6 @@
           "OlePassport",
           "OleQuery",
           "OleReport",
-          "OleSensor",
           "OleSet",
           "OleTable"
         ]
@@ -62,7 +61,7 @@
         ]
       },
       {
-        "Keygen": [
+        "OleSensor": [
           
         ]
       }
@@ -205,14 +204,14 @@
       "OlePassport",
       "OleQuery",
       "OleReport",
-      "OleSensor",
       "OleSet",
       "OleTable",
       "TokenList",
       "Transform"
     ],
     "swing": [
-      "OleDialog"
+      "OleDialog",
+      "OleSensor"
     ],
     "agents": [
       

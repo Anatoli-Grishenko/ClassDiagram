@@ -35,12 +35,26 @@
       },
       {
         "Ole": [
-          "OleConfig",
-          "OleSensor"
+          "OleConfig"
+        ]
+      },
+      {
+        "Vector3D": [
+          
         ]
       },
       {
         "Thing": [
+          
+        ]
+      },
+      {
+        "SensorDecoder": [
+          "Environment"
+        ]
+      },
+      {
+        "OleSensor": [
           
         ]
       },
@@ -73,12 +87,14 @@
         "Thing": [
           "World",
           "Map2DColor",
-          "Perceptor"
+          "Point3D",
+          "Perceptor",
+          "SensorDecoder"
         ]
       },
       {
         "Compass": [
-          "direction"
+          
         ]
       },
       {
@@ -109,7 +125,8 @@
       {
         "World": [
           "Thing",
-          "OleConfig"
+          "OleConfig",
+          "Point3D"
         ]
       },
       {
@@ -120,6 +137,11 @@
       {
         "Point3D": [
           
+        ]
+      },
+      {
+        "Environment": [
+          "World"
         ]
       },
       {
@@ -143,11 +165,6 @@
         ]
       },
       {
-        "sensors": [
-          
-        ]
-      },
-      {
         "Perceptor": [
           "Thing"
         ]
@@ -159,22 +176,24 @@
       }
     ]
   },
-  "publicmethods": {
-    
-  },
   "class": {
     "extern": [
       "JsonObject",
       "JsonObject",
-      "JsonObject"
+      "sensors",
+      "JsonObject",
+      "sensors",
+      "JsonObject",
+      "sensors",
+      "Environment"
     ],
     "data": [
       "Ole",
-      "OleConfig",
-      "OleSensor"
+      "OleConfig"
     ],
     "swing": [
-      "Angular"
+      "Angular",
+      "OleSensor"
     ],
     "agents": [
       
@@ -212,8 +231,7 @@
     ],
     "glossary": [
       "capability",
-      "direction",
-      "sensors"
+      "direction"
     ],
     "larva": [
       
@@ -246,127 +264,127 @@
   "format": {
     "data": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "swing": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "agents": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "appboot": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "basher": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "console": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "crypto": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "database": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "disk": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "factoryagent": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "geometry": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "glossary": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "larva": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "map2D": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "messaging": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "ontology": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "sessions": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "telegram": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "tools": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "world": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "white",
       "color": "black"
     },
     "extern": {
       "face": "Arial",
-      "fontsize": 12,
+      "fontsize": 6,
       "fillcolor": "gray",
       "color": "black"
     },
