@@ -1,0 +1,7 @@
+digraph graphname {
+     rankdir="BT"
+dpi=300
+ratio="fill";
+ size="16,16!";
+ margin=0;
+}

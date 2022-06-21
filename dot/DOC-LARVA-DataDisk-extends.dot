@@ -1,0 +1,74 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ratio="fill";
+ size="11,11!";
+ margin=0;
+AdminPassport AdminPassport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>AdminPassport</b></FONT></td></tr>
+</table>>]
+Ole Ole [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Ole</b></FONT></td></tr>
+</table>>]
+OleConfig OleConfig [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleConfig</b></FONT></td></tr>
+</table>>]
+OleDot OleDot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleDot</b></FONT></td></tr>
+</table>>]
+OleFile OleFile [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleFile</b></FONT></td></tr>
+</table>>]
+OlePassport OlePassport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OlePassport</b></FONT></td></tr>
+</table>>]
+OleQuery OleQuery [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleQuery</b></FONT></td></tr>
+</table>>]
+OleReport OleReport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleReport</b></FONT></td></tr>
+</table>>]
+OleSet OleSet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleSet</b></FONT></td></tr>
+</table>>]
+OleTable OleTable [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleTable</b></FONT></td></tr>
+</table>>]
+TokenList TokenList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>TokenList</b></FONT></td></tr>
+</table>>]
+Transform Transform [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Transform</b></FONT></td></tr>
+</table>>]
+OleDialog OleDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleDialog</b></FONT></td></tr>
+</table>>]
+OleSensor OleSensor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleSensor</b></FONT></td></tr>
+</table>>]
+Basher Basher [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Basher</b></FONT></td></tr>
+</table>>]
+AdminCryptor AdminCryptor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>AdminCryptor</b></FONT></td></tr>
+</table>>]
+Cryptor Cryptor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Cryptor</b></FONT></td></tr>
+</table>>]
+Keygen Keygen [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Keygen</b></FONT></td></tr>
+</table>>]
+OleDataBase OleDataBase [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleDataBase</b></FONT></td></tr>
+</table>>]
+Roles Roles [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Roles</b></FONT></td></tr>
+</table>>]
+SequenceDiagram SequenceDiagram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>SequenceDiagram</b></FONT></td></tr>
+</table>>]
+Ontology Ontology [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Ontology</b></FONT></td></tr>
+</table>>]
+ReportableObject ReportableObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>ReportableObject</b></FONT></td></tr>
+</table>>]
+TimeHandler TimeHandler [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>TimeHandler</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+Ole -> JsonObject [arrowhead=onormal, penwidth=1, color=black]
+OleConfig -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleDot -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleFile -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OlePassport -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleQuery -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleReport -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleSet -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleTable -> Ole [arrowhead=onormal, penwidth=1, color=black]
+AdminPassport -> OlePassport [arrowhead=onormal, penwidth=1, color=black]
+AdminCryptor -> Cryptor [arrowhead=onormal, penwidth=1, color=black]
+Cryptor -> Ole [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleConfig -> OleDialog [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Ole -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleTable -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}

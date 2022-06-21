@@ -11,8 +11,8 @@
   "relation": {
     "extends": [
       {
-        "JScrollPane": [
-          "OleBitmapPane"
+        "OleDataBase": [
+          
         ]
       },
       {
@@ -52,6 +52,16 @@
       {
         "JFrame": [
           "OleFrame"
+        ]
+      },
+      {
+        "OlePassport": [
+          
+        ]
+      },
+      {
+        "JScrollPane": [
+          "OleBitmapPane"
         ]
       },
       {
@@ -178,6 +188,71 @@
     ]
   },
   "publicmethods": {
+    "OleQuery": [
+      "OleQuery(Ole o)",
+      "OleQuery Pair(String field, Object o)",
+      "OleQuery Condition(String field, String comp, Object o)"
+    ],
+    "Ole": [
+      "static Ole Json2Ole(JsonObject jsole)",
+      "static JsonObject Ole2PlainJson(Ole odata)",
+      "static List<String> allNames(JsonObject jso)",
+      "Ole()",
+      "Ole(JsonObject jsole)",
+      "Ole(String s)",
+      "Ole clear()",
+      "boolean isOle()",
+      "boolean isEmpty()",
+      "Ole set(String s)",
+      "Ole fromJson(JsonObject jsole)",
+      "JsonObject toPlainJson()",
+      "String toString(WriterConfig wcon)",
+      "String toString()",
+      "Ole parse(String s)",
+      "boolean checkField(String fieldName)",
+      "Ole addField(String fieldName)",
+      "Ole setID(String id)",
+      "Ole setType(String type)",
+      "Ole setDate(String date)",
+      "Ole setDescription(String description)",
+      "Ole setOle()",
+      "String getID()",
+      "String getType()",
+      "String getDate()",
+      "String getDescription()",
+      "List<String> getFieldList()",
+      "String getFieldType(String field)",
+      "String getValueType(JsonValue jsv)",
+      "final Ole getOle(String field)",
+      "Ole set(String field, boolean value)",
+      "Ole set(String field, int value)",
+      "Ole set(String field, double value)",
+      "Ole set(String field, String value)",
+      "Ole set(String field, JsonArray value)",
+      "Ole set(String field, Ole value)",
+      "boolean isEncrypted()",
+      "Ole onEncryption(Cryptor myc)",
+      "Ole offEncryption()",
+      "Ole loadFile(String fullfilename)",
+      "final String getField(String field)",
+      "final boolean getBoolean(String field)",
+      "final int getInt(String field)",
+      "final double getDouble(String field)",
+      "final String getString(String field)",
+      "final ArrayList getArray(String field)",
+      "final Ole setField(String fieldname, String value)",
+      "final Ole setField(String fieldname, int value)",
+      "final Ole setField(String fieldname, double value)",
+      "final Ole setField(String fieldname, boolean value)",
+      "final Ole setField(String fieldname, ArrayList<Object> value)",
+      "final Ole setField(String fieldname, Ole value)",
+      "final Ole addToField(String fieldname, String v)",
+      "final Ole addToField(String fieldname, int v)",
+      "final Ole addToField(String fieldname, double v)",
+      "final Ole addToField(String fieldname, boolean v)",
+      "final Ole addToField(String fieldname, Ole v)",
+      "Ole setFieldGeneric(String field, Object s)"
+    ],
     "OleMenuBar": [
       "JMenu addMenu(String name, OleConfig omenu)"
     ],
@@ -187,6 +262,23 @@
       "void actionPerformed(ActionEvent e)",
       "abstract void myActionListener(ActionEvent e);",
       "abstract void myKeyListener(KeyEvent e);"
+    ],
+    "OleTable": [
+      "OleTable(Ole o)",
+      "boolean isEmpty()",
+      "OleTable(ResultSet rs)",
+      "JsonArray rawRows()",
+      "OleTable addRow(Ole o)",
+      "Ole getRow(int r)",
+      "Ole getRow(String field, int value)",
+      "Ole getRow(String field, String value)",
+      "ArrayList<Ole> getAllRows()",
+      "ArrayList<Ole> getAllRows(String field, String value)",
+      "ArrayList<Ole> getAllRows(String field, int value)",
+      "OleTable getAllRowsOleTable(String field, String value)",
+      "OleTable getAllRowsOleTable(String field, int value)",
+      "int size()",
+      "String prettyprint()"
     ],
     "OleButton": [
       "void mouseEntered(MouseEvent e)",
@@ -205,6 +297,61 @@
     ],
     "OleToolBar": [
       
+    ],
+    "OleFile": [
+      "OleFile(Ole o)",
+      "OleFile loadFile(String fullfilename)",
+      "boolean saveFile(String outputfolder)",
+      "String getStringContent()",
+      "String getFileName()"
+    ],
+    "OleSensor": [
+      "OleSensor(Ole o)",
+      "OleSensor setAllReadings(ArrayList<Double> values)",
+      "ArrayList<Double> getAllReadings()",
+      "String getSensorName()",
+      "OleSensor setSensorName(String name)"
+    ],
+    "OleDataBase": [
+      "boolean defineConnection(String host, int port, String database, String user, String password)",
+      "boolean openConnection()",
+      "String getURL()",
+      "final void closeConnection()",
+      "void emergencyClose()",
+      "boolean isOpen()",
+      "boolean isError()",
+      "boolean canContinue()",
+      "void flushError()",
+      "void validationQuery()",
+      "void startCommit() throws SQLException",
+      "void endCommit() throws SQLException",
+      "void rollBack()",
+      "void openTransaction()",
+      "void closeTransaction()",
+      "OleTable DBObjectQuery(String table, OleQuery oq)",
+      "boolean DBObjectDelete(String table, OleQuery oq)",
+      "boolean DBObjectUpdate(String table, OleQuery find, OleQuery update)",
+      "boolean DBObjectUpdateUnique(String table, OleQuery find, OleQuery update)",
+      "OleTable DBquery(String sentence)",
+      "boolean DBupdate(String sentence)",
+      "boolean DBinsert(String sentence)",
+      "boolean DBdelete(String sentence)",
+      "boolean isEmpty()",
+      "void loadSchema()",
+      "ArrayList<String> getTableList()",
+      "ArrayList<String> getColumnList(String tablename)",
+      "String getColumnType(String tablename, String columname)",
+      "boolean getORM()",
+      "of.println(\" class \"+this._database+\" \");",
+      "of.println(\" OleDataBase db;\");",
+      "of.println(\" OleTable \"+table+\"GetRow(OleQuery oq) \");",
+      "of.println(\" OleTable \"+table+\"GetRow(String field, String value) \");",
+      "String[] errorLog()",
+      "void reportException(Exception Ex)",
+      "void reportError(String which)",
+      "String defReportType()",
+      "String[] defReportableObjectList()",
+      "String reportObjectStatus(String objectid)"
     ],
     "OleList": [
       "OleList init(OleConfig olecfg)",
@@ -229,11 +376,31 @@
       "int getHeight()",
       "void setWidth(int width)",
       "void setHeight(int height)",
-      "static void exportTo(String dotFile, String type)",
+      "static void exportTo(String dotFile, String layoutmanager, String type)",
       "void toDot(String dotfilename)",
       "if (getOle(\"methods\").get(classname) != null)",
       "void recursiveTree(Ole classname, PrintStream output)",
       "static String highlight(String s)"
+    ],
+    "OleSet": [
+      "OleSet(Ole o)",
+      "int size()",
+      "String getItem(int i)",
+      "OleSet addUniqueItem(String item)",
+      "OleSet addUniqueItem(String[] items)",
+      "OleSet addDupItem(String[] items)",
+      "OleSet addDupItem(String item)",
+      "OleSet removeItem(String item)",
+      "OleSet removeALlItems(String item)",
+      "boolean findItem(String item)",
+      "OleSet getIntersection(OleSet other)",
+      "OleSet getUnion(OleSet other)",
+      "OleSet getConcatenation(OleSet other)",
+      "OleSet getDifference(OleSet other)",
+      "String prettyprint()"
+    ],
+    "OlePassport": [
+      "OlePassport(Ole o)"
     ],
     "OleBitmapPane": [
       "void mouseDragged(MouseEvent e)",
@@ -303,47 +470,10 @@
       "List<String> getAllTabNames()",
       "Ole getTab(String stab)",
       "List<String> getAllTabFields(String stab)"
-    ]
-  },
-  "protectedmethods": {
-    "OleMenuBar": [
-      
     ],
-    "OleFrame": [
-      
-    ],
-    "OleButton": [
-      
-    ],
-    "OleDialog": [
-      "void setLayout(OleConfig olecfg)",
-      "JPanel setLayout(String oid, Ole ocomponents, OleConfig olecfg)",
-      "void setValues(OleConfig olecfg)",
-      "void setValues(String oid, Ole ocomponents, OleConfig olecfg)",
-      "OleConfig getValues(OleConfig olecfg)",
-      "OleConfig getValues(Ole currentTab, OleConfig olecfg)"
-    ],
-    "OleToolBar": [
-      
-    ],
-    "OleList": [
-      
-    ],
-    "OleDot": [
-      "if (getOle(\"methods\").get(classname) != null)"
-    ],
-    "OleBitmapPane": [
-      
-    ],
-    "OleDrawPane": [
-      
-    ],
-    "OleApplication": [
-      "void addLabel(Container con, String s)",
-      "void addLabel(Container con, String s, Color col)"
-    ],
-    "OleConfig": [
-      "List<String> getTabList()"
+    "OleReport": [
+      "OleReport(ReportableObject o)",
+      "String shortTextReport()"
     ]
   },
   "class": {
@@ -363,7 +493,16 @@
       "JFrame",
       "JList",
       "JMenuBar",
-      "JPanel"
+      "JPanel",
+      "OleDataBase",
+      "JButton",
+      "JDialog",
+      "JFrame",
+      "JList",
+      "JMenuBar",
+      "JPanel",
+      "JScrollPane",
+      "JsonObject"
     ],
     "data": [
       "Ole",
@@ -391,24 +530,24 @@
   },
   "format": {
     "data": {
-      "face": "Courier New",
-      "fontsize": 24,
+      "face": "Arial",
+      "fontsize": 9,
       "fillcolor": "white",
       "color": "black"
     },
     "swing": {
-      "face": "Courier New",
-      "fontsize": 24,
+      "face": "Arial",
+      "fontsize": 9,
       "fillcolor": "white",
       "color": "black"
     },
     "extern": {
-      "face": "Courier New",
-      "fontsize": 24,
+      "face": "Arial",
+      "fontsize": 9,
       "fillcolor": "gray",
       "color": "black"
     },
-    "extends": "[arrowhead=onormal, penwidth=2, color=black]",
-    "owns": "[style=dotted,arrowhead=odiamond, penwidth=2,color=blue]"
+    "extends": "[arrowhead=onormal, penwidth=1, color=black]",
+    "owns": "[style=dotted,arrowhead=odiamond, penwidth=1,color=blue]"
   }
 }

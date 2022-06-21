@@ -1,0 +1,87 @@
+digraph graphname {
+     rankdir="BT"
+dpi=1200
+ratio="fill";
+ size="16,11!";
+ margin=0;
+Ole Ole [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Ole</b></FONT></td></tr>
+</table>>]
+OleFile OleFile [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleFile</b></FONT></td></tr>
+</table>>]
+DeathStar DeathStar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>DeathStar</b></FONT></td></tr>
+</table>>]
+LARVAAdminAgent LARVAAdminAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>LARVAAdminAgent</b></FONT></td></tr>
+</table>>]
+LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>LARVABaseAgent</b></FONT></td></tr>
+</table>>]
+LARVABaseTelegram LARVABaseTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>LARVABaseTelegram</b></FONT></td></tr>
+</table>>]
+LARVAEphemeral LARVAEphemeral [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>LARVAEphemeral</b></FONT></td></tr>
+</table>>]
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>LARVAFirstAgent</b></FONT></td></tr>
+</table>>]
+Keygen Keygen [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Keygen</b></FONT></td></tr>
+</table>>]
+Goku Goku [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Goku</b></FONT></td></tr>
+</table>>]
+HWManager HWManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>HWManager</b></FONT></td></tr>
+</table>>]
+IdentityManager IdentityManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>IdentityManager</b></FONT></td></tr>
+</table>>]
+LARVAPrivateTelegram LARVAPrivateTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>LARVAPrivateTelegram</b></FONT></td></tr>
+</table>>]
+LARVAPublicTelegram LARVAPublicTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>LARVAPublicTelegram</b></FONT></td></tr>
+</table>>]
+SessionManager SessionManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>SessionManager</b></FONT></td></tr>
+</table>>]
+StoreManager StoreManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>StoreManager</b></FONT></td></tr>
+</table>>]
+TeamController TeamController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>TeamController</b></FONT></td></tr>
+</table>>]
+WorldController WorldController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>WorldController</b></FONT></td></tr>
+</table>>]
+Session Session [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Session</b></FONT></td></tr>
+</table>>]
+liveBot liveBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>liveBot</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+LARVAPrivateTelegram -> LARVABaseTelegram [arrowhead=onormal, penwidth=1, color=black]
+LARVAPublicTelegram -> LARVABaseTelegram [arrowhead=onormal, penwidth=1, color=black]
+DeathStar -> LARVAFirstAgent [arrowhead=onormal, penwidth=1, color=black]
+Ole -> JsonObject [arrowhead=onormal, penwidth=1, color=black]
+OleFile -> Ole [arrowhead=onormal, penwidth=1, color=black]
+LARVAAdminAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
+LARVAFirstAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
+SessionManager -> LARVAEphemeral [arrowhead=onormal, penwidth=1, color=black]
+StoreManager -> LARVAEphemeral [arrowhead=onormal, penwidth=1, color=black]
+LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=1, color=black]
+Goku -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
+HWManager -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
+TeamController -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
+WorldController -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
+IdentityManager -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
+LARVABaseTelegram -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
+LARVAEphemeral -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
+Ole -> TeamController [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleFile -> LARVABaseAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Ole -> WorldController [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Ole -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Session -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Ole -> Session [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+liveBot -> Session [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}

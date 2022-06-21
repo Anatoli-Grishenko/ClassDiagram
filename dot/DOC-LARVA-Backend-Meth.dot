@@ -1,0 +1,155 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ratio="fill";
+ size="11,16!";
+ margin=0;
+Ole Ole [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Ole</b></FONT></td></tr>
+</table>>]
+OleFile OleFile [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleFile</b></FONT></td></tr>
+</table>>]
+OleQuery OleQuery [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleQuery</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleQuery <b>Condition</b>(String field, String comp, Object o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleQuery <b>Pair</b>(String field, Object o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>O<b>leQuery</b>(Ole o)</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td> </td></tr></table></td></tr>
+</table>>]
+OleTable OleTable [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleTable</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>ArrayList&lt;Ole&gt; <b>getAllRows</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>ArrayList&lt;Ole&gt; <b>getAllRows</b>(String field, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>ArrayList&lt;Ole&gt; <b>getAllRows</b>(String field, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>JsonArray <b>rawRows</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Ole <b>getRow</b>(String field, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Ole <b>getRow</b>(String field, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Ole <b>getRow</b>(int r)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleTable <b>addRow</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleTable <b>getAllRowsOleTable</b>(String field, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleTable <b>getAllRowsOleTable</b>(String field, int value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>O<b>leTable</b>(Ole o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>O<b>leTable</b>(ResultSet rs)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>prettyprint</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>isEmpty</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>size</b>()</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td> </td></tr></table></td></tr>
+</table>>]
+TokenList TokenList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>TokenList</b></FONT></td></tr>
+</table>>]
+Transform Transform [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Transform</b></FONT></td></tr>
+</table>>]
+LARVAAdminAgent LARVAAdminAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>LARVAAdminAgent</b></FONT></td></tr>
+</table>>]
+LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>LARVABaseAgent</b></FONT></td></tr>
+</table>>]
+DBA2122 DBA2122 [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>DBA2122</b></FONT></td></tr>
+</table>>]
+OleDataBase OleDataBase [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>OleDataBase</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>ArrayList&lt;String&gt; <b>getColumnList</b>(String tablename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>ArrayList&lt;String&gt; <b>getTableList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleTable <b>DBObjectQuery</b>(String table, OleQuery oq)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>OleTable <b>DBquery</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>defReportType</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>getColumnType</b>(String tablename, String columname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>getURL</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>reportObjectStatus</b>(String objectid)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String[] <b>defReportableObjectList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String[] <b>errorLog</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>DBObjectDelete</b>(String table, OleQuery oq)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>DBObjectUpdate</b>(String table, OleQuery find, OleQuery update)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>DBObjectUpdateUnique</b>(String table, OleQuery find, OleQuery update)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>DBdelete</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>DBinsert</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>DBupdate</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>canContinue</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>defineConnection</b>(String host, int port, String database, String user, String password)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>getORM</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>isEmpty</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>isError</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>isOpen</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>openConnection</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>final void <b>closeConnection</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>o<b>f.println</b>(" OleDataBase db;");</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>of.println(" OleTable <b>"+table+"GetRow</b>(OleQuery oq) ");</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>of.println(" OleTable <b>"+table+"GetRow</b>(String field, String value) ");</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>o<b>f.println</b>(" class "+this._database+" ");</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>closeTransaction</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>emergencyClose</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>endCommit</b>() throws SQLException</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>flushError</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>loadSchema</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>openTransaction</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>reportError</b>(String which)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>reportException</b>(Exception Ex)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>rollBack</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>startCommit</b>() throws SQLException</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>void <b>validationQuery</b>()</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>OleTable <b>DBSBquery</b>(SentenceBuilder s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>OleTable <b>getOleTable</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>ResultSet <b>getResult</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>SentenceBuilder <b>sentence</b>(SQLOP o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>boolean <b>DBSBdelete</b>(SentenceBuilder s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>boolean <b>DBSBinsert</b>(SentenceBuilder s)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">(-)<i>boolean <b>DBSBupdate</b>(SentenceBuilder s)</i></FONT></td></tr>
+<tr><td> </td></tr></table></td></tr>
+</table>>]
+SentenceBuilder SentenceBuilder [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>SentenceBuilder</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>SentenceBuilder <b>Column</b>(String column)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>SentenceBuilder <b>Condition</b>(String column, String comp, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>SentenceBuilder <b>Op</b>(SQLOP o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>SentenceBuilder <b>Pair</b>(String column, String value)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>SentenceBuilder <b>Table</b>(String t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>SentenceBuilder <b>clear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>toString</b>()</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td> </td></tr></table></td></tr>
+</table>>]
+DataBaser DataBaser [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>DataBaser</b></FONT></td></tr>
+</table>>]
+Sentence Sentence [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>Sentence</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>Sentence <b>parseSentence</b>(String sentence)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>getCursorSentence</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>getFutureSentence</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>getPastSentence</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>getSentence</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>next</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>String <b>next</b>(int many)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>hasNext</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>isNext</b>(String tok)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>isNext</b>(String tok1, String tok2)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>boolean <b>isNext</b>(String tok1, String tok2, String tok3)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "9">[+]<i>int <b>size</b>()</i></FONT></td></tr>
+</table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td> </td></tr></table></td></tr>
+</table>>]
+TimeHandler TimeHandler [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="12"><b>TimeHandler</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>Agent</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>Agent</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+DBA2122 -> OleDataBase [arrowhead=onormal, penwidth=1, color=black]
+Ole -> JsonObject [arrowhead=onormal, penwidth=1, color=black]
+OleFile -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleQuery -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleTable -> Ole [arrowhead=onormal, penwidth=1, color=black]
+LARVAAdminAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
+LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=1, color=black]
+DataBaser -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
+OleDataBase -> SentenceBuilder [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleFile -> LARVABaseAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+DBA2122 -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Ole -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+TimeHandler -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Sentence -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Ole -> DBA2122 [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleTable -> DBA2122 [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Ole -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleTable -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+SentenceBuilder -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}

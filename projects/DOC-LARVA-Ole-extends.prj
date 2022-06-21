@@ -182,16 +182,8 @@
       ],
       "[Select packages]": "SelectPackages",
       "Packages selected": [
-        "agents",
-        "crypto",
         "data",
-        "database",
-        "disk",
-        "factoryagent",
-        "larva",
-        "sessions",
-        "telegram",
-        "world"
+        "swing"
       ]
     },
     "Classes": {
@@ -352,53 +344,76 @@
       ],
       "[Select classes]": "Select classes",
       "Classes selected": [
-        "Agent",
-        "DataBaser",
-        "DrDiagnostic",
-        "GMailer",
-        "Goku",
-        "HWManager",
-        "IdentityManager",
-        "LARVAAdminAgent",
-        "LARVABaseAgent",
-        "LARVABaseTelegram",
-        "LARVAEphemeral",
-        "LARVAFirstAgent",
-        "LARVAPrivateTelegram",
-        "LARVAPublicTelegram",
-        "LARVAQueen",
-        "Mario",
-        "SessionManager",
-        "SonGoanda",
-        "StoreManager",
-        "TeamController",
-        "WorldController"
+        "Ole",
+        "OleApplication",
+        "OleBitmapPane",
+        "OleButton",
+        "OleConfig",
+        "OleDataBase",
+        "OleDialog",
+        "OleDot",
+        "OleDrawPane",
+        "OleFile",
+        "OleFrame",
+        "OleList",
+        "OleMenuBar",
+        "OlePassport",
+        "OleQuery",
+        "OleReport",
+        "OleSensor",
+        "OleSet",
+        "OleTable",
+        "OleToolBar",
+        "JButton",
+        "JDialog",
+        "JFrame",
+        "JList",
+        "JMenuBar",
+        "JPanel",
+        "JScrollPane",
+        "JsonObject"
       ],
-      "Include methods": true,
+      "Include methods": false,
       "Only public methods": true,
       "Show methods": [
-        "Agent",
-        "DBA2122",
-        "GMailer",
-        "LARVAAdminAgent",
-        "LARVABaseAgent",
-        "LARVABaseTelegram",
-        "LARVAEphemeral",
-        "LARVAFirstAgent",
-        "SessionManager",
-        "StoreManager",
-        "TeamController",
-        "WorldController"
+        "Ole",
+        "OleApplication",
+        "OleBitmapPane",
+        "OleButton",
+        "OleConfig",
+        "OleDataBase",
+        "OleDialog",
+        "OleDot",
+        "OleDrawPane",
+        "OleFile",
+        "OleFrame",
+        "OleList",
+        "OleMenuBar",
+        "OlePassport",
+        "OleQuery",
+        "OleReport",
+        "OleSensor",
+        "OleSet",
+        "OleTable",
+        "OleToolBar",
+        "JButton",
+        "JDialog",
+        "JFrame",
+        "JList",
+        "JMenuBar",
+        "JPanel",
+        "JScrollPane",
+        "JsonObject"
       ]
     },
     "Display": {
       "Format": {
         "Font": "Arial",
-        "Font size": 32,
+        "Font size": 9,
         "Fill color": "Black & White"
       },
       "Lines": {
-        "Line width": 2,
+        "Line width": 1,
         "Line color": "Colored"
       },
       "Output": {
@@ -406,7 +421,7 @@
         "Width": 11,
         "Height": 16,
         "Fill": true,
-        "Layout": "dot"
+        "Layout": "neato"
       }
     }
   },
@@ -420,7 +435,7 @@
       "multiple": true,
       "rows": 5,
       "selected": [
-        "world"
+        "swing"
       ]
     },
     "Packages selected": {
@@ -516,7 +531,7 @@
     "Classes found": {
       "listtype": "String",
       "selected": [
-        "FactoryAgent"
+        "OleToolBar"
       ],
       "multiple": true,
       "rows": 6

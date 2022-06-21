@@ -1,0 +1,62 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ratio="fill";
+ size="11,11!";
+ margin=0;
+Ole Ole [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Ole</b></FONT></td></tr>
+</table>>]
+OleFile OleFile [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleFile</b></FONT></td></tr>
+</table>>]
+OleQuery OleQuery [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleQuery</b></FONT></td></tr>
+</table>>]
+OleTable OleTable [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleTable</b></FONT></td></tr>
+</table>>]
+TokenList TokenList [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>TokenList</b></FONT></td></tr>
+</table>>]
+Transform Transform [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Transform</b></FONT></td></tr>
+</table>>]
+LARVAAdminAgent LARVAAdminAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>LARVAAdminAgent</b></FONT></td></tr>
+</table>>]
+LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>LARVABaseAgent</b></FONT></td></tr>
+</table>>]
+DBA2122 DBA2122 [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>DBA2122</b></FONT></td></tr>
+</table>>]
+OleDataBase OleDataBase [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleDataBase</b></FONT></td></tr>
+</table>>]
+SentenceBuilder SentenceBuilder [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>SentenceBuilder</b></FONT></td></tr>
+</table>>]
+DataBaser DataBaser [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>DataBaser</b></FONT></td></tr>
+</table>>]
+Sentence Sentence [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Sentence</b></FONT></td></tr>
+</table>>]
+TimeHandler TimeHandler [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>TimeHandler</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+DBA2122 -> OleDataBase [arrowhead=onormal, penwidth=1, color=black]
+Ole -> JsonObject [arrowhead=onormal, penwidth=1, color=black]
+OleFile -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleQuery -> Ole [arrowhead=onormal, penwidth=1, color=black]
+OleTable -> Ole [arrowhead=onormal, penwidth=1, color=black]
+LARVAAdminAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
+LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=1, color=black]
+DataBaser -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
+OleDataBase -> SentenceBuilder [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleFile -> LARVABaseAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+DBA2122 -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Ole -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+TimeHandler -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Sentence -> LARVAAdminAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Ole -> DBA2122 [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleTable -> DBA2122 [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Ole -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleTable -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+SentenceBuilder -> OleDataBase [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}

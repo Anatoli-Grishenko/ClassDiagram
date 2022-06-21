@@ -1,0 +1,11 @@
+{
+  "options": {
+    "Cliente":{"Diagnóstico":"TLP"},
+  },
+  "properties": {
+        "Diagnóstico":{
+            "tooltip":"Paca este es el diagnostico",
+            "select":["TLP","TAS","PSICOSIS"]
+        }
+  }
+}
