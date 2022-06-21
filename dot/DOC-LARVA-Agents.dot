@@ -1,103 +1,59 @@
 digraph graphname {
      rankdir="BT"
-dpi=600
+dpi=300
 ratio="fill";
- size="9,11!";
+ size="11,16!";
  margin=0;
-DeathStar DeathStar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Arial" POINT-SIZE="6"><b>DeathStar</b></FONT></td></tr>
-</table>>]
-LARVAAdminAgent LARVAAdminAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Arial" POINT-SIZE="6"><b>LARVAAdminAgent</b></FONT></td></tr>
-</table>>]
-LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Arial" POINT-SIZE="6"><b>LARVABaseAgent</b></FONT></td></tr>
-</table>>]
-LARVABaseTelegram LARVABaseTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Arial" POINT-SIZE="6"><b>LARVABaseTelegram</b></FONT></td></tr>
-</table>>]
-LARVAEphemeral LARVAEphemeral [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Arial" POINT-SIZE="6"><b>LARVAEphemeral</b></FONT></td></tr>
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Arial" POINT-SIZE="6"><b>LARVAFirstAgent</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>ACLMessage <b>LARVAblockingReceive</b>(MessageTemplate t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllProvidersOf</b>(String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllServicesProvidedBy</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>ArrayList&lt;String&gt; <b>DFGetProviderList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>ArrayList&lt;String&gt; <b>DFGetServiceList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>String <b>getIdentityManager</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>String <b>getMypassport</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>String <b>getSequenceDiagram</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>boolean <b>DFHasService</b>(String agentName, String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>boolean <b>loadMyPassport</b>(String passportFileName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>Alert</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>LARVAwait</b>(int milis)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>Message</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>doActivateLARVADash</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>getUserData</b>(String welcome)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>postExecute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>preExecute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>saveSequenceDiagram</b>(String filename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>setIdentityManager</b>(String IdentityManager)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>setMypassport</b>(String mypassport)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>setup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table></td></tr>
 </table>>]
 LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Arial" POINT-SIZE="6"><b>LARVAFirstAgent</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>ACLMessage <b>LARVAblockingReceive</b>(MessageTemplate t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllProvidersOf</b>(String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllServicesProvidedBy</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>ArrayList&lt;String&gt; <b>DFGetProviderList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>ArrayList&lt;String&gt; <b>DFGetServiceList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>String <b>getIdentityManager</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>String <b>getMypassport</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>String <b>getSequenceDiagram</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>boolean <b>DFHasService</b>(String agentName, String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>boolean <b>loadMyPassport</b>(String passportFileName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>Alert</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>LARVAwait</b>(int milis)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>Message</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>doActivateLARVADash</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>getUserData</b>(String welcome)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>postExecute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>preExecute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>saveSequenceDiagram</b>(String filename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>setIdentityManager</b>(String IdentityManager)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>setMypassport</b>(String mypassport)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>setup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "4">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table></td></tr>
 </table>>]
-DataBaser DataBaser [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>DataBaser</b></FONT></td></tr>
-</table>>]
-DrDiagnostic DrDiagnostic [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>DrDiagnostic</b></FONT></td></tr>
-</table>>]
-GMailer GMailer [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>GMailer</b></FONT></td></tr>
-</table>>]
-Goku Goku [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>Goku</b></FONT></td></tr>
-</table>>]
-HWManager HWManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>HWManager</b></FONT></td></tr>
-</table>>]
-IdentityManager IdentityManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>IdentityManager</b></FONT></td></tr>
-</table>>]
-LARVAPrivateTelegram LARVAPrivateTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>LARVAPrivateTelegram</b></FONT></td></tr>
-</table>>]
-LARVAPublicTelegram LARVAPublicTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>LARVAPublicTelegram</b></FONT></td></tr>
-</table>>]
-LARVAQueen LARVAQueen [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>LARVAQueen</b></FONT></td></tr>
-</table>>]
-Mario Mario [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>Mario</b></FONT></td></tr>
-</table>>]
-ProblemManager ProblemManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>ProblemManager</b></FONT></td></tr>
-</table>>]
-SessionManager SessionManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>SessionManager</b></FONT></td></tr>
-</table>>]
-SonGoanda SonGoanda [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>SonGoanda</b></FONT></td></tr>
-</table>>]
-StoreManager StoreManager [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>StoreManager</b></FONT></td></tr>
-</table>>]
-TeamController TeamController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>TeamController</b></FONT></td></tr>
-</table>>]
-WorldController WorldController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Arial" POINT-SIZE="6"><b>WorldController</b></FONT></td></tr>
-</table>>]
-LARVATelegramBot LARVATelegramBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Orchid"><FONT face="Arial" POINT-SIZE="6"><b>LARVATelegramBot</b></FONT></td></tr>
-</table>>]
-Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
-</table>>]
-TelegramLongPollingBot TelegramLongPollingBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>TelegramLongPollingBot</b></FONT></td></tr>
-</table>>]
-Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
-</table>>]
-Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
-</table>>]
-TelegramLongPollingBot TelegramLongPollingBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>TelegramLongPollingBot</b></FONT></td></tr>
-</table>>]
-Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
-</table>>]
-TelegramLongPollingBot TelegramLongPollingBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>TelegramLongPollingBot</b></FONT></td></tr>
-</table>>]
-Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
-</table>>]
-TelegramLongPollingBot TelegramLongPollingBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>TelegramLongPollingBot</b></FONT></td></tr>
-</table>>]
-Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
-</table>>]
-TelegramLongPollingBot TelegramLongPollingBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>TelegramLongPollingBot</b></FONT></td></tr>
-</table>>]
-Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Agent</b></FONT></td></tr>
-</table>>]
-TelegramLongPollingBot TelegramLongPollingBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>TelegramLongPollingBot</b></FONT></td></tr>
-</table>>]
-LARVAPrivateTelegram -> LARVABaseTelegram [arrowhead=onormal, penwidth=1, color=black]
-LARVAPublicTelegram -> LARVABaseTelegram [arrowhead=onormal, penwidth=1, color=black]
-DeathStar -> LARVAFirstAgent [arrowhead=onormal, penwidth=1, color=black]
-LARVATelegramBot -> TelegramLongPollingBot [arrowhead=onormal, penwidth=1, color=black]
-LARVAAdminAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
-LARVAFirstAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
-SessionManager -> LARVAEphemeral [arrowhead=onormal, penwidth=1, color=black]
-StoreManager -> LARVAEphemeral [arrowhead=onormal, penwidth=1, color=black]
-LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=1, color=black]
-Goku -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
-HWManager -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
-Mario -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
-SonGoanda -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
-TeamController -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
-WorldController -> SessionManager [arrowhead=onormal, penwidth=1, color=black]
-DataBaser -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
-DrDiagnostic -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
-GMailer -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
-IdentityManager -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
-LARVABaseTelegram -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
-LARVAEphemeral -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
-LARVAQueen -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
-ProblemManager -> LARVAAdminAgent [arrowhead=onormal, penwidth=1, color=black]
-LARVAAdminAgent -> LARVATelegramBot [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
 }

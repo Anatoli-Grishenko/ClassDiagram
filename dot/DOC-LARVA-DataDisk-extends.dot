@@ -20,8 +20,6 @@ OleQuery OleQuery [shape=plain, label=<<table border="0" cellborder="1" cellspac
 </table>>]
 OleReport OleReport [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleReport</b></FONT></td></tr>
 </table>>]
-OleSensor OleSensor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleSensor</b></FONT></td></tr>
-</table>>]
 OleSet OleSet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleSet</b></FONT></td></tr>
 </table>>]
 OleTable OleTable [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleTable</b></FONT></td></tr>
@@ -31,6 +29,8 @@ TokenList TokenList [shape=plain, label=<<table border="0" cellborder="1" cellsp
 Transform Transform [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Transform</b></FONT></td></tr>
 </table>>]
 OleDialog OleDialog [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleDialog</b></FONT></td></tr>
+</table>>]
+OleSensor OleSensor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>OleSensor</b></FONT></td></tr>
 </table>>]
 Basher Basher [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Basher</b></FONT></td></tr>
 </table>>]
@@ -63,7 +63,6 @@ OleFile -> Ole [arrowhead=onormal, penwidth=1, color=black]
 OlePassport -> Ole [arrowhead=onormal, penwidth=1, color=black]
 OleQuery -> Ole [arrowhead=onormal, penwidth=1, color=black]
 OleReport -> Ole [arrowhead=onormal, penwidth=1, color=black]
-OleSensor -> Ole [arrowhead=onormal, penwidth=1, color=black]
 OleSet -> Ole [arrowhead=onormal, penwidth=1, color=black]
 OleTable -> Ole [arrowhead=onormal, penwidth=1, color=black]
 AdminPassport -> OlePassport [arrowhead=onormal, penwidth=1, color=black]

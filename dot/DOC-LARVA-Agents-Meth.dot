@@ -4,10 +4,35 @@ dpi=600
 ratio="fill";
  size="11,16!";
  margin=0;
-DeathStar DeathStar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="16"><b>DeathStar</b></FONT></td></tr>
-</table>>]
 LARVAAdminAgent LARVAAdminAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="16"><b>LARVAAdminAgent</b></FONT></td></tr>
-<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>AdminGiveBirth</b>(FactoryAgent factory, String agentname, String containername, Class c, OleConfig config)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>AdminKill</b>(FactoryAgent factory, String agentname)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>done</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>AdminConfirmBirth</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>AdminConfirmDeath</b>(String replywith)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>AdminProcessesClear</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>BehaviourDefaultClear</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>BehaviourSplitSsetup</b>(Processes t)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>DataBaseClear</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>FactoryAgentClear</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>FactoryAgentSetup</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>Notify</b>(String what, ArrayList&lt;Integer&gt; UserIDs, String inReplyTo)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>NotifyClass</b>(String what)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>NotifyReferee</b>(String what)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>NotifyTeacher</b>(String what)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>NotifyUser</b>(int userID, String what)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>ServiceHandlerADMIN</b>(ACLMessage msg)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>ServiceHandlerNOTIFICATION</b>(ACLMessage msg)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>ServiceHandlerRegular</b>(ACLMessage msg)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>ServiceHandlerXUI</b>(ACLMessage msg)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>SetupAdmin</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>StatusDisableSafeMode</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>StatusEnableSafeMode</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>StatusSet</b>(AlertsLevel level, Alerts category, String alert)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>action</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>doShield</b>(Runnable r)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr></table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>AdminGiveBirth</b>(FactoryAgent factory, String agentname, String containername, Class c, OleConfig config)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>AdminKill</b>(FactoryAgent factory, String agentname)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>AdminConfirmBirth</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>AdminConfirmDeath</b>(String replywith)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>AdminProcessesClear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>BehaviourDefaultClear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>BehaviourSplitSsetup</b>(Processes t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>DataBaseClear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>FactoryAgentClear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>FactoryAgentSetup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>Notify</b>(String what, ArrayList&lt;Integer&gt; UserIDs, String inReplyTo)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>NotifyClass</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>NotifyReferee</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>NotifyTeacher</b>(String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>NotifyUser</b>(int userID, String what)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>ServiceHandlerADMIN</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>ServiceHandlerNOTIFICATION</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>ServiceHandlerRegular</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>ServiceHandlerXUI</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>SetupAdmin</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>StatusDisableSafeMode</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>StatusEnableSafeMode</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>StatusSet</b>(AlertsLevel level, Alerts category, String alert)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>doShield</b>(Runnable r)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table></td></tr>
 <tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>ACLMessage <b>pullACLM</b>(MessageTemplate t)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>OleReport <b>ReportAgent</b>()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>String <b>RespondAdmin</b>(ACLMessage msg, int performative, Ole details)</i></FONT></td></tr>
@@ -37,41 +62,97 @@ LARVAAdminAgent LARVAAdminAgent [shape=plain, label=<<table border="0" cellborde
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>onTick</b>()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>pressReturn</b>()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>pushACLM</b>(ACLMessage msg)</i></FONT></td></tr>
-</table></td></tr>
+<tr><td> </td></tr></table></td></tr>
 </table>>]
 LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="16"><b>LARVABaseAgent</b></FONT></td></tr>
-<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>AMSGetAllConnectedAgents</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllProvidersOf</b>(String service)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllServicesProvidedBy</b>(String agentName)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetProviderList</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetServiceList</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>AMSIsConnected</b>(String agentName)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>DFHasService</b>(String agentName, String service)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>DFSetMyServices</b>(String[] services)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>done</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>isCheckedin</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>isExit</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>int <b>getNCycles</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>DFRemoveAllMyServices</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>Execute</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>action</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setCheckedin</b>(boolean checkedin)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setExit</b>(boolean exit)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setNcycles</b>(int ncycles)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setup</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr></table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>AMSGetAllConnectedAgents</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllProvidersOf</b>(String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllServicesProvidedBy</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetProviderList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetServiceList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>AMSIsConnected</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>DFAddMyServices</b>(String[] services)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>DFHasService</b>(String agentName, String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>DFSetMyServices</b>(String[] services)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>done</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>isCheckedin</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>isExit</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>long <b>getNCycles</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>DFRemoveAllMyServices</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>Execute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>action</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>doExit</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>doNotExit</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>postExecute</b>()  }</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>preExecute</b>()  }</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setCheckedin</b>(boolean checkedin)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setExit</b>(boolean exit)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setNcycles</b>(int ncycles)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table></td></tr>
 <tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>String <b>inputLine</b>(String message)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>boolean <b>Confirm</b>(String message)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>Alert</b>(String message)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>BehaviourDefaultSetup</b>()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>Error</b>(String message)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>Info</b>(String message)</i></FONT></td></tr>
-</table></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>Message</b>(String message)</i></FONT></td></tr>
+<tr><td> </td></tr></table></td></tr>
 </table>>]
 LARVABaseTelegram LARVABaseTelegram [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="16"><b>LARVABaseTelegram</b></FONT></td></tr>
 </table>>]
 LARVAEphemeral LARVAEphemeral [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="16"><b>LARVAEphemeral</b></FONT></td></tr>
 </table>>]
 LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="16"><b>LARVAFirstAgent</b></FONT></td></tr>
-<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ACLMessage <b>LARVAblockingReceive</b>(MessageTemplate t)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllProvidersOf</b>(String service)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllServicesProvidedBy</b>(String agentName)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetProviderList</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetServiceList</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>String <b>getIdentityManager</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>String <b>getMypassport</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>DFHasService</b>(String agentName, String service)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>loadMyPassport</b>(String passportFileName)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>Alert</b>(String message)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>doActivateLARVADash</b>()</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>getUserData</b>(String welcome)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>saveSequenceDiagram</b>(String filename)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setIdentityManager</b>(String IdentityManager)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setMypassport</b>(String mypassport)</i></FONT></td></tr><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr></table></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ACLMessage <b>LARVAblockingReceive</b>(MessageTemplate t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllProvidersOf</b>(String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetAllServicesProvidedBy</b>(String agentName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetProviderList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>ArrayList&lt;String&gt; <b>DFGetServiceList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>String <b>getIdentityManager</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>String <b>getMypassport</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>DFHasService</b>(String agentName, String service)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>boolean <b>loadMyPassport</b>(String passportFileName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>Alert</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>Message</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>actionPerformed</b>(ActionEvent e)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>doActivateLARVADash</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>getUserData</b>(String welcome)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>postExecute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>preExecute</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>saveSequenceDiagram</b>(String filename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setIdentityManager</b>(String IdentityManager)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setMypassport</b>(String mypassport)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>setup</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">[+]<i>void <b>takeDown</b>()</i></FONT></td></tr>
+</table></td></tr>
 <tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>ACLMessage <b>LARVAblockingReceive</b>()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>ACLMessage <b>LARVAblockingReceive</b>(MessageTemplate t, long milis)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>Choice <b>Ag</b>(Environment E, DecisionSet A)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>DecisionSet <b>Prioritize</b>(Environment E, DecisionSet A)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>Environment <b>T</b>(Environment E, Choice a)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>String <b>inputLine</b>(String message)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>String <b>inputSelect</b>(String message, String[] options, String value)</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>String[] <b>getConfiguredSensors</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>String[] <b>getConfiguredSensors</b>(OleConfig ocfg)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>boolean <b>Confirm</b>(String message)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>boolean <b>G</b>(Environment E)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>boolean <b>Va</b>(Environment E, Choice a)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>boolean <b>Ve</b>(Environment E)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>boolean <b>doLARVACheckin</b>()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>boolean <b>doLARVACheckout</b>()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>boolean <b>isSwing</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>double <b>U</b>(Environment E)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>Error</b>(String message)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>Info</b>(String message)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>LARVAsend</b>(ACLMessage msg)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>closeRemote</b>()</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>doSwingLater</b>(Runnable what)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>doSwingWait</b>(Runnable what)</i></FONT></td></tr>
 <tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>enableDeepLARVAMonitoring</b>()</i></FONT></td></tr>
-<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>refreshGUI</b>()</i></FONT></td></tr>
-</table></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>openRemote</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Arial" POINT-SIZE= "12">(-)<i>void <b>waitRemoteSemaphore</b>()</i></FONT></td></tr>
+<tr><td> </td></tr></table></td></tr>
 </table>>]
 DataBaser DataBaser [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="16"><b>DataBaser</b></FONT></td></tr>
 </table>>]
@@ -113,19 +194,12 @@ TelegramLongPollingBot TelegramLongPollingBot [shape=plain, label=<<table border
 </table>>]
 Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="16"><b>Agent</b></FONT></td></tr>
 </table>>]
-TelegramLongPollingBot TelegramLongPollingBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="16"><b>TelegramLongPollingBot</b></FONT></td></tr>
-</table>>]
-Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="16"><b>Agent</b></FONT></td></tr>
-</table>>]
-TelegramLongPollingBot TelegramLongPollingBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="16"><b>TelegramLongPollingBot</b></FONT></td></tr>
-</table>>]
-Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="16"><b>Agent</b></FONT></td></tr>
+DeathStar DeathStar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="16"><b>DeathStar</b></FONT></td></tr>
 </table>>]
 TelegramLongPollingBot TelegramLongPollingBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="16"><b>TelegramLongPollingBot</b></FONT></td></tr>
 </table>>]
 LARVAPrivateTelegram -> LARVABaseTelegram [arrowhead=onormal, penwidth=1, color=black]
 LARVAPublicTelegram -> LARVABaseTelegram [arrowhead=onormal, penwidth=1, color=black]
-DeathStar -> LARVAFirstAgent [arrowhead=onormal, penwidth=1, color=black]
 LARVATelegramBot -> TelegramLongPollingBot [arrowhead=onormal, penwidth=1, color=black]
 LARVAAdminAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
 LARVAFirstAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]

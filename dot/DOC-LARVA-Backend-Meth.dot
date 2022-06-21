@@ -133,10 +133,6 @@ Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0
 </table>>]
 JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JsonObject</b></FONT></td></tr>
 </table>>]
-Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>Agent</b></FONT></td></tr>
-</table>>]
-JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="12"><b>JsonObject</b></FONT></td></tr>
-</table>>]
 DBA2122 -> OleDataBase [arrowhead=onormal, penwidth=1, color=black]
 Ole -> JsonObject [arrowhead=onormal, penwidth=1, color=black]
 OleFile -> Ole [arrowhead=onormal, penwidth=1, color=black]
