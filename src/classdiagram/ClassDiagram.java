@@ -545,7 +545,8 @@ public class ClassDiagram {
         // Methods
         oMainFrame.showProgress("Analyzing methods");
         for (String fromclass : allfilebasher.keySet()) {
-            datamembers = getMethods(fromclass, "public"); //frombasher.grepv("//");
+            datamembers = getMethods(fromclass, "public");
+            datamembers.addAll(getMethods(fromclass, "protected")); //frombasher.grepv("//");
             publicmethods.put(fromclass, datamembers);
             if (datamembers.size() > 0) {
                 oMainFrame.showProgress("   " + fromclass + "+" + datamembers.toString());
