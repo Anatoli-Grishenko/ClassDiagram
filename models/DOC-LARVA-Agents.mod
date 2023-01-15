@@ -29,74 +29,209 @@
   "relation": {
     "extends": [
       {
-        "LARVAFirstAgent": [
+        "OleDataBase": [
+          
+        ]
+      },
+      {
+        "JsonObject": [
+          "Ole"
+        ]
+      },
+      {
+        "Ole": [
+          "OleConfig",
+          "OleDot",
+          "OleFile",
+          "OlePassport",
+          "OleQuery",
+          "OleReport",
+          "OleSet",
+          "OleTable"
+        ]
+      },
+      {
+        "OlePassport": [
+          "AdminPassport"
+        ]
+      },
+      {
+        "Cryptor": [
+          "AdminCryptor"
+        ]
+      },
+      {
+        "OleSensor": [
           
         ]
       }
     ],
     "owns": [
       {
-        "LARVAFirstAgent": [
+        "OleQuery": [
+          
+        ]
+      },
+      {
+        "Ole": [
+          "Cryptor"
+        ]
+      },
+      {
+        "Cryptor": [
+          
+        ]
+      },
+      {
+        "Roles": [
+          
+        ]
+      },
+      {
+        "SequenceDiagram": [
+          
+        ]
+      },
+      {
+        "TimeHandler": [
+          
+        ]
+      },
+      {
+        "OleTable": [
+          
+        ]
+      },
+      {
+        "Keygen": [
+          
+        ]
+      },
+      {
+        "Transform": [
+          
+        ]
+      },
+      {
+        "OleDialog": [
+          "OleConfig"
+        ]
+      },
+      {
+        "Basher": [
+          
+        ]
+      },
+      {
+        "AdminPassport": [
+          
+        ]
+      },
+      {
+        "AdminCryptor": [
+          
+        ]
+      },
+      {
+        "ReportableObject": [
+          
+        ]
+      },
+      {
+        "OleFile": [
+          
+        ]
+      },
+      {
+        "OleSensor": [
+          
+        ]
+      },
+      {
+        "OleDataBase": [
+          "Ole",
+          "OleTable"
+        ]
+      },
+      {
+        "Ontology": [
+          
+        ]
+      },
+      {
+        "TokenList": [
+          
+        ]
+      },
+      {
+        "OleDot": [
+          
+        ]
+      },
+      {
+        "OlePassport": [
+          
+        ]
+      },
+      {
+        "OleSet": [
+          
+        ]
+      },
+      {
+        "OleConfig": [
+          
+        ]
+      },
+      {
+        "OleReport": [
           
         ]
       }
     ]
   },
-  "publicmethods": {
-    "LARVAFirstAgent": [
-      "void setup()",
-      "void LARVAwait(int milis)",
-      "void postExecute()",
-      "void preExecute()",
-      "void takeDown()",
-      "boolean loadMyPassport(String passportFileName)",
-      "void setMypassport(String mypassport)",
-      "String getMypassport()",
-      "ACLMessage LARVAblockingReceive(MessageTemplate t)",
-      "void Alert(String message)",
-      "void Message(String message)",
-      "void doActivateLARVADash()",
-      "String getIdentityManager()",
-      "void setIdentityManager(String IdentityManager)",
-      "ArrayList<String> DFGetProviderList()",
-      "ArrayList<String> DFGetServiceList()",
-      "ArrayList<String> DFGetAllProvidersOf(String service)",
-      "ArrayList<String> DFGetAllServicesProvidedBy(String agentName)",
-      "boolean DFHasService(String agentName, String service)",
-      "String getSequenceDiagram()",
-      "void saveSequenceDiagram(String filename)",
-      "void getUserData(String welcome)",
-      "void actionPerformed(ActionEvent e)"
-    ]
-  },
   "class": {
     "extern": [
-      
+      "JsonObject",
+      "JsonObject"
     ],
     "data": [
-      
+      "AdminPassport",
+      "Ole",
+      "OleConfig",
+      "OleDot",
+      "OleFile",
+      "OlePassport",
+      "OleQuery",
+      "OleReport",
+      "OleSet",
+      "OleTable",
+      "TokenList",
+      "Transform"
     ],
     "swing": [
-      
+      "OleDialog",
+      "OleSensor"
     ],
     "agents": [
-      "LARVAFirstAgent",
-      "LARVAFirstAgent"
+      
     ],
     "appboot": [
       
     ],
     "basher": [
-      
+      "Basher"
     ],
     "console": [
       
     ],
     "crypto": [
-      
+      "AdminCryptor",
+      "Cryptor",
+      "Keygen"
     ],
     "database": [
-      
+      "OleDataBase"
     ],
     "disk": [
       
@@ -108,7 +243,7 @@
       
     ],
     "glossary": [
-      
+      "Roles"
     ],
     "larva": [
       
@@ -117,10 +252,10 @@
       
     ],
     "messaging": [
-      
+      "SequenceDiagram"
     ],
     "ontology": [
-      
+      "Ontology"
     ],
     "sessions": [
       
@@ -129,7 +264,8 @@
       
     ],
     "tools": [
-      
+      "ReportableObject",
+      "TimeHandler"
     ],
     "world": [
       

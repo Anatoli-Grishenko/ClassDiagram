@@ -1,0 +1,51 @@
+digraph graphname {
+     rankdir="BT"
+dpi=300
+ size="11,16!";
+ margin=0;
+LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="9"><b>LARVABaseAgent</b></FONT></td></tr>
+</table>>]
+LARVADialogicalAgent LARVADialogicalAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="9"><b>LARVADialogicalAgent</b></FONT></td></tr>
+</table>>]
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="9"><b>LARVAFirstAgent</b></FONT></td></tr>
+</table>>]
+DialogicBrawlerSingle DialogicBrawlerSingle [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Courier New" POINT-SIZE="9"><b>DialogicBrawlerSingle</b></FONT></td></tr>
+</table>>]
+DialogicBrawlerSmash DialogicBrawlerSmash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Courier New" POINT-SIZE="9"><b>DialogicBrawlerSmash</b></FONT></td></tr>
+</table>>]
+FirstBrawlerSingle FirstBrawlerSingle [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Courier New" POINT-SIZE="9"><b>FirstBrawlerSingle</b></FONT></td></tr>
+</table>>]
+FirstBrawlerSmash FirstBrawlerSmash [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Courier New" POINT-SIZE="9"><b>FirstBrawlerSmash</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>Agent</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>Agent</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>Agent</b></FONT></td></tr>
+</table>>]
+AgentDialogicFull AgentDialogicFull [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>AgentDialogicFull</b></FONT></td></tr>
+</table>>]
+AgentLARVAFull AgentLARVAFull [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>AgentLARVAFull</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>Agent</b></FONT></td></tr>
+</table>>]
+AgentDialogicFull AgentDialogicFull [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>AgentDialogicFull</b></FONT></td></tr>
+</table>>]
+AgentLARVAFull AgentLARVAFull [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>AgentLARVAFull</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>Agent</b></FONT></td></tr>
+</table>>]
+AgentDialogicFull AgentDialogicFull [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>AgentDialogicFull</b></FONT></td></tr>
+</table>>]
+AgentLARVAFull AgentLARVAFull [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>AgentLARVAFull</b></FONT></td></tr>
+</table>>]
+AgentLARVAFull -> LARVAFirstAgent [arrowhead=onormal, penwidth=1, color=black]
+LARVADialogicalAgent -> LARVAFirstAgent [arrowhead=onormal, penwidth=1, color=black]
+FirstBrawlerSingle -> AgentLARVAFull [arrowhead=onormal, penwidth=1, color=black]
+AgentDialogicFull -> LARVADialogicalAgent [arrowhead=onormal, penwidth=1, color=black]
+LARVAFirstAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
+DialogicBrawlerSingle -> AgentDialogicFull [arrowhead=onormal, penwidth=1, color=black]
+FirstBrawlerSmash -> FirstBrawlerSingle [arrowhead=onormal, penwidth=1, color=black]
+LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=1, color=black]
+DialogicBrawlerSmash -> DialogicBrawlerSingle [arrowhead=onormal, penwidth=1, color=black]
+}

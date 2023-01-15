@@ -2,7 +2,6 @@
   "options": {
     "Sources": {
       "Input folders": [
-        
       ],
       "Output folder": "dot/",
       "Source folders": "src",
@@ -10,45 +9,44 @@
       "Which classes": "Referenced",
       "[Scan files]": "Scan files",
       "File list": [
-        
       ]
     },
     "Packages": {
       "[Scan packages]": "ScanPackages",
       "Packages found": [
-        
       ],
       "[Select packages]": "SelectPackages",
       "Packages selected": [
-        
       ]
     },
     "Classes": {
       "[Scan classes]": "Scan classes",
       "Classes found": [
-        
       ],
       "[Select classes]": "Select classes",
       "Classes selected": [
-        
       ],
       "Include methods": true,
+      "Only public methods": true,
       "Show methods": [
-        
       ]
     },
     "Display": {
       "Format": {
         "Font": "Courier New",
-        "Font size": 24,
-        "Fill color": "Black & White"
+        "Font size": 9,
+        "Fill color": "Colored"
       },
       "Lines": {
-        "Line width": 2,
-        "Line color": "Colored"
+        "Line width": 1,
+        "Line color": "Black & White"
       },
       "Output": {
-        "Resolution": "300"
+        "Resolution": "600",
+        "Width": 11,
+        "Height": 16,
+        "Fill": false,
+        "Layout": "dot"
       }
     }
   },
@@ -62,7 +60,7 @@
       "multiple": true,
       "rows": 5,
       "selected": [
-        "swing"
+        "world"
       ]
     },
     "Packages selected": {
@@ -88,6 +86,13 @@
       "select": [
         "Arial",
         "Courier New"
+      ]
+    },
+    "Layout": {
+      "tooltip": "Use layout manager",
+      "select": [
+        "dot",
+        "neato"
       ]
     },
     "Font size": {
@@ -121,7 +126,7 @@
       "listtype": "folder",
       "multiple": true,
       "selected": [
-        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/es.ugr.larva.core/"
+        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/LARVA/"
       ]
     },
     "File list": {
@@ -151,7 +156,7 @@
     "Classes found": {
       "listtype": "String",
       "selected": [
-        "JsonObject"
+        "LARVAFirstAgent"
       ],
       "multiple": true,
       "rows": 6

@@ -1,14 +1,6 @@
 {
   "classtypes": [
-    "world",
-    "ATST",
     "Environment",
-    "Lab1",
-    "Lab2",
-    "Lab3",
-    "Main",
-    "Profiler",
-    "STF",
     "agents",
     "ai",
     "appboot",
@@ -20,12 +12,14 @@
     "disk",
     "geometry",
     "glossary",
+    "hack2",
     "map2D",
     "messaging",
     "ontology",
     "swing",
     "telegram2",
     "tools",
+    "world",
     "zip",
     "extern"
   ],
@@ -36,50 +30,19 @@
   "relation": {
     "extends": [
       {
-        "ITTL2": [
-          "ITTL3"
-        ]
-      },
-      {
-        "AT_ST_BASIC_SURROUND": [
-          "AT_ST_FULL"
-        ]
-      },
-      {
         "LARVAFirstAgent": [
-          "AT_ST",
+          "AgentLARVAFull",
           "LARVADialogicalAgent"
         ]
       },
       {
-        "AT_ST_FULL": [
-          
-        ]
-      },
-      {
-        "Agent": [
-          "LARVABaseAgent"
-        ]
-      },
-      {
-        "DroidShip": [
-          "BB1F",
-          "DEST"
-        ]
-      },
-      {
-        "DEST": [
-          
-        ]
-      },
-      {
-        "AT_ST_BASIC_AVOID": [
-          "AT_ST_BASIC_SURROUND"
+        "AgentLARVAFull": [
+          "FirstBrawlerSingle"
         ]
       },
       {
         "LARVADialogicalAgent": [
-          "DroidShip"
+          "AgentDialogicFull"
         ]
       },
       {
@@ -88,24 +51,44 @@
         ]
       },
       {
-        "AT_ST": [
-          
+        "AgentDialogicFull": [
+          "DialogicBrawlerSingle"
+        ]
+      },
+      {
+        "FirstBrawlerSingle": [
+          "FirstBrawlerSmash"
+        ]
+      },
+      {
+        "Agent": [
+          "LARVABaseAgent"
+        ]
+      },
+      {
+        "DialogicBrawlerSingle": [
+          "DialogicBrawlerSmash"
         ]
       }
     ],
     "owns": [
+      {
+        "DialogicBrawlerSmash": [
+          
+        ]
+      },
+      {
+        "DialogicBrawlerSingle": [
+          
+        ]
+      },
       {
         "LARVABaseAgent": [
           
         ]
       },
       {
-        "AT_ST": [
-          
-        ]
-      },
-      {
-        "BB1F": [
+        "FirstBrawlerSingle": [
           
         ]
       },
@@ -115,42 +98,17 @@
         ]
       },
       {
-        "AT_ST_FULL": [
+        "AgentLARVAFull": [
           
         ]
       },
       {
-        "DEST": [
+        "FirstBrawlerSmash": [
           
         ]
       },
       {
-        "ITTL1": [
-          
-        ]
-      },
-      {
-        "ITTL2": [
-          
-        ]
-      },
-      {
-        "AT_ST_BASIC_SURROUND": [
-          
-        ]
-      },
-      {
-        "ITTL3": [
-          
-        ]
-      },
-      {
-        "DroidShip": [
-          
-        ]
-      },
-      {
-        "AT_ST_BASIC_AVOID": [
+        "AgentDialogicFull": [
           
         ]
       },
@@ -164,42 +122,21 @@
   "class": {
     "extern": [
       "Agent",
-      "Agent"
-    ],
-    "world": [
-      
-    ],
-    "ATST": [
-      "AT_ST",
-      "AT_ST_BASIC_AVOID",
-      "AT_ST_BASIC_SURROUND",
-      "AT_ST_FULL"
+      "Agent",
+      "Agent",
+      "AgentDialogicFull",
+      "AgentLARVAFull",
+      "Agent",
+      "AgentDialogicFull",
+      "AgentLARVAFull",
+      "Agent",
+      "AgentDialogicFull",
+      "AgentLARVAFull"
     ],
     "Environment": [
       
     ],
-    "Lab1": [
-      "ITTL1"
-    ],
-    "Lab2": [
-      "ITTL2"
-    ],
-    "Lab3": [
-      "ITTL3"
-    ],
-    "Main": [
-      
-    ],
-    "Profiler": [
-      
-    ],
-    "STF": [
-      
-    ],
     "agents": [
-      "BB1F",
-      "DEST",
-      "DroidShip",
       "LARVABaseAgent",
       "LARVADialogicalAgent",
       "LARVAFirstAgent"
@@ -234,6 +171,12 @@
     "glossary": [
       
     ],
+    "hack2": [
+      "DialogicBrawlerSingle",
+      "DialogicBrawlerSmash",
+      "FirstBrawlerSingle",
+      "FirstBrawlerSmash"
+    ],
     "map2D": [
       
     ],
@@ -252,171 +195,138 @@
     "tools": [
       
     ],
+    "world": [
+      
+    ],
     "zip": [
       
     ]
   },
   "format": {
-    "world": {
+    "Environment": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "Chartreuse",
       "color": "black"
     },
-    "ATST": {
+    "agents": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "MediumSpringGreen",
       "color": "black"
     },
-    "Environment": {
+    "ai": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "Turquoise",
       "color": "black"
     },
-    "Lab1": {
+    "appboot": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "CadetBlue",
       "color": "black"
     },
-    "Lab2": {
+    "basher": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "MediumAquaMarine",
       "color": "black"
     },
-    "Lab3": {
+    "console": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "Thistle",
       "color": "black"
     },
-    "Main": {
+    "crypto": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "LightSteelBlue",
       "color": "black"
     },
-    "Profiler": {
+    "data": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "DarkViolet",
       "color": "black"
     },
-    "STF": {
+    "database": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "BlueViolet",
       "color": "black"
     },
-    "agents": {
+    "disk": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "DarkOliveGreen",
       "color": "black"
     },
-    "ai": {
+    "geometry": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "Aqua",
       "color": "black"
     },
-    "appboot": {
+    "glossary": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "OliveDrab",
       "color": "black"
     },
-    "basher": {
+    "hack2": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "Cyan",
       "color": "black"
     },
-    "console": {
+    "map2D": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "LightBlue",
       "color": "black"
     },
-    "crypto": {
+    "messaging": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "Indigo",
       "color": "black"
     },
-    "data": {
+    "ontology": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "DarkSeaGreen",
       "color": "black"
     },
-    "database": {
+    "swing": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "Crimson",
       "color": "black"
     },
-    "disk": {
+    "telegram2": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "Orchid",
       "color": "black"
     },
-    "geometry": {
+    "tools": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "DarkGreen",
       "color": "black"
     },
-    "glossary": {
+    "world": {
       "face": "Courier New",
       "fontsize": 9,
       "fillcolor": "Salmon",
       "color": "black"
     },
-    "map2D": {
-      "face": "Courier New",
-      "fontsize": 9,
-      "fillcolor": "RebeccaPurple",
-      "color": "black"
-    },
-    "messaging": {
-      "face": "Courier New",
-      "fontsize": 9,
-      "fillcolor": "MediumSlateBlue",
-      "color": "black"
-    },
-    "ontology": {
-      "face": "Courier New",
-      "fontsize": 9,
-      "fillcolor": "DodgerBlue",
-      "color": "black"
-    },
-    "swing": {
-      "face": "Courier New",
-      "fontsize": 9,
-      "fillcolor": "PaleTurquoise",
-      "color": "black"
-    },
-    "telegram2": {
-      "face": "Courier New",
-      "fontsize": 9,
-      "fillcolor": "Fuchsia",
-      "color": "black"
-    },
-    "tools": {
-      "face": "Courier New",
-      "fontsize": 9,
-      "fillcolor": "Violet",
-      "color": "black"
-    },
     "zip": {
       "face": "Courier New",
       "fontsize": 9,
-      "fillcolor": "DarkTurquoise",
+      "fillcolor": "RebeccaPurple",
       "color": "black"
     },
     "extern": {
