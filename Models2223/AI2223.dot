@@ -1,0 +1,48 @@
+digraph graphname {
+     rankdir="BT"
+dpi=300
+ size="11,11!";
+ margin=0;
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>LARVAFirstAgent</b></FONT></td></tr>
+</table>>]
+Map2DColor Map2DColor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="6"><b>Map2DColor</b></FONT></td></tr>
+</table>>]
+ArrayList<Choice> ArrayList<Choice> [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>ArrayList<Choice></b></FONT></td></tr>
+</table>>]
+ArrayList<Choice> ArrayList<Choice> [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>ArrayList<Choice></b></FONT></td></tr>
+</table>>]
+AStar AStar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>AStar</b></FONT></td></tr>
+</table>>]
+Choice Choice [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Choice</b></FONT></td></tr>
+</table>>]
+DecisionSet DecisionSet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>DecisionSet</b></FONT></td></tr>
+</table>>]
+Environment Environment [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Environment</b></FONT></td></tr>
+</table>>]
+Greedy Greedy [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Greedy</b></FONT></td></tr>
+</table>>]
+Search Search [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Search</b></FONT></td></tr>
+</table>>]
+Subsumption Subsumption [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Subsumption</b></FONT></td></tr>
+</table>>]
+Plan Plan [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>Plan</b></FONT></td></tr>
+</table>>]
+ArrayList<Choice> ArrayList<Choice> [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="6"><b>ArrayList<Choice></b></FONT></td></tr>
+</table>>]
+DecisionSet -> ArrayList<Choice> [arrowhead=onormal, penwidth=1, color=black]
+Plan -> ArrayList<Choice> [arrowhead=onormal, penwidth=1, color=black]
+AStar -> Search [arrowhead=onormal, penwidth=1, color=black]
+Greedy -> Search [arrowhead=onormal, penwidth=1, color=black]
+Map2DColor -> Greedy [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+DecisionSet -> Choice [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Environment -> LARVAFirstAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+DecisionSet -> LARVAFirstAgent [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Map2DColor -> AStar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+DecisionSet -> Subsumption [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Choice -> Subsumption [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Environment -> Subsumption [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+DecisionSet -> Search [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Choice -> Search [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Map2DColor -> Search [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Choice -> DecisionSet [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}

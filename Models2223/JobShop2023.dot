@@ -1,0 +1,60 @@
+digraph graphname {
+     rankdir="BT"
+dpi=300
+ size="22,32!";
+ margin=0;
+AgentJobShop AgentJobShop [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Courier New" POINT-SIZE="4"><b>AgentJobShop</b></FONT></td></tr>
+</table>>]
+AgentProducer AgentProducer [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Courier New" POINT-SIZE="4"><b>AgentProducer</b></FONT></td></tr>
+</table>>]
+NController NController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="4"><b>NController</b></FONT></td></tr>
+</table>>]
+NMCutter1 NMCutter1 [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="4"><b>NMCutter1</b></FONT></td></tr>
+</table>>]
+NMCutterPRO NMCutterPRO [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="4"><b>NMCutterPRO</b></FONT></td></tr>
+</table>>]
+NMDrillA NMDrillA [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="4"><b>NMDrillA</b></FONT></td></tr>
+</table>>]
+NMDrillB NMDrillB [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="4"><b>NMDrillB</b></FONT></td></tr>
+</table>>]
+NMPolisher NMPolisher [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="4"><b>NMPolisher</b></FONT></td></tr>
+</table>>]
+NMachine NMachine [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="4"><b>NMachine</b></FONT></td></tr>
+</table>>]
+HController HController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE="4"><b>HController</b></FONT></td></tr>
+</table>>]
+HMCutter1 HMCutter1 [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE="4"><b>HMCutter1</b></FONT></td></tr>
+</table>>]
+HMCutterPRO HMCutterPRO [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE="4"><b>HMCutterPRO</b></FONT></td></tr>
+</table>>]
+HMDrillA HMDrillA [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE="4"><b>HMDrillA</b></FONT></td></tr>
+</table>>]
+HMDrillB HMDrillB [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE="4"><b>HMDrillB</b></FONT></td></tr>
+</table>>]
+HMPolisher HMPolisher [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE="4"><b>HMPolisher</b></FONT></td></tr>
+</table>>]
+HMachine HMachine [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE="4"><b>HMachine</b></FONT></td></tr>
+</table>>]
+JobShop JobShop [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="CadetBlue"><FONT face="Courier New" POINT-SIZE="4"><b>JobShop</b></FONT></td></tr>
+</table>>]
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="4"><b>LARVAFirstAgent</b></FONT></td></tr>
+</table>>]
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="4"><b>LARVAFirstAgent</b></FONT></td></tr>
+</table>>]
+HMCutter1 -> HMachine [arrowhead=onormal, penwidth=1, color=black]
+HMCutterPRO -> HMachine [arrowhead=onormal, penwidth=1, color=black]
+HMDrillA -> HMachine [arrowhead=onormal, penwidth=1, color=black]
+HMDrillB -> HMachine [arrowhead=onormal, penwidth=1, color=black]
+HMPolisher -> HMachine [arrowhead=onormal, penwidth=1, color=black]
+AgentProducer -> AgentJobShop [arrowhead=onormal, penwidth=1, color=black]
+HController -> AgentJobShop [arrowhead=onormal, penwidth=1, color=black]
+HMachine -> AgentJobShop [arrowhead=onormal, penwidth=1, color=black]
+NController -> AgentJobShop [arrowhead=onormal, penwidth=1, color=black]
+NMachine -> AgentJobShop [arrowhead=onormal, penwidth=1, color=black]
+AgentJobShop -> LARVAFirstAgent [arrowhead=onormal, penwidth=1, color=black]
+NMCutter1 -> NMachine [arrowhead=onormal, penwidth=1, color=black]
+NMCutterPRO -> NMachine [arrowhead=onormal, penwidth=1, color=black]
+NMDrillA -> NMachine [arrowhead=onormal, penwidth=1, color=black]
+NMDrillB -> NMachine [arrowhead=onormal, penwidth=1, color=black]
+NMPolisher -> NMachine [arrowhead=onormal, penwidth=1, color=black]
+}

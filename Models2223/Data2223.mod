@@ -40,14 +40,12 @@
         "DeathStarDeLuxe",
         "DecisionSet",
         "Decisor",
-        "Dictionary",
         "DrDiagnostic",
         "EmptyAgent",
         "Entity3D",
         "Environment",
         "EnvironmentOld",
         "Event",
-        "ExitRequestedException",
         "FactoryAgent",
         "Functional",
         "GMailer",
@@ -58,7 +56,6 @@
         "GameObject",
         "GamePanel",
         "GameScene",
-        "Goals",
         "Goku",
         "Greedy",
         "HWManager",
@@ -95,8 +92,6 @@
         "Map2DPalette",
         "Mario",
         "Menu",
-        "Mission",
-        "MissionSet",
         "MyDrawPane",
         "MyMapPalPane",
         "MyPlainButton",
@@ -125,6 +120,7 @@
         "OleLabels",
         "OleLinear",
         "OleList",
+        "OleMap",
         "OleMenuBar",
         "OlePassport",
         "OlePerformeter",
@@ -166,7 +162,6 @@
         "SequenceDiagram",
         "Session",
         "SessionManager",
-        "Signals",
         "SimpleVector3D",
         "SonGoanda",
         "Sprite",
@@ -194,6 +189,7 @@
         "World",
         "WorldController",
         "XUIAgent",
+        "XUIAgentOldDash",
         "capability",
         "direction",
         "emojis",
@@ -268,7 +264,6 @@
         "AngleTransporter",
         "Angular",
         "ArrayList<Choice>",
-        "ArrayList<String>",
         "Basher",
         "Behaviour",
         "BehaviourControl",
@@ -288,14 +283,12 @@
         "DeathStarDeLuxe",
         "DecisionSet",
         "Decisor",
-        "Dictionary",
         "DrDiagnostic",
         "EmptyAgent",
         "Entity3D",
         "Environment",
         "EnvironmentOld",
         "Event",
-        "ExitRequestedException",
         "FactoryAgent",
         "Functional",
         "GMailer",
@@ -306,11 +299,9 @@
         "GameObject",
         "GamePanel",
         "GameScene",
-        "Goals",
         "Goku",
         "Greedy",
         "HWManager",
-        "HashMap<String,",
         "IdentityManager",
         "Internet",
         "JADEBoot",
@@ -355,8 +346,6 @@
         "Map2DPalette",
         "Mario",
         "Menu",
-        "Mission",
-        "MissionSet",
         "MyDrawPane",
         "MyMapPalPane",
         "MyPlainButton",
@@ -386,6 +375,7 @@
         "OleLabels",
         "OleLinear",
         "OleList",
+        "OleMap",
         "OleMenuBar",
         "OlePassport",
         "OlePerformeter",
@@ -427,7 +417,6 @@
         "SequenceDiagram",
         "Session",
         "SessionManager",
-        "Signals",
         "SimpleVector3D",
         "SonGoanda",
         "Sprite",
@@ -452,11 +441,11 @@
         "TracePositions",
         "TradeFederation",
         "Transform",
-        "UncheckedIOException",
         "Vector3D",
         "World",
         "WorldController",
         "XUIAgent",
+        "XUIAgentOldDash",
         "capability",
         "direction",
         "emojis",
@@ -466,32 +455,58 @@
       ],
       "[Select classes]": "Select classes",
       "Classes selected": [
-        "Agent",
-        "LARVABaseAgent",
-        "LARVAFirstAgent"
+        "AdminCryptor",
+        "AdminPassport",
+        "Cryptor",
+        "Ole",
+        "OleConfig",
+        "OleDataBase",
+        "OleDialog",
+        "OleDot",
+        "OleFile",
+        "OlePassport",
+        "OleQuery",
+        "OleReport",
+        "OleSensor",
+        "OleSet",
+        "OleTable",
+        "Ontology",
+        "ReportableObject",
+        "Roles",
+        "SequenceDiagram",
+        "TimeHandler",
+        "TokenList",
+        "Transform",
+        "JsonObject",
+        "Basher",
+        "Keygen"
       ],
       "Include methods": false,
-      "Only public methods": false,
+      "Only public methods": true,
       "Show methods": [
-        
+        "AdminCryptor",
+        "Cryptor",
+        "Keygen",
+        "Ole",
+        "OleConfig"
       ]
     },
     "Display": {
       "Format": {
         "Font": "Arial",
         "Font size": 6,
-        "Fill color": "Colored"
+        "Fill color": "Black & White"
       },
       "Lines": {
         "Line width": 1,
         "Line color": "Colored"
       },
       "Output": {
-        "Resolution": "300",
-        "Width": 20,
-        "Height": 30,
-        "Fill": false,
-        "Layout": "dot"
+        "Resolution": "600",
+        "Width": 11,
+        "Height": 16,
+        "Fill": true,
+        "Layout": "neato"
       }
     }
   },
@@ -504,7 +519,9 @@
       "listtype": "string",
       "multiple": true,
       "rows": 5,
-      "selected": "world"
+      "selected": [
+        "world"
+      ]
     },
     "Packages selected": {
       "listtype": "string",
@@ -568,7 +585,9 @@
       "tooltip": "Select project folders",
       "listtype": "folder",
       "multiple": true,
-      "selected": "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/LARVA/"
+      "selected": [
+        "/home/lcv/UGR/Docencia/2122/DBA/Dropbox/LARVA/"
+      ]
     },
     "File list": {
       "listtype": "file",
@@ -596,7 +615,9 @@
     },
     "Classes found": {
       "listtype": "String",
-      "selected": "LARVAFirstAgent",
+      "selected": [
+        "OleConfig"
+      ],
       "multiple": true,
       "rows": 6
     },

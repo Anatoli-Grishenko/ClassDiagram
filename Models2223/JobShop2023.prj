@@ -1,0 +1,242 @@
+{
+  "options": {
+    "Sources": {
+      "Input folders": [
+        "/home/lcv/Dropbox/Teaching/DBA/JobShop2013/"
+      ],
+      "Output folder": "dot/",
+      "Source folders": "src",
+      "File extension": "java",
+      "Which classes": "Referenced",
+      "[Scan files]": "Scan files",
+      "File list": [
+        "AgentJobShop",
+        "AgentProducer",
+        "HController",
+        "HMCutter1",
+        "HMCutterPRO",
+        "HMDrillA",
+        "HMDrillB",
+        "HMPolisher",
+        "HMachine",
+        "JobShop",
+        "Layout",
+        "Machine",
+        "NController",
+        "NMCutter1",
+        "NMCutterPRO",
+        "NMDrillA",
+        "NMDrillB",
+        "NMPolisher",
+        "NMachine",
+        "Operations",
+        "Product"
+      ]
+    },
+    "Packages": {
+      "[Scan packages]": "ScanPackages",
+      "Packages found": [
+        "Agents",
+        "Network",
+        "StrongHierarchy",
+        "jobshop"
+      ],
+      "[Select packages]": "SelectPackages",
+      "Packages selected": [
+        "Agents",
+        "Network",
+        "StrongHierarchy",
+        "jobshop"
+      ]
+    },
+    "Classes": {
+      "[Scan classes]": "Scan classes",
+      "Classes found": [
+        "AgentJobShop",
+        "AgentProducer",
+        "HController",
+        "HMCutter1",
+        "HMCutterPRO",
+        "HMDrillA",
+        "HMDrillB",
+        "HMPolisher",
+        "HMachine",
+        "JobShop",
+        "LARVAFirstAgent",
+        "Layout",
+        "Machine",
+        "NController",
+        "NMCutter1",
+        "NMCutterPRO",
+        "NMDrillA",
+        "NMDrillB",
+        "NMPolisher",
+        "NMachine",
+        "Operations",
+        "Product"
+      ],
+      "[Select classes]": "Select classes",
+      "Classes selected": [
+        "AgentJobShop",
+        "AgentProducer",
+        "HController",
+        "HMCutter1",
+        "HMCutterPRO",
+        "HMDrillA",
+        "HMDrillB",
+        "HMPolisher",
+        "HMachine",
+        "JobShop",
+        "LARVAFirstAgent",
+        "NController",
+        "NMCutter1",
+        "NMCutterPRO",
+        "NMDrillA",
+        "NMDrillB",
+        "NMPolisher",
+        "NMachine"
+      ],
+      "Include methods": false,
+      "Only public methods": false,
+      "Show methods": [
+        
+      ]
+    },
+    "Display": {
+      "Format": {
+        "Font": "Courier New",
+        "Font size": 4,
+        "Fill color": "Colored"
+      },
+      "Lines": {
+        "Line width": 1,
+        "Line color": "Black & White"
+      },
+      "Output": {
+        "Resolution": "300",
+        "Width": 22,
+        "Height": 32,
+        "Fill": false,
+        "Layout": "neato"
+      }
+    }
+  },
+  "properties": {
+    "Packages": {
+      "tooltip": "Filter packages",
+      "columns": 2
+    },
+    "Packages found": {
+      "listtype": "string",
+      "multiple": true,
+      "rows": 5,
+      "selected": [
+        "jobshop"
+      ]
+    },
+    "Packages selected": {
+      "listtype": "string",
+      "multiple": true,
+      "rows": 5
+    },
+    "Sources": {
+      "tooltip": "Select the source files to analyze"
+    },
+    "Classes": {
+      "tooltip": "Generate the Classes model"
+    },
+    "Which classes": {
+      "tooltip": "Select which classes are to be displayed",
+      "select": [
+        "All",
+        "Referenced"
+      ]
+    },
+    "Font": {
+      "tooltip": "For to be used",
+      "select": [
+        "Arial",
+        "Courier New"
+      ]
+    },
+    "Layout": {
+      "tooltip": "Use layout manager",
+      "select": [
+        "dot",
+        "neato"
+      ]
+    },
+    "Font size": {
+      "tooltip": "Size of the font to be used"
+    },
+    "Fill color": {
+      "tooltip": "Color of the head of each class",
+      "select": [
+        "Black & White",
+        "Colored"
+      ]
+    },
+    "Line color": {
+      "tooltip": "Color of the lines",
+      "select": [
+        "Black & White",
+        "Colored"
+      ]
+    },
+    "Resolution": {
+      "tooltip": "Choose the resolution, in dpi, of the output",
+      "select": [
+        "150",
+        "300",
+        "600",
+        "1200"
+      ]
+    },
+    "Input folders": {
+      "tooltip": "Select project folders",
+      "listtype": "folder",
+      "multiple": true,
+      "selected": [
+        "/home/lcv/Dropbox/Teaching/DBA/JobShop2013/"
+      ]
+    },
+    "File list": {
+      "listtype": "file",
+      "rows": 4,
+      "multiple": true,
+      "selected": ""
+    },
+    "Output folder": {
+      "tooltip": "Select the folder to output charts",
+      "folder": ""
+    },
+    "Source folders": {
+      "tooltip": "Only the folders that contains source code",
+      "select": [
+        "all",
+        "src"
+      ]
+    },
+    "File extension": {
+      "tooltip": "Which type of files (language) will be included"
+    },
+    "Format": {
+      "border": true,
+      "Columns": 4
+    },
+    "Classes found": {
+      "listtype": "String",
+      "selected": [
+        "Product"
+      ],
+      "multiple": true,
+      "rows": 6
+    },
+    "Methods found": {
+      "listtype": "String",
+      "rows": 6,
+      "multiple": true,
+      "selected": ""
+    }
+  }
+}

@@ -29,29 +29,56 @@
   "relation": {
     "extends": [
       {
-        "LARVAFirstAgent": [
-          
-        ]
-      },
-      {
-        "LARVABaseAgent": [
-          "LARVAFirstAgent"
-        ]
-      },
-      {
-        "Agent": [
-          "LARVABaseAgent"
+        "Search": [
+          "AStar",
+          "Greedy",
+          "AStar",
+          "Greedy"
         ]
       }
     ],
     "owns": [
       {
-        "LARVABaseAgent": [
+        "Map2DColor": [
           
         ]
       },
       {
-        "LARVAFirstAgent": [
+        "Greedy": [
+          "Map2DColor"
+        ]
+      },
+      {
+        "AStarBehavioural": [
+          "DecisionSet",
+          "Choice",
+          "Map2DColor"
+        ]
+      },
+      {
+        "Choice": [
+          "DecisionSet"
+        ]
+      },
+      {
+        "AStar": [
+          "Map2DColor"
+        ]
+      },
+      {
+        "Search": [
+          "DecisionSet",
+          "Choice",
+          "Map2DColor"
+        ]
+      },
+      {
+        "DecisionSet": [
+          "Choice"
+        ]
+      },
+      {
+        "Environment": [
           
         ]
       }
@@ -59,12 +86,19 @@
   },
   "class": {
     "extern": [
-      "Agent",
-      "Agent",
-      "Agent",
-      "Agent",
-      "Agent",
-      "Agent"
+      "AStar",
+      "AStarBehavioural",
+      "Choice",
+      "DecisionSet",
+      "Environment",
+      "Greedy",
+      "AStar",
+      "AStarBehavioural",
+      "Choice",
+      "DecisionSet",
+      "Environment",
+      "Greedy",
+      "Search"
     ],
     "data": [
       
@@ -73,8 +107,7 @@
       
     ],
     "agents": [
-      "LARVABaseAgent",
-      "LARVAFirstAgent"
+      
     ],
     "appboot": [
       
@@ -107,7 +140,7 @@
       
     ],
     "map2D": [
-      
+      "Map2DColor"
     ],
     "messaging": [
       
@@ -131,127 +164,127 @@
   "format": {
     "data": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "Chartreuse",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "swing": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "MediumSpringGreen",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "agents": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "Turquoise",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "appboot": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "CadetBlue",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "basher": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "MediumAquaMarine",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "console": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "Thistle",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "crypto": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "LightSteelBlue",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "database": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "DarkViolet",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "disk": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "BlueViolet",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "factoryagent": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "DarkOliveGreen",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "geometry": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "Aqua",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "glossary": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "OliveDrab",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "larva": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "Cyan",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "map2D": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "LightBlue",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "messaging": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "Indigo",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "ontology": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "DarkSeaGreen",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "sessions": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "Crimson",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "telegram": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "Orchid",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "tools": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "DarkGreen",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "world": {
       "face": "Arial",
-      "fontsize": 3,
-      "fillcolor": "Salmon",
+      "fontsize": 7,
+      "fillcolor": "white",
       "color": "black"
     },
     "extern": {
       "face": "Arial",
-      "fontsize": 3,
+      "fontsize": 7,
       "fillcolor": "gray",
       "color": "black"
     },

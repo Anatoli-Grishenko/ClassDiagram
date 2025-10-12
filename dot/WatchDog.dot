@@ -1,0 +1,34 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ size="11,16!";
+ margin=0;
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE="9"><b>LARVAFirstAgent</b></FONT></td></tr>
+</table>>]
+ControlPanel ControlPanel [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Courier New" POINT-SIZE="9"><b>ControlPanel</b></FONT></td></tr>
+</table>>]
+Domestic Domestic [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Courier New" POINT-SIZE="9"><b>Domestic</b></FONT></td></tr>
+</table>>]
+Hub Hub [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Courier New" POINT-SIZE="9"><b>Hub</b></FONT></td></tr>
+</table>>]
+Notifier Notifier [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Courier New" POINT-SIZE="9"><b>Notifier</b></FONT></td></tr>
+</table>>]
+Sensor Sensor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Courier New" POINT-SIZE="9"><b>Sensor</b></FONT></td></tr>
+</table>>]
+TelegramBot TelegramBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Cyan"><FONT face="Courier New" POINT-SIZE="9"><b>TelegramBot</b></FONT></td></tr>
+</table>>]
+WDConfiguration WDConfiguration [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Salmon"><FONT face="Courier New" POINT-SIZE="9"><b>WDConfiguration</b></FONT></td></tr>
+</table>>]
+WDSensors WDSensors [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Salmon"><FONT face="Courier New" POINT-SIZE="9"><b>WDSensors</b></FONT></td></tr>
+</table>>]
+WatchPremium WatchPremium [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Blue"><FONT face="Courier New" POINT-SIZE="9"><b>WatchPremium</b></FONT></td></tr>
+</table>>]
+Domestic -> LARVAFirstAgent [arrowhead=onormal, penwidth=1, color=black]
+ControlPanel -> Domestic [arrowhead=onormal, penwidth=1, color=black]
+Hub -> Domestic [arrowhead=onormal, penwidth=1, color=black]
+Notifier -> Domestic [arrowhead=onormal, penwidth=1, color=black]
+Sensor -> Domestic [arrowhead=onormal, penwidth=1, color=black]
+WDConfiguration -> Domestic [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+WDSensors -> Domestic [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+LARVAFirstAgent -> TelegramBot [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}

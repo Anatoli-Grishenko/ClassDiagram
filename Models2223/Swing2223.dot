@@ -1,0 +1,49 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ratio="fill";
+ size="11,16!";
+ margin=0;
+Map2DColor Map2DColor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="7"><b>Map2DColor</b></FONT></td></tr>
+</table>>]
+AStar AStar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>AStar</b></FONT></td></tr>
+</table>>]
+AStarBehavioural AStarBehavioural [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>AStarBehavioural</b></FONT></td></tr>
+</table>>]
+Choice Choice [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>Choice</b></FONT></td></tr>
+</table>>]
+DecisionSet DecisionSet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>DecisionSet</b></FONT></td></tr>
+</table>>]
+Environment Environment [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>Environment</b></FONT></td></tr>
+</table>>]
+Greedy Greedy [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>Greedy</b></FONT></td></tr>
+</table>>]
+AStar AStar [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>AStar</b></FONT></td></tr>
+</table>>]
+AStarBehavioural AStarBehavioural [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>AStarBehavioural</b></FONT></td></tr>
+</table>>]
+Choice Choice [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>Choice</b></FONT></td></tr>
+</table>>]
+DecisionSet DecisionSet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>DecisionSet</b></FONT></td></tr>
+</table>>]
+Environment Environment [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>Environment</b></FONT></td></tr>
+</table>>]
+Greedy Greedy [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>Greedy</b></FONT></td></tr>
+</table>>]
+Search Search [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="7"><b>Search</b></FONT></td></tr>
+</table>>]
+AStar -> Search [arrowhead=onormal, penwidth=1, color=black]
+Greedy -> Search [arrowhead=onormal, penwidth=1, color=black]
+AStar -> Search [arrowhead=onormal, penwidth=1, color=black]
+Greedy -> Search [arrowhead=onormal, penwidth=1, color=black]
+Map2DColor -> Greedy [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+DecisionSet -> AStarBehavioural [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Choice -> AStarBehavioural [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Map2DColor -> AStarBehavioural [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+DecisionSet -> Choice [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Map2DColor -> AStar [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+DecisionSet -> Search [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Choice -> Search [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Map2DColor -> Search [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Choice -> DecisionSet [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}

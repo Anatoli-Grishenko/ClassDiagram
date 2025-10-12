@@ -1,0 +1,84 @@
+digraph graphname {
+     rankdir="BT"
+dpi=300
+ size="11,16!";
+ margin=0;
+Environment Environment [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Courier New" POINT-SIZE="9"><b>Environment</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Environment <b>addThings</b>(ArrayList&lt;Thing&gt; listT)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Environment <b>clone</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Environment <b>readInternalPerceptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Environment <b>setExternalObjects</b>(String things)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Environment <b>setExternalPerceptions</b>(String perceptions)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Environment <b>simmulate</b>(Choice a)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>E<b>nvironment</b>(E<b>nvironment</b> other)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Mission <b>getCurrentMission</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Point3D <b>getCityPosition</b>(String city)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>getCurrentCity</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>getCurrentGoal</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>getDestinationCity</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>setNextGoal</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String[] <b>getCitiesAround</b>(Point3D p, int radius)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String[] <b>getCitiesAround</b>(int radius)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String[] <b>getCityList</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ThingSet <b>getCensus</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ThingSet <b>getFullCadastre</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>executeInternalAction</b>(String action)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isCrahsed</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isEnergyExhausted</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isEquivalentTo</b>(Environment other)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isFreeFront</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isFreeFrontLeft</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isFreeFrontRight</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isFreeLeft</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isFreeRight</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isTargetAhead</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isTargetBack</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isTargetFront</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isTargetFrontLeft</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isTargetFrontRight</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isTargetLeft</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isTargetLeftmost</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isTargetRight</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isTargetRightmost</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>loadWorld</b>(String worldname, String name, Roles r, Sensors attach[])</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>willBeAlive</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getFrontGeneral</b>(int[][] data)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getHereGeneral</b>(int[][] data)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getLeftGeneral</b>(int[][] data)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getLeftmostGeneral</b>(int[][] data)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getLidarFront</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getLidarHere</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getLidarLeft</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getLidarLeftmost</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getLidarRight</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getLidarRightmost</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getRightGeneral</b>(int[][] data)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getRightmostGeneral</b>(int[][] data)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getSlope</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getVisualFront</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getVisualHere</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getVisualLeft</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getVisualLeftmost</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getVisualRight</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getVisualRightmost</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>isMemoryGPS</b>(Point3D current)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>isMemoryGPSVector</b>(SimpleVector3D current)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>isMemoryVector</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int[] <b>getShortPolar</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int[][] <b>getAbsoluteGeneral</b>(int[][] data)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int[][] <b>getPolarGeneral</b>(int[][] data)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int[][] <b>getRelativeGeneral</b>(int[][] data)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int[][] <b>getShortDistances</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int[][] <b>getShortGeneral</b>(int[][] data)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int[][] <b>getShortLidar</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int[][] <b>getShortRadar</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int[][] <b>getShortVisual</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>cache</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>makeCurrentMission</b>(String missionString)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setCurrentGoal</b>(String goal)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setCurrentMission</b>(Mission m)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setCurrentMission</b>(String missionName)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setCurrentMission</b>(String missionName, String goals[])</i></FONT></td></tr>
+</table></td></tr>
+</table>>]
+}

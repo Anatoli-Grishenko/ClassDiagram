@@ -3,44 +3,4 @@ digraph graphname {
 dpi=600
  size="11,16!";
  margin=0;
-AT_ST AT_ST [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="9"><b>AT_ST</b></FONT></td></tr>
-</table>>]
-AT_ST_BASIC_AVOID AT_ST_BASIC_AVOID [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="9"><b>AT_ST_BASIC_AVOID</b></FONT></td></tr>
-</table>>]
-AT_ST_BASIC_SURROUND AT_ST_BASIC_SURROUND [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="9"><b>AT_ST_BASIC_SURROUND</b></FONT></td></tr>
-</table>>]
-AT_ST_FULL AT_ST_FULL [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="9"><b>AT_ST_FULL</b></FONT></td></tr>
-</table>>]
-ITTL1 ITTL1 [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="CadetBlue"><FONT face="Courier New" POINT-SIZE="9"><b>ITTL1</b></FONT></td></tr>
-</table>>]
-ITTL2 ITTL2 [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumAquaMarine"><FONT face="Courier New" POINT-SIZE="9"><b>ITTL2</b></FONT></td></tr>
-</table>>]
-ITTL3 ITTL3 [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Courier New" POINT-SIZE="9"><b>ITTL3</b></FONT></td></tr>
-</table>>]
-BB1F BB1F [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="DarkOliveGreen"><FONT face="Courier New" POINT-SIZE="9"><b>BB1F</b></FONT></td></tr>
-</table>>]
-DEST DEST [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="DarkOliveGreen"><FONT face="Courier New" POINT-SIZE="9"><b>DEST</b></FONT></td></tr>
-</table>>]
-DroidShip DroidShip [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="DarkOliveGreen"><FONT face="Courier New" POINT-SIZE="9"><b>DroidShip</b></FONT></td></tr>
-</table>>]
-LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="DarkOliveGreen"><FONT face="Courier New" POINT-SIZE="9"><b>LARVABaseAgent</b></FONT></td></tr>
-</table>>]
-LARVADialogicalAgent LARVADialogicalAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="DarkOliveGreen"><FONT face="Courier New" POINT-SIZE="9"><b>LARVADialogicalAgent</b></FONT></td></tr>
-</table>>]
-LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="DarkOliveGreen"><FONT face="Courier New" POINT-SIZE="9"><b>LARVAFirstAgent</b></FONT></td></tr>
-</table>>]
-Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>Agent</b></FONT></td></tr>
-</table>>]
-Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>Agent</b></FONT></td></tr>
-</table>>]
-ITTL3 -> ITTL2 [arrowhead=onormal, penwidth=1, color=black]
-AT_ST_FULL -> AT_ST_BASIC_SURROUND [arrowhead=onormal, penwidth=1, color=black]
-AT_ST -> LARVAFirstAgent [arrowhead=onormal, penwidth=1, color=black]
-LARVADialogicalAgent -> LARVAFirstAgent [arrowhead=onormal, penwidth=1, color=black]
-LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=1, color=black]
-BB1F -> DroidShip [arrowhead=onormal, penwidth=1, color=black]
-DEST -> DroidShip [arrowhead=onormal, penwidth=1, color=black]
-AT_ST_BASIC_SURROUND -> AT_ST_BASIC_AVOID [arrowhead=onormal, penwidth=1, color=black]
-DroidShip -> LARVADialogicalAgent [arrowhead=onormal, penwidth=1, color=black]
-LARVAFirstAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
 }

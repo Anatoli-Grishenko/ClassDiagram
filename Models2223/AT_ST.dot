@@ -1,0 +1,39 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ size="11,16!";
+ margin=0;
+AT_ST AT_ST [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Courier New" POINT-SIZE="9"><b>AT_ST</b></FONT></td></tr>
+</table>>]
+AT_ST_BASIC_AVOID AT_ST_BASIC_AVOID [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Courier New" POINT-SIZE="9"><b>AT_ST_BASIC_AVOID</b></FONT></td></tr>
+</table>>]
+AT_ST_BASIC_SURROUND AT_ST_BASIC_SURROUND [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Courier New" POINT-SIZE="9"><b>AT_ST_BASIC_SURROUND</b></FONT></td></tr>
+</table>>]
+AT_ST_DIRECTDRIVE AT_ST_DIRECTDRIVE [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Courier New" POINT-SIZE="9"><b>AT_ST_DIRECTDRIVE</b></FONT></td></tr>
+</table>>]
+STF_BASIC_AVOID STF_BASIC_AVOID [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="CadetBlue"><FONT face="Courier New" POINT-SIZE="9"><b>STF_BASIC_AVOID</b></FONT></td></tr>
+</table>>]
+STF_BASIC_SURROUND STF_BASIC_SURROUND [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="CadetBlue"><FONT face="Courier New" POINT-SIZE="9"><b>STF_BASIC_SURROUND</b></FONT></td></tr>
+</table>>]
+STF_DIRECT_DRIVE STF_DIRECT_DRIVE [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="CadetBlue"><FONT face="Courier New" POINT-SIZE="9"><b>STF_DIRECT_DRIVE</b></FONT></td></tr>
+</table>>]
+LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumAquaMarine"><FONT face="Courier New" POINT-SIZE="9"><b>LARVABaseAgent</b></FONT></td></tr>
+</table>>]
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumAquaMarine"><FONT face="Courier New" POINT-SIZE="9"><b>LARVAFirstAgent</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>Agent</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>Agent</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="9"><b>Agent</b></FONT></td></tr>
+</table>>]
+AT_ST -> LARVAFirstAgent [arrowhead=onormal, penwidth=1, color=black]
+AT_ST_BASIC_AVOID -> AT_ST_DIRECTDRIVE [arrowhead=onormal, penwidth=1, color=black]
+STF_DIRECT_DRIVE -> AT_ST_DIRECTDRIVE [arrowhead=onormal, penwidth=1, color=black]
+AT_ST_BASIC_SURROUND -> AT_ST_BASIC_AVOID [arrowhead=onormal, penwidth=1, color=black]
+LARVAFirstAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
+AT_ST_DIRECTDRIVE -> AT_ST [arrowhead=onormal, penwidth=1, color=black]
+LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=1, color=black]
+STF_BASIC_AVOID -> STF_DIRECT_DRIVE [arrowhead=onormal, penwidth=1, color=black]
+STF_BASIC_SURROUND -> STF_BASIC_AVOID [arrowhead=onormal, penwidth=1, color=black]
+}

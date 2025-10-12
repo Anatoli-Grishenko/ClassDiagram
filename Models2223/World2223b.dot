@@ -1,0 +1,107 @@
+digraph graphname {
+     rankdir="BT"
+dpi=300
+ size="11,16!";
+ margin=0;
+Ole Ole [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Ole</b></FONT></td></tr>
+</table>>]
+OleConfig OleConfig [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>OleConfig</b></FONT></td></tr>
+</table>>]
+Circle3D Circle3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Circle3D</b></FONT></td></tr>
+</table>>]
+Compass Compass [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Compass</b></FONT></td></tr>
+</table>>]
+Entity3D Entity3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Entity3D</b></FONT></td></tr>
+</table>>]
+Line3D Line3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Line3D</b></FONT></td></tr>
+</table>>]
+Point3D Point3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Point3D</b></FONT></td></tr>
+</table>>]
+PolarSurface PolarSurface [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>PolarSurface</b></FONT></td></tr>
+</table>>]
+Polygon3D Polygon3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Polygon3D</b></FONT></td></tr>
+</table>>]
+Scene3D Scene3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Scene3D</b></FONT></td></tr>
+</table>>]
+SimpleVector3D SimpleVector3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>SimpleVector3D</b></FONT></td></tr>
+</table>>]
+String3D String3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>String3D</b></FONT></td></tr>
+</table>>]
+Vector3D Vector3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Vector3D</b></FONT></td></tr>
+</table>>]
+Sensors Sensors [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Sensors</b></FONT></td></tr>
+</table>>]
+Map2DColor Map2DColor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Map2DColor</b></FONT></td></tr>
+</table>>]
+Perceptor Perceptor [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Perceptor</b></FONT></td></tr>
+</table>>]
+SensorDecoder SensorDecoder [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>SensorDecoder</b></FONT></td></tr>
+</table>>]
+Thing Thing [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>Thing</b></FONT></td></tr>
+</table>>]
+ThingIndex ThingIndex [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>ThingIndex</b></FONT></td></tr>
+</table>>]
+ThingSet ThingSet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>ThingSet</b></FONT></td></tr>
+</table>>]
+World World [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>World</b></FONT></td></tr>
+</table>>]
+liveBot liveBot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial" POINT-SIZE="5"><b>liveBot</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="5"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="5"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+Environment Environment [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="5"><b>Environment</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="5"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+Environment Environment [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="5"><b>Environment</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="5"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+Environment Environment [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="5"><b>Environment</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="5"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+Environment Environment [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="5"><b>Environment</b></FONT></td></tr>
+</table>>]
+JsonObject JsonObject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="5"><b>JsonObject</b></FONT></td></tr>
+</table>>]
+Environment Environment [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Arial" POINT-SIZE="5"><b>Environment</b></FONT></td></tr>
+</table>>]
+Ole -> JsonObject [arrowhead=onormal, penwidth=1, color=black]
+OleConfig -> Ole [arrowhead=onormal, penwidth=1, color=black]
+SimpleVector3D -> Vector3D [arrowhead=onormal, penwidth=1, color=black]
+liveBot -> Thing [arrowhead=onormal, penwidth=1, color=black]
+Environment -> SensorDecoder [arrowhead=onormal, penwidth=1, color=black]
+Circle3D -> Entity3D [arrowhead=onormal, penwidth=1, color=black]
+Line3D -> Entity3D [arrowhead=onormal, penwidth=1, color=black]
+Polygon3D -> Entity3D [arrowhead=onormal, penwidth=1, color=black]
+String3D -> Entity3D [arrowhead=onormal, penwidth=1, color=black]
+Thing -> Entity3D [arrowhead=onormal, penwidth=1, color=black]
+Point3D -> Vector3D [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+World -> Thing [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Map2DColor -> Thing [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Point3D -> Thing [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Perceptor -> Thing [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+SensorDecoder -> Thing [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Point3D -> Line3D [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+SimpleVector3D -> PolarSurface [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+ThingIndex -> ThingSet [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Entity3D -> Scene3D [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Point3D -> Polygon3D [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Thing -> World [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+ThingSet -> World [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+OleConfig -> World [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Point3D -> World [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Thing -> ThingIndex [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Point3D -> SimpleVector3D [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+World -> Environment [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+liveBot -> Environment [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+ThingSet -> Environment [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Point3D -> liveBot [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Map2DColor -> SensorDecoder [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+SimpleVector3D -> SensorDecoder [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Point3D -> Circle3D [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Thing -> Perceptor [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}

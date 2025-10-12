@@ -1,0 +1,117 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ size="11,16!";
+ margin=0;
+Entity3D Entity3D [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Aqua"><FONT face="Courier New" POINT-SIZE="9"><b>Entity3D</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Color <b>getColor</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Entity3D  <b>setCenter</b>(Point3D _center)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Entity3D <b>setColor</b>(Color _color)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Entity3D <b>setName</b>(String _name)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Entity3D <b>setOrientation</b>(int orientation)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>E<b>ntity3D</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>E<b>ntity3D</b>(Point3D position, Color color)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>E<b>ntity3D</b>(SimpleVector3D vposition, Color color)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Point3D <b>getCenter</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Point3D <b>getPosition</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Point3D <b>getSize</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>SimpleVector3D <b>getVector</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>getId</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>getKey</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>getName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>getType</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>contains</b>(Point3D p)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isAvailable</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>double <b>getCapacity</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>double <b>getMaxCapacity</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>final Entity3D <b>setPosition</b>(Point3D p)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>final Entity3D <b>setPosition</b>(SimpleVector3D p)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>final Entity3D <b>setSize</b>(Point3D p)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>compare</b>(Entity3D one, Entity3D other)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>compareTo</b>(Entity3D other)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getDimension</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getOrientation</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setAvailable</b>(boolean _available)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setCapacity</b>(double _capacity)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setKey</b>(String _key)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setMaxCapacity</b>(double _maxCapacity)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setType</b>(String _type)</i></FONT></td></tr>
+</table></td></tr>
+</table>>]
+Scheduler Scheduler [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="DarkSeaGreen"><FONT face="Courier New" POINT-SIZE="9"><b>Scheduler</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Layout2D <b>getMap</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ThingSet <b>getDeliveries</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ThingSet <b>getOrder</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ThingSet <b>getResources</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>TimeTable <b>solveQuick</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setDeliveries</b>(ThingSet Deliveries)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setMap</b>(Layout2D Map)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setOrder</b>(ThingSet Order)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setResources</b>(ThingSet Resources)</i></FONT></td></tr>
+</table></td></tr>
+</table>>]
+TimeTable TimeTable [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="DarkSeaGreen"><FONT face="Courier New" POINT-SIZE="9"><b>TimeTable</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ArrayList&lt;Assignment&gt; <b>getAllOCurrences</b>(String resource)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Assignment <b>getEarlierAssignment</b>(int time)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Assignment <b>getLast</b>(String name)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>getSolution</b>(String who)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getMakespan</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getNAgents</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getNOccurrences</b>(String resource)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>addAssignment</b>(Assignment a)</i></FONT></td></tr>
+</table></td></tr>
+</table>>]
+Thing Thing [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="RebeccaPurple"><FONT face="Courier New" POINT-SIZE="9"><b>Thing</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>JsonObject <b>getMinimalPerceptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>JsonObject <b>getPerceptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>JsonObject <b>toJson</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Map2DColor <b>getSurface</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>SensorDecoder <b>Raw</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>getBelongsTo</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>toString</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Thing <b>addSensor</b>(Perceptor p)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Thing <b>placeAtSurface</b>(Point3D p)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Thing <b>setSurface</b>(Map2DColor cartography)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>T<b>hing</b>(String name, World w)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>World <b>getWorld</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isHasAirport</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isHasHeliport</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isHasPort</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>sizePerceptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>fromJson</b>(JsonObject o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>readPerceptions</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setBelongsTo</b>(String _belongsTo)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setHasAirport</b>(boolean hastAirport)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setHasHeliport</b>(boolean hasHeliport)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setHasPort</b>(boolean hasPort)</i></FONT></td></tr>
+</table></td></tr>
+</table>>]
+ThingSet ThingSet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="RebeccaPurple"><FONT face="Courier New" POINT-SIZE="9"><b>ThingSet</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ArrayList&lt;String&gt; <b>getAllBelong</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ArrayList&lt;String&gt; <b>getAllNames</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ArrayList&lt;String&gt; <b>getAllPosition</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ArrayList&lt;String&gt; <b>getAllTypes</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ArrayList&lt;Thing&gt; <b>getAllThings</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ArrayList&lt;Thing&gt; <b>splitListByBelong</b>(String type)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ArrayList&lt;Thing&gt; <b>splitListByType</b>(String type)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>JsonObject <b>toJson</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Ontology <b>getOntology</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>getTypeFilter</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Thing <b>getThing</b>(String name)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ThingSet <b>addThing</b>(JsonObject jsothing)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ThingSet <b>addThing</b>(Thing t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ThingSet <b>fromJson</b>(JsonArray reading)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ThingSet <b>reIndexThing</b>(Thing t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ThingSet <b>removeThing</b>(Thing t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ThingSet <b>setTypeFilter</b>(String typeFilter)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>ThingSet <b>splitSetByType</b>(String type)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>belongs</b>(Thing t)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>loadFromTSVFile</b>(String filename)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>size</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>clear</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setOntology</b>(Ontology ontology)</i></FONT></td></tr>
+</table></td></tr>
+</table>>]
+Thing -> Entity3D [arrowhead=onormal, penwidth=1, color=black]
+ThingSet -> Scheduler [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}

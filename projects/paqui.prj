@@ -1,0 +1,46 @@
+{
+  "inputFolders": [
+    "src"
+  ],
+  "outputFolder": "src/",
+  "sourceFolders": "src",
+  "fileExtension": "java",
+  "whichClasses": "All",
+  "fileList": [
+    "fileluis"
+  ],
+  "packagesList": [
+    "packageLuis"
+  ],
+  "packageSelection": [
+    
+  ],
+  "classesList": [
+    "classesLuis"
+  ],
+  "classesSelected": [
+    
+  ],
+  "includeMethods": true,
+  "onlyPublicMethods": true,
+  "font": "Arial",
+  "fontSize": 9,
+  "lineWidth": 1,
+  "lineColor": "Black & White",
+  "dpiResolution": "600",
+  "widthInches": 11,
+  "heightInches": 16,
+  "fill": false,
+  "layout": "dot",
+  "metadata": {
+    "ClassName": "classdiagram.Project",
+    "tabnames": [
+      "Sources",
+      "Packages",
+      "Classes",
+      "Display"
+    ],
+    "label": "D716",
+    "time": "2025-10-11 20:54:18:231"
+  }
+}

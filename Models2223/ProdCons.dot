@@ -1,0 +1,49 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ size="11,16!";
+ margin=0;
+ProductionController ProductionController [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Courier New" POINT-SIZE="4"><b>ProductionController</b></FONT></td></tr>
+</table>>]
+WordConsumer WordConsumer [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Courier New" POINT-SIZE="4"><b>WordConsumer</b></FONT></td></tr>
+</table>>]
+WordProducer WordProducer [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Chartreuse"><FONT face="Courier New" POINT-SIZE="4"><b>WordProducer</b></FONT></td></tr>
+</table>>]
+PCDialogical PCDialogical [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumSpringGreen"><FONT face="Courier New" POINT-SIZE="4"><b>PCDialogical</b></FONT></td></tr>
+</table>>]
+PCNonDialogical PCNonDialogical [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE="4"><b>PCNonDialogical</b></FONT></td></tr>
+</table>>]
+OWordFollower OWordFollower [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumAquaMarine"><FONT face="Courier New" POINT-SIZE="4"><b>OWordFollower</b></FONT></td></tr>
+</table>>]
+OWordStarter OWordStarter [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumAquaMarine"><FONT face="Courier New" POINT-SIZE="4"><b>OWordStarter</b></FONT></td></tr>
+</table>>]
+OpenWordPlayer OpenWordPlayer [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="MediumAquaMarine"><FONT face="Courier New" POINT-SIZE="4"><b>OpenWordPlayer</b></FONT></td></tr>
+</table>>]
+WordFollower WordFollower [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Courier New" POINT-SIZE="4"><b>WordFollower</b></FONT></td></tr>
+</table>>]
+WordStarter WordStarter [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Thistle"><FONT face="Courier New" POINT-SIZE="4"><b>WordStarter</b></FONT></td></tr>
+</table>>]
+LARVABaseAgent LARVABaseAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="LightSteelBlue"><FONT face="Courier New" POINT-SIZE="4"><b>LARVABaseAgent</b></FONT></td></tr>
+</table>>]
+LARVADialogicalAgent LARVADialogicalAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="LightSteelBlue"><FONT face="Courier New" POINT-SIZE="4"><b>LARVADialogicalAgent</b></FONT></td></tr>
+</table>>]
+LARVAFirstAgent LARVAFirstAgent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="LightSteelBlue"><FONT face="Courier New" POINT-SIZE="4"><b>LARVAFirstAgent</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="4"><b>Agent</b></FONT></td></tr>
+</table>>]
+Agent Agent [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="gray"><FONT face="Courier New" POINT-SIZE="4"><b>Agent</b></FONT></td></tr>
+</table>>]
+LARVADialogicalAgent -> LARVAFirstAgent [arrowhead=onormal, penwidth=1, color=black]
+PCNonDialogical -> LARVAFirstAgent [arrowhead=onormal, penwidth=1, color=black]
+OWordFollower -> PCDialogical [arrowhead=onormal, penwidth=1, color=black]
+OWordStarter -> PCDialogical [arrowhead=onormal, penwidth=1, color=black]
+OpenWordPlayer -> PCDialogical [arrowhead=onormal, penwidth=1, color=black]
+PCDialogical -> LARVADialogicalAgent [arrowhead=onormal, penwidth=1, color=black]
+LARVAFirstAgent -> LARVABaseAgent [arrowhead=onormal, penwidth=1, color=black]
+LARVABaseAgent -> Agent [arrowhead=onormal, penwidth=1, color=black]
+ProductionController -> PCNonDialogical [arrowhead=onormal, penwidth=1, color=black]
+WordConsumer -> PCNonDialogical [arrowhead=onormal, penwidth=1, color=black]
+WordFollower -> PCNonDialogical [arrowhead=onormal, penwidth=1, color=black]
+WordProducer -> PCNonDialogical [arrowhead=onormal, penwidth=1, color=black]
+WordStarter -> PCNonDialogical [arrowhead=onormal, penwidth=1, color=black]
+}

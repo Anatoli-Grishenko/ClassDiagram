@@ -1,0 +1,64 @@
+digraph graphname {
+     rankdir="BT"
+dpi=600
+ size="11,16!";
+ margin=0;
+Choice Choice [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE="9"><b>Choice</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Choice <b>getParent</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Choice <b>setMaxUtility</b>(double utility)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Choice <b>setMinUtility</b>(double utility)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Choice <b>setName</b>(String label)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Choice <b>setUtility</b>(double utility)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Choice <b>setValid</b>(boolean eligible)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>C<b>hoice</b>(Point3D p)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>DecisionSet <b>getChildren</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Point3D <b>getPosition</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>getName</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>toString</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>equals</b>(Choice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>inPosition</b>(Choice other)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>inProximity</b>(Choice other)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isEqualTo</b>(Choice other)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>isValid</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>double <b>getG</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>double <b>getH</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>double <b>getUtility</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>calculateDepth</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>compareTo</b>(Object o)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>getDepth</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>static boolean <b>isIncreasing</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>static void <b>setDecreasing</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>static void <b>setIncreasing</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setChildren</b>(DecisionSet children)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setDepth</b>(int depth)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setG</b>(double g)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setH</b>(double h)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setParent</b>(Choice parent)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>void <b>setPosition</b>(Point3D position)</i></FONT></td></tr>
+</table></td></tr>
+</table>>]
+DecisionSet DecisionSet [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="Turquoise"><FONT face="Courier New" POINT-SIZE="9"><b>DecisionSet</b></FONT></td></tr>
+<tr><td><table border="0" cellborder="0" cellspacing="0"><tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Choice <b>BestChoice</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Choice <b>SecondBestChoice</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Choice <b>getChoice</b>(Choice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Choice <b>getChoice</b>(String label)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Choice <b>getChoice</b>(int i)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>Choice <b>popBestChoice</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>DecisionSet <b>addChoice</b>(Choice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>DecisionSet <b>addChoiceMajor</b>(Choice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>DecisionSet <b>addChoiceMinor</b>(Choice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>DecisionSet <b>extractEligibles</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>DecisionSet <b>reOrder</b>(Choice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>DecisionSet <b>removeChoice</b>(Choice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>DecisionSet <b>removeChoice</b>(int i)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>DecisionSet <b>sort</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>DecisionSet <b>sortAscending</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>DecisionSet <b>sortDescending</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>String <b>toString</b>()</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>boolean <b>containsChoice</b>(Choice c)</i></FONT></td></tr>
+<tr><td align="left"><FONT face="Courier New" POINT-SIZE= "6">[+]<i>int <b>findChoice</b>(Choice c)</i></FONT></td></tr>
+</table></td></tr>
+</table>>]
+DecisionSet -> Choice [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+Choice -> DecisionSet [style=dotted,arrowhead=odiamond, penwidth=1,color=blue]
+}
