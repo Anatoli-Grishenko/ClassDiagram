@@ -1,0 +1,19 @@
+digraph {
+label="copilot";
+rankdir="BT";
+dpi=600;
+ratio="fill";
+size="11,16";
+margin=0;
+
+
+
+// Nodes
+Copilot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New"  POINT-SIZE="9" >Copilot</FONT><br/><FONT face="Courier New"  POINT-SIZE="4" >copilot</FONT></td></tr></table>>]
+CopilotJob [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New"  POINT-SIZE="9" >CopilotJob</FONT><br/><FONT face="Courier New"  POINT-SIZE="4" >data</FONT></td></tr></table>>]
+CopilotProject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New"  POINT-SIZE="9" >CopilotProject</FONT><br/><FONT face="Courier New"  POINT-SIZE="4" >data</FONT></td></tr></table>>]
+CopilotFile [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Courier New"  POINT-SIZE="9" >CopilotFile</FONT><br/><FONT face="Courier New"  POINT-SIZE="4" >data</FONT></td></tr></table>>]
+
+// Edges
+
+}

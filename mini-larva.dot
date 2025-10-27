@@ -1,0 +1,15 @@
+digraph {
+label="mini-larva";
+rankdir="BT";
+dpi=300;
+ratio="fill";
+size="12,12";
+margin=0;
+
+
+
+// Nodes
+
+// Edges
+
+}

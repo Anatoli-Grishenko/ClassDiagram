@@ -1,6 +1,20 @@
-digraph graphname {
-     rankdir="BT"
-dpi=600
- size="11,16!";
- margin=0;
+digraph {
+label="nonamed";
+rankdir="BT";
+dpi=300;
+ratio="fill";
+size="5,5";
+margin=0;
+
+
+
+// Nodes
+Copilot [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial"  POINT-SIZE="9" >Copilot</FONT></td></tr></table>>]
+CopilotJob [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial"  POINT-SIZE="9" >CopilotJob</FONT></td></tr></table>>]
+CopilotProject [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial"  POINT-SIZE="9" >CopilotProject</FONT></td></tr></table>>]
+CopilotFile [shape=plain, label=<<table border="0" cellborder="1" cellspacing="0"><tr><td bgcolor="white"><FONT face="Arial"  POINT-SIZE="9" >CopilotFile</FONT></td></tr></table>>]
+
+// Edges
+
+CopilotFile -> CopilotJob [label="",arrowhead=odiamond, penwidth=1, color=black]
 }

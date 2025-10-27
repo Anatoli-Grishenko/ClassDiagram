@@ -1,0 +1,47 @@
+{
+  "name": "larva2",
+  "inputFolders": [
+    "/home/lcv/UGR/ThePlayground/es.ugr.larva2.core/"
+  ],
+  "outputFolder": "",
+  "sourceFolders": "src",
+  "fileExtension": "java",
+  "filesList": [
+    
+  ],
+  "packagesList": [
+    
+  ],
+  "packageSelection": [
+    
+  ],
+  "whichClasses": "Referenced",
+  "classesList": [
+    
+  ],
+  "classesSelected": [
+    
+  ],
+  "includeMethods": false,
+  "onlyPublicMethods": false,
+  "font": "Courier New",
+  "fontSize": 9,
+  "lineWidth": 1,
+  "lineColor": "Black & White",
+  "dpiResolution": "600",
+  "widthInches": 11,
+  "heightInches": 16,
+  "fill": false,
+  "layout": "dot",
+  "metadata": {
+    "ClassName": "classdiagram.Project",
+    "tabnames": [
+      "Sources",
+      "Packages",
+      "Classes",
+      "Display"
+    ],
+    "label": "E818",
+    "time": "2025-10-15 22:04:05:586"
+  }
+}

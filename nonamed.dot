@@ -1,0 +1,19 @@
+digraph {
+label="nonamed";
+rankdir="BT";
+dpi=300;
+ratio="fill";
+size="5,5";
+margin=0;
+
+
+
+// Nodes
+Copilot [shape=rect, label=<<FONT face="Arial"  POINT-SIZE="24" >Copilot</FONT>>]
+CopilotJob [shape=rect, label=<<FONT face="Arial"  POINT-SIZE="24" >CopilotJob</FONT>>]
+CopilotProject [shape=rect, label=<<FONT face="Arial"  POINT-SIZE="24" >CopilotProject</FONT>>]
+CopilotFile [shape=rect, label=<<FONT face="Arial"  POINT-SIZE="24" >CopilotFile</FONT>>]
+
+// Edges
+
+}

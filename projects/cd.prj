@@ -1,0 +1,46 @@
+{
+  "inputFolders": [
+    
+  ],
+  "outputFolder": "",
+  "sourceFolders": "src",
+  "fileExtension": "java",
+  "whichClasses": "All",
+  "fileList": [
+    
+  ],
+  "packagesList": [
+    
+  ],
+  "packageSelection": [
+    
+  ],
+  "classesList": [
+    
+  ],
+  "classesSelected": [
+    
+  ],
+  "includeMethods": false,
+  "onlyPublicMethods": false,
+  "font": "Courier New",
+  "fontSize": 9,
+  "lineWidth": 1,
+  "lineColor": "Black & White",
+  "dpiResolution": "600",
+  "widthInches": 11,
+  "heightInches": 16,
+  "fill": false,
+  "layout": "dot",
+  "metadata": {
+    "ClassName": "classdiagram.Project",
+    "tabnames": [
+      "Sources",
+      "Packages",
+      "Classes",
+      "Display"
+    ],
+    "label": "F84E",
+    "time": "2025-10-13 23:42:42:144"
+  }
+}
