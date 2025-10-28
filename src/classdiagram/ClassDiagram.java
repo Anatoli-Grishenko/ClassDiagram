@@ -7,7 +7,10 @@ package classdiagram;
 
 import Bitmap.LColorBitmap;
 import Dot.LDotCanvas;
+import Dot.LDotCanvas.ExportDOT;
+import static Dot.LDotCanvas.ExportDOT.jpg;
 import Exceptions.LException;
+import LReflection.LSerializer;
 import LReflection.LTypeAbstraction;
 import Swing.LApplication;
 import Swing.LDialog;
@@ -56,7 +59,8 @@ public class ClassDiagram {
     static final String PFOLDER = "./projects/";
     static LProgressWindow lpW;
     static LNewLogger ln;
-
+    @LSerializer(Description = "La descripcion")
+    static LDotCanvas.ExportDOT expTo=jpg;
     /**
      * @param args the command line arguments
      */
@@ -217,7 +221,7 @@ public class ClassDiagram {
 //                    lpW.done();
                     case "FROMCLASSES":
                         lpW.addMessage("\n\n================= SEEKING DEPENDENCIES\n\n");
-                        lpW.reset(myProject.getFilesList().length * 10);
+                        lpW.reset(myProject.getFilesList().length * 2);
                         oMainFrame.showProgress("Analyzing dependencies", 10);
                         myProject.findUsage();
 //                    lpW.done();
@@ -335,6 +339,19 @@ public class ClassDiagram {
         }
     }
 
+    public static void exportTo() {
+        String exto="Luis";
+        exto = oMainFrame.readSelect("Export to:", "Please select format", new String[]{"jpg","pdf"}, exto);
+            
+        if (exto != null) {
+            if (myProject.saveDot(ExportDOT.valueOf(exto))) {
+                LSwingTools.Info("Export project", "Exporting to "+LDotCanvas.ExportDOT.valueOf(exto));
+            } else {
+                LSwingTools.Error("Export project", "Faileñd to export to "+myProject.getName()+"."+expTo.name());                             
+            }
+        }
+   }
+
     public static void selectFolders() {
         if (isProject()) {
             FolderList fl = new FolderList();
@@ -394,6 +411,9 @@ public class ClassDiagram {
         }
         if (e.getActionCommand().equals("SelectPackages")) {
             selectPackages();
+        }
+        if (e.getActionCommand().equals("ExportTo")) {
+            exportTo();
         }
     }
 //    public static void frameActionListener(ActionEvent e) {

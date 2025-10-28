@@ -33,6 +33,8 @@ import java.util.regex.Pattern;
 @LSerializer
 public class Project {
 
+    public final String ExternID = "extern";
+
     @LSerializer(Group = "Sources", Label = "Name of project:")
     String name = "nonamed";
     @LSerializer(Group = "Sources", Label = "Input folders:", isFolder = true)
@@ -74,6 +76,8 @@ public class Project {
     String lineColor = "Black & White";
     @LSerializer(Group = "Display", Label = "Resolution (dpi):", SelectList = {"150", "300", "600"})
     String dpiResolution = "600";
+    @LSerializer(Group = "Display", Label = "Dot ratio", SelectList = {"filled", "compressed", "auto"})
+    String ratio = "auto";
     @LSerializer(Group = "Display", Label = "With (inches):")
     int widthInches = 11;
     @LSerializer(Group = "Display", Label = "Height (inches):")
@@ -84,6 +88,7 @@ public class Project {
     String layout = "dot";
 
 //    static ArrayList<String> filenameList, packageList, classList;
+    LFile drawing= new LFile();
     HashMap<String, String> filecontentTable;
     HashMap<String, Integer> classusageTable;
     HashMap<String, ArrayList<String>> packagesTable, extendsTable, datamenbersTable, publicmethodsTable, protectedmethodsTable;
@@ -95,6 +100,7 @@ public class Project {
     public Project() {
         out = System.out;
         clear();
+//        outBitmap.readFrom((drawing.getBinaryContent()));
     }
 
     public void clear() {
@@ -341,7 +347,7 @@ public class Project {
         extendsTable = extendsTable;
     }
 
-    public HashMap<String, ArrayList<String>> getDatamenbersTable() {
+    public HashMap<String, ArrayList<String>> getDatamembersTable() {
         return datamenbersTable;
     }
 
@@ -518,11 +524,20 @@ public class Project {
         if (getParsersTable().get(filename) == null) {
             return res;
         }
+        String fromClass = getClassName(filename);
         for (String line : getParsersTable().get(filename).getList()) {
-            if (bclass && !bfirstmethod) {
+            if (line.matches("public class.*")) {
+                bclass = true;
+            }
+//            if (line.contains("new") && line.contains("(") && line.contains(")")) {
+////            if ((line.contains("public") || line.contains("private") || line.contains("protected"))
+////                    && line.contains("(") && line.contains(")") && !line.contains("new")) {
+//                bfirstmethod = true;
+//            }
+            if (bclass) {
                 for (String tofile : getParsersTable().keySet()) {
                     String toclass = getClassName(tofile);
-                    if (classusageTable.get(toclass) > 0 && !toclass.equals(getClassName(filename))) {
+                    if (getClassusageTable().get(toclass) > 0 && !toclass.equals(fromClass)) {
                         pat = Pattern.compile("[ \\[(<]" + toclass + "[\\])> ]");
                         Matcher m = pat.matcher(line);
                         if (m.find() && !Belongs(res, toclass)) {
@@ -533,13 +548,6 @@ public class Project {
 
             }
 
-            if (line.matches("public class.*")) {
-                bclass = true;
-            }
-            if ((line.contains("public") || line.contains("private") || line.contains("protected")) && line.contains("(") && line.contains(")") && !line.contains("new")) {
-                bfirstmethod = true;
-                return res;
-            }
         }
         return res;
     }
@@ -557,17 +565,21 @@ public class Project {
             sclass = getClassName(sfile);
             spackage = getPackageName(sfile);
             ssuperclass = getExtends(sfile);
-            if (!Belongs(getPackageSelection(), spackage)) {
-                continue;
+            if (classusageTable.get(sclass) == null) {
+                classusageTable.put(sclass, 1);
             }
-            if (ssuperclass.length() > 0) {
-                if (classusageTable.get(ssuperclass) == null) {
-                    classusageTable.put(ssuperclass, 1);
-                }
+
+//            if (!Belongs(getPackageSelection(), spackage)) {
+//                continue;
+//            }
+//            if (ssuperclass.length() > 0) {
+//                if (classusageTable.get(ssuperclass) == null) {
+//                    classusageTable.put(ssuperclass, 1);
+//                }
                 out.println("   " + sclass + " extends " + ssuperclass);
-                classusageTable.put(sclass, classusageTable.get(sclass) + 1);
-                classusageTable.put(ssuperclass, classusageTable.get(ssuperclass) + 1);
-            }
+//                classusageTable.put(sclass, classusageTable.get(sclass) + 1);
+//                classusageTable.put(ssuperclass, classusageTable.get(ssuperclass) + 1);
+//            }
         }
         // Count owns
         out.println("Analyzing data members");
@@ -579,11 +591,12 @@ public class Project {
                 continue;
             }
             datamembers = getDataMembers(sfile);
-            getDatamenbersTable().put(sclass, new ArrayList(LTypeAbstraction.toArrayList(datamembers)));
+            getDatamembersTable().put(sclass, new ArrayList(LTypeAbstraction.toArrayList(datamembers)));
+            out.println("\t"+sclass+"."+getDatamembersTable().get(sclass).toString());
             for (String tonew : datamembers) {
                 classusageTable.put(tonew, classusageTable.get(tonew) + 1);
-                classusageTable.put(sclass, classusageTable.get(sclass) + 1);
-                out.println("       " + sclass + "." + tonew);
+//                classusageTable.put(sclass, classusageTable.get(sclass) + 1);
+//                out.println("       " + sclass + "." + tonew);
             }
         }
 ////        // Methods
@@ -620,8 +633,8 @@ public class Project {
 //        oMainFrame.showProgress("End of analysis");
 
     }
+    //
 
-//
     protected String getClassName(String filename) {
         LBashTools lbt = new LBashTools(filename, "");
         return lbt.sed("^.*/", "").toString().replace(".java", "");
@@ -658,7 +671,12 @@ public class Project {
     }
 
     public boolean saveDot() {
+        return ClassDiagram.myProject.saveDot(LDotCanvas.ExportDOT.jpg);
+    }
+    
+    public boolean saveDot(LDotCanvas.ExportDOT ldexp) {
 //        String command, dotfile = "./" + getName() + ".dot", pngfile = "./" + getName() + ".png", outfile = "./" + getName() + ".txt";
+        String sclass, spackage, ssuperclass;
         ProcessBuilder pb;
         Process ps = null;
         boolean result = false;
@@ -668,7 +686,8 @@ public class Project {
         outDot.setDpi(getDpiResolution());
         outDot.setWidth(getWidthInches());
         outDot.setHeight(getHeightInches());
-        outDot.setRatio("fill");
+        outDot.setRatio(getRatio());
+
         LDotObject.setDefaultShape(LDotObject.DotShape.plain);
         LDotObject.setDefaultFont(getFont());
         LDotObject.setDefaultFontsize(getFontSize());
@@ -684,9 +703,15 @@ public class Project {
             }
             ldo.setFilled(true);
             ldo.setFillcolor(LDotObject.DotColors.white);
-//             ldo.setShape(LDotObject.DotShape.rect);
             outDot.addObject(ldo);
         }
+
+        ldo = new LDotObject(ExternID);
+        ldo.setFilled(true);
+        ldo.setFillcolor(LDotObject.DotColors.gray);
+//            ldo.setShape(LDotObject.DotShape.rect);
+        outDot.addObject(ldo);
+
         for (String sc : getExternClassesList()) {
             ldo = new LDotObject(sc);
             ldo.setFilled(true);
@@ -705,23 +730,57 @@ public class Project {
                     }
                 }
             }
+            for (String sc : getExternClassesList()) {
+                if (Belongs(outDot.getNames(), sc)) {
+                    outDot.addRelation(new LDotRelation(sc, ExternID, LDotRelation.LDRelation.EXTENDS));
+                }
+            }
+
         }
 
         // owns
         if (isIncludeData()) {
-            for (String spclass : getDatamenbersTable().keySet()) {
-                for (String sbclass : getDatamenbersTable().get(spclass)) {
-                    if (Belongs(outDot.getNames(), sbclass) && Belongs(outDot.getNames(), spclass)) {
-                        outDot.addRelation(new LDotRelation(sbclass, spclass, LDotRelation.LDRelation.OWNS));
+            for (String sfile : getFilesList()) {
+                sclass = getClassName(sfile);
+                spackage = getPackageName(sfile);
+                ssuperclass = getExtends(sfile);
+                if (spackage.length() < 1) {
+                    continue;
+                }
+                if (!Belongs(getPackageSelection(), spackage)) {
+                    continue;
+                }
+
+                if (ssuperclass.length() == 0) {
+                    for (String spclass : getDatamembersTable().keySet()) {
+                        if (getDatamembersTable().get(spclass).contains(sclass)) {
+                            LDotRelation ldrProv = new LDotRelation(sclass, spclass, LDotRelation.LDRelation.OWNS);
+                            if (!outDot.areRelated(ldrProv)) {
+                                outDot.addRelation(ldrProv);
+                                continue;
+                            }
+                        }
                     }
                 }
             }
+//            for (String spclass : getDatamembersTable().keySet()) {
+//                for (String sbclass : getDatamembersTable().get(spclass)) {
+//                    if (Belongs(outDot.getNames(), sbclass) && Belongs(outDot.getNames(), spclass)) {
+//                        LDotRelation ldrProv = new LDotRelation(sbclass, spclass, LDotRelation.LDRelation.OWNS);
+//                        if (!outDot.areRelated(ldrProv)) {
+//                            if (getClassusageTable().get(sbclass) < 2) {
+//                                outDot.addRelation(ldrProv);
+//                            }
+//                        }
+//                    }
+//                }
+//            }
         }
         outDot.save(getOutputFolder(), getName());
         if (getLayout().equals("neato")) {
-            result = outDot.Neato(getOutputFolder(), getName(), LDotCanvas.ExportDOT.jpg);
+            result = outDot.Neato(getOutputFolder(), getName(), ldexp);
         } else {
-            result = outDot.Dot(getOutputFolder(), getName(), LDotCanvas.ExportDOT.jpg);
+            result = outDot.Dot(getOutputFolder(), getName(), ldexp);
         }
         String outputfilename = getOutputFolder() + "/" + getName() + ".jpg";
         if (result) {
@@ -788,6 +847,22 @@ public class Project {
 
     public void setIncludeExtends(boolean includeExtends) {
         this.includeExtends = includeExtends;
+    }
+
+    public String getRatio() {
+        return ratio;
+    }
+
+    public void setRatio(String ratio) {
+        this.ratio = ratio;
+    }
+
+    public LFile getDrawing() {
+        return drawing;
+    }
+
+    public void setDrawing(LFile drawing) {
+        this.drawing = drawing;
     }
 
 }
